@@ -1,41 +1,41 @@
 {
-  "generatedAt": "2026-06-12T03:58:42.356Z",
+  "generatedAt": "2026-06-12T04:14:02.284Z",
   "quarter": "Q2 2026",
   "teams": [
     {
       "name": "Modelo Día",
-      "adoptionRate": 0,
-      "totalRfdFrames": 0,
-      "totalDs": 0,
-      "totalNonDs": 0,
-      "totalInstances": 0,
+      "adoptionRate": 23,
+      "totalRfdFrames": 22,
+      "totalDs": 10397,
+      "totalNonDs": 34064,
+      "totalInstances": 44461,
       "files": [
         {
           "key": "sDx9W33S6h0bwrHdGMBe00",
           "name": "Modelo Día 2026",
-          "rfdFrameCount": 0,
-          "dsInstances": 0,
-          "nonDsInstances": 0,
-          "totalInstances": 0,
-          "adoptionRate": 0
+          "rfdFrameCount": 15,
+          "dsInstances": 2605,
+          "nonDsInstances": 13273,
+          "totalInstances": 15878,
+          "adoptionRate": 16
         },
         {
           "key": "cwPxuq8YMgbHvlBb4dy9Yr",
           "name": "Portal de Suscripción & Emisión",
-          "rfdFrameCount": 0,
-          "dsInstances": 0,
-          "nonDsInstances": 0,
-          "totalInstances": 0,
-          "adoptionRate": 0
+          "rfdFrameCount": 6,
+          "dsInstances": 7428,
+          "nonDsInstances": 17806,
+          "totalInstances": 25234,
+          "adoptionRate": 29
         },
         {
           "key": "6QBFEXpu6r5ZDNuzYYtK97",
           "name": "Vida Ley & SCTR",
-          "rfdFrameCount": 0,
-          "dsInstances": 0,
-          "nonDsInstances": 0,
-          "totalInstances": 0,
-          "adoptionRate": 0
+          "rfdFrameCount": 1,
+          "dsInstances": 364,
+          "nonDsInstances": 2985,
+          "totalInstances": 3349,
+          "adoptionRate": 11
         }
       ]
     }
@@ -45,10 +45,10 @@
       "team": "Modelo Día",
       "quarter": "Q2 2026",
       "date": "2026-06-12",
-      "adoptionRate": 0,
-      "totalRfdFrames": 0,
-      "totalDs": 0,
-      "totalInstances": 0
+      "adoptionRate": 23,
+      "totalRfdFrames": 22,
+      "totalDs": 10397,
+      "totalInstances": 44461
     }
   ]
 }
