@@ -8,17 +8,7 @@ const REPORT_PATH = path.join(__dirname, "docs", "report.json");
 
 const DALTON_KEYS = {
   components: "IDBzmWEtnNBVSQTixgXWjy",
-  icons: "EVpXx1jLdKLIDLyyn2kTWa",
-  foundations: "1j9PKhuBbltHSFhq2Dogvg",
 };
-
-const DALTON_COMPONENT_PREFIXES = [
-  "Button", "Input", "Modal", "Card", "Badge", "Alert", "Tag",
-  "Tooltip", "Checkbox", "Radio", "Select", "Table", "Tabs",
-  "Accordion", "Banner", "Chip", "Divider", "Icon", "Link",
-  "Pagination", "Progress", "Skeleton", "Spinner", "Switch",
-  "Toast", "Avatar", "Breadcrumb", "Dropdown", "Nav",
-];
 
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
@@ -31,6 +21,46 @@ async function figmaFetch(endpoint) {
     throw new Error(`Figma API error ${res.status}: ${err}`);
   }
   return res.json();
+}
+
+// Load Dalton component keys AND componentSet mapping
+async function getDaltonComponentData() {
+  const keyToSetId = new Map(); // componentKey -> componentSetId
+  const setIdToName = new Map(); // componentSetId -> name
+  const keys = new Set();
+
+  try {
+    const data = await figmaFetch(`/files/${DALTON_KEYS.components}`);
+
+    // componentSets = families (unique components)
+    if (data.componentSets) {
+      for (const [id, cs] of Object.entries(data.componentSets)) {
+        setIdToName.set(id, cs.name);
+      }
+    }
+
+    if (data.components) {
+      for (const [id, comp] of Object.entries(data.components)) {
+        if (comp.key) {
+          keys.add(comp.key);
+          // Map key -> setId (for coverage tracking)
+          if (comp.componentSetId) {
+            keyToSetId.set(comp.key, comp.componentSetId);
+          } else {
+            // Standalone component (no variants) — use its own id as setId
+            keyToSetId.set(comp.key, id);
+            if (!setIdToName.has(id)) setIdToName.set(id, comp.name);
+          }
+        }
+      }
+    }
+
+    console.log(`  Loaded ${keys.size} component keys across ${setIdToName.size} unique components`);
+  } catch (e) {
+    console.warn("  Could not load Dalton component keys:", e.message);
+  }
+
+  return { keys, keyToSetId, setIdToName, totalUnique: setIdToName.size };
 }
 
 function findReadyForDevNodes(node, found = []) {
@@ -59,43 +89,35 @@ function findNodeById(node, targetId) {
   return null;
 }
 
-function countInstances(node, daltonComponentKeys, counts = { ds: 0, nonDs: 0 }) {
-  if (!node) return counts;
+// Count instances and track unique DS sets used + non-DS names
+function countInstances(node, daltonData, counts = { ds: 0, nonDs: 0 }, usedSetIds = new Set(), nonDsNames = {}) {
+  if (!node) return { counts, usedSetIds, nonDsNames };
+
   if (node.type === "INSTANCE") {
     const compKey = node.componentId;
-    const compName = node.name || "";
-    const isDaltonByKey = compKey && daltonComponentKeys.has(compKey);
-    const isDaltonByName =
-      !isDaltonByKey &&
-      DALTON_COMPONENT_PREFIXES.some((prefix) => compName.startsWith(prefix));
-    if (isDaltonByKey || isDaltonByName) {
+    const compName = node.name || "Sin nombre";
+
+    const isDalton = compKey && daltonData.keys.has(compKey);
+
+    if (isDalton) {
       counts.ds++;
+      const setId = daltonData.keyToSetId.get(compKey);
+      if (setId) usedSetIds.add(setId);
     } else {
       counts.nonDs++;
+      // Track non-DS component names for gap analysis
+      const cleanName = compName.split("/").pop().trim(); // take last segment
+      nonDsNames[cleanName] = (nonDsNames[cleanName] || 0) + 1;
     }
   }
+
   if (node.children) {
     for (const child of node.children) {
-      countInstances(child, daltonComponentKeys, counts);
+      countInstances(child, daltonData, counts, usedSetIds, nonDsNames);
     }
   }
-  return counts;
-}
 
-async function getDaltonComponentKeys() {
-  const keys = new Set();
-  try {
-    const data = await figmaFetch(`/files/${DALTON_KEYS.components}`);
-    if (data.components) {
-      for (const [, comp] of Object.entries(data.components)) {
-        if (comp.key) keys.add(comp.key);
-      }
-    }
-    console.log(`  Loaded ${keys.size} Dalton component keys`);
-  } catch (e) {
-    console.warn("  Could not load Dalton component keys, using name matching:", e.message);
-  }
-  return keys;
+  return { counts, usedSetIds, nonDsNames };
 }
 
 async function getPages(fileKey) {
@@ -113,11 +135,13 @@ async function getPageNodes(fileKey, pageId) {
   }
 }
 
-async function analyzeFile(fileKey, fileName, daltonComponentKeys) {
+async function analyzeFile(fileKey, fileName, daltonData) {
   console.log(`\n  Analyzing: ${fileName} (${fileKey})`);
   let rfdFrameCount = 0;
   let dsInstances = 0;
   let nonDsInstances = 0;
+  const usedSetIds = new Set();
+  const nonDsNames = {};
 
   const pages = await getPages(fileKey);
   console.log(`  Pages found: ${pages.length}`);
@@ -135,20 +159,32 @@ async function analyzeFile(fileKey, fileName, daltonComponentKeys) {
       const rfdNode = findNodeById(pageNode, nodeId);
       if (!rfdNode) continue;
       rfdFrameCount++;
-      const counts = countInstances(rfdNode, daltonComponentKeys);
-      dsInstances += counts.ds;
-      nonDsInstances += counts.nonDs;
+      const result = countInstances(rfdNode, daltonData, { ds: 0, nonDs: 0 }, usedSetIds, nonDsNames);
+      dsInstances += result.counts.ds;
+      nonDsInstances += result.counts.nonDs;
     }
     await sleep(800);
   }
 
   const totalInstances = dsInstances + nonDsInstances;
-  const adoptionRate =
-    totalInstances > 0 ? Math.round((dsInstances / totalInstances) * 100) : 0;
+  const adoptionRate = totalInstances > 0 ? Math.round((dsInstances / totalInstances) * 100) : 0;
+  const uniqueUsed = usedSetIds.size;
+  const coverageRate = daltonData.totalUnique > 0 ? Math.round((uniqueUsed / daltonData.totalUnique) * 100) : 0;
 
-  console.log(`  RFD frames: ${rfdFrameCount} | DS: ${dsInstances} | Non-DS: ${nonDsInstances} | Rate: ${adoptionRate}%`);
+  // Top 20 non-DS components
+  const top20NonDs = Object.entries(nonDsNames)
+    .sort((a, b) => b[1] - a[1])
+    .slice(0, 20)
+    .map(([name, count]) => ({ name, count }));
 
-  return { key: fileKey, name: fileName, rfdFrameCount, dsInstances, nonDsInstances, totalInstances, adoptionRate };
+  console.log(`  RFD: ${rfdFrameCount} | DS: ${dsInstances} | Non-DS: ${nonDsInstances} | Adoption: ${adoptionRate}% | Coverage: ${uniqueUsed}/${daltonData.totalUnique} (${coverageRate}%)`);
+
+  return {
+    key: fileKey, name: fileName, rfdFrameCount,
+    dsInstances, nonDsInstances, totalInstances, adoptionRate,
+    uniqueComponentsUsed: uniqueUsed, totalUniqueInLibrary: daltonData.totalUnique, coverageRate,
+    top20NonDs,
+  };
 }
 
 async function run() {
@@ -166,8 +202,8 @@ async function run() {
     history = JSON.parse(fs.readFileSync(HISTORY_PATH, "utf8"));
   }
 
-  console.log("Loading Dalton component keys...");
-  const daltonComponentKeys = await getDaltonComponentKeys();
+  console.log("Loading Dalton component data...");
+  const daltonData = await getDaltonComponentData();
   await sleep(1000);
 
   const teamsData = [];
@@ -178,11 +214,11 @@ async function run() {
 
     for (const file of team.files) {
       try {
-        const result = await analyzeFile(file.key, file.name, daltonComponentKeys);
+        const result = await analyzeFile(file.key, file.name, daltonData);
         filesData.push(result);
       } catch (e) {
         console.error(`  Error analyzing ${file.name}:`, e.message);
-        filesData.push({ key: file.key, name: file.name, error: e.message, rfdFrameCount: 0, dsInstances: 0, nonDsInstances: 0, totalInstances: 0, adoptionRate: 0 });
+        filesData.push({ key: file.key, name: file.name, error: e.message, rfdFrameCount: 0, dsInstances: 0, nonDsInstances: 0, totalInstances: 0, adoptionRate: 0, uniqueComponentsUsed: 0, totalUniqueInLibrary: daltonData.totalUnique, coverageRate: 0, top20NonDs: [] });
       }
       await sleep(1500);
     }
@@ -193,7 +229,31 @@ async function run() {
     const totalInstances = totalDs + totalNonDs;
     const teamAdoptionRate = totalInstances > 0 ? Math.round((totalDs / totalInstances) * 100) : 0;
 
-    teamsData.push({ name: team.name, adoptionRate: teamAdoptionRate, totalRfdFrames, totalDs, totalNonDs, totalInstances, files: filesData });
+    // Aggregate unique components across files
+    const allUsedSets = new Set();
+    const aggregatedNonDs = {};
+    for (const f of filesData) {
+      if (f.top20NonDs) {
+        for (const { name, count } of f.top20NonDs) {
+          aggregatedNonDs[name] = (aggregatedNonDs[name] || 0) + count;
+        }
+      }
+    }
+    const teamTop20NonDs = Object.entries(aggregatedNonDs)
+      .sort((a, b) => b[1] - a[1])
+      .slice(0, 20)
+      .map(([name, count]) => ({ name, count }));
+
+    const teamUniqueUsed = filesData.reduce((s, f) => s + (f.uniqueComponentsUsed || 0), 0);
+    const teamCoverageRate = daltonData.totalUnique > 0 ? Math.round((teamUniqueUsed / daltonData.totalUnique) * 100) : 0;
+
+    teamsData.push({
+      name: team.name, adoptionRate: teamAdoptionRate,
+      totalRfdFrames, totalDs, totalNonDs, totalInstances,
+      uniqueComponentsUsed: teamUniqueUsed, totalUniqueInLibrary: daltonData.totalUnique,
+      coverageRate: teamCoverageRate, top20NonDs: teamTop20NonDs,
+      files: filesData,
+    });
   }
 
   const now = new Date();
@@ -202,21 +262,25 @@ async function run() {
 
   for (const team of teamsData) {
     const existingIdx = history.findIndex((h) => h.team === team.name && h.quarter === quarter);
-    const entry = { team: team.name, quarter, date: dateStr, adoptionRate: team.adoptionRate, totalRfdFrames: team.totalRfdFrames, totalDs: team.totalDs, totalInstances: team.totalInstances };
+    const entry = {
+      team: team.name, quarter, date: dateStr,
+      adoptionRate: team.adoptionRate, totalRfdFrames: team.totalRfdFrames,
+      totalDs: team.totalDs, totalInstances: team.totalInstances,
+      coverageRate: team.coverageRate, uniqueComponentsUsed: team.uniqueComponentsUsed,
+    };
     if (existingIdx >= 0) { history[existingIdx] = entry; } else { history.push(entry); }
   }
 
   fs.writeFileSync(HISTORY_PATH, JSON.stringify(history, null, 2));
-
-  const report = { generatedAt: now.toISOString(), quarter, teams: teamsData, history };
+  const report = { generatedAt: now.toISOString(), quarter, totalUniqueInLibrary: daltonData.totalUnique, teams: teamsData, history };
 
   if (!fs.existsSync(path.join(__dirname, "docs"))) fs.mkdirSync(path.join(__dirname, "docs"));
-
   fs.writeFileSync(REPORT_PATH, JSON.stringify(report, null, 2));
+
   console.log(`\nReport saved to docs/report.json`);
   console.log("\n=== Summary ===");
   for (const team of teamsData) {
-    console.log(`${team.name}: ${team.adoptionRate}% (${team.totalRfdFrames} RFD frames)`);
+    console.log(`${team.name}: ${team.adoptionRate}% adoption | ${team.coverageRate}% coverage (${team.uniqueComponentsUsed}/${daltonData.totalUnique} unique)`);
   }
 }
 
