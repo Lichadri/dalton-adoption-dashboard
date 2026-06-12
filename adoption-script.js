@@ -8,6 +8,20 @@ const REPORT_PATH = path.join(__dirname, "docs", "report.json");
 
 const DALTON_KEYS = { components: "IDBzmWEtnNBVSQTixgXWjy" };
 
+// Exact Dalton component family names (from the library)
+const DALTON_FAMILIES = [
+  "Accordion", "Alert", "Avatar", "Badges", "Breadcrumb", "Button",
+  "Calendar", "Calendar v.2", "Cards", "Animations", "Cards I", "Cards II",
+  "Checkbox", "Chips", "Comparador", "Controls", "Covers",
+  "File uploader", "Footer", "Header", "Hero", "Infografia", "Input",
+  "Links", "Loader", "Main Search", "Modals", "Pagination", "Progress bar",
+  "Radio", "Select", "Sidebar", "Status Message", "Stepper", "Tab",
+  "Table", "Text Area", "Toggle", "Tooltips", "Tracking", "Whatsapp float",
+];
+
+// Lowercase for case-insensitive matching
+const DALTON_FAMILIES_LOWER = DALTON_FAMILIES.map(f => f.toLowerCase());
+
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
 async function figmaFetch(endpoint) {
@@ -21,44 +35,31 @@ async function figmaFetch(endpoint) {
   return res.json();
 }
 
-// Load Dalton data using NODE IDs (not keys)
-// componentId in team files = node ID of the master component in the library
-async function getDaltonComponentData() {
-  const nodeIds = new Set();         // node IDs for instance matching
-  const nodeIdToFamily = new Map();  // nodeId -> family name (for coverage)
-  const familyNames = new Set();
+// Check if a component name matches a Dalton family
+// Handles: "Button/Primary/Large", "Desktop/Botón Primario", "radio_form", etc.
+function isDaltonComponent(name) {
+  if (!name) return false;
+  const lower = name.toLowerCase();
 
-  try {
-    const data = await figmaFetch(`/files/${DALTON_KEYS.components}`);
+  // Check if any segment of the name matches a Dalton family
+  const segments = lower.split("/").map(s => s.trim());
 
-    const setIdToName = new Map();
-    if (data.componentSets) {
-      for (const [id, cs] of Object.entries(data.componentSets)) {
-        setIdToName.set(id, cs.name);
+  for (const segment of segments) {
+    for (const family of DALTON_FAMILIES_LOWER) {
+      if (segment === family || segment.startsWith(family + " ") || segment.startsWith(family + "_")) {
+        return { matched: true, family: DALTON_FAMILIES[DALTON_FAMILIES_LOWER.indexOf(family)] };
       }
     }
-
-    if (data.components) {
-      for (const [nodeId, comp] of Object.entries(data.components)) {
-        nodeIds.add(nodeId); // THIS is what componentId in team files matches
-
-        let familyName;
-        if (comp.componentSetId && setIdToName.has(comp.componentSetId)) {
-          familyName = setIdToName.get(comp.componentSetId);
-        } else {
-          familyName = comp.name;
-        }
-        nodeIdToFamily.set(nodeId, familyName);
-        familyNames.add(familyName);
-      }
-    }
-
-    console.log(`  Loaded ${nodeIds.size} component node IDs across ${familyNames.size} unique families`);
-  } catch (e) {
-    console.warn("  Could not load Dalton component data:", e.message);
   }
 
-  return { nodeIds, nodeIdToFamily, totalUniqueFamilies: familyNames.size };
+  // Also check full name starts with family
+  for (const family of DALTON_FAMILIES_LOWER) {
+    if (lower.startsWith(family)) {
+      return { matched: true, family: DALTON_FAMILIES[DALTON_FAMILIES_LOWER.indexOf(family)] };
+    }
+  }
+
+  return { matched: false, family: null };
 }
 
 function findReadyForDevNodes(node, found = []) {
@@ -85,17 +86,15 @@ function findNodeById(node, targetId) {
   return null;
 }
 
-function countInstances(node, daltonData, counts, usedFamilies, nonDsNames) {
+function countInstances(node, counts, usedFamilies, nonDsNames) {
   if (!node) return;
 
   if (node.type === "INSTANCE") {
-    const compNodeId = node.componentId; // node ID of master component
-    const isDalton = compNodeId && daltonData.nodeIds.has(compNodeId);
+    const result = isDaltonComponent(node.name);
 
-    if (isDalton) {
+    if (result.matched) {
       counts.ds++;
-      const family = daltonData.nodeIdToFamily.get(compNodeId);
-      if (family) usedFamilies.add(family);
+      usedFamilies.add(result.family);
     } else {
       counts.nonDs++;
       const cleanName = (node.name || "Sin nombre").split("/").pop().trim();
@@ -105,7 +104,7 @@ function countInstances(node, daltonData, counts, usedFamilies, nonDsNames) {
 
   if (node.children) {
     for (const child of node.children) {
-      countInstances(child, daltonData, counts, usedFamilies, nonDsNames);
+      countInstances(child, counts, usedFamilies, nonDsNames);
     }
   }
 }
@@ -125,7 +124,7 @@ async function getPageNodes(fileKey, pageId) {
   }
 }
 
-async function analyzeFile(fileKey, fileName, daltonData) {
+async function analyzeFile(fileKey, fileName) {
   console.log(`\n  Analyzing: ${fileName} (${fileKey})`);
   let rfdFrameCount = 0;
   const counts = { ds: 0, nonDs: 0 };
@@ -148,7 +147,7 @@ async function analyzeFile(fileKey, fileName, daltonData) {
       const rfdNode = findNodeById(pageNode, nodeId);
       if (!rfdNode) continue;
       rfdFrameCount++;
-      countInstances(rfdNode, daltonData, counts, usedFamilies, nonDsNames);
+      countInstances(rfdNode, counts, usedFamilies, nonDsNames);
     }
     await sleep(800);
   }
@@ -156,21 +155,22 @@ async function analyzeFile(fileKey, fileName, daltonData) {
   const totalInstances = counts.ds + counts.nonDs;
   const adoptionRate = totalInstances > 0 ? Math.round((counts.ds / totalInstances) * 100) : 0;
   const uniqueUsed = usedFamilies.size;
-  const coverageRate = daltonData.totalUniqueFamilies > 0 ? Math.round((uniqueUsed / daltonData.totalUniqueFamilies) * 100) : 0;
+  const totalFamilies = DALTON_FAMILIES.length;
+  const coverageRate = Math.round((uniqueUsed / totalFamilies) * 100);
 
   const top20NonDs = Object.entries(nonDsNames)
     .sort((a, b) => b[1] - a[1])
     .slice(0, 20)
     .map(([name, count]) => ({ name, count }));
 
-  console.log(`  RFD: ${rfdFrameCount} | DS: ${counts.ds} | Non-DS: ${counts.nonDs} | Adoption: ${adoptionRate}% | Coverage: ${uniqueUsed}/${daltonData.totalUniqueFamilies} (${coverageRate}%)`);
+  console.log(`  RFD: ${rfdFrameCount} | DS: ${counts.ds} | Non-DS: ${counts.nonDs} | Adoption: ${adoptionRate}% | Coverage: ${uniqueUsed}/${totalFamilies} (${coverageRate}%)`);
 
   return {
     key: fileKey, name: fileName, rfdFrameCount,
     dsInstances: counts.ds, nonDsInstances: counts.nonDs,
     totalInstances, adoptionRate,
     uniqueComponentsUsed: uniqueUsed,
-    totalUniqueInLibrary: daltonData.totalUniqueFamilies,
+    totalUniqueInLibrary: totalFamilies,
     coverageRate, top20NonDs,
   };
 }
@@ -179,19 +179,12 @@ async function run() {
   if (!FIGMA_TOKEN) { console.error("ERROR: FIGMA_TOKEN not set"); process.exit(1); }
 
   console.log("=== Dalton DS Adoption Report ===");
-  console.log(`Date: ${new Date().toISOString()}\n`);
+  console.log(`Date: ${new Date().toISOString()}`);
+  console.log(`Matching against ${DALTON_FAMILIES.length} Dalton component families\n`);
 
   const config = JSON.parse(fs.readFileSync(CONFIG_PATH, "utf8"));
   let history = [];
   if (fs.existsSync(HISTORY_PATH)) history = JSON.parse(fs.readFileSync(HISTORY_PATH, "utf8"));
-
-  console.log("Loading Dalton component data...");
-  const daltonData = await getDaltonComponentData();
-  await sleep(1000);
-  const sampleIds = [...daltonData.nodeIds].slice(0, 3);
-console.log("Sample Dalton node IDs:", sampleIds);
-
-
 
   const teamsData = [];
 
@@ -201,10 +194,10 @@ console.log("Sample Dalton node IDs:", sampleIds);
 
     for (const file of team.files) {
       try {
-        filesData.push(await analyzeFile(file.key, file.name, daltonData));
+        filesData.push(await analyzeFile(file.key, file.name));
       } catch (e) {
         console.error(`  Error: ${file.name}:`, e.message);
-        filesData.push({ key: file.key, name: file.name, error: e.message, rfdFrameCount: 0, dsInstances: 0, nonDsInstances: 0, totalInstances: 0, adoptionRate: 0, uniqueComponentsUsed: 0, totalUniqueInLibrary: daltonData.totalUniqueFamilies, coverageRate: 0, top20NonDs: [] });
+        filesData.push({ key: file.key, name: file.name, error: e.message, rfdFrameCount: 0, dsInstances: 0, nonDsInstances: 0, totalInstances: 0, adoptionRate: 0, uniqueComponentsUsed: 0, totalUniqueInLibrary: DALTON_FAMILIES.length, coverageRate: 0, top20NonDs: [] });
       }
       await sleep(1500);
     }
@@ -215,7 +208,7 @@ console.log("Sample Dalton node IDs:", sampleIds);
     const totalInstances = totalDs + totalNonDs;
     const teamAdoptionRate = totalInstances > 0 ? Math.round((totalDs / totalInstances) * 100) : 0;
     const teamUniqueUsed = filesData.reduce((s, f) => s + (f.uniqueComponentsUsed || 0), 0);
-    const teamCoverageRate = daltonData.totalUniqueFamilies > 0 ? Math.round((teamUniqueUsed / daltonData.totalUniqueFamilies) * 100) : 0;
+    const teamCoverageRate = Math.round((teamUniqueUsed / DALTON_FAMILIES.length) * 100);
 
     const aggregatedNonDs = {};
     for (const f of filesData) {
@@ -231,7 +224,7 @@ console.log("Sample Dalton node IDs:", sampleIds);
       name: team.name, adoptionRate: teamAdoptionRate,
       totalRfdFrames, totalDs, totalNonDs, totalInstances,
       uniqueComponentsUsed: teamUniqueUsed,
-      totalUniqueInLibrary: daltonData.totalUniqueFamilies,
+      totalUniqueInLibrary: DALTON_FAMILIES.length,
       coverageRate: teamCoverageRate, top20NonDs: teamTop20NonDs, files: filesData,
     });
   }
@@ -247,14 +240,14 @@ console.log("Sample Dalton node IDs:", sampleIds);
   }
 
   fs.writeFileSync(HISTORY_PATH, JSON.stringify(history, null, 2));
-  const report = { generatedAt: now.toISOString(), quarter, totalUniqueInLibrary: daltonData.totalUniqueFamilies, teams: teamsData, history };
+  const report = { generatedAt: now.toISOString(), quarter, totalUniqueInLibrary: DALTON_FAMILIES.length, teams: teamsData, history };
   if (!fs.existsSync(path.join(__dirname, "docs"))) fs.mkdirSync(path.join(__dirname, "docs"));
   fs.writeFileSync(REPORT_PATH, JSON.stringify(report, null, 2));
 
   console.log(`\nReport saved to docs/report.json`);
   console.log("\n=== Summary ===");
   for (const team of teamsData) {
-    console.log(`${team.name}: ${team.adoptionRate}% adoption | ${team.coverageRate}% coverage (${team.uniqueComponentsUsed}/${daltonData.totalUniqueFamilies})`);
+    console.log(`${team.name}: ${team.adoptionRate}% adoption | ${team.coverageRate}% coverage (${team.uniqueComponentsUsed}/${DALTON_FAMILIES.length})`);
   }
 }
 
