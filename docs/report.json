@@ -1,22 +1,18 @@
 {
-  "generatedAt": "2026-06-12T06:26:57.307Z",
+  "generatedAt": "2026-06-12T06:36:38.633Z",
   "quarter": "Q2 2026",
   "teams": [
     {
       "name": "Modelo Día",
-      "adoptionRate": 39,
+      "adoptionRate": 38,
       "totalRfdFrames": 22,
-      "totalDs": 17455,
-      "totalComponents": 17067,
-      "totalIcons": 388,
-      "totalInternal": 27015,
+      "totalDs": 17103,
+      "totalInternal": 27367,
       "totalInstances": 44470,
-      "componentsRate": 38,
-      "iconsRate": 1,
       "top20Internal": [
         {
           "name": "arrow down",
-          "count": 2855
+          "count": 2926
         },
         {
           "name": "desk Table cell",
@@ -24,7 +20,7 @@
         },
         {
           "name": "person",
-          "count": 2009
+          "count": 2134
         },
         {
           "name": "Tag",
@@ -32,7 +28,7 @@
         },
         {
           "name": "arrow right",
-          "count": 1335
+          "count": 1347
         },
         {
           "name": "desktop",
@@ -87,12 +83,12 @@
           "count": 378
         },
         {
-          "name": "Aprobado",
-          "count": 230
+          "name": "search",
+          "count": 243
         },
         {
-          "name": "search",
-          "count": 224
+          "name": "Aprobado",
+          "count": 230
         }
       ],
       "files": [
@@ -100,22 +96,22 @@
           "key": "sDx9W33S6h0bwrHdGMBe00",
           "name": "Modelo Día 2026",
           "rfdFrameCount": 15,
-          "dsInstances": 6557,
-          "componentsInstances": 6208,
-          "iconsInstances": 349,
-          "internalInstances": 9321,
+          "dsInstances": 6244,
+          "internalInstances": 9634,
           "totalInstances": 15878,
-          "adoptionRate": 41,
-          "componentsRate": 39,
-          "iconsRate": 2,
+          "adoptionRate": 39,
           "top20Internal": [
             {
               "name": "arrow down",
-              "count": 1831
+              "count": 1891
             },
             {
               "name": "home",
               "count": 815
+            },
+            {
+              "name": "person",
+              "count": 758
             },
             {
               "name": "viajes",
@@ -126,24 +122,20 @@
               "count": 653
             },
             {
-              "name": "person",
-              "count": 648
-            },
-            {
               "name": "arrow right",
-              "count": 626
+              "count": 633
             },
             {
               "name": "Tag",
               "count": 512
             },
             {
-              "name": "business center",
-              "count": 165
+              "name": "search",
+              "count": 176
             },
             {
-              "name": "search",
-              "count": 158
+              "name": "business center",
+              "count": 165
             },
             {
               "name": "arrow up",
@@ -196,13 +188,9 @@
           "name": "Portal de Suscripción & Emisión",
           "rfdFrameCount": 6,
           "dsInstances": 9266,
-          "componentsInstances": 9266,
-          "iconsInstances": 0,
           "internalInstances": 15968,
           "totalInstances": 25234,
           "adoptionRate": 37,
-          "componentsRate": 37,
-          "iconsRate": 0,
           "top20Internal": [
             {
               "name": "desk Table cell",
@@ -290,18 +278,14 @@
           "key": "6QBFEXpu6r5ZDNuzYYtK97",
           "name": "Vida Ley & SCTR",
           "rfdFrameCount": 1,
-          "dsInstances": 1632,
-          "componentsInstances": 1593,
-          "iconsInstances": 39,
-          "internalInstances": 1726,
+          "dsInstances": 1593,
+          "internalInstances": 1765,
           "totalInstances": 3358,
-          "adoptionRate": 49,
-          "componentsRate": 47,
-          "iconsRate": 1,
+          "adoptionRate": 47,
           "top20Internal": [
             {
               "name": "arrow down",
-              "count": 530
+              "count": 541
             },
             {
               "name": "home",
@@ -309,15 +293,15 @@
             },
             {
               "name": "person",
-              "count": 77
+              "count": 92
             },
             {
               "name": "arrow right",
-              "count": 74
+              "count": 79
             },
             {
               "name": "search",
-              "count": 66
+              "count": 67
             },
             {
               "name": "arrow up",
@@ -389,11 +373,9 @@
       "team": "Modelo Día",
       "quarter": "Q2 2026",
       "date": "2026-06-12",
-      "adoptionRate": 39,
-      "componentsRate": 38,
-      "iconsRate": 1,
+      "adoptionRate": 38,
       "totalRfdFrames": 22,
-      "totalDs": 17455,
+      "totalDs": 17103,
       "totalInstances": 44470
     }
   ]
