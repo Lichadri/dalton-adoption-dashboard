@@ -1,1 +1,11 @@
-[]
+[
+  {
+    "team": "Modelo Día",
+    "quarter": "Q2 2026",
+    "date": "2026-06-12",
+    "adoptionRate": 0,
+    "totalRfdFrames": 0,
+    "totalDs": 0,
+    "totalInstances": 0
+  }
+]

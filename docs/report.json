@@ -1,6 +1,54 @@
 {
-  "generatedAt": null,
-  "quarter": "—",
-  "teams": [],
-  "history": []
+  "generatedAt": "2026-06-12T03:58:42.356Z",
+  "quarter": "Q2 2026",
+  "teams": [
+    {
+      "name": "Modelo Día",
+      "adoptionRate": 0,
+      "totalRfdFrames": 0,
+      "totalDs": 0,
+      "totalNonDs": 0,
+      "totalInstances": 0,
+      "files": [
+        {
+          "key": "sDx9W33S6h0bwrHdGMBe00",
+          "name": "Modelo Día 2026",
+          "rfdFrameCount": 0,
+          "dsInstances": 0,
+          "nonDsInstances": 0,
+          "totalInstances": 0,
+          "adoptionRate": 0
+        },
+        {
+          "key": "cwPxuq8YMgbHvlBb4dy9Yr",
+          "name": "Portal de Suscripción & Emisión",
+          "rfdFrameCount": 0,
+          "dsInstances": 0,
+          "nonDsInstances": 0,
+          "totalInstances": 0,
+          "adoptionRate": 0
+        },
+        {
+          "key": "6QBFEXpu6r5ZDNuzYYtK97",
+          "name": "Vida Ley & SCTR",
+          "rfdFrameCount": 0,
+          "dsInstances": 0,
+          "nonDsInstances": 0,
+          "totalInstances": 0,
+          "adoptionRate": 0
+        }
+      ]
+    }
+  ],
+  "history": [
+    {
+      "team": "Modelo Día",
+      "quarter": "Q2 2026",
+      "date": "2026-06-12",
+      "adoptionRate": 0,
+      "totalRfdFrames": 0,
+      "totalDs": 0,
+      "totalInstances": 0
+    }
+  ]
 }
