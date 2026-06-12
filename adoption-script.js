@@ -18,6 +18,16 @@ const DALTON_COMPONENT_FAMILIES = [
 ];
 const FAMILIES_LOWER = DALTON_COMPONENT_FAMILIES.map(f => f.toLowerCase());
 
+// Icons to exclude from count (known Dalton icons with non-prefixed names)
+const EXCLUDED_ICONS = new Set([
+  "arrow down", "arrow right", "arrow left", "arrow up",
+  "desktop", "home", "person", "search", "viajes",
+  "work experience icon", "business center", "up", "arrowright",
+  "check", "edit", "delete", "plus", "minus", "close",
+  "logo",
+]);
+
+
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
 async function figmaFetch(endpoint) {
@@ -31,6 +41,11 @@ async function figmaFetch(endpoint) {
 function classify(name) {
   if (!name) return "internal";
   const lower = name.toLowerCase();
+  const lastName = lower.split("/").pop().trim();
+
+  // Exclude known icons from count entirely
+  if (EXCLUDED_ICONS.has(lastName) || EXCLUDED_ICONS.has(lower)) return "exclude";
+
   const segments = lower.split("/").map(s => s.trim());
   for (const segment of segments) {
     for (const fam of FAMILIES_LOWER) {
@@ -71,9 +86,12 @@ function countInstances(node, result) {
   if (!node) return;
   if (node.type === "INSTANCE") {
     const lib = classify(node.name);
-    result[lib].count++;
-    const name = (node.name || "Sin nombre").split("/").pop().trim();
-    result[lib].names[name] = (result[lib].names[name] || 0) + 1;
+    if (lib === "exclude") { /* skip known icons */ }
+    else {
+      result[lib].count++;
+      const name = (node.name || "Sin nombre").split("/").pop().trim();
+      result[lib].names[name] = (result[lib].names[name] || 0) + 1;
+    }
   }
   if (node.children) for (const child of node.children) countInstances(child, result);
 }
