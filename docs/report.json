@@ -1,42 +1,18 @@
 {
-  "generatedAt": "2026-06-12T13:59:04.329Z",
+  "generatedAt": "2026-06-12T14:17:07.135Z",
   "quarter": "Q2 2026",
   "teams": [
     {
       "name": "Modelo Día",
-      "adoptionRate": 39,
-      "totalRfdFrames": 21,
-      "totalDs": 11919,
-      "totalInternal": 18475,
-      "totalInstances": 30394,
+      "adoptionRate": 56,
+      "totalRfdFrames": 22,
+      "totalDs": 11789,
+      "totalInternal": 9399,
+      "totalInstances": 21188,
       "top20Internal": [
         {
           "name": "desk Table cell",
-          "count": 2571
-        },
-        {
-          "name": "arrow down",
-          "count": 2527
-        },
-        {
-          "name": "desktop",
-          "count": 1227
-        },
-        {
-          "name": "home",
-          "count": 1145
-        },
-        {
-          "name": "person",
-          "count": 1026
-        },
-        {
-          "name": "arrow right",
-          "count": 962
-        },
-        {
-          "name": "viajes",
-          "count": 669
+          "count": 2624
         },
         {
           "name": "Left Label",
@@ -48,47 +24,71 @@
         },
         {
           "name": "Control",
-          "count": 620
-        },
-        {
-          "name": "search",
-          "count": 243
-        },
-        {
-          "name": "Work Experience Icon",
-          "count": 216
-        },
-        {
-          "name": "arrow up",
-          "count": 210
+          "count": 643
         },
         {
           "name": "Component 16",
-          "count": 186
+          "count": 270
         },
         {
-          "name": "business center",
-          "count": 165
+          "name": "Botón Primario",
+          "count": 180
         },
         {
           "name": "Dropdown filter page",
-          "count": 155
+          "count": 159
         },
         {
           "name": "width fixed pagination",
-          "count": 155
+          "count": 159
         },
         {
-          "name": "Up",
-          "count": 148
+          "name": "Indicator Circle",
+          "count": 135
         },
         {
-          "name": "ArrowRight",
-          "count": 145
+          "name": "Line Tracking Vertical",
+          "count": 135
         },
         {
-          "name": "logo",
-          "count": 142
+          "name": "Article",
+          "count": 113
+        },
+        {
+          "name": "barras",
+          "count": 109
+        },
+        {
+          "name": "settings",
+          "count": 108
+        },
+        {
+          "name": "Indicator step",
+          "count": 106
+        },
+        {
+          "name": "billetera",
+          "count": 106
+        },
+        {
+          "name": "description",
+          "count": 105
+        },
+        {
+          "name": "create account",
+          "count": 104
+        },
+        {
+          "name": "Page",
+          "count": 102
+        },
+        {
+          "name": "Icon",
+          "count": 100
+        },
+        {
+          "name": "AGENDA",
+          "count": 92
         }
       ],
       "files": [
@@ -96,58 +96,18 @@
           "key": "sDx9W33S6h0bwrHdGMBe00",
           "name": "Modelo Día 2026",
           "rfdFrameCount": 15,
-          "dsInstances": 6244,
-          "internalInstances": 9634,
-          "totalInstances": 15878,
-          "adoptionRate": 39,
+          "dsInstances": 6189,
+          "internalInstances": 3906,
+          "totalInstances": 10095,
+          "adoptionRate": 61,
           "top20Internal": [
-            {
-              "name": "arrow down",
-              "count": 1891
-            },
-            {
-              "name": "home",
-              "count": 815
-            },
-            {
-              "name": "person",
-              "count": 758
-            },
-            {
-              "name": "viajes",
-              "count": 656
-            },
             {
               "name": "Left Label",
               "count": 653
             },
             {
-              "name": "arrow right",
-              "count": 633
-            },
-            {
               "name": "Tag",
               "count": 512
-            },
-            {
-              "name": "search",
-              "count": 176
-            },
-            {
-              "name": "business center",
-              "count": 165
-            },
-            {
-              "name": "arrow up",
-              "count": 150
-            },
-            {
-              "name": "ArrowRight",
-              "count": 145
-            },
-            {
-              "name": "logo",
-              "count": 112
             },
             {
               "name": "Indicator Circle",
@@ -160,10 +120,6 @@
             {
               "name": "Indicator step",
               "count": 106
-            },
-            {
-              "name": "arrow left",
-              "count": 103
             },
             {
               "name": "Icon",
@@ -180,73 +136,93 @@
             {
               "name": "Article",
               "count": 83
+            },
+            {
+              "name": "Component 16",
+              "count": 81
+            },
+            {
+              "name": "Indicator number",
+              "count": 80
+            },
+            {
+              "name": "settings",
+              "count": 78
+            },
+            {
+              "name": "billetera",
+              "count": 76
+            },
+            {
+              "name": "description",
+              "count": 75
+            },
+            {
+              "name": "barras",
+              "count": 74
+            },
+            {
+              "name": "create account",
+              "count": 74
+            },
+            {
+              "name": "Bar Progress",
+              "count": 70
+            },
+            {
+              "name": "Landing",
+              "count": 66
+            },
+            {
+              "name": "add",
+              "count": 55
+            },
+            {
+              "name": "Botón Primario",
+              "count": 54
             }
           ]
         },
         {
           "key": "cwPxuq8YMgbHvlBb4dy9Yr",
           "name": "Portal de Suscripción & Emisión",
-          "rfdFrameCount": 5,
-          "dsInstances": 4082,
-          "internalInstances": 7076,
-          "totalInstances": 11158,
-          "adoptionRate": 37,
+          "rfdFrameCount": 6,
+          "dsInstances": 4008,
+          "internalInstances": 4982,
+          "totalInstances": 8990,
+          "adoptionRate": 45,
           "top20Internal": [
             {
               "name": "desk Table cell",
-              "count": 2571
-            },
-            {
-              "name": "desktop",
-              "count": 1227
+              "count": 2624
             },
             {
               "name": "Control",
-              "count": 620
-            },
-            {
-              "name": "arrow right",
-              "count": 250
-            },
-            {
-              "name": "Work Experience Icon",
-              "count": 216
+              "count": 636
             },
             {
               "name": "Component 16",
-              "count": 186
-            },
-            {
-              "name": "person",
-              "count": 176
+              "count": 189
             },
             {
               "name": "Dropdown filter page",
-              "count": 155
+              "count": 159
             },
             {
               "name": "width fixed pagination",
-              "count": 155
-            },
-            {
-              "name": "Up",
-              "count": 148
+              "count": 159
             },
             {
               "name": "Botón Primario",
-              "count": 124
+              "count": 126
             },
             {
               "name": "Page",
               "count": 102
             },
             {
-              "name": "arrow down",
-              "count": 95
-            },
-            {
               "name": "list",
-              "count": 84
+              "count": 86
             },
             {
               "name": "Tag",
@@ -254,7 +230,7 @@
             },
             {
               "name": "download",
-              "count": 81
+              "count": 82
             },
             {
               "name": "DirectionDown",
@@ -262,15 +238,39 @@
             },
             {
               "name": "BtnBackNext",
-              "count": 62
+              "count": 63
             },
             {
               "name": "Pregunta formulario",
-              "count": 62
+              "count": 63
             },
             {
               "name": "account",
-              "count": 62
+              "count": 63
+            },
+            {
+              "name": "menu",
+              "count": 63
+            },
+            {
+              "name": "print",
+              "count": 54
+            },
+            {
+              "name": "ArrowLeft",
+              "count": 53
+            },
+            {
+              "name": "day_format",
+              "count": 42
+            },
+            {
+              "name": "Label in",
+              "count": 36
+            },
+            {
+              "name": "Infotip",
+              "count": 33
             }
           ]
         },
@@ -278,35 +278,11 @@
           "key": "6QBFEXpu6r5ZDNuzYYtK97",
           "name": "Vida Ley & SCTR",
           "rfdFrameCount": 1,
-          "dsInstances": 1593,
-          "internalInstances": 1765,
-          "totalInstances": 3358,
-          "adoptionRate": 47,
+          "dsInstances": 1592,
+          "internalInstances": 511,
+          "totalInstances": 2103,
+          "adoptionRate": 76,
           "top20Internal": [
-            {
-              "name": "arrow down",
-              "count": 541
-            },
-            {
-              "name": "home",
-              "count": 330
-            },
-            {
-              "name": "person",
-              "count": 92
-            },
-            {
-              "name": "arrow right",
-              "count": 79
-            },
-            {
-              "name": "search",
-              "count": 67
-            },
-            {
-              "name": "arrow up",
-              "count": 60
-            },
             {
               "name": "Tag",
               "count": 51
@@ -314,10 +290,6 @@
             {
               "name": "barras",
               "count": 35
-            },
-            {
-              "name": "logo",
-              "count": 30
             },
             {
               "name": "create account",
@@ -356,12 +328,40 @@
               "count": 13
             },
             {
-              "name": "viajes",
-              "count": 13
-            },
-            {
               "name": "Slider Controls",
               "count": 12
+            },
+            {
+              "name": "Star",
+              "count": 10
+            },
+            {
+              "name": "download",
+              "count": 10
+            },
+            {
+              "name": "play : pause",
+              "count": 9
+            },
+            {
+              "name": "theatre icon",
+              "count": 9
+            },
+            {
+              "name": "fullscreen icon",
+              "count": 9
+            },
+            {
+              "name": "Search Suggestion",
+              "count": 8
+            },
+            {
+              "name": "Search Button",
+              "count": 7
+            },
+            {
+              "name": "Control",
+              "count": 7
             }
           ]
         }
@@ -373,10 +373,10 @@
       "team": "Modelo Día",
       "quarter": "Q2 2026",
       "date": "2026-06-12",
-      "adoptionRate": 39,
-      "totalRfdFrames": 21,
-      "totalDs": 11919,
-      "totalInstances": 30394
+      "adoptionRate": 56,
+      "totalRfdFrames": 22,
+      "totalDs": 11789,
+      "totalInstances": 21188
     }
   ]
 }
