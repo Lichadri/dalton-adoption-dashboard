@@ -1,41 +1,382 @@
 {
-  "generatedAt": "2026-06-12T04:14:02.284Z",
+  "generatedAt": "2026-06-12T04:50:35.083Z",
   "quarter": "Q2 2026",
+  "totalUniqueInLibrary": 365,
   "teams": [
     {
       "name": "Modelo Día",
-      "adoptionRate": 23,
+      "adoptionRate": 0,
       "totalRfdFrames": 22,
-      "totalDs": 10397,
-      "totalNonDs": 34064,
-      "totalInstances": 44461,
+      "totalDs": 0,
+      "totalNonDs": 44470,
+      "totalInstances": 44470,
+      "uniqueComponentsUsed": 0,
+      "totalUniqueInLibrary": 365,
+      "coverageRate": 0,
+      "top20NonDs": [
+        {
+          "name": "arrow down",
+          "count": 2926
+        },
+        {
+          "name": "desk Table cell",
+          "count": 2571
+        },
+        {
+          "name": "Input",
+          "count": 2373
+        },
+        {
+          "name": "help Circle",
+          "count": 2190
+        },
+        {
+          "name": "person",
+          "count": 2134
+        },
+        {
+          "name": "Button",
+          "count": 2047
+        },
+        {
+          "name": "Sidebar State",
+          "count": 2016
+        },
+        {
+          "name": "Sidebar view",
+          "count": 1997
+        },
+        {
+          "name": "Tag",
+          "count": 1609
+        },
+        {
+          "name": "arrow right",
+          "count": 1347
+        },
+        {
+          "name": "Checkbox Atom",
+          "count": 1339
+        },
+        {
+          "name": "desktop",
+          "count": 1227
+        },
+        {
+          "name": "Table header cell",
+          "count": 1227
+        },
+        {
+          "name": "home",
+          "count": 1145
+        },
+        {
+          "name": "ArrowRight",
+          "count": 1053
+        },
+        {
+          "name": "Work Experience Icon",
+          "count": 810
+        },
+        {
+          "name": "DirectionDown",
+          "count": 779
+        },
+        {
+          "name": "business center",
+          "count": 770
+        },
+        {
+          "name": "viajes",
+          "count": 656
+        },
+        {
+          "name": "Left Label",
+          "count": 653
+        }
+      ],
       "files": [
         {
           "key": "sDx9W33S6h0bwrHdGMBe00",
           "name": "Modelo Día 2026",
           "rfdFrameCount": 15,
-          "dsInstances": 2605,
-          "nonDsInstances": 13273,
+          "dsInstances": 0,
+          "nonDsInstances": 15878,
           "totalInstances": 15878,
-          "adoptionRate": 16
+          "adoptionRate": 0,
+          "uniqueComponentsUsed": 0,
+          "totalUniqueInLibrary": 365,
+          "coverageRate": 0,
+          "top20NonDs": [
+            {
+              "name": "arrow down",
+              "count": 1891
+            },
+            {
+              "name": "Sidebar State",
+              "count": 1446
+            },
+            {
+              "name": "Sidebar view",
+              "count": 1427
+            },
+            {
+              "name": "home",
+              "count": 815
+            },
+            {
+              "name": "person",
+              "count": 758
+            },
+            {
+              "name": "Button",
+              "count": 663
+            },
+            {
+              "name": "viajes",
+              "count": 656
+            },
+            {
+              "name": "Left Label",
+              "count": 653
+            },
+            {
+              "name": "arrow right",
+              "count": 633
+            },
+            {
+              "name": "Input",
+              "count": 538
+            },
+            {
+              "name": "Tag",
+              "count": 512
+            },
+            {
+              "name": "help Circle",
+              "count": 365
+            },
+            {
+              "name": "Header Label",
+              "count": 335
+            },
+            {
+              "name": "search",
+              "count": 176
+            },
+            {
+              "name": "business center",
+              "count": 165
+            },
+            {
+              "name": "arrow up",
+              "count": 150
+            },
+            {
+              "name": "ArrowRight",
+              "count": 145
+            },
+            {
+              "name": "calendar",
+              "count": 135
+            },
+            {
+              "name": "Tab",
+              "count": 128
+            },
+            {
+              "name": "Radio Button With Text",
+              "count": 121
+            }
+          ]
         },
         {
           "key": "cwPxuq8YMgbHvlBb4dy9Yr",
           "name": "Portal de Suscripción & Emisión",
           "rfdFrameCount": 6,
-          "dsInstances": 7428,
-          "nonDsInstances": 17806,
+          "dsInstances": 0,
+          "nonDsInstances": 25234,
           "totalInstances": 25234,
-          "adoptionRate": 29
+          "adoptionRate": 0,
+          "uniqueComponentsUsed": 0,
+          "totalUniqueInLibrary": 365,
+          "coverageRate": 0,
+          "top20NonDs": [
+            {
+              "name": "desk Table cell",
+              "count": 2571
+            },
+            {
+              "name": "help Circle",
+              "count": 1825
+            },
+            {
+              "name": "Input",
+              "count": 1758
+            },
+            {
+              "name": "Checkbox Atom",
+              "count": 1339
+            },
+            {
+              "name": "person",
+              "count": 1284
+            },
+            {
+              "name": "Button",
+              "count": 1261
+            },
+            {
+              "name": "desktop",
+              "count": 1227
+            },
+            {
+              "name": "Table header cell",
+              "count": 1227
+            },
+            {
+              "name": "Tag",
+              "count": 1046
+            },
+            {
+              "name": "ArrowRight",
+              "count": 908
+            },
+            {
+              "name": "Work Experience Icon",
+              "count": 810
+            },
+            {
+              "name": "DirectionDown",
+              "count": 779
+            },
+            {
+              "name": "arrow right",
+              "count": 635
+            },
+            {
+              "name": "Control",
+              "count": 620
+            },
+            {
+              "name": "business center",
+              "count": 605
+            },
+            {
+              "name": "Component 16",
+              "count": 567
+            },
+            {
+              "name": "arrow down",
+              "count": 494
+            },
+            {
+              "name": "account",
+              "count": 379
+            },
+            {
+              "name": "menu",
+              "count": 379
+            },
+            {
+              "name": "radio_form",
+              "count": 378
+            }
+          ]
         },
         {
           "key": "6QBFEXpu6r5ZDNuzYYtK97",
           "name": "Vida Ley & SCTR",
           "rfdFrameCount": 1,
-          "dsInstances": 364,
-          "nonDsInstances": 2985,
-          "totalInstances": 3349,
-          "adoptionRate": 11
+          "dsInstances": 0,
+          "nonDsInstances": 3358,
+          "totalInstances": 3358,
+          "adoptionRate": 0,
+          "uniqueComponentsUsed": 0,
+          "totalUniqueInLibrary": 365,
+          "coverageRate": 0,
+          "top20NonDs": [
+            {
+              "name": "Sidebar State",
+              "count": 570
+            },
+            {
+              "name": "Sidebar view",
+              "count": 570
+            },
+            {
+              "name": "arrow down",
+              "count": 541
+            },
+            {
+              "name": "home",
+              "count": 330
+            },
+            {
+              "name": "Button",
+              "count": 123
+            },
+            {
+              "name": "person",
+              "count": 92
+            },
+            {
+              "name": "arrow right",
+              "count": 79
+            },
+            {
+              "name": "Input",
+              "count": 77
+            },
+            {
+              "name": "search",
+              "count": 67
+            },
+            {
+              "name": "arrow up",
+              "count": 60
+            },
+            {
+              "name": "Tag",
+              "count": 51
+            },
+            {
+              "name": "barras",
+              "count": 35
+            },
+            {
+              "name": "calendar",
+              "count": 33
+            },
+            {
+              "name": "logo",
+              "count": 30
+            },
+            {
+              "name": "create account",
+              "count": 30
+            },
+            {
+              "name": "settings",
+              "count": 30
+            },
+            {
+              "name": "Article",
+              "count": 30
+            },
+            {
+              "name": "billetera",
+              "count": 30
+            },
+            {
+              "name": "description",
+              "count": 30
+            },
+            {
+              "name": "notifications",
+              "count": 30
+            }
+          ]
         }
       ]
     }
@@ -45,10 +386,12 @@
       "team": "Modelo Día",
       "quarter": "Q2 2026",
       "date": "2026-06-12",
-      "adoptionRate": 23,
+      "adoptionRate": 0,
       "totalRfdFrames": 22,
-      "totalDs": 10397,
-      "totalInstances": 44461
+      "totalDs": 0,
+      "totalInstances": 44470,
+      "coverageRate": 0,
+      "uniqueComponentsUsed": 0
     }
   ]
 }
