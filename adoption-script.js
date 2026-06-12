@@ -188,6 +188,10 @@ async function run() {
   console.log("Loading Dalton component data...");
   const daltonData = await getDaltonComponentData();
   await sleep(1000);
+  const sampleIds = [...daltonData.nodeIds].slice(0, 3);
+console.log("Sample Dalton node IDs:", sampleIds);
+
+
 
   const teamsData = [];
 
