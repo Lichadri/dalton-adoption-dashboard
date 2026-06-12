@@ -1,14 +1,14 @@
 {
-  "generatedAt": "2026-06-12T14:20:55.003Z",
+  "generatedAt": "2026-06-12T15:28:27.435Z",
   "quarter": "Q2 2026",
   "teams": [
     {
       "name": "Modelo Día",
       "adoptionRate": 56,
       "totalRfdFrames": 22,
-      "totalDs": 11789,
-      "totalInternal": 9399,
-      "totalInstances": 21188,
+      "totalDs": 11828,
+      "totalInternal": 9405,
+      "totalInstances": 21233,
       "top20Internal": [
         {
           "name": "desk Table cell",
@@ -52,31 +52,31 @@
         },
         {
           "name": "Article",
-          "count": 113
+          "count": 114
         },
         {
           "name": "barras",
-          "count": 109
+          "count": 110
         },
         {
           "name": "settings",
-          "count": 108
+          "count": 109
+        },
+        {
+          "name": "billetera",
+          "count": 107
         },
         {
           "name": "Indicator step",
           "count": 106
         },
         {
-          "name": "billetera",
+          "name": "description",
           "count": 106
         },
         {
-          "name": "description",
-          "count": 105
-        },
-        {
           "name": "create account",
-          "count": 104
+          "count": 105
         },
         {
           "name": "Page",
@@ -96,9 +96,9 @@
           "key": "sDx9W33S6h0bwrHdGMBe00",
           "name": "Modelo Día 2026",
           "rfdFrameCount": 15,
-          "dsInstances": 6189,
-          "internalInstances": 3906,
-          "totalInstances": 10095,
+          "dsInstances": 6228,
+          "internalInstances": 3912,
+          "totalInstances": 10140,
           "adoptionRate": 61,
           "top20Internal": [
             {
@@ -135,7 +135,7 @@
             },
             {
               "name": "Article",
-              "count": 83
+              "count": 84
             },
             {
               "name": "Component 16",
@@ -147,23 +147,23 @@
             },
             {
               "name": "settings",
-              "count": 78
+              "count": 79
             },
             {
               "name": "billetera",
-              "count": 76
+              "count": 77
             },
             {
               "name": "description",
-              "count": 75
+              "count": 76
             },
             {
               "name": "barras",
-              "count": 74
+              "count": 75
             },
             {
               "name": "create account",
-              "count": 74
+              "count": 75
             },
             {
               "name": "Bar Progress",
@@ -366,6 +366,189 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Ecommerce",
+      "adoptionRate": 50,
+      "totalRfdFrames": 1,
+      "totalDs": 645,
+      "totalInternal": 649,
+      "totalInstances": 1294,
+      "top20Internal": [
+        {
+          "name": "Property 33",
+          "count": 95
+        },
+        {
+          "name": "Átomo",
+          "count": 65
+        },
+        {
+          "name": "Slider Controls Glass",
+          "count": 30
+        },
+        {
+          "name": "Slider Controls",
+          "count": 30
+        },
+        {
+          "name": "Spinner",
+          "count": 29
+        },
+        {
+          "name": "icon",
+          "count": 24
+        },
+        {
+          "name": "Caja formulario complex L M",
+          "count": 24
+        },
+        {
+          "name": "Contenido desktop",
+          "count": 24
+        },
+        {
+          "name": "Formulario L M complex",
+          "count": 24
+        },
+        {
+          "name": "Banner mobile",
+          "count": 15
+        },
+        {
+          "name": "Carrusel",
+          "count": 15
+        },
+        {
+          "name": "Slider",
+          "count": 15
+        },
+        {
+          "name": "Status Control",
+          "count": 15
+        },
+        {
+          "name": "Contenido mobile",
+          "count": 15
+        },
+        {
+          "name": "security",
+          "count": 14
+        },
+        {
+          "name": "menu",
+          "count": 14
+        },
+        {
+          "name": "Tag",
+          "count": 14
+        },
+        {
+          "name": "Complex",
+          "count": 12
+        },
+        {
+          "name": "CajaFormulario",
+          "count": 9
+        },
+        {
+          "name": "Carousel",
+          "count": 9
+        }
+      ],
+      "files": [
+        {
+          "key": "b7nkcHmaq9SibdyBrCzVjt",
+          "name": "Auto Efectivo — One Click",
+          "rfdFrameCount": 1,
+          "dsInstances": 645,
+          "internalInstances": 649,
+          "totalInstances": 1294,
+          "adoptionRate": 50,
+          "top20Internal": [
+            {
+              "name": "Property 33",
+              "count": 95
+            },
+            {
+              "name": "Átomo",
+              "count": 65
+            },
+            {
+              "name": "Slider Controls Glass",
+              "count": 30
+            },
+            {
+              "name": "Slider Controls",
+              "count": 30
+            },
+            {
+              "name": "Spinner",
+              "count": 29
+            },
+            {
+              "name": "icon",
+              "count": 24
+            },
+            {
+              "name": "Caja formulario complex L M",
+              "count": 24
+            },
+            {
+              "name": "Contenido desktop",
+              "count": 24
+            },
+            {
+              "name": "Formulario L M complex",
+              "count": 24
+            },
+            {
+              "name": "Banner mobile",
+              "count": 15
+            },
+            {
+              "name": "Carrusel",
+              "count": 15
+            },
+            {
+              "name": "Slider",
+              "count": 15
+            },
+            {
+              "name": "Status Control",
+              "count": 15
+            },
+            {
+              "name": "Contenido mobile",
+              "count": 15
+            },
+            {
+              "name": "security",
+              "count": 14
+            },
+            {
+              "name": "menu",
+              "count": 14
+            },
+            {
+              "name": "Tag",
+              "count": 14
+            },
+            {
+              "name": "Complex",
+              "count": 12
+            },
+            {
+              "name": "CajaFormulario",
+              "count": 9
+            },
+            {
+              "name": "Carousel",
+              "count": 9
+            }
+          ]
+        }
+      ]
     }
   ],
   "history": [
@@ -375,8 +558,17 @@
       "date": "2026-06-12",
       "adoptionRate": 56,
       "totalRfdFrames": 22,
-      "totalDs": 11789,
-      "totalInstances": 21188
+      "totalDs": 11828,
+      "totalInstances": 21233
+    },
+    {
+      "team": "Ecommerce",
+      "quarter": "Q2 2026",
+      "date": "2026-06-12",
+      "adoptionRate": 50,
+      "totalRfdFrames": 1,
+      "totalDs": 645,
+      "totalInstances": 1294
     }
   ]
 }

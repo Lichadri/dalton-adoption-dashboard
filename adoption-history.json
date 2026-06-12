@@ -5,7 +5,16 @@
     "date": "2026-06-12",
     "adoptionRate": 56,
     "totalRfdFrames": 22,
-    "totalDs": 11789,
-    "totalInstances": 21188
+    "totalDs": 11828,
+    "totalInstances": 21233
+  },
+  {
+    "team": "Ecommerce",
+    "quarter": "Q2 2026",
+    "date": "2026-06-12",
+    "adoptionRate": 50,
+    "totalRfdFrames": 1,
+    "totalDs": 645,
+    "totalInstances": 1294
   }
 ]
