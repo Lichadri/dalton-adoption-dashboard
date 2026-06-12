@@ -11,9 +11,6 @@
     --green: #1D9E75; --green-light: #e6f7f2;
     --yellow: #F5A623; --yellow-light: #fef6e7;
     --red: #D94F3D; --red-light: #fdecea;
-    --blue: #185FA5; --blue-light: #e8eef7;
-    --teal: #1D9E75; --teal-light: #e6f7f2;
-    --purple: #6B4FBB; --purple-light: #f0ecfb;
     --gray-50: #f8f9fa; --gray-100: #f1f3f5; --gray-200: #e9ecef;
     --gray-400: #adb5bd; --gray-600: #6c757d; --gray-800: #343a40; --gray-900: #212529;
     --white: #ffffff;
@@ -44,38 +41,30 @@
   .section-title { font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.6px; color: var(--gray-600); white-space: nowrap; }
   .section-divider { flex: 1; height: 1px; background: var(--gray-200); }
 
-  /* SUMMARY */
-  .summary-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 16px; margin-bottom: 40px; }
+  .summary-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-bottom: 40px; }
   .summary-card { background: var(--white); border: 1px solid var(--gray-200); border-radius: var(--radius); padding: 20px; box-shadow: var(--shadow); }
   .summary-card-label { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; color: var(--gray-600); margin-bottom: 8px; }
-  .summary-card-value { font-size: 28px; font-weight: 700; letter-spacing: -1px; line-height: 1; }
+  .summary-card-value { font-size: 30px; font-weight: 700; letter-spacing: -1px; line-height: 1; }
   .summary-card-value.cyan { color: var(--cyan); }
   .summary-card-value.green { color: var(--green); }
   .summary-card-sub { font-size: 12px; color: var(--gray-600); margin-top: 6px; }
 
-  /* LIBRARY BREAKDOWN */
-  .lib-breakdown { background: var(--white); border: 1px solid var(--gray-200); border-radius: var(--radius); padding: 24px; margin-bottom: 40px; box-shadow: var(--shadow); }
-  .lib-breakdown-title { font-size: 14px; font-weight: 600; margin-bottom: 20px; }
-  .lib-bar-wrap { margin-bottom: 20px; }
-  .lib-bar-track { height: 10px; background: var(--gray-100); border-radius: 6px; overflow: hidden; display: flex; margin-bottom: 12px; }
-  .lib-bar-seg { height: 100%; transition: width 0.8s ease; }
-  .lib-bar-seg.components { background: var(--blue); }
-  .lib-bar-seg.icons { background: var(--teal); }
-  .lib-bar-seg.internal { background: var(--gray-200); }
-  .lib-legend { display: flex; gap: 24px; flex-wrap: wrap; }
-  .lib-legend-item { display: flex; align-items: center; gap: 8px; }
-  .lib-legend-dot { width: 10px; height: 10px; border-radius: 2px; flex-shrink: 0; }
-  .lib-legend-dot.components { background: var(--blue); }
-  .lib-legend-dot.icons { background: var(--teal); }
-  .lib-legend-dot.internal { background: var(--gray-300, #dee2e6); border: 1px solid var(--gray-200); }
-  .lib-legend-label { font-size: 13px; color: var(--gray-800); }
-  .lib-legend-pct { font-size: 13px; font-weight: 700; }
-  .lib-legend-pct.components { color: var(--blue); }
-  .lib-legend-pct.icons { color: var(--teal); }
-  .lib-legend-pct.internal { color: var(--gray-600); }
+  .dist-card { background: var(--white); border: 1px solid var(--gray-200); border-radius: var(--radius); padding: 24px; margin-bottom: 40px; box-shadow: var(--shadow); }
+  .dist-title { font-size: 14px; font-weight: 600; margin-bottom: 16px; }
+  .dist-bar { height: 10px; background: var(--gray-100); border-radius: 6px; overflow: hidden; display: flex; margin-bottom: 14px; }
+  .dist-bar-ds { height: 100%; background: var(--cyan); border-radius: 6px 0 0 6px; }
+  .dist-bar-int { height: 100%; background: var(--gray-200); }
+  .dist-legend { display: flex; gap: 24px; flex-wrap: wrap; }
+  .dist-legend-item { display: flex; align-items: center; gap: 8px; }
+  .dist-dot { width: 10px; height: 10px; border-radius: 2px; }
+  .dist-dot.ds { background: var(--cyan); }
+  .dist-dot.int { background: var(--gray-200); border: 1px solid var(--gray-300, #dee2e6); }
+  .dist-label { font-size: 13px; color: var(--gray-800); }
+  .dist-pct { font-size: 13px; font-weight: 700; }
+  .dist-pct.ds { color: var(--cyan); }
+  .dist-pct.int { color: var(--gray-600); }
 
-  /* TEAM CARDS */
-  .teams-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 20px; margin-bottom: 40px; }
+  .teams-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 20px; margin-bottom: 40px; }
   .team-card { background: var(--white); border: 1px solid var(--gray-200); border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); }
   .team-card-header { padding: 18px 20px 14px; display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; }
   .team-name { font-size: 15px; font-weight: 600; }
@@ -87,15 +76,16 @@
 
   .team-bar-wrap { padding: 0 20px 16px; }
   .team-bar-label { display: flex; justify-content: space-between; font-size: 10px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.4px; color: var(--gray-600); margin-bottom: 5px; }
-  .team-bar-track { height: 6px; background: var(--gray-100); border-radius: 4px; overflow: hidden; display: flex; margin-bottom: 10px; }
-  .team-bar-seg { height: 100%; }
-  .team-bar-seg.components { background: var(--blue); }
-  .team-bar-seg.icons { background: var(--teal); }
+  .team-bar-bg { height: 6px; background: var(--gray-100); border-radius: 4px; overflow: hidden; }
+  .team-bar-fill { height: 100%; border-radius: 4px; background: var(--cyan); transition: width 0.8s ease; }
+  .team-bar-fill.high { background: var(--green); }
+  .team-bar-fill.mid { background: var(--yellow); }
+  .team-bar-fill.low { background: var(--red); }
 
   .team-stats { display: flex; border-top: 1px solid var(--gray-100); }
   .team-stat { flex: 1; padding: 10px 12px; text-align: center; border-right: 1px solid var(--gray-100); }
   .team-stat:last-child { border-right: none; }
-  .team-stat-value { font-size: 15px; font-weight: 700; line-height: 1; }
+  .team-stat-value { font-size: 16px; font-weight: 700; line-height: 1; }
   .team-stat-label { font-size: 10px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.4px; color: var(--gray-600); margin-top: 3px; }
 
   .files-toggle { width: 100%; padding: 9px 20px; background: none; border: none; border-top: 1px solid var(--gray-100); cursor: pointer; display: flex; align-items: center; justify-content: space-between; font-size: 11px; font-weight: 600; color: var(--gray-600); text-transform: uppercase; letter-spacing: 0.4px; transition: background 0.15s; }
@@ -112,8 +102,7 @@
   .file-error { font-size: 11px; color: var(--red); }
   .no-rfd-note { font-size: 11px; color: var(--gray-600); padding: 8px 20px 12px; font-style: italic; }
 
-  /* GAP ANALYSIS */
-  .gap-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 20px; margin-bottom: 40px; }
+  .gap-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 20px; margin-bottom: 40px; }
   .gap-card { background: var(--white); border: 1px solid var(--gray-200); border-radius: var(--radius); padding: 20px; box-shadow: var(--shadow); }
   .gap-card-title { font-size: 14px; font-weight: 600; margin-bottom: 4px; }
   .gap-card-sub { font-size: 12px; color: var(--gray-600); margin-bottom: 16px; }
@@ -124,23 +113,20 @@
   .gap-bar-fill { height: 100%; background: var(--magenta); border-radius: 3px; opacity: 0.7; }
   .gap-count { font-size: 11px; font-weight: 600; color: var(--gray-600); min-width: 28px; text-align: right; }
 
-  /* TREND */
   .trend-card { background: var(--white); border: 1px solid var(--gray-200); border-radius: var(--radius); padding: 24px; margin-bottom: 40px; box-shadow: var(--shadow); }
   .trend-empty { text-align: center; padding: 32px; color: var(--gray-600); font-size: 13px; }
   .trend-table { width: 100%; border-collapse: collapse; font-size: 13px; }
   .trend-table th { text-align: left; font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; color: var(--gray-600); padding: 8px 12px; border-bottom: 2px solid var(--gray-200); }
-  .trend-table td { padding: 10px 12px; border-bottom: 1px solid var(--gray-100); color: var(--gray-800); vertical-align: top; }
+  .trend-table td { padding: 10px 12px; border-bottom: 1px solid var(--gray-100); color: var(--gray-800); }
   .trend-table tr:last-child td { border-bottom: none; }
-  .trend-pct { font-weight: 700; display: block; }
+  .trend-pct { font-weight: 700; }
   .trend-pct.high { color: var(--green); }
   .trend-pct.mid { color: #b87400; }
   .trend-pct.low { color: var(--red); }
-  .trend-sub { font-size: 11px; color: var(--gray-600); display: block; margin-top: 2px; }
   .target-note { display: flex; align-items: center; gap: 8px; margin-top: 16px; font-size: 12px; color: var(--gray-600); }
   .target-dot { width: 12px; height: 2px; background: var(--cyan); border-radius: 1px; }
 
-  @media (max-width: 900px) { .summary-grid { grid-template-columns: repeat(3, 1fr); } }
-  @media (max-width: 600px) { .summary-grid { grid-template-columns: repeat(2, 1fr); } .main { padding: 20px 16px; } .header { padding: 0 16px; } .header-subtitle { display: none; } }
+  @media (max-width: 768px) { .summary-grid { grid-template-columns: repeat(2, 1fr); } .main { padding: 20px 16px; } .header { padding: 0 16px; } .header-subtitle { display: none; } }
 </style>
 </head>
 <body>
@@ -167,31 +153,19 @@
 
 <script>
 const TARGET = 75;
-
-function rateClass(r) {
-  if (!r) return "empty";
-  if (r >= TARGET) return "high";
-  if (r >= 50) return "mid";
-  return "low";
-}
-
+function rateClass(r) { if (!r) return "empty"; if (r >= TARGET) return "high"; if (r >= 50) return "mid"; return "low"; }
+function rateColor(r) { if (!r) return "var(--gray-400)"; if (r >= TARGET) return "var(--green)"; if (r >= 50) return "var(--yellow)"; return "var(--red)"; }
 function fmtNum(n) { return (n||0).toLocaleString("es-PE"); }
-function fmtDate(iso) {
-  if (!iso) return "—";
-  return new Date(iso).toLocaleDateString("es-PE", {day:"2-digit",month:"short",year:"numeric",hour:"2-digit",minute:"2-digit"});
-}
+function fmtDate(iso) { if (!iso) return "—"; return new Date(iso).toLocaleDateString("es-PE", {day:"2-digit",month:"short",year:"numeric",hour:"2-digit",minute:"2-digit"}); }
 
-function buildSummary(teams, report) {
+function buildSummary(teams) {
   const totalFiles = teams.reduce((s,t) => s + t.files.length, 0);
   const totalFrames = teams.reduce((s,t) => s + t.totalRfdFrames, 0);
   const totalDs = teams.reduce((s,t) => s + t.totalDs, 0);
   const totalInstances = teams.reduce((s,t) => s + t.totalInstances, 0);
-  const avgRate = totalInstances > 0 ? Math.round((totalDs/totalInstances)*100) : 0;
-  const totalComponents = teams.reduce((s,t) => s + t.totalComponents, 0);
-  const totalIcons = teams.reduce((s,t) => s + t.totalIcons, 0);
   const totalInternal = teams.reduce((s,t) => s + t.totalInternal, 0);
-  const compPct = totalInstances > 0 ? Math.round((totalComponents/totalInstances)*100) : 0;
-  const iconPct = totalInstances > 0 ? Math.round((totalIcons/totalInstances)*100) : 0;
+  const avgRate = totalInstances > 0 ? Math.round((totalDs/totalInstances)*100) : 0;
+  const dsPct = totalInstances > 0 ? Math.round((totalDs/totalInstances)*100) : 0;
   const intPct = totalInstances > 0 ? Math.round((totalInternal/totalInstances)*100) : 0;
 
   return `
@@ -202,39 +176,30 @@ function buildSummary(teams, report) {
         <div class="summary-card-sub">Target: ${TARGET}%</div>
       </div>
       <div class="summary-card">
-        <div class="summary-card-label">Components</div>
-        <div class="summary-card-value" style="color:var(--blue)">${compPct}%</div>
-        <div class="summary-card-sub">${fmtNum(totalComponents)} instancias</div>
-      </div>
-      <div class="summary-card">
-        <div class="summary-card-label">Icons</div>
-        <div class="summary-card-value" style="color:var(--teal)">${iconPct}%</div>
-        <div class="summary-card-sub">${fmtNum(totalIcons)} instancias</div>
-      </div>
-      <div class="summary-card">
-        <div class="summary-card-label">Frames RFD</div>
+        <div class="summary-card-label">Frames Ready for Dev</div>
         <div class="summary-card-value">${fmtNum(totalFrames)}</div>
         <div class="summary-card-sub">En ${totalFiles} archivo${totalFiles!==1?'s':''}</div>
       </div>
       <div class="summary-card">
-        <div class="summary-card-label">Internos</div>
-        <div class="summary-card-value" style="color:var(--gray-600)">${intPct}%</div>
-        <div class="summary-card-sub">${fmtNum(totalInternal)} instancias</div>
+        <div class="summary-card-label">Instancias DS</div>
+        <div class="summary-card-value cyan">${fmtNum(totalDs)}</div>
+        <div class="summary-card-sub">De ${fmtNum(totalInstances)} totales</div>
+      </div>
+      <div class="summary-card">
+        <div class="summary-card-label">Equipos medidos</div>
+        <div class="summary-card-value">${teams.length}</div>
+        <div class="summary-card-sub">Archivos: ${totalFiles}</div>
       </div>
     </div>
-    <div class="lib-breakdown">
-      <div class="lib-breakdown-title">Distribución de instancias — ${fmtNum(totalInstances)} totales</div>
-      <div class="lib-bar-wrap">
-        <div class="lib-bar-track">
-          <div class="lib-bar-seg components" style="width:${compPct}%"></div>
-          <div class="lib-bar-seg icons" style="width:${iconPct}%"></div>
-          <div class="lib-bar-seg internal" style="width:${intPct}%"></div>
-        </div>
-        <div class="lib-legend">
-          <div class="lib-legend-item"><div class="lib-legend-dot components"></div><span class="lib-legend-label">Components DS</span><span class="lib-legend-pct components">${compPct}% · ${fmtNum(totalComponents)}</span></div>
-          <div class="lib-legend-item"><div class="lib-legend-dot icons"></div><span class="lib-legend-label">Icons DS</span><span class="lib-legend-pct icons">${iconPct}% · ${fmtNum(totalIcons)}</span></div>
-          <div class="lib-legend-item"><div class="lib-legend-dot internal"></div><span class="lib-legend-label">Internos</span><span class="lib-legend-pct internal">${intPct}% · ${fmtNum(totalInternal)}</span></div>
-        </div>
+    <div class="dist-card">
+      <div class="dist-title">Distribución de instancias — ${fmtNum(totalInstances)} totales</div>
+      <div class="dist-bar">
+        <div class="dist-bar-ds" style="width:${dsPct}%"></div>
+        <div class="dist-bar-int" style="width:${intPct}%"></div>
+      </div>
+      <div class="dist-legend">
+        <div class="dist-legend-item"><div class="dist-dot ds"></div><span class="dist-label">Dalton DS</span><span class="dist-pct ds">${dsPct}% · ${fmtNum(totalDs)}</span></div>
+        <div class="dist-legend-item"><div class="dist-dot int"></div><span class="dist-label">Internos</span><span class="dist-pct int">${intPct}% · ${fmtNum(totalInternal)}</span></div>
       </div>
     </div>`;
 }
@@ -242,18 +207,13 @@ function buildSummary(teams, report) {
 function buildTeamCard(team) {
   const cls = rateClass(team.adoptionRate);
   const hasData = team.totalRfdFrames > 0;
-  const totalInst = team.totalInstances || 1;
-  const compW = Math.round((team.totalComponents/totalInst)*100);
-  const iconW = Math.round((team.totalIcons/totalInst)*100);
 
   const filesHtml = team.files.map(f => {
     if (f.error) return `<div class="file-row"><span class="file-name">${f.name}</span><span class="file-error">Error</span></div>`;
-    const fc = rateClass(f.adoptionRate);
-    const color = fc==='high'?'var(--green)':fc==='mid'?'var(--yellow)':fc==='low'?'var(--red)':'var(--gray-400)';
     return `<div class="file-row">
       <span class="file-name" title="${f.name}">${f.name}</span>
       <span class="file-frames">${f.rfdFrameCount>0?f.rfdFrameCount+' frame'+(f.rfdFrameCount!==1?'s':''):'Sin RFD'}</span>
-      <span class="file-rate" style="color:${color}">${f.rfdFrameCount>0?f.adoptionRate+'%':'—'}</span>
+      <span class="file-rate" style="color:${rateColor(f.adoptionRate)}">${f.rfdFrameCount>0?f.adoptionRate+'%':'—'}</span>
     </div>`;
   }).join("");
 
@@ -266,21 +226,13 @@ function buildTeamCard(team) {
         <div class="adoption-chip ${cls}">${hasData?team.adoptionRate+'%':'Sin datos'}</div>
       </div>
       <div class="team-bar-wrap">
-        <div class="team-bar-label"><span>Components + Icons</span><span>${TARGET}% target</span></div>
-        <div class="team-bar-track">
-          <div class="team-bar-seg components" style="width:${compW}%"></div>
-          <div class="team-bar-seg icons" style="width:${iconW}%"></div>
-        </div>
-        <div class="team-bar-label" style="margin-top:2px">
-          <span style="color:var(--blue)">■ C: ${team.componentsRate||0}%</span>
-          <span style="color:var(--teal)">■ I: ${team.iconsRate||0}%</span>
-        </div>
+        <div class="team-bar-label"><span>Adopción DS</span><span>${TARGET}% target</span></div>
+        <div class="team-bar-bg"><div class="team-bar-fill ${cls}" style="width:${team.adoptionRate}%"></div></div>
       </div>
       ${!hasData?`<div class="no-rfd-note">No se encontraron frames "Ready for Dev"</div>`:''}
       <div class="team-stats">
         <div class="team-stat"><div class="team-stat-value">${fmtNum(team.totalRfdFrames)}</div><div class="team-stat-label">Frames RFD</div></div>
-        <div class="team-stat"><div class="team-stat-value" style="color:var(--blue)">${fmtNum(team.totalComponents)}</div><div class="team-stat-label">Comp. DS</div></div>
-        <div class="team-stat"><div class="team-stat-value" style="color:var(--teal)">${fmtNum(team.totalIcons)}</div><div class="team-stat-label">Icons DS</div></div>
+        <div class="team-stat"><div class="team-stat-value" style="color:var(--cyan)">${fmtNum(team.totalDs)}</div><div class="team-stat-label">Inst. DS</div></div>
         <div class="team-stat"><div class="team-stat-value" style="color:var(--gray-600)">${fmtNum(team.totalInternal)}</div><div class="team-stat-label">Internos</div></div>
       </div>
       <button class="files-toggle" onclick="toggleFiles('${cardId}',this)">
@@ -292,8 +244,7 @@ function buildTeamCard(team) {
 }
 
 function buildGap(teams) {
-  const hasData = teams.some(t => t.top20Internal && t.top20Internal.length > 0);
-  if (!hasData) return `<div class="trend-empty">No hay datos aún.</div>`;
+  if (!teams.some(t => t.top20Internal?.length)) return `<div class="trend-empty">No hay datos aún.</div>`;
   return `<div class="gap-grid">${teams.map(team => {
     if (!team.top20Internal?.length) return '';
     const max = team.top20Internal[0].count || 1;
@@ -320,16 +271,8 @@ function buildTrend(history) {
     html += `<tr><td><strong>${team}</strong></td>`;
     for (const q of quarters) {
       const e = entries.find(x => x.quarter === q);
-      if (e) {
-        const cls = rateClass(e.adoptionRate);
-        html += `<td>
-          <span class="trend-pct ${cls}">${e.adoptionRate}%</span>
-          ${e.componentsRate!==undefined?`<span class="trend-sub" style="color:var(--blue)">C: ${e.componentsRate}%</span>`:''}
-          ${e.iconsRate!==undefined?`<span class="trend-sub" style="color:var(--teal)">I: ${e.iconsRate}%</span>`:''}
-        </td>`;
-      } else {
-        html += `<td style="color:var(--gray-400)">—</td>`;
-      }
+      if (e) { html += `<td><span class="trend-pct ${rateClass(e.adoptionRate)}">${e.adoptionRate}%</span></td>`; }
+      else { html += `<td style="color:var(--gray-400)">—</td>`; }
     }
     html += `</tr>`;
   }
@@ -350,20 +293,15 @@ async function loadReport() {
     const res = await fetch("report.json?t=" + Date.now());
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     const report = await res.json();
-
     document.getElementById("quarterLabel").textContent = report.quarter || "—";
     document.getElementById("lastUpdated").textContent = "Actualizado: " + fmtDate(report.generatedAt);
-
     main.innerHTML = `
       <div class="section-header"><span class="section-title">Resumen</span><div class="section-divider"></div></div>
-      ${buildSummary(report.teams, report)}
-
+      ${buildSummary(report.teams)}
       <div class="section-header"><span class="section-title">Por equipo</span><div class="section-divider"></div></div>
       <div class="teams-grid">${report.teams.map(buildTeamCard).join('')}</div>
-
       <div class="section-header"><span class="section-title">Componentes internos más frecuentes</span><div class="section-divider"></div></div>
       ${buildGap(report.teams)}
-
       <div class="section-header"><span class="section-title">Tendencia histórica</span><div class="section-divider"></div></div>
       <div class="trend-card">${buildTrend(report.history)}</div>
     `;
@@ -371,7 +309,6 @@ async function loadReport() {
     main.innerHTML = `<div class="state-container"><div style="background:var(--red-light);border:1px solid #f5c6c2;border-radius:12px;padding:20px 24px;text-align:center;max-width:480px"><strong style="display:block;color:var(--red);margin-bottom:6px">No se pudo cargar el reporte</strong><span style="font-size:13px">${e.message==="HTTP 404"?"Corre el script primero.":"Error: "+e.message}</span></div></div>`;
   }
 }
-
 loadReport();
 </script>
 </body>
