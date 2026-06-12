@@ -23,7 +23,7 @@ const EXCLUDED_ICONS = new Set([
   "arrow down", "arrow right", "arrow left", "arrow up",
   "desktop", "home", "person", "search", "viajes",
   "work experience icon", "business center", "up", "arrowright",
-  "check", "edit", "delete", "plus", "minus", "close",
+  "check", "edit", "delete", "plus", "minus", "close", "close",
   "logo",
 ]);
 
