@@ -21,19 +21,16 @@ async function figmaFetch(endpoint) {
   return res.json();
 }
 
-// Load Dalton data:
-// - keys: Set of component keys (for instance matching)
-// - keyToFamily: componentKey -> family name (for coverage)
-// - totalUniqueFamilies: count of unique component families
+// Load Dalton data using NODE IDs (not keys)
+// componentId in team files = node ID of the master component in the library
 async function getDaltonComponentData() {
-  const keys = new Set();
-  const keyToFamily = new Map();
+  const nodeIds = new Set();         // node IDs for instance matching
+  const nodeIdToFamily = new Map();  // nodeId -> family name (for coverage)
   const familyNames = new Set();
 
   try {
     const data = await figmaFetch(`/files/${DALTON_KEYS.components}`);
 
-    // Build componentSet name map: setId -> name
     const setIdToName = new Map();
     if (data.componentSets) {
       for (const [id, cs] of Object.entries(data.componentSets)) {
@@ -42,29 +39,26 @@ async function getDaltonComponentData() {
     }
 
     if (data.components) {
-      for (const [id, comp] of Object.entries(data.components)) {
-        if (!comp.key) continue;
-        keys.add(comp.key);
+      for (const [nodeId, comp] of Object.entries(data.components)) {
+        nodeIds.add(nodeId); // THIS is what componentId in team files matches
 
-        // Determine family name
         let familyName;
         if (comp.componentSetId && setIdToName.has(comp.componentSetId)) {
           familyName = setIdToName.get(comp.componentSetId);
         } else {
-          // Standalone component (no variants)
           familyName = comp.name;
         }
-        keyToFamily.set(comp.key, familyName);
+        nodeIdToFamily.set(nodeId, familyName);
         familyNames.add(familyName);
       }
     }
 
-    console.log(`  Loaded ${keys.size} keys across ${familyNames.size} unique families`);
+    console.log(`  Loaded ${nodeIds.size} component node IDs across ${familyNames.size} unique families`);
   } catch (e) {
-    console.warn("  Could not load Dalton component keys:", e.message);
+    console.warn("  Could not load Dalton component data:", e.message);
   }
 
-  return { keys, keyToFamily, totalUniqueFamilies: familyNames.size };
+  return { nodeIds, nodeIdToFamily, totalUniqueFamilies: familyNames.size };
 }
 
 function findReadyForDevNodes(node, found = []) {
@@ -91,19 +85,16 @@ function findNodeById(node, targetId) {
   return null;
 }
 
-// Count DS vs non-DS instances
-// - usedFamilies: tracks which Dalton families are actually used (for coverage)
-// - nonDsNames: frequency map of non-DS component names
 function countInstances(node, daltonData, counts, usedFamilies, nonDsNames) {
   if (!node) return;
 
   if (node.type === "INSTANCE") {
-    const compKey = node.componentId; // this is the component KEY in team files
-    const isDalton = compKey && daltonData.keys.has(compKey);
+    const compNodeId = node.componentId; // node ID of master component
+    const isDalton = compNodeId && daltonData.nodeIds.has(compNodeId);
 
     if (isDalton) {
       counts.ds++;
-      const family = daltonData.keyToFamily.get(compKey);
+      const family = daltonData.nodeIdToFamily.get(compNodeId);
       if (family) usedFamilies.add(family);
     } else {
       counts.nonDs++;
@@ -228,9 +219,17 @@ async function run() {
         aggregatedNonDs[name] = (aggregatedNonDs[name] || 0) + count;
       }
     }
-    const teamTop20NonDs = Object.entries(aggregatedNonDs).sort((a, b) => b[1] - a[1]).slice(0, 20).map(([name, count]) => ({ name, count }));
+    const teamTop20NonDs = Object.entries(aggregatedNonDs)
+      .sort((a, b) => b[1] - a[1]).slice(0, 20)
+      .map(([name, count]) => ({ name, count }));
 
-    teamsData.push({ name: team.name, adoptionRate: teamAdoptionRate, totalRfdFrames, totalDs, totalNonDs, totalInstances, uniqueComponentsUsed: teamUniqueUsed, totalUniqueInLibrary: daltonData.totalUniqueFamilies, coverageRate: teamCoverageRate, top20NonDs: teamTop20NonDs, files: filesData });
+    teamsData.push({
+      name: team.name, adoptionRate: teamAdoptionRate,
+      totalRfdFrames, totalDs, totalNonDs, totalInstances,
+      uniqueComponentsUsed: teamUniqueUsed,
+      totalUniqueInLibrary: daltonData.totalUniqueFamilies,
+      coverageRate: teamCoverageRate, top20NonDs: teamTop20NonDs, files: filesData,
+    });
   }
 
   const now = new Date();
