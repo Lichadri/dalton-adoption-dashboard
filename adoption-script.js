@@ -18,9 +18,6 @@ const DALTON_COMPONENT_FAMILIES = [
 ];
 const FAMILIES_LOWER = DALTON_COMPONENT_FAMILIES.map(f => f.toLowerCase());
 
-// Icon prefixes from Dalton Icons library
-const ICON_PREFIXES = ["glyphs/", "icons/illustrative/", "icons/basics/", "icons/"];
-
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
 async function figmaFetch(endpoint) {
@@ -31,17 +28,9 @@ async function figmaFetch(endpoint) {
   return res.json();
 }
 
-// Classify instance by name only (reliable regardless of publish state)
 function classify(name) {
   if (!name) return "internal";
   const lower = name.toLowerCase();
-
-  // Icons first
-  for (const prefix of ICON_PREFIXES) {
-    if (lower.startsWith(prefix)) return "Icons";
-  }
-
-  // Component families — check each segment
   const segments = lower.split("/").map(s => s.trim());
   for (const segment of segments) {
     for (const fam of FAMILIES_LOWER) {
@@ -50,11 +39,9 @@ function classify(name) {
       }
     }
   }
-  // Full name starts with family
   for (const fam of FAMILIES_LOWER) {
     if (lower.startsWith(fam)) return "Components";
   }
-
   return "internal";
 }
 
@@ -111,7 +98,6 @@ async function analyzeFile(fileKey, fileName) {
   let rfdFrameCount = 0;
   const result = {
     Components: { count: 0, names: {} },
-    Icons: { count: 0, names: {} },
     internal: { count: 0, names: {} },
   };
 
@@ -136,25 +122,21 @@ async function analyzeFile(fileKey, fileName) {
     await sleep(800);
   }
 
-  const totalDs = result.Components.count + result.Icons.count;
+  const totalDs = result.Components.count;
   const totalInstances = totalDs + result.internal.count;
   const adoptionRate = totalInstances > 0 ? Math.round((totalDs / totalInstances) * 100) : 0;
-  const componentsRate = totalInstances > 0 ? Math.round((result.Components.count / totalInstances) * 100) : 0;
-  const iconsRate = totalInstances > 0 ? Math.round((result.Icons.count / totalInstances) * 100) : 0;
 
   const top20Internal = Object.entries(result.internal.names)
     .sort((a, b) => b[1] - a[1]).slice(0, 20)
     .map(([name, count]) => ({ name, count }));
 
-  console.log(`  RFD: ${rfdFrameCount} | C: ${result.Components.count} | I: ${result.Icons.count} | Internal: ${result.internal.count} | Rate: ${adoptionRate}%`);
+  console.log(`  RFD: ${rfdFrameCount} | DS: ${result.Components.count} | Internal: ${result.internal.count} | Rate: ${adoptionRate}%`);
 
   return {
     key: fileKey, name: fileName, rfdFrameCount,
     dsInstances: totalDs,
-    componentsInstances: result.Components.count,
-    iconsInstances: result.Icons.count,
     internalInstances: result.internal.count,
-    totalInstances, adoptionRate, componentsRate, iconsRate,
+    totalInstances, adoptionRate,
     top20Internal,
   };
 }
@@ -180,20 +162,16 @@ async function run() {
         filesData.push(await analyzeFile(file.key, file.name));
       } catch (e) {
         console.error(`  Error: ${file.name}:`, e.message);
-        filesData.push({ key: file.key, name: file.name, error: e.message, rfdFrameCount: 0, dsInstances: 0, componentsInstances: 0, iconsInstances: 0, internalInstances: 0, totalInstances: 0, adoptionRate: 0, componentsRate: 0, iconsRate: 0, top20Internal: [] });
+        filesData.push({ key: file.key, name: file.name, error: e.message, rfdFrameCount: 0, dsInstances: 0, internalInstances: 0, totalInstances: 0, adoptionRate: 0, top20Internal: [] });
       }
       await sleep(1500);
     }
 
     const totalRfdFrames = filesData.reduce((s, f) => s + f.rfdFrameCount, 0);
     const totalDs = filesData.reduce((s, f) => s + f.dsInstances, 0);
-    const totalComponents = filesData.reduce((s, f) => s + f.componentsInstances, 0);
-    const totalIcons = filesData.reduce((s, f) => s + f.iconsInstances, 0);
     const totalInternal = filesData.reduce((s, f) => s + f.internalInstances, 0);
     const totalInstances = totalDs + totalInternal;
     const teamAdoptionRate = totalInstances > 0 ? Math.round((totalDs / totalInstances) * 100) : 0;
-    const teamComponentsRate = totalInstances > 0 ? Math.round((totalComponents / totalInstances) * 100) : 0;
-    const teamIconsRate = totalInstances > 0 ? Math.round((totalIcons / totalInstances) * 100) : 0;
 
     const aggregatedInternal = {};
     for (const f of filesData) {
@@ -207,9 +185,7 @@ async function run() {
 
     teamsData.push({
       name: team.name, adoptionRate: teamAdoptionRate,
-      totalRfdFrames, totalDs, totalComponents, totalIcons,
-      totalInternal, totalInstances,
-      componentsRate: teamComponentsRate, iconsRate: teamIconsRate,
+      totalRfdFrames, totalDs, totalInternal, totalInstances,
       top20Internal: teamTop20Internal, files: filesData,
     });
   }
@@ -220,7 +196,7 @@ async function run() {
 
   for (const team of teamsData) {
     const existingIdx = history.findIndex(h => h.team === team.name && h.quarter === quarter);
-    const entry = { team: team.name, quarter, date: dateStr, adoptionRate: team.adoptionRate, componentsRate: team.componentsRate, iconsRate: team.iconsRate, totalRfdFrames: team.totalRfdFrames, totalDs: team.totalDs, totalInstances: team.totalInstances };
+    const entry = { team: team.name, quarter, date: dateStr, adoptionRate: team.adoptionRate, totalRfdFrames: team.totalRfdFrames, totalDs: team.totalDs, totalInstances: team.totalInstances };
     if (existingIdx >= 0) { history[existingIdx] = entry; } else { history.push(entry); }
   }
 
@@ -232,7 +208,7 @@ async function run() {
   console.log(`\nReport saved to docs/report.json`);
   console.log("\n=== Summary ===");
   for (const team of teamsData) {
-    console.log(`${team.name}: ${team.adoptionRate}% (C:${team.componentsRate}% I:${team.iconsRate}%) | ${team.totalRfdFrames} RFD frames`);
+    console.log(`${team.name}: ${team.adoptionRate}% | ${team.totalRfdFrames} RFD frames`);
   }
 }
 
