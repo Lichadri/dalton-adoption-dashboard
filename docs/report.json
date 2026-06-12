@@ -1,30 +1,56 @@
 {
-  "generatedAt": "2026-06-12T05:50:03.907Z",
+  "generatedAt": "2026-06-12T06:09:05.578Z",
   "quarter": "Q2 2026",
-  "totalUniqueInLibrary": 42,
+  "totalComponentsInLibrary": 608,
+  "totalIconsInLibrary": 432,
   "teams": [
     {
       "name": "Modelo Día",
-      "adoptionRate": 39,
+      "adoptionRate": 0,
       "totalRfdFrames": 22,
-      "totalDs": 17446,
-      "totalNonDs": 27024,
+      "totalDs": 0,
+      "totalComponents": 0,
+      "totalIcons": 0,
+      "totalInternal": 44470,
       "totalInstances": 44470,
-      "uniqueComponentsUsed": 23,
-      "totalUniqueInLibrary": 42,
-      "coverageRate": 55,
-      "top20NonDs": [
+      "componentsRate": 0,
+      "iconsRate": 0,
+      "uniqueComponentsUsed": 0,
+      "uniqueIconsUsed": 0,
+      "totalComponentsInLibrary": 608,
+      "totalIconsInLibrary": 432,
+      "top20Internal": [
         {
           "name": "arrow down",
-          "count": 2855
+          "count": 2926
         },
         {
           "name": "desk Table cell",
           "count": 2571
         },
         {
+          "name": "Input",
+          "count": 2373
+        },
+        {
+          "name": "help Circle",
+          "count": 2190
+        },
+        {
           "name": "person",
-          "count": 2009
+          "count": 2134
+        },
+        {
+          "name": "Button",
+          "count": 2047
+        },
+        {
+          "name": "Sidebar State",
+          "count": 2016
+        },
+        {
+          "name": "Sidebar view",
+          "count": 1997
         },
         {
           "name": "Tag",
@@ -32,10 +58,18 @@
         },
         {
           "name": "arrow right",
-          "count": 1335
+          "count": 1347
+        },
+        {
+          "name": "Checkbox Atom",
+          "count": 1339
         },
         {
           "name": "desktop",
+          "count": 1227
+        },
+        {
+          "name": "Table header cell",
           "count": 1227
         },
         {
@@ -60,39 +94,11 @@
         },
         {
           "name": "viajes",
-          "count": 669
+          "count": 656
         },
         {
           "name": "Left Label",
-          "count": 666
-        },
-        {
-          "name": "Control",
-          "count": 620
-        },
-        {
-          "name": "Component 16",
-          "count": 567
-        },
-        {
-          "name": "account",
-          "count": 379
-        },
-        {
-          "name": "menu",
-          "count": 379
-        },
-        {
-          "name": "Botón Primario",
-          "count": 378
-        },
-        {
-          "name": "Aprobado",
-          "count": 230
-        },
-        {
-          "name": "search",
-          "count": 224
+          "count": 653
         }
       ],
       "files": [
@@ -100,45 +106,42 @@
           "key": "sDx9W33S6h0bwrHdGMBe00",
           "name": "Modelo Día 2026",
           "rfdFrameCount": 15,
-          "dsInstances": 6548,
-          "nonDsInstances": 9330,
+          "dsInstances": 0,
+          "componentsInstances": 0,
+          "iconsInstances": 0,
+          "internalInstances": 15878,
           "totalInstances": 15878,
-          "adoptionRate": 41,
-          "uniqueComponentsUsed": 22,
-          "totalUniqueInLibrary": 42,
-          "coverageRate": 52,
-          "usedFamiliesList": [
-            "Radio",
-            "Button",
-            "Stepper",
-            "Alert",
-            "Icons",
-            "Input",
-            "Select",
-            "Loader",
-            "Progress bar",
-            "Header",
-            "Tracking",
-            "Chips",
-            "Sidebar",
-            "Calendar",
-            "Checkbox",
-            "Tab",
-            "Controls",
-            "Main Search",
-            "File uploader",
-            "Text Area",
-            "Pagination",
-            "Toggle"
-          ],
-          "top20NonDs": [
+          "adoptionRate": 0,
+          "componentsRate": 0,
+          "iconsRate": 0,
+          "uniqueComponentsUsed": 0,
+          "uniqueIconsUsed": 0,
+          "totalComponentsInLibrary": 608,
+          "totalIconsInLibrary": 432,
+          "top20Internal": [
             {
               "name": "arrow down",
-              "count": 1831
+              "count": 1891
+            },
+            {
+              "name": "Sidebar State",
+              "count": 1446
+            },
+            {
+              "name": "Sidebar view",
+              "count": 1427
             },
             {
               "name": "home",
               "count": 815
+            },
+            {
+              "name": "person",
+              "count": 758
+            },
+            {
+              "name": "Button",
+              "count": 663
             },
             {
               "name": "viajes",
@@ -149,24 +152,32 @@
               "count": 653
             },
             {
-              "name": "person",
-              "count": 648
+              "name": "arrow right",
+              "count": 633
             },
             {
-              "name": "arrow right",
-              "count": 626
+              "name": "Input",
+              "count": 538
             },
             {
               "name": "Tag",
               "count": 512
             },
             {
-              "name": "business center",
-              "count": 165
+              "name": "help Circle",
+              "count": 365
+            },
+            {
+              "name": "Header Label",
+              "count": 335
             },
             {
               "name": "search",
-              "count": 158
+              "count": 176
+            },
+            {
+              "name": "business center",
+              "count": 165
             },
             {
               "name": "arrow up",
@@ -177,40 +188,16 @@
               "count": 145
             },
             {
-              "name": "logo",
-              "count": 112
+              "name": "calendar",
+              "count": 135
             },
             {
-              "name": "Indicator Circle",
-              "count": 110
+              "name": "Tab",
+              "count": 128
             },
             {
-              "name": "Line Tracking Vertical",
-              "count": 110
-            },
-            {
-              "name": "Indicator step",
-              "count": 106
-            },
-            {
-              "name": "arrow left",
-              "count": 103
-            },
-            {
-              "name": "Icon",
-              "count": 100
-            },
-            {
-              "name": "AGENDA",
-              "count": 92
-            },
-            {
-              "name": "generate ai",
-              "count": 87
-            },
-            {
-              "name": "Article",
-              "count": 83
+              "name": "Radio Button With Text",
+              "count": 121
             }
           ]
         },
@@ -218,40 +205,49 @@
           "key": "cwPxuq8YMgbHvlBb4dy9Yr",
           "name": "Portal de Suscripción & Emisión",
           "rfdFrameCount": 6,
-          "dsInstances": 9266,
-          "nonDsInstances": 15968,
+          "dsInstances": 0,
+          "componentsInstances": 0,
+          "iconsInstances": 0,
+          "internalInstances": 25234,
           "totalInstances": 25234,
-          "adoptionRate": 37,
-          "uniqueComponentsUsed": 14,
-          "totalUniqueInLibrary": 42,
-          "coverageRate": 33,
-          "usedFamiliesList": [
-            "Radio",
-            "Alert",
-            "Button",
-            "Input",
-            "Select",
-            "Checkbox",
-            "Header",
-            "Table",
-            "Pagination",
-            "Chips",
-            "Text Area",
-            "Calendar",
-            "File uploader",
-            "Controls"
-          ],
-          "top20NonDs": [
+          "adoptionRate": 0,
+          "componentsRate": 0,
+          "iconsRate": 0,
+          "uniqueComponentsUsed": 0,
+          "uniqueIconsUsed": 0,
+          "totalComponentsInLibrary": 608,
+          "totalIconsInLibrary": 432,
+          "top20Internal": [
             {
               "name": "desk Table cell",
               "count": 2571
+            },
+            {
+              "name": "help Circle",
+              "count": 1825
+            },
+            {
+              "name": "Input",
+              "count": 1758
+            },
+            {
+              "name": "Checkbox Atom",
+              "count": 1339
             },
             {
               "name": "person",
               "count": 1284
             },
             {
+              "name": "Button",
+              "count": 1261
+            },
+            {
               "name": "desktop",
+              "count": 1227
+            },
+            {
+              "name": "Table header cell",
               "count": 1227
             },
             {
@@ -299,28 +295,8 @@
               "count": 379
             },
             {
-              "name": "Botón Primario",
+              "name": "radio_form",
               "count": 378
-            },
-            {
-              "name": "Aprobado",
-              "count": 230
-            },
-            {
-              "name": "BtnBackNext",
-              "count": 189
-            },
-            {
-              "name": "Pregunta formulario",
-              "count": 189
-            },
-            {
-              "name": "download",
-              "count": 176
-            },
-            {
-              "name": "ArrowLeft",
-              "count": 171
             }
           ]
         },
@@ -328,52 +304,54 @@
           "key": "6QBFEXpu6r5ZDNuzYYtK97",
           "name": "Vida Ley & SCTR",
           "rfdFrameCount": 1,
-          "dsInstances": 1632,
-          "nonDsInstances": 1726,
+          "dsInstances": 0,
+          "componentsInstances": 0,
+          "iconsInstances": 0,
+          "internalInstances": 3358,
           "totalInstances": 3358,
-          "adoptionRate": 49,
-          "uniqueComponentsUsed": 17,
-          "totalUniqueInLibrary": 42,
-          "coverageRate": 40,
-          "usedFamiliesList": [
-            "Input",
-            "Alert",
-            "Select",
-            "Checkbox",
-            "Button",
-            "Icons",
-            "Sidebar",
-            "Calendar",
-            "Tab",
-            "Text Area",
-            "Main Search",
-            "Radio",
-            "Tracking",
-            "Progress bar",
-            "Pagination",
-            "Chips",
-            "Header"
-          ],
-          "top20NonDs": [
+          "adoptionRate": 0,
+          "componentsRate": 0,
+          "iconsRate": 0,
+          "uniqueComponentsUsed": 0,
+          "uniqueIconsUsed": 0,
+          "totalComponentsInLibrary": 608,
+          "totalIconsInLibrary": 432,
+          "top20Internal": [
+            {
+              "name": "Sidebar State",
+              "count": 570
+            },
+            {
+              "name": "Sidebar view",
+              "count": 570
+            },
             {
               "name": "arrow down",
-              "count": 530
+              "count": 541
             },
             {
               "name": "home",
               "count": 330
             },
             {
+              "name": "Button",
+              "count": 123
+            },
+            {
               "name": "person",
-              "count": 77
+              "count": 92
             },
             {
               "name": "arrow right",
-              "count": 74
+              "count": 79
+            },
+            {
+              "name": "Input",
+              "count": 77
             },
             {
               "name": "search",
-              "count": 66
+              "count": 67
             },
             {
               "name": "arrow up",
@@ -386,6 +364,10 @@
             {
               "name": "barras",
               "count": 35
+            },
+            {
+              "name": "calendar",
+              "count": 33
             },
             {
               "name": "logo",
@@ -412,28 +394,8 @@
               "count": 30
             },
             {
-              "name": "Indicator Circle",
-              "count": 25
-            },
-            {
-              "name": "Line Tracking Vertical",
-              "count": 25
-            },
-            {
-              "name": "ArrowLeft",
-              "count": 14
-            },
-            {
-              "name": "Left Label",
-              "count": 13
-            },
-            {
-              "name": "viajes",
-              "count": 13
-            },
-            {
-              "name": "Slider Controls",
-              "count": 12
+              "name": "notifications",
+              "count": 30
             }
           ]
         }
@@ -445,12 +407,12 @@
       "team": "Modelo Día",
       "quarter": "Q2 2026",
       "date": "2026-06-12",
-      "adoptionRate": 39,
+      "adoptionRate": 0,
+      "componentsRate": 0,
+      "iconsRate": 0,
       "totalRfdFrames": 22,
-      "totalDs": 17446,
-      "totalInstances": 44470,
-      "coverageRate": 55,
-      "uniqueComponentsUsed": 23
+      "totalDs": 0,
+      "totalInstances": 44470
     }
   ]
 }
