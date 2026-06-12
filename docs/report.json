@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-06-12T04:50:35.083Z",
+  "generatedAt": "2026-06-12T04:59:25.112Z",
   "quarter": "Q2 2026",
-  "totalUniqueInLibrary": 365,
+  "totalUniqueInLibrary": 315,
   "teams": [
     {
       "name": "Modelo Día",
@@ -11,7 +11,7 @@
       "totalNonDs": 44470,
       "totalInstances": 44470,
       "uniqueComponentsUsed": 0,
-      "totalUniqueInLibrary": 365,
+      "totalUniqueInLibrary": 315,
       "coverageRate": 0,
       "top20NonDs": [
         {
@@ -105,7 +105,7 @@
           "totalInstances": 15878,
           "adoptionRate": 0,
           "uniqueComponentsUsed": 0,
-          "totalUniqueInLibrary": 365,
+          "totalUniqueInLibrary": 315,
           "coverageRate": 0,
           "top20NonDs": [
             {
@@ -199,7 +199,7 @@
           "totalInstances": 25234,
           "adoptionRate": 0,
           "uniqueComponentsUsed": 0,
-          "totalUniqueInLibrary": 365,
+          "totalUniqueInLibrary": 315,
           "coverageRate": 0,
           "top20NonDs": [
             {
@@ -293,7 +293,7 @@
           "totalInstances": 3358,
           "adoptionRate": 0,
           "uniqueComponentsUsed": 0,
-          "totalUniqueInLibrary": 365,
+          "totalUniqueInLibrary": 315,
           "coverageRate": 0,
           "top20NonDs": [
             {
