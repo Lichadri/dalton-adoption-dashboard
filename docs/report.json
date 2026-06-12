@@ -1,56 +1,30 @@
 {
-  "generatedAt": "2026-06-12T06:19:42.400Z",
+  "generatedAt": "2026-06-12T06:26:57.307Z",
   "quarter": "Q2 2026",
-  "totalComponentsInLibrary": 608,
-  "totalIconsInLibrary": 432,
   "teams": [
     {
       "name": "Modelo Día",
-      "adoptionRate": 0,
+      "adoptionRate": 39,
       "totalRfdFrames": 22,
-      "totalDs": 0,
-      "totalComponents": 0,
-      "totalIcons": 0,
-      "totalInternal": 44470,
+      "totalDs": 17455,
+      "totalComponents": 17067,
+      "totalIcons": 388,
+      "totalInternal": 27015,
       "totalInstances": 44470,
-      "componentsRate": 0,
-      "iconsRate": 0,
-      "uniqueComponentsUsed": 0,
-      "uniqueIconsUsed": 0,
-      "totalComponentsInLibrary": 608,
-      "totalIconsInLibrary": 432,
+      "componentsRate": 38,
+      "iconsRate": 1,
       "top20Internal": [
         {
           "name": "arrow down",
-          "count": 2926
+          "count": 2855
         },
         {
           "name": "desk Table cell",
           "count": 2571
         },
         {
-          "name": "Input",
-          "count": 2373
-        },
-        {
-          "name": "help Circle",
-          "count": 2190
-        },
-        {
           "name": "person",
-          "count": 2134
-        },
-        {
-          "name": "Button",
-          "count": 2047
-        },
-        {
-          "name": "Sidebar State",
-          "count": 2016
-        },
-        {
-          "name": "Sidebar view",
-          "count": 1997
+          "count": 2009
         },
         {
           "name": "Tag",
@@ -58,18 +32,10 @@
         },
         {
           "name": "arrow right",
-          "count": 1347
-        },
-        {
-          "name": "Checkbox Atom",
-          "count": 1339
+          "count": 1335
         },
         {
           "name": "desktop",
-          "count": 1227
-        },
-        {
-          "name": "Table header cell",
           "count": 1227
         },
         {
@@ -94,11 +60,39 @@
         },
         {
           "name": "viajes",
-          "count": 656
+          "count": 669
         },
         {
           "name": "Left Label",
-          "count": 653
+          "count": 666
+        },
+        {
+          "name": "Control",
+          "count": 620
+        },
+        {
+          "name": "Component 16",
+          "count": 567
+        },
+        {
+          "name": "account",
+          "count": 379
+        },
+        {
+          "name": "menu",
+          "count": 379
+        },
+        {
+          "name": "Botón Primario",
+          "count": 378
+        },
+        {
+          "name": "Aprobado",
+          "count": 230
+        },
+        {
+          "name": "search",
+          "count": 224
         }
       ],
       "files": [
@@ -106,42 +100,22 @@
           "key": "sDx9W33S6h0bwrHdGMBe00",
           "name": "Modelo Día 2026",
           "rfdFrameCount": 15,
-          "dsInstances": 0,
-          "componentsInstances": 0,
-          "iconsInstances": 0,
-          "internalInstances": 15878,
+          "dsInstances": 6557,
+          "componentsInstances": 6208,
+          "iconsInstances": 349,
+          "internalInstances": 9321,
           "totalInstances": 15878,
-          "adoptionRate": 0,
-          "componentsRate": 0,
-          "iconsRate": 0,
-          "uniqueComponentsUsed": 0,
-          "uniqueIconsUsed": 0,
-          "totalComponentsInLibrary": 608,
-          "totalIconsInLibrary": 432,
+          "adoptionRate": 41,
+          "componentsRate": 39,
+          "iconsRate": 2,
           "top20Internal": [
             {
               "name": "arrow down",
-              "count": 1891
-            },
-            {
-              "name": "Sidebar State",
-              "count": 1446
-            },
-            {
-              "name": "Sidebar view",
-              "count": 1427
+              "count": 1831
             },
             {
               "name": "home",
               "count": 815
-            },
-            {
-              "name": "person",
-              "count": 758
-            },
-            {
-              "name": "Button",
-              "count": 663
             },
             {
               "name": "viajes",
@@ -152,32 +126,24 @@
               "count": 653
             },
             {
-              "name": "arrow right",
-              "count": 633
+              "name": "person",
+              "count": 648
             },
             {
-              "name": "Input",
-              "count": 538
+              "name": "arrow right",
+              "count": 626
             },
             {
               "name": "Tag",
               "count": 512
             },
             {
-              "name": "help Circle",
-              "count": 365
-            },
-            {
-              "name": "Header Label",
-              "count": 335
+              "name": "business center",
+              "count": 165
             },
             {
               "name": "search",
-              "count": 176
-            },
-            {
-              "name": "business center",
-              "count": 165
+              "count": 158
             },
             {
               "name": "arrow up",
@@ -188,16 +154,40 @@
               "count": 145
             },
             {
-              "name": "calendar",
-              "count": 135
+              "name": "logo",
+              "count": 112
             },
             {
-              "name": "Tab",
-              "count": 128
+              "name": "Indicator Circle",
+              "count": 110
             },
             {
-              "name": "Radio Button With Text",
-              "count": 121
+              "name": "Line Tracking Vertical",
+              "count": 110
+            },
+            {
+              "name": "Indicator step",
+              "count": 106
+            },
+            {
+              "name": "arrow left",
+              "count": 103
+            },
+            {
+              "name": "Icon",
+              "count": 100
+            },
+            {
+              "name": "AGENDA",
+              "count": 92
+            },
+            {
+              "name": "generate ai",
+              "count": 87
+            },
+            {
+              "name": "Article",
+              "count": 83
             }
           ]
         },
@@ -205,49 +195,25 @@
           "key": "cwPxuq8YMgbHvlBb4dy9Yr",
           "name": "Portal de Suscripción & Emisión",
           "rfdFrameCount": 6,
-          "dsInstances": 0,
-          "componentsInstances": 0,
+          "dsInstances": 9266,
+          "componentsInstances": 9266,
           "iconsInstances": 0,
-          "internalInstances": 25234,
+          "internalInstances": 15968,
           "totalInstances": 25234,
-          "adoptionRate": 0,
-          "componentsRate": 0,
+          "adoptionRate": 37,
+          "componentsRate": 37,
           "iconsRate": 0,
-          "uniqueComponentsUsed": 0,
-          "uniqueIconsUsed": 0,
-          "totalComponentsInLibrary": 608,
-          "totalIconsInLibrary": 432,
           "top20Internal": [
             {
               "name": "desk Table cell",
               "count": 2571
             },
             {
-              "name": "help Circle",
-              "count": 1825
-            },
-            {
-              "name": "Input",
-              "count": 1758
-            },
-            {
-              "name": "Checkbox Atom",
-              "count": 1339
-            },
-            {
               "name": "person",
               "count": 1284
             },
             {
-              "name": "Button",
-              "count": 1261
-            },
-            {
               "name": "desktop",
-              "count": 1227
-            },
-            {
-              "name": "Table header cell",
               "count": 1227
             },
             {
@@ -295,8 +261,28 @@
               "count": 379
             },
             {
-              "name": "radio_form",
+              "name": "Botón Primario",
               "count": 378
+            },
+            {
+              "name": "Aprobado",
+              "count": 230
+            },
+            {
+              "name": "BtnBackNext",
+              "count": 189
+            },
+            {
+              "name": "Pregunta formulario",
+              "count": 189
+            },
+            {
+              "name": "download",
+              "count": 176
+            },
+            {
+              "name": "ArrowLeft",
+              "count": 171
             }
           ]
         },
@@ -304,54 +290,34 @@
           "key": "6QBFEXpu6r5ZDNuzYYtK97",
           "name": "Vida Ley & SCTR",
           "rfdFrameCount": 1,
-          "dsInstances": 0,
-          "componentsInstances": 0,
-          "iconsInstances": 0,
-          "internalInstances": 3358,
+          "dsInstances": 1632,
+          "componentsInstances": 1593,
+          "iconsInstances": 39,
+          "internalInstances": 1726,
           "totalInstances": 3358,
-          "adoptionRate": 0,
-          "componentsRate": 0,
-          "iconsRate": 0,
-          "uniqueComponentsUsed": 0,
-          "uniqueIconsUsed": 0,
-          "totalComponentsInLibrary": 608,
-          "totalIconsInLibrary": 432,
+          "adoptionRate": 49,
+          "componentsRate": 47,
+          "iconsRate": 1,
           "top20Internal": [
             {
-              "name": "Sidebar State",
-              "count": 570
-            },
-            {
-              "name": "Sidebar view",
-              "count": 570
-            },
-            {
               "name": "arrow down",
-              "count": 541
+              "count": 530
             },
             {
               "name": "home",
               "count": 330
             },
             {
-              "name": "Button",
-              "count": 123
-            },
-            {
               "name": "person",
-              "count": 92
-            },
-            {
-              "name": "arrow right",
-              "count": 79
-            },
-            {
-              "name": "Input",
               "count": 77
             },
             {
+              "name": "arrow right",
+              "count": 74
+            },
+            {
               "name": "search",
-              "count": 67
+              "count": 66
             },
             {
               "name": "arrow up",
@@ -364,10 +330,6 @@
             {
               "name": "barras",
               "count": 35
-            },
-            {
-              "name": "calendar",
-              "count": 33
             },
             {
               "name": "logo",
@@ -394,8 +356,28 @@
               "count": 30
             },
             {
-              "name": "notifications",
-              "count": 30
+              "name": "Indicator Circle",
+              "count": 25
+            },
+            {
+              "name": "Line Tracking Vertical",
+              "count": 25
+            },
+            {
+              "name": "ArrowLeft",
+              "count": 14
+            },
+            {
+              "name": "Left Label",
+              "count": 13
+            },
+            {
+              "name": "viajes",
+              "count": 13
+            },
+            {
+              "name": "Slider Controls",
+              "count": 12
             }
           ]
         }
@@ -407,11 +389,11 @@
       "team": "Modelo Día",
       "quarter": "Q2 2026",
       "date": "2026-06-12",
-      "adoptionRate": 0,
-      "componentsRate": 0,
-      "iconsRate": 0,
+      "adoptionRate": 39,
+      "componentsRate": 38,
+      "iconsRate": 1,
       "totalRfdFrames": 22,
-      "totalDs": 0,
+      "totalDs": 17455,
       "totalInstances": 44470
     }
   ]

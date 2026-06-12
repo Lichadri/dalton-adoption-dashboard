@@ -3,11 +3,11 @@
     "team": "Modelo Día",
     "quarter": "Q2 2026",
     "date": "2026-06-12",
-    "adoptionRate": 0,
-    "componentsRate": 0,
-    "iconsRate": 0,
+    "adoptionRate": 39,
+    "componentsRate": 38,
+    "iconsRate": 1,
     "totalRfdFrames": 22,
-    "totalDs": 0,
+    "totalDs": 17455,
     "totalInstances": 44470
   }
 ]
