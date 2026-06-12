@@ -41,6 +41,11 @@ function isDaltonComponent(name) {
   if (!name) return false;
   const lower = name.toLowerCase();
 
+  // Icons: names starting with "glyphs/"
+  if (lower.startsWith("glyphs/")) {
+    return { matched: true, family: "Icons" };
+  }
+
   // Check if any segment of the name matches a Dalton family
   const segments = lower.split("/").map(s => s.trim());
 
@@ -165,13 +170,18 @@ async function analyzeFile(fileKey, fileName) {
 
   console.log(`  RFD: ${rfdFrameCount} | DS: ${counts.ds} | Non-DS: ${counts.nonDs} | Adoption: ${adoptionRate}% | Coverage: ${uniqueUsed}/${totalFamilies} (${coverageRate}%)`);
 
+  const totalFamiliesWithIcons = DALTON_FAMILIES.length + 1;
+  const coverageRateFinal = Math.round((uniqueUsed / totalFamiliesWithIcons) * 100);
+
   return {
     key: fileKey, name: fileName, rfdFrameCount,
     dsInstances: counts.ds, nonDsInstances: counts.nonDs,
     totalInstances, adoptionRate,
     uniqueComponentsUsed: uniqueUsed,
-    totalUniqueInLibrary: totalFamilies,
-    coverageRate, top20NonDs,
+    totalUniqueInLibrary: totalFamiliesWithIcons,
+    coverageRate: coverageRateFinal,
+    usedFamiliesList: [...usedFamilies],
+    top20NonDs,
   };
 }
 
@@ -207,8 +217,14 @@ async function run() {
     const totalNonDs = filesData.reduce((s, f) => s + f.nonDsInstances, 0);
     const totalInstances = totalDs + totalNonDs;
     const teamAdoptionRate = totalInstances > 0 ? Math.round((totalDs / totalInstances) * 100) : 0;
-    const teamUniqueUsed = filesData.reduce((s, f) => s + (f.uniqueComponentsUsed || 0), 0);
-    const teamCoverageRate = Math.round((teamUniqueUsed / DALTON_FAMILIES.length) * 100);
+    // Deduplicate families across files using the stored usedFamiliesList
+    const teamFamiliesSet = new Set();
+    for (const f of filesData) {
+      for (const fam of (f.usedFamiliesList || [])) teamFamiliesSet.add(fam);
+    }
+    const teamUniqueUsed = teamFamiliesSet.size;
+    const totalFamiliesWithIcons = DALTON_FAMILIES.length + 1; // +1 for Icons
+    const teamCoverageRate = Math.round((teamUniqueUsed / totalFamiliesWithIcons) * 100);
 
     const aggregatedNonDs = {};
     for (const f of filesData) {
@@ -224,7 +240,7 @@ async function run() {
       name: team.name, adoptionRate: teamAdoptionRate,
       totalRfdFrames, totalDs, totalNonDs, totalInstances,
       uniqueComponentsUsed: teamUniqueUsed,
-      totalUniqueInLibrary: DALTON_FAMILIES.length,
+      totalUniqueInLibrary: totalFamiliesWithIcons,
       coverageRate: teamCoverageRate, top20NonDs: teamTop20NonDs, files: filesData,
     });
   }
@@ -240,7 +256,7 @@ async function run() {
   }
 
   fs.writeFileSync(HISTORY_PATH, JSON.stringify(history, null, 2));
-  const report = { generatedAt: now.toISOString(), quarter, totalUniqueInLibrary: DALTON_FAMILIES.length, teams: teamsData, history };
+  const report = { generatedAt: now.toISOString(), quarter, totalUniqueInLibrary: DALTON_FAMILIES.length + 1, teams: teamsData, history };
   if (!fs.existsSync(path.join(__dirname, "docs"))) fs.mkdirSync(path.join(__dirname, "docs"));
   fs.writeFileSync(REPORT_PATH, JSON.stringify(report, null, 2));
 
