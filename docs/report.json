@@ -1,22 +1,22 @@
 {
-  "generatedAt": "2026-06-12T05:44:11.862Z",
+  "generatedAt": "2026-06-12T05:50:03.907Z",
   "quarter": "Q2 2026",
-  "totalUniqueInLibrary": 41,
+  "totalUniqueInLibrary": 42,
   "teams": [
     {
       "name": "Modelo Día",
-      "adoptionRate": 38,
+      "adoptionRate": 39,
       "totalRfdFrames": 22,
-      "totalDs": 17103,
-      "totalNonDs": 27367,
+      "totalDs": 17446,
+      "totalNonDs": 27024,
       "totalInstances": 44470,
-      "uniqueComponentsUsed": 51,
-      "totalUniqueInLibrary": 41,
-      "coverageRate": 124,
+      "uniqueComponentsUsed": 23,
+      "totalUniqueInLibrary": 42,
+      "coverageRate": 55,
       "top20NonDs": [
         {
           "name": "arrow down",
-          "count": 2926
+          "count": 2855
         },
         {
           "name": "desk Table cell",
@@ -24,7 +24,7 @@
         },
         {
           "name": "person",
-          "count": 2134
+          "count": 2009
         },
         {
           "name": "Tag",
@@ -32,7 +32,7 @@
         },
         {
           "name": "arrow right",
-          "count": 1347
+          "count": 1335
         },
         {
           "name": "desktop",
@@ -87,12 +87,12 @@
           "count": 378
         },
         {
-          "name": "search",
-          "count": 243
-        },
-        {
           "name": "Aprobado",
           "count": 230
+        },
+        {
+          "name": "search",
+          "count": 224
         }
       ],
       "files": [
@@ -100,25 +100,45 @@
           "key": "sDx9W33S6h0bwrHdGMBe00",
           "name": "Modelo Día 2026",
           "rfdFrameCount": 15,
-          "dsInstances": 6244,
-          "nonDsInstances": 9634,
+          "dsInstances": 6548,
+          "nonDsInstances": 9330,
           "totalInstances": 15878,
-          "adoptionRate": 39,
-          "uniqueComponentsUsed": 21,
-          "totalUniqueInLibrary": 41,
-          "coverageRate": 51,
+          "adoptionRate": 41,
+          "uniqueComponentsUsed": 22,
+          "totalUniqueInLibrary": 42,
+          "coverageRate": 52,
+          "usedFamiliesList": [
+            "Radio",
+            "Button",
+            "Stepper",
+            "Alert",
+            "Icons",
+            "Input",
+            "Select",
+            "Loader",
+            "Progress bar",
+            "Header",
+            "Tracking",
+            "Chips",
+            "Sidebar",
+            "Calendar",
+            "Checkbox",
+            "Tab",
+            "Controls",
+            "Main Search",
+            "File uploader",
+            "Text Area",
+            "Pagination",
+            "Toggle"
+          ],
           "top20NonDs": [
             {
               "name": "arrow down",
-              "count": 1891
+              "count": 1831
             },
             {
               "name": "home",
               "count": 815
-            },
-            {
-              "name": "person",
-              "count": 758
             },
             {
               "name": "viajes",
@@ -129,20 +149,24 @@
               "count": 653
             },
             {
+              "name": "person",
+              "count": 648
+            },
+            {
               "name": "arrow right",
-              "count": 633
+              "count": 626
             },
             {
               "name": "Tag",
               "count": 512
             },
             {
-              "name": "search",
-              "count": 176
-            },
-            {
               "name": "business center",
               "count": 165
+            },
+            {
+              "name": "search",
+              "count": 158
             },
             {
               "name": "arrow up",
@@ -199,8 +223,24 @@
           "totalInstances": 25234,
           "adoptionRate": 37,
           "uniqueComponentsUsed": 14,
-          "totalUniqueInLibrary": 41,
-          "coverageRate": 34,
+          "totalUniqueInLibrary": 42,
+          "coverageRate": 33,
+          "usedFamiliesList": [
+            "Radio",
+            "Alert",
+            "Button",
+            "Input",
+            "Select",
+            "Checkbox",
+            "Header",
+            "Table",
+            "Pagination",
+            "Chips",
+            "Text Area",
+            "Calendar",
+            "File uploader",
+            "Controls"
+          ],
           "top20NonDs": [
             {
               "name": "desk Table cell",
@@ -288,17 +328,36 @@
           "key": "6QBFEXpu6r5ZDNuzYYtK97",
           "name": "Vida Ley & SCTR",
           "rfdFrameCount": 1,
-          "dsInstances": 1593,
-          "nonDsInstances": 1765,
+          "dsInstances": 1632,
+          "nonDsInstances": 1726,
           "totalInstances": 3358,
-          "adoptionRate": 47,
-          "uniqueComponentsUsed": 16,
-          "totalUniqueInLibrary": 41,
-          "coverageRate": 39,
+          "adoptionRate": 49,
+          "uniqueComponentsUsed": 17,
+          "totalUniqueInLibrary": 42,
+          "coverageRate": 40,
+          "usedFamiliesList": [
+            "Input",
+            "Alert",
+            "Select",
+            "Checkbox",
+            "Button",
+            "Icons",
+            "Sidebar",
+            "Calendar",
+            "Tab",
+            "Text Area",
+            "Main Search",
+            "Radio",
+            "Tracking",
+            "Progress bar",
+            "Pagination",
+            "Chips",
+            "Header"
+          ],
           "top20NonDs": [
             {
               "name": "arrow down",
-              "count": 541
+              "count": 530
             },
             {
               "name": "home",
@@ -306,15 +365,15 @@
             },
             {
               "name": "person",
-              "count": 92
+              "count": 77
             },
             {
               "name": "arrow right",
-              "count": 79
+              "count": 74
             },
             {
               "name": "search",
-              "count": 67
+              "count": 66
             },
             {
               "name": "arrow up",
@@ -386,12 +445,12 @@
       "team": "Modelo Día",
       "quarter": "Q2 2026",
       "date": "2026-06-12",
-      "adoptionRate": 38,
+      "adoptionRate": 39,
       "totalRfdFrames": 22,
-      "totalDs": 17103,
+      "totalDs": 17446,
       "totalInstances": 44470,
-      "coverageRate": 124,
-      "uniqueComponentsUsed": 51
+      "coverageRate": 55,
+      "uniqueComponentsUsed": 23
     }
   ]
 }
