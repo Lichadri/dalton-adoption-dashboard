@@ -2,11 +2,9 @@ name: Dalton Adoption Report
 
 on:
   schedule:
-    # 10am Lima (UTC-5) = 15:00 UTC — Lunes a Viernes
     - cron: "0 15 * * 1-5"
-    # 4pm Lima (UTC-5) = 21:00 UTC — Lunes a Viernes
     - cron: "0 21 * * 1-5"
-  workflow_dispatch: # permite correrlo manualmente desde GitHub
+  workflow_dispatch:
 
 jobs:
   run-report:
@@ -21,15 +19,30 @@ jobs:
         with:
           node-version: "20"
 
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install openpyxl
+        run: pip install openpyxl
+
       - name: Run adoption script
         env:
           FIGMA_TOKEN: ${{ secrets.FIGMA_TOKEN }}
         run: node adoption-script.js
 
+      - name: Upload Excel as artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: reporte-adopcion-${{ github.run_number }}
+          path: docs/reporte-adopcion.xlsx
+          retention-days: 30
+
       - name: Commit & push report
         run: |
           git config user.name "dalton-bot"
           git config user.email "dalton-bot@pacifico.com.pe"
-          git add docs/report.json adoption-history.json
+          git add docs/report.json docs/reporte-adopcion.xlsx adoption-history.json
           git diff --cached --quiet || git commit -m "chore: adoption report $(date -u +'%Y-%m-%d %H:%M UTC')"
           git push
