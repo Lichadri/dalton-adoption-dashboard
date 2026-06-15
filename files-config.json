@@ -3,17 +3,18 @@
     {
       "name": "Modelo Día",
       "category": "Modelo Día",
-      "files": [...]
+      "files": [
+        { "key": "sDx9W33S6h0bwrHdGMBe00", "name": "Modelo Día 2026" },
+        { "key": "cwPxuq8YMgbHvlBb4dy9Yr", "name": "Portal de Suscripción & Emisión" },
+        { "key": "6QBFEXpu6r5ZDNuzYYtK97", "name": "Vida Ley & SCTR" }
+      ]
     },
     {
       "name": "Auto Efectivo",
       "category": "Ecommerce",
-      "files": [...]
-    },
-    {
-      "name": "Vida",
-      "category": "Ecommerce",
-      "files": [...]
+      "files": [
+        { "key": "b7nkcHmaq9SibdyBrCzVjt", "name": "Auto Efectivo — One Click" }
+      ]
     }
   ]
 }
