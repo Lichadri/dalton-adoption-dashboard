@@ -1,12 +1,15 @@
 {
-  "generatedAt": "2026-06-12T22:23:45.730Z",
+  "generatedAt": "2026-06-15T03:44:01.189Z",
   "quarter": "Q2 2026",
   "teams": [
     {
       "name": "Modelo Día",
+      "category": "Modelo Día",
       "adoptionRate": 56,
       "totalRfdFrames": 22,
       "totalDs": 11828,
+      "dsInstances": 11828,
+      "internalInstances": 9405,
       "totalInternal": 9405,
       "totalInstances": 21233,
       "top20Internal": [
@@ -368,10 +371,13 @@
       ]
     },
     {
-      "name": "Ecommerce",
+      "name": "Auto Efectivo",
+      "category": "Ecommerce",
       "adoptionRate": 50,
       "totalRfdFrames": 1,
       "totalDs": 645,
+      "dsInstances": 645,
+      "internalInstances": 649,
       "totalInternal": 649,
       "totalInstances": 1294,
       "top20Internal": [
@@ -554,8 +560,9 @@
   "history": [
     {
       "team": "Modelo Día",
+      "category": "Modelo Día",
       "quarter": "Q2 2026",
-      "date": "2026-06-12",
+      "date": "2026-06-15",
       "adoptionRate": 56,
       "totalRfdFrames": 22,
       "totalDs": 11828,
@@ -565,6 +572,16 @@
       "team": "Ecommerce",
       "quarter": "Q2 2026",
       "date": "2026-06-12",
+      "adoptionRate": 50,
+      "totalRfdFrames": 1,
+      "totalDs": 645,
+      "totalInstances": 1294
+    },
+    {
+      "team": "Auto Efectivo",
+      "category": "Ecommerce",
+      "quarter": "Q2 2026",
+      "date": "2026-06-15",
       "adoptionRate": 50,
       "totalRfdFrames": 1,
       "totalDs": 645,

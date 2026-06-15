@@ -1,8 +1,9 @@
 [
   {
     "team": "Modelo Día",
+    "category": "Modelo Día",
     "quarter": "Q2 2026",
-    "date": "2026-06-12",
+    "date": "2026-06-15",
     "adoptionRate": 56,
     "totalRfdFrames": 22,
     "totalDs": 11828,
@@ -12,6 +13,16 @@
     "team": "Ecommerce",
     "quarter": "Q2 2026",
     "date": "2026-06-12",
+    "adoptionRate": 50,
+    "totalRfdFrames": 1,
+    "totalDs": 645,
+    "totalInstances": 1294
+  },
+  {
+    "team": "Auto Efectivo",
+    "category": "Ecommerce",
+    "quarter": "Q2 2026",
+    "date": "2026-06-15",
     "adoptionRate": 50,
     "totalRfdFrames": 1,
     "totalDs": 645,
