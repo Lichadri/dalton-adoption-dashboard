@@ -1,17 +1,17 @@
 {
-  "generatedAt": "2026-06-15T19:05:20.293Z",
+  "generatedAt": "2026-06-16T18:56:27.957Z",
   "quarter": "Q2 2026",
   "teams": [
     {
       "name": "Modelo Día",
       "category": "Modelo Día",
-      "adoptionRate": 56,
+      "adoptionRate": 54,
       "totalRfdFrames": 22,
-      "totalDs": 11828,
-      "dsInstances": 11828,
-      "internalInstances": 9405,
-      "totalInternal": 9405,
-      "totalInstances": 21233,
+      "totalDs": 11837,
+      "dsInstances": 11837,
+      "internalInstances": 9883,
+      "totalInternal": 9883,
+      "totalInstances": 21720,
       "top20Internal": [
         {
           "name": "desk Table cell",
@@ -30,12 +30,12 @@
           "count": 643
         },
         {
-          "name": "Component 16",
-          "count": 270
+          "name": "DirectionDown",
+          "count": 311
         },
         {
-          "name": "Botón Primario",
-          "count": 180
+          "name": "Component 16",
+          "count": 270
         },
         {
           "name": "Dropdown filter page",
@@ -52,6 +52,14 @@
         {
           "name": "Line Tracking Vertical",
           "count": 135
+        },
+        {
+          "name": "Botón Primario",
+          "count": 126
+        },
+        {
+          "name": "DirectionUp",
+          "count": 116
         },
         {
           "name": "Article",
@@ -82,16 +90,8 @@
           "count": 105
         },
         {
-          "name": "Page",
-          "count": 102
-        },
-        {
           "name": "Icon",
-          "count": 100
-        },
-        {
-          "name": "AGENDA",
-          "count": 92
+          "count": 103
         }
       ],
       "files": [
@@ -99,10 +99,10 @@
           "key": "sDx9W33S6h0bwrHdGMBe00",
           "name": "Modelo Día 2026",
           "rfdFrameCount": 15,
-          "dsInstances": 6228,
-          "internalInstances": 3912,
-          "totalInstances": 10140,
-          "adoptionRate": 61,
+          "dsInstances": 6237,
+          "internalInstances": 4390,
+          "totalInstances": 10627,
+          "adoptionRate": 59,
           "top20Internal": [
             {
               "name": "Left Label",
@@ -111,6 +111,14 @@
             {
               "name": "Tag",
               "count": 512
+            },
+            {
+              "name": "DirectionDown",
+              "count": 244
+            },
+            {
+              "name": "DirectionUp",
+              "count": 116
             },
             {
               "name": "Indicator Circle",
@@ -126,7 +134,11 @@
             },
             {
               "name": "Icon",
-              "count": 100
+              "count": 103
+            },
+            {
+              "name": "directionLeft",
+              "count": 96
             },
             {
               "name": "AGENDA",
@@ -171,18 +183,6 @@
             {
               "name": "Bar Progress",
               "count": 70
-            },
-            {
-              "name": "Landing",
-              "count": 66
-            },
-            {
-              "name": "add",
-              "count": 55
-            },
-            {
-              "name": "Botón Primario",
-              "count": 54
             }
           ]
         },
@@ -562,11 +562,11 @@
       "team": "Modelo Día",
       "category": "Modelo Día",
       "quarter": "Q2 2026",
-      "date": "2026-06-15",
-      "adoptionRate": 56,
+      "date": "2026-06-16",
+      "adoptionRate": 54,
       "totalRfdFrames": 22,
-      "totalDs": 11828,
-      "totalInstances": 21233
+      "totalDs": 11837,
+      "totalInstances": 21720
     },
     {
       "team": "Ecommerce",
@@ -581,7 +581,7 @@
       "team": "Auto Efectivo",
       "category": "Ecommerce",
       "quarter": "Q2 2026",
-      "date": "2026-06-15",
+      "date": "2026-06-16",
       "adoptionRate": 50,
       "totalRfdFrames": 1,
       "totalDs": 645,
