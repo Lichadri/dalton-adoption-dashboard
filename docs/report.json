@@ -1,17 +1,17 @@
 {
-  "generatedAt": "2026-06-16T18:56:27.957Z",
+  "generatedAt": "2026-06-16T22:53:00.777Z",
   "quarter": "Q2 2026",
   "teams": [
     {
       "name": "Modelo Día",
       "category": "Modelo Día",
-      "adoptionRate": 54,
+      "adoptionRate": 55,
       "totalRfdFrames": 22,
-      "totalDs": 11837,
-      "dsInstances": 11837,
-      "internalInstances": 9883,
-      "totalInternal": 9883,
-      "totalInstances": 21720,
+      "totalDs": 11902,
+      "dsInstances": 11902,
+      "internalInstances": 9931,
+      "totalInternal": 9931,
+      "totalInstances": 21833,
       "top20Internal": [
         {
           "name": "desk Table cell",
@@ -27,7 +27,7 @@
         },
         {
           "name": "Control",
-          "count": 643
+          "count": 636
         },
         {
           "name": "DirectionDown",
@@ -63,18 +63,22 @@
         },
         {
           "name": "Article",
-          "count": 114
+          "count": 115
         },
         {
           "name": "barras",
-          "count": 110
+          "count": 111
         },
         {
           "name": "settings",
-          "count": 109
+          "count": 110
         },
         {
           "name": "billetera",
+          "count": 108
+        },
+        {
+          "name": "description",
           "count": 107
         },
         {
@@ -82,12 +86,8 @@
           "count": 106
         },
         {
-          "name": "description",
-          "count": 106
-        },
-        {
           "name": "create account",
-          "count": 105
+          "count": 106
         },
         {
           "name": "Icon",
@@ -281,10 +281,10 @@
           "key": "6QBFEXpu6r5ZDNuzYYtK97",
           "name": "Vida Ley & SCTR",
           "rfdFrameCount": 1,
-          "dsInstances": 1592,
-          "internalInstances": 511,
-          "totalInstances": 2103,
-          "adoptionRate": 76,
+          "dsInstances": 1657,
+          "internalInstances": 559,
+          "totalInstances": 2216,
+          "adoptionRate": 75,
           "top20Internal": [
             {
               "name": "Tag",
@@ -292,27 +292,27 @@
             },
             {
               "name": "barras",
-              "count": 35
+              "count": 36
             },
             {
               "name": "create account",
-              "count": 30
+              "count": 31
             },
             {
               "name": "settings",
-              "count": 30
+              "count": 31
             },
             {
               "name": "Article",
-              "count": 30
+              "count": 31
             },
             {
               "name": "billetera",
-              "count": 30
+              "count": 31
             },
             {
               "name": "description",
-              "count": 30
+              "count": 31
             },
             {
               "name": "Indicator Circle",
@@ -324,6 +324,10 @@
             },
             {
               "name": "ArrowLeft",
+              "count": 14
+            },
+            {
+              "name": "eye_open",
               "count": 14
             },
             {
@@ -355,16 +359,12 @@
               "count": 9
             },
             {
-              "name": "Search Suggestion",
+              "name": "Search Button",
               "count": 8
             },
             {
-              "name": "Search Button",
-              "count": 7
-            },
-            {
-              "name": "Control",
-              "count": 7
+              "name": "Search Suggestion",
+              "count": 8
             }
           ]
         }
@@ -563,10 +563,10 @@
       "category": "Modelo Día",
       "quarter": "Q2 2026",
       "date": "2026-06-16",
-      "adoptionRate": 54,
+      "adoptionRate": 55,
       "totalRfdFrames": 22,
-      "totalDs": 11837,
-      "totalInstances": 21720
+      "totalDs": 11902,
+      "totalInstances": 21833
     },
     {
       "team": "Ecommerce",
