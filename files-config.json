@@ -1,6 +1,47 @@
 {
   "teams": [
     {
+      "name": "MEP",
+      "category": "MEP",
+      "files": [
+        { "key": "mK0HHoTiAQsbOOf5XvJ6Z3", "name": "Pagos — Débito Automático" },
+        { "key": "dJJGQrXarbfgwuowDQt5LS", "name": "Seguros MEP 2025" },
+        { "key": "jxcrxrVb429qpKXAhNifUC", "name": "Raspa & Gana" },
+        { "key": "AwGsmKtPnyFM0nwB9JJyYX", "name": "Modales MEP" }
+      ]
+    },
+    {
+      "name": "Somos Corredores",
+      "category": "Somos Corredores",
+      "files": [
+        { "key": "mWXT628azFx5kWTK9sWp13", "name": "CAR" },
+        { "key": "5hD4pTIf3zVKz7mn0CdlHk", "name": "Aviso de Siniestros" }
+      ]
+    },
+    {
+      "name": "Protege 365",
+      "category": "Protege 365",
+      "files": [
+        { "key": "XTTjedhXUghJApM4YxDILE", "name": "Web Pública" },
+        { "key": "5IkYpIB7NzyRqmLyHEpSPa", "name": "Web Privada" }
+      ]
+    },
+    {
+      "name": "Nueva Web Empresas",
+      "category": "Nueva Web Empresas",
+      "files": [
+        { "key": "gbvdlNhLYLRg7RCzNwI8yu", "name": "TRIN" },
+        { "key": "j4Uyzko4eQSDtEaWyVm2JM", "name": "Home Empresas" }
+      ]
+    },
+    {
+      "name": "Portal Digital de Siniestros",
+      "category": "Portal Digital de Siniestros",
+      "files": [
+        { "key": "y8YuwqsKA18BElJM0MFbFU", "name": "Portal Digital de Siniestros" }
+      ]
+    },
+    {
       "name": "Modelo Día",
       "category": "Modelo Día",
       "files": [
@@ -10,10 +51,31 @@
       ]
     },
     {
-      "name": "Auto Efectivo",
+      "name": "Ecommerce",
       "category": "Ecommerce",
       "files": [
-        { "key": "b7nkcHmaq9SibdyBrCzVjt", "name": "Auto Efectivo — One Click" }
+        { "key": "upcRdAiQNfadmghectZOhr", "name": "SOAT" },
+        { "key": "FqXf8kbKEimlAkKleve0yT", "name": "Vehicular" },
+        { "key": "b7nkcHmaq9SibdyBrCzVjt", "name": "Auto Efectivo" },
+        { "key": "xShNTlhayoEAr0RpftFHUq", "name": "Vehicular Todo Riesgo" },
+        { "key": "a924JCQttuuzvRhcJNFiG3", "name": "Viajes" },
+        { "key": "ZmHev0uWWs7m1h61BgUecU", "name": "VDT — Perfilador Productos Vida" }
+      ]
+    },
+    {
+      "name": "Web Corporativa",
+      "category": "Web Corporativa",
+      "files": [
+        { "key": "XaZynqqaHNdtOL7E2TtbLq", "name": "Productos Vida" },
+        { "key": "m8OsFy9gG7vcZTzkTIKDOR", "name": "Menú / Home" },
+        { "key": "qnAHAbm5nt9jLXAWUjf8ZY", "name": "Productos Líneas Personales" }
+      ]
+    },
+    {
+      "name": "Embebidos",
+      "category": "Embebidos",
+      "files": [
+        { "key": "X8aq9jmjEuGuWDblebqRFz", "name": "Landing Alianzas" }
       ]
     }
   ]
