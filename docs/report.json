@@ -1,16 +1,16 @@
 {
-  "generatedAt": "2026-06-17T17:18:52.134Z",
+  "generatedAt": "2026-06-17T17:47:58.565Z",
   "quarter": "Q2 2026",
   "teams": [
     {
       "name": "MEP",
       "category": "MEP",
-      "adoptionRate": 31,
+      "adoptionRate": 34,
       "totalRfdFrames": 17,
-      "totalDs": 2437,
-      "dsInstances": 2437,
-      "internalInstances": 5545,
-      "totalInternal": 5545,
+      "totalDs": 2680,
+      "dsInstances": 2680,
+      "internalInstances": 5302,
+      "totalInternal": 5302,
       "totalInstances": 7982,
       "top20Internal": [
         {
@@ -36,10 +36,6 @@
         {
           "name": "card_atajo_home",
           "count": 212
-        },
-        {
-          "name": "Tag",
-          "count": 204
         },
         {
           "name": "message",
@@ -74,12 +70,16 @@
           "count": 45
         },
         {
+          "name": "sirena emergencia",
+          "count": 37
+        },
+        {
           "name": "descarga documento",
           "count": 35
         },
         {
-          "name": "sirena emergencia",
-          "count": 31
+          "name": "informacion de poliza",
+          "count": 34
         },
         {
           "name": "Card_ beneficios",
@@ -99,18 +99,14 @@
           "key": "mK0HHoTiAQsbOOf5XvJ6Z3",
           "name": "Pagos — Débito Automático",
           "rfdFrameCount": 4,
-          "dsInstances": 474,
-          "internalInstances": 820,
+          "dsInstances": 574,
+          "internalInstances": 720,
           "totalInstances": 1294,
-          "adoptionRate": 37,
+          "adoptionRate": 44,
           "top20Internal": [
             {
               "name": "menú",
               "count": 195
-            },
-            {
-              "name": "Tag",
-              "count": 63
             },
             {
               "name": "shield",
@@ -153,10 +149,6 @@
               "count": 16
             },
             {
-              "name": "Indicator Circle",
-              "count": 15
-            },
-            {
               "name": "Line Tracking Vertical",
               "count": 15
             },
@@ -169,20 +161,28 @@
               "count": 13
             },
             {
-              "name": "Dropdown Input",
-              "count": 9
-            },
-            {
               "name": "AddCard",
-              "count": 9
-            },
-            {
-              "name": "Label in",
               "count": 9
             },
             {
               "name": "download",
               "count": 9
+            },
+            {
+              "name": "encripted",
+              "count": 8
+            },
+            {
+              "name": "informacion de poliza",
+              "count": 7
+            },
+            {
+              "name": "Payment Icon",
+              "count": 6
+            },
+            {
+              "name": "sirena emergencia",
+              "count": 6
             }
           ]
         },
@@ -190,10 +190,10 @@
           "key": "dJJGQrXarbfgwuowDQt5LS",
           "name": "Seguros MEP 2025",
           "rfdFrameCount": 11,
-          "dsInstances": 1950,
-          "internalInstances": 4706,
+          "dsInstances": 2093,
+          "internalInstances": 4563,
           "totalInstances": 6656,
-          "adoptionRate": 29,
+          "adoptionRate": 31,
           "top20Internal": [
             {
               "name": "menú",
@@ -236,10 +236,6 @@
               "count": 144
             },
             {
-              "name": "Tag",
-              "count": 141
-            },
-            {
               "name": "Bottom app bar",
               "count": 138
             },
@@ -273,6 +269,10 @@
             },
             {
               "name": "ahorros",
+              "count": 27
+            },
+            {
+              "name": "informacion de poliza",
               "count": 27
             }
           ]
@@ -344,41 +344,17 @@
     {
       "name": "Somos Corredores",
       "category": "Somos Corredores",
-      "adoptionRate": 25,
+      "adoptionRate": 79,
       "totalRfdFrames": 12,
-      "totalDs": 1215,
-      "dsInstances": 1215,
-      "internalInstances": 3557,
-      "totalInternal": 3557,
-      "totalInstances": 4772,
+      "totalDs": 3647,
+      "dsInstances": 3647,
+      "internalInstances": 967,
+      "totalInternal": 967,
+      "totalInstances": 4614,
       "top20Internal": [
-        {
-          "name": "type_option",
-          "count": 1500
-        },
-        {
-          "name": "Indicator step",
-          "count": 255
-        },
-        {
-          "name": "section_footer",
-          "count": 250
-        },
         {
           "name": "Bar Progress",
           "count": 196
-        },
-        {
-          "name": "reemplazar slot",
-          "count": 150
-        },
-        {
-          "name": "compare_arrow",
-          "count": 150
-        },
-        {
-          "name": "Label in",
-          "count": 95
         },
         {
           "name": "Suggested search (Deprecated)",
@@ -401,10 +377,6 @@
           "count": 59
         },
         {
-          "name": "src_option_redes",
-          "count": 50
-        },
-        {
           "name": "celda L",
           "count": 49
         },
@@ -417,20 +389,48 @@
           "count": 39
         },
         {
-          "name": "Left Label",
-          "count": 36
-        },
-        {
           "name": "facebook",
           "count": 35
         },
         {
-          "name": "title_+_options",
+          "name": "Upload icon",
           "count": 31
         },
         {
-          "name": "Upload icon",
-          "count": 24
+          "name": "Userflow",
+          "count": 27
+        },
+        {
+          "name": "ArrowLeft",
+          "count": 21
+        },
+        {
+          "name": "celda S",
+          "count": 12
+        },
+        {
+          "name": "File",
+          "count": 12
+        },
+        {
+          "name": "titulo-fila",
+          "count": 11
+        },
+        {
+          "name": "generate ai",
+          "count": 11
+        },
+        {
+          "name": "More",
+          "count": 11
+        },
+        {
+          "name": "arrow_carrousel",
+          "count": 10
+        },
+        {
+          "name": "Commercial Chips",
+          "count": 9
         }
       ],
       "files": [
@@ -438,30 +438,18 @@
           "key": "mWXT628azFx5kWTK9sWp13",
           "name": "CAR",
           "rfdFrameCount": 5,
-          "dsInstances": 663,
-          "internalInstances": 1047,
-          "totalInstances": 1710,
-          "adoptionRate": 39,
+          "dsInstances": 1037,
+          "internalInstances": 665,
+          "totalInstances": 1702,
+          "adoptionRate": 61,
           "top20Internal": [
-            {
-              "name": "Indicator step",
-              "count": 195
-            },
             {
               "name": "Bar Progress",
               "count": 156
             },
             {
-              "name": "type_option",
-              "count": 96
-            },
-            {
               "name": "celda L",
               "count": 49
-            },
-            {
-              "name": "Label in",
-              "count": 41
             },
             {
               "name": "Suggested search (Deprecated)",
@@ -504,10 +492,6 @@
               "count": 19
             },
             {
-              "name": "section_footer",
-              "count": 16
-            },
-            {
               "name": "celda S",
               "count": 12
             },
@@ -522,6 +506,22 @@
             {
               "name": "More",
               "count": 11
+            },
+            {
+              "name": "File",
+              "count": 9
+            },
+            {
+              "name": "Respuesta",
+              "count": 8
+            },
+            {
+              "name": "Infotip",
+              "count": 8
+            },
+            {
+              "name": "audifonos",
+              "count": 8
             }
           ]
         },
@@ -529,54 +529,18 @@
           "key": "5hD4pTIf3zVKz7mn0CdlHk",
           "name": "Aviso de Siniestros",
           "rfdFrameCount": 7,
-          "dsInstances": 552,
-          "internalInstances": 2510,
-          "totalInstances": 3062,
-          "adoptionRate": 18,
+          "dsInstances": 2610,
+          "internalInstances": 302,
+          "totalInstances": 2912,
+          "adoptionRate": 90,
           "top20Internal": [
-            {
-              "name": "type_option",
-              "count": 1404
-            },
-            {
-              "name": "section_footer",
-              "count": 234
-            },
-            {
-              "name": "reemplazar slot",
-              "count": 150
-            },
-            {
-              "name": "compare_arrow",
-              "count": 150
-            },
-            {
-              "name": "Indicator step",
-              "count": 60
-            },
-            {
-              "name": "Label in",
-              "count": 54
-            },
-            {
-              "name": "src_option_redes",
-              "count": 50
-            },
             {
               "name": "Bar Progress",
               "count": 40
             },
             {
-              "name": "Left Label",
-              "count": 36
-            },
-            {
               "name": "facebook",
               "count": 35
-            },
-            {
-              "name": "title_+_options",
-              "count": 31
             },
             {
               "name": "Suggested search (Deprecated)",
@@ -599,20 +563,56 @@
               "count": 20
             },
             {
-              "name": "title_+_phones",
-              "count": 16
-            },
-            {
               "name": "arrow_carrousel",
-              "count": 10
-            },
-            {
-              "name": "src_option_stores_download",
               "count": 10
             },
             {
               "name": "Commercial Chips",
               "count": 9
+            },
+            {
+              "name": "Userflow",
+              "count": 8
+            },
+            {
+              "name": "Container Drag and Drop",
+              "count": 7
+            },
+            {
+              "name": "Upload icon",
+              "count": 7
+            },
+            {
+              "name": "Page",
+              "count": 6
+            },
+            {
+              "name": "menu-atom",
+              "count": 5
+            },
+            {
+              "name": "instagram",
+              "count": 5
+            },
+            {
+              "name": "tiktok",
+              "count": 5
+            },
+            {
+              "name": "youtube",
+              "count": 5
+            },
+            {
+              "name": "Control",
+              "count": 4
+            },
+            {
+              "name": "DirectionDown",
+              "count": 3
+            },
+            {
+              "name": "File",
+              "count": 3
             }
           ]
         }
@@ -621,61 +621,25 @@
     {
       "name": "Protege 365",
       "category": "Protege 365",
-      "adoptionRate": 19,
-      "totalRfdFrames": 8,
-      "totalDs": 1900,
-      "dsInstances": 1900,
-      "internalInstances": 8303,
-      "totalInternal": 8303,
-      "totalInstances": 10203,
+      "adoptionRate": 66,
+      "totalRfdFrames": 7,
+      "totalDs": 4743,
+      "dsInstances": 4743,
+      "internalInstances": 2412,
+      "totalInternal": 2412,
+      "totalInstances": 7155,
       "top20Internal": [
         {
-          "name": "type_option",
-          "count": 3264
-        },
-        {
           "name": "Menu Item",
-          "count": 640
-        },
-        {
-          "name": "section_footer",
-          "count": 544
-        },
-        {
-          "name": "src_option_redes",
-          "count": 316
-        },
-        {
-          "name": "Átomo",
-          "count": 276
-        },
-        {
-          "name": "reemplazar slot",
-          "count": 272
-        },
-        {
-          "name": "compare_arrow",
-          "count": 272
+          "count": 520
         },
         {
           "name": "Menu title",
-          "count": 160
-        },
-        {
-          "name": "facebook",
-          "count": 160
-        },
-        {
-          "name": "title_+_options",
-          "count": 136
-        },
-        {
-          "name": "Tag",
-          "count": 105
+          "count": 130
         },
         {
           "name": "Commercial Chips",
-          "count": 105
+          "count": 103
         },
         {
           "name": "HealthAndSafe",
@@ -683,31 +647,67 @@
         },
         {
           "name": "Notification Item",
-          "count": 93
+          "count": 75
         },
         {
           "name": "eye_close",
-          "count": 93
+          "count": 75
         },
         {
-          "name": "menu",
-          "count": 68
+          "name": "Slider Controls",
+          "count": 74
+        },
+        {
+          "name": "facebook",
+          "count": 70
         },
         {
           "name": "grid view",
           "count": 61
         },
         {
-          "name": "src_option_stores_download",
-          "count": 56
+          "name": "Location",
+          "count": 58
         },
         {
           "name": "time",
           "count": 56
         },
         {
+          "name": "menu",
+          "count": 54
+        },
+        {
+          "name": "Beneficio | card",
+          "count": 48
+        },
+        {
           "name": "Apps",
-          "count": 52
+          "count": 42
+        },
+        {
+          "name": "Beneficio | card mobile",
+          "count": 42
+        },
+        {
+          "name": "Slider",
+          "count": 38
+        },
+        {
+          "name": "Status Control",
+          "count": 38
+        },
+        {
+          "name": "generate ai",
+          "count": 37
+        },
+        {
+          "name": "Atajos | Beneficios (new)",
+          "count": 35
+        },
+        {
+          "name": "download",
+          "count": 34
         }
       ],
       "files": [
@@ -715,43 +715,11 @@
           "key": "XTTjedhXUghJApM4YxDILE",
           "name": "Web Pública",
           "rfdFrameCount": 2,
-          "dsInstances": 342,
-          "internalInstances": 1253,
-          "totalInstances": 1595,
-          "adoptionRate": 21,
+          "dsInstances": 1272,
+          "internalInstances": 275,
+          "totalInstances": 1547,
+          "adoptionRate": 82,
           "top20Internal": [
-            {
-              "name": "type_option",
-              "count": 576
-            },
-            {
-              "name": "section_footer",
-              "count": 96
-            },
-            {
-              "name": "reemplazar slot",
-              "count": 48
-            },
-            {
-              "name": "compare_arrow",
-              "count": 48
-            },
-            {
-              "name": "Átomo",
-              "count": 46
-            },
-            {
-              "name": "Tag",
-              "count": 40
-            },
-            {
-              "name": "src_option_redes",
-              "count": 36
-            },
-            {
-              "name": "Property 33",
-              "count": 34
-            },
             {
               "name": "download",
               "count": 34
@@ -767,10 +735,6 @@
             {
               "name": "NorthEast",
               "count": 32
-            },
-            {
-              "name": "title_+_options",
-              "count": 24
             },
             {
               "name": "Component 86",
@@ -793,67 +757,71 @@
               "count": 10
             },
             {
-              "name": "Átomo mobile",
-              "count": 10
-            },
-            {
               "name": "ProductTabs",
               "count": 8
+            },
+            {
+              "name": "Trend",
+              "count": 8
+            },
+            {
+              "name": "MedicalService",
+              "count": 8
+            },
+            {
+              "name": "Handshake",
+              "count": 7
+            },
+            {
+              "name": "Component 87",
+              "count": 6
+            },
+            {
+              "name": "Component 88",
+              "count": 6
+            },
+            {
+              "name": "call",
+              "count": 6
+            },
+            {
+              "name": "menu",
+              "count": 6
+            },
+            {
+              "name": "message",
+              "count": 6
+            },
+            {
+              "name": "Slider",
+              "count": 4
+            },
+            {
+              "name": "Status Control",
+              "count": 4
             }
           ]
         },
         {
           "key": "5IkYpIB7NzyRqmLyHEpSPa",
           "name": "Web Privada",
-          "rfdFrameCount": 6,
-          "dsInstances": 1558,
-          "internalInstances": 7050,
-          "totalInstances": 8608,
-          "adoptionRate": 18,
+          "rfdFrameCount": 5,
+          "dsInstances": 3471,
+          "internalInstances": 2137,
+          "totalInstances": 5608,
+          "adoptionRate": 62,
           "top20Internal": [
             {
-              "name": "type_option",
-              "count": 2688
-            },
-            {
               "name": "Menu Item",
-              "count": 640
-            },
-            {
-              "name": "section_footer",
-              "count": 448
-            },
-            {
-              "name": "src_option_redes",
-              "count": 280
-            },
-            {
-              "name": "Átomo",
-              "count": 230
-            },
-            {
-              "name": "reemplazar slot",
-              "count": 224
-            },
-            {
-              "name": "compare_arrow",
-              "count": 224
+              "count": 520
             },
             {
               "name": "Menu title",
-              "count": 160
-            },
-            {
-              "name": "facebook",
-              "count": 160
-            },
-            {
-              "name": "title_+_options",
-              "count": 112
+              "count": 130
             },
             {
               "name": "Commercial Chips",
-              "count": 105
+              "count": 103
             },
             {
               "name": "HealthAndSafe",
@@ -861,35 +829,67 @@
             },
             {
               "name": "Notification Item",
-              "count": 93
+              "count": 75
             },
             {
               "name": "eye_close",
-              "count": 93
+              "count": 75
             },
             {
-              "name": "menu",
-              "count": 68
-            },
-            {
-              "name": "Tag",
-              "count": 65
+              "name": "facebook",
+              "count": 70
             },
             {
               "name": "grid view",
               "count": 61
             },
             {
-              "name": "src_option_stores_download",
-              "count": 56
-            },
-            {
               "name": "time",
               "count": 56
             },
             {
+              "name": "menu",
+              "count": 48
+            },
+            {
+              "name": "Beneficio | card",
+              "count": 48
+            },
+            {
+              "name": "Location",
+              "count": 48
+            },
+            {
+              "name": "Slider Controls",
+              "count": 42
+            },
+            {
               "name": "Apps",
-              "count": 52
+              "count": 42
+            },
+            {
+              "name": "Beneficio | card mobile",
+              "count": 42
+            },
+            {
+              "name": "generate ai",
+              "count": 37
+            },
+            {
+              "name": "Atajos | Beneficios (new)",
+              "count": 35
+            },
+            {
+              "name": "Slider",
+              "count": 34
+            },
+            {
+              "name": "Status Control",
+              "count": 34
+            },
+            {
+              "name": "Indicator number",
+              "count": 30
             }
           ]
         }
@@ -898,53 +898,21 @@
     {
       "name": "Nueva Web Empresas",
       "category": "Nueva Web Empresas",
-      "adoptionRate": 13,
-      "totalRfdFrames": 44,
-      "totalDs": 25727,
-      "dsInstances": 25727,
-      "internalInstances": 179865,
-      "totalInternal": 179865,
-      "totalInstances": 205592,
+      "adoptionRate": 86,
+      "totalRfdFrames": 37,
+      "totalDs": 154195,
+      "dsInstances": 154195,
+      "internalInstances": 26003,
+      "totalInternal": 26003,
+      "totalInstances": 180198,
       "top20Internal": [
         {
-          "name": "type_option",
-          "count": 96329
-        },
-        {
-          "name": "section_footer",
-          "count": 16943
-        },
-        {
-          "name": "src_option_redes",
-          "count": 9112
-        },
-        {
-          "name": "reemplazar slot",
-          "count": 8640
-        },
-        {
-          "name": "compare_arrow",
-          "count": 8256
-        },
-        {
           "name": "facebook",
-          "count": 5595
-        },
-        {
-          "name": "title_+_options",
-          "count": 4319
+          "count": 4980
         },
         {
           "name": "celda S",
           "count": 2366
-        },
-        {
-          "name": "Átomo",
-          "count": 2109
-        },
-        {
-          "name": "src_option_stores_download",
-          "count": 1868
         },
         {
           "name": "eye_close",
@@ -953,18 +921,6 @@
         {
           "name": "Notification Item",
           "count": 1536
-        },
-        {
-          "name": "Indicator step",
-          "count": 1166
-        },
-        {
-          "name": "title_+_phones",
-          "count": 1080
-        },
-        {
-          "name": "title_+_social media",
-          "count": 1080
         },
         {
           "name": "menu",
@@ -985,148 +941,79 @@
         {
           "name": "Icon",
           "count": 697
+        },
+        {
+          "name": "instagram",
+          "count": 692
+        },
+        {
+          "name": "tiktok",
+          "count": 692
+        },
+        {
+          "name": "youtube",
+          "count": 692
+        },
+        {
+          "name": "account",
+          "count": 564
+        },
+        {
+          "name": "title_+_badges_download",
+          "count": 518
+        },
+        {
+          "name": "call",
+          "count": 514
+        },
+        {
+          "name": "Home_Header",
+          "count": 511
+        },
+        {
+          "name": "Action 1",
+          "count": 496
+        },
+        {
+          "name": "Action 2",
+          "count": 496
+        },
+        {
+          "name": "Menu_Mobile",
+          "count": 482
+        },
+        {
+          "name": "titulo-fila",
+          "count": 433
         }
       ],
       "files": [
         {
           "key": "gbvdlNhLYLRg7RCzNwI8yu",
           "name": "TRIN",
-          "rfdFrameCount": 7,
-          "dsInstances": 1446,
-          "internalInstances": 16460,
-          "totalInstances": 17906,
-          "adoptionRate": 8,
-          "top20Internal": [
-            {
-              "name": "type_option",
-              "count": 9216
-            },
-            {
-              "name": "section_footer",
-              "count": 1536
-            },
-            {
-              "name": "src_option_redes",
-              "count": 960
-            },
-            {
-              "name": "reemplazar slot",
-              "count": 768
-            },
-            {
-              "name": "compare_arrow",
-              "count": 768
-            },
-            {
-              "name": "facebook",
-              "count": 615
-            },
-            {
-              "name": "title_+_options",
-              "count": 384
-            },
-            {
-              "name": "Indicator Circle",
-              "count": 295
-            },
-            {
-              "name": "Line Tracking Vertical",
-              "count": 295
-            },
-            {
-              "name": "Indicator number",
-              "count": 200
-            },
-            {
-              "name": "generate ai",
-              "count": 200
-            },
-            {
-              "name": "src_option_stores_download",
-              "count": 192
-            },
-            {
-              "name": "title_+_phones",
-              "count": 96
-            },
-            {
-              "name": "title_+_social media",
-              "count": 96
-            },
-            {
-              "name": "day_format",
-              "count": 84
-            },
-            {
-              "name": "instagram",
-              "count": 77
-            },
-            {
-              "name": "tiktok",
-              "count": 77
-            },
-            {
-              "name": "youtube",
-              "count": 77
-            },
-            {
-              "name": "Step 1",
-              "count": 59
-            },
-            {
-              "name": "Step 2",
-              "count": 59
-            }
-          ]
+          "rfdFrameCount": 0,
+          "dsInstances": 0,
+          "internalInstances": 0,
+          "totalInstances": 0,
+          "adoptionRate": 0,
+          "top20Internal": []
         },
         {
           "key": "j4Uyzko4eQSDtEaWyVm2JM",
           "name": "Home Empresas",
           "rfdFrameCount": 37,
-          "dsInstances": 24281,
-          "internalInstances": 163405,
-          "totalInstances": 187686,
-          "adoptionRate": 13,
+          "dsInstances": 154195,
+          "internalInstances": 26003,
+          "totalInstances": 180198,
+          "adoptionRate": 86,
           "top20Internal": [
-            {
-              "name": "type_option",
-              "count": 87113
-            },
-            {
-              "name": "section_footer",
-              "count": 15407
-            },
-            {
-              "name": "src_option_redes",
-              "count": 8152
-            },
-            {
-              "name": "reemplazar slot",
-              "count": 7872
-            },
-            {
-              "name": "compare_arrow",
-              "count": 7488
-            },
             {
               "name": "facebook",
               "count": 4980
             },
             {
-              "name": "title_+_options",
-              "count": 3935
-            },
-            {
               "name": "celda S",
               "count": 2366
-            },
-            {
-              "name": "Átomo",
-              "count": 2109
-            },
-            {
-              "name": "src_option_stores_download",
-              "count": 1676
             },
             {
               "name": "eye_close",
@@ -1137,20 +1024,8 @@
               "count": 1536
             },
             {
-              "name": "Indicator step",
-              "count": 1166
-            },
-            {
               "name": "menu",
               "count": 1019
-            },
-            {
-              "name": "title_+_phones",
-              "count": 984
-            },
-            {
-              "name": "title_+_social media",
-              "count": 984
             },
             {
               "name": "Discount Badge",
@@ -1167,6 +1042,50 @@
             {
               "name": "Icon",
               "count": 697
+            },
+            {
+              "name": "instagram",
+              "count": 692
+            },
+            {
+              "name": "tiktok",
+              "count": 692
+            },
+            {
+              "name": "youtube",
+              "count": 692
+            },
+            {
+              "name": "account",
+              "count": 564
+            },
+            {
+              "name": "title_+_badges_download",
+              "count": 518
+            },
+            {
+              "name": "call",
+              "count": 514
+            },
+            {
+              "name": "Home_Header",
+              "count": 511
+            },
+            {
+              "name": "Action 1",
+              "count": 496
+            },
+            {
+              "name": "Action 2",
+              "count": 496
+            },
+            {
+              "name": "Menu_Mobile",
+              "count": 482
+            },
+            {
+              "name": "titulo-fila",
+              "count": 433
             }
           ]
         }
@@ -1175,22 +1094,14 @@
     {
       "name": "Portal Digital de Siniestros",
       "category": "Portal Digital de Siniestros",
-      "adoptionRate": 47,
+      "adoptionRate": 74,
       "totalRfdFrames": 5,
-      "totalDs": 6522,
-      "dsInstances": 6522,
-      "internalInstances": 7315,
-      "totalInternal": 7315,
-      "totalInstances": 13837,
+      "totalDs": 10174,
+      "dsInstances": 10174,
+      "internalInstances": 3543,
+      "totalInternal": 3543,
+      "totalInstances": 13717,
       "top20Internal": [
-        {
-          "name": "type_option",
-          "count": 1440
-        },
-        {
-          "name": "Tag",
-          "count": 569
-        },
         {
           "name": "Pegar Icon",
           "count": 484
@@ -1204,52 +1115,20 @@
           "count": 328
         },
         {
-          "name": "Átomo",
-          "count": 306
-        },
-        {
           "name": "DirectionRight",
           "count": 268
-        },
-        {
-          "name": "section_footer",
-          "count": 240
-        },
-        {
-          "name": "Label in",
-          "count": 228
         },
         {
           "name": "power",
           "count": 212
         },
         {
-          "name": "Left Label",
-          "count": 204
-        },
-        {
-          "name": "Dropdown Input",
-          "count": 190
-        },
-        {
           "name": "call",
           "count": 153
         },
         {
-          "name": "src_option_redes",
-          "count": 150
-        },
-        {
           "name": "Option",
           "count": 139
-        },
-        {
-          "name": "reemplazar slot",
-          "count": 120
-        },
-        {
-          "name": "compare_arrow",
-          "count": 120
         },
         {
           "name": "Component 9",
@@ -1262,6 +1141,46 @@
         {
           "name": "Logo Horizontal",
           "count": 73
+        },
+        {
+          "name": "Action",
+          "count": 61
+        },
+        {
+          "name": "facebook",
+          "count": 60
+        },
+        {
+          "name": "Card Dashboard",
+          "count": 56
+        },
+        {
+          "name": "mail",
+          "count": 47
+        },
+        {
+          "name": "Frame 1707479054",
+          "count": 46
+        },
+        {
+          "name": "Frame 1707479133",
+          "count": 44
+        },
+        {
+          "name": "download",
+          "count": 32
+        },
+        {
+          "name": "Indicator number",
+          "count": 32
+        },
+        {
+          "name": "Simple",
+          "count": 29
+        },
+        {
+          "name": "informacion de poliza",
+          "count": 27
         }
       ],
       "files": [
@@ -1269,19 +1188,11 @@
           "key": "y8YuwqsKA18BElJM0MFbFU",
           "name": "Portal Digital de Siniestros",
           "rfdFrameCount": 5,
-          "dsInstances": 6522,
-          "internalInstances": 7315,
-          "totalInstances": 13837,
-          "adoptionRate": 47,
+          "dsInstances": 10174,
+          "internalInstances": 3543,
+          "totalInstances": 13717,
+          "adoptionRate": 74,
           "top20Internal": [
-            {
-              "name": "type_option",
-              "count": 1440
-            },
-            {
-              "name": "Tag",
-              "count": 569
-            },
             {
               "name": "Pegar Icon",
               "count": 484
@@ -1295,52 +1206,20 @@
               "count": 328
             },
             {
-              "name": "Átomo",
-              "count": 306
-            },
-            {
               "name": "DirectionRight",
               "count": 268
-            },
-            {
-              "name": "section_footer",
-              "count": 240
-            },
-            {
-              "name": "Label in",
-              "count": 228
             },
             {
               "name": "power",
               "count": 212
             },
             {
-              "name": "Left Label",
-              "count": 204
-            },
-            {
-              "name": "Dropdown Input",
-              "count": 190
-            },
-            {
               "name": "call",
               "count": 153
             },
             {
-              "name": "src_option_redes",
-              "count": 150
-            },
-            {
               "name": "Option",
               "count": 139
-            },
-            {
-              "name": "reemplazar slot",
-              "count": 120
-            },
-            {
-              "name": "compare_arrow",
-              "count": 120
             },
             {
               "name": "Component 9",
@@ -1353,6 +1232,46 @@
             {
               "name": "Logo Horizontal",
               "count": 73
+            },
+            {
+              "name": "Action",
+              "count": 61
+            },
+            {
+              "name": "facebook",
+              "count": 60
+            },
+            {
+              "name": "Card Dashboard",
+              "count": 56
+            },
+            {
+              "name": "mail",
+              "count": 47
+            },
+            {
+              "name": "Frame 1707479054",
+              "count": 46
+            },
+            {
+              "name": "Frame 1707479133",
+              "count": 44
+            },
+            {
+              "name": "download",
+              "count": 32
+            },
+            {
+              "name": "Indicator number",
+              "count": 32
+            },
+            {
+              "name": "Simple",
+              "count": 29
+            },
+            {
+              "name": "informacion de poliza",
+              "count": 27
             }
           ]
         }
@@ -1361,29 +1280,21 @@
     {
       "name": "Modelo Día",
       "category": "Modelo Día",
-      "adoptionRate": 55,
+      "adoptionRate": 62,
       "totalRfdFrames": 22,
-      "totalDs": 11902,
-      "dsInstances": 11902,
-      "internalInstances": 9931,
-      "totalInternal": 9931,
-      "totalInstances": 21833,
+      "totalDs": 13591,
+      "dsInstances": 13591,
+      "internalInstances": 8241,
+      "totalInternal": 8241,
+      "totalInstances": 21832,
       "top20Internal": [
         {
           "name": "desk Table cell",
           "count": 2624
         },
         {
-          "name": "Left Label",
-          "count": 666
-        },
-        {
-          "name": "Tag",
-          "count": 646
-        },
-        {
           "name": "Control",
-          "count": 636
+          "count": 643
         },
         {
           "name": "DirectionDown",
@@ -1394,6 +1305,10 @@
           "count": 270
         },
         {
+          "name": "Botón Primario",
+          "count": 180
+        },
+        {
           "name": "Dropdown filter page",
           "count": 159
         },
@@ -1402,16 +1317,8 @@
           "count": 159
         },
         {
-          "name": "Indicator Circle",
-          "count": 135
-        },
-        {
           "name": "Line Tracking Vertical",
           "count": 135
-        },
-        {
-          "name": "Botón Primario",
-          "count": 126
         },
         {
           "name": "DirectionUp",
@@ -1430,6 +1337,10 @@
           "count": 110
         },
         {
+          "name": "Page",
+          "count": 109
+        },
+        {
           "name": "billetera",
           "count": 108
         },
@@ -1438,16 +1349,24 @@
           "count": 107
         },
         {
-          "name": "Indicator step",
-          "count": 106
-        },
-        {
           "name": "create account",
           "count": 106
         },
         {
           "name": "Icon",
           "count": 103
+        },
+        {
+          "name": "directionLeft",
+          "count": 96
+        },
+        {
+          "name": "AGENDA",
+          "count": 92
+        },
+        {
+          "name": "download",
+          "count": 92
         }
       ],
       "files": [
@@ -1455,19 +1374,11 @@
           "key": "sDx9W33S6h0bwrHdGMBe00",
           "name": "Modelo Día 2026",
           "rfdFrameCount": 15,
-          "dsInstances": 6237,
-          "internalInstances": 4390,
+          "dsInstances": 7697,
+          "internalInstances": 2930,
           "totalInstances": 10627,
-          "adoptionRate": 59,
+          "adoptionRate": 72,
           "top20Internal": [
-            {
-              "name": "Left Label",
-              "count": 653
-            },
-            {
-              "name": "Tag",
-              "count": 512
-            },
             {
               "name": "DirectionDown",
               "count": 244
@@ -1477,16 +1388,8 @@
               "count": 116
             },
             {
-              "name": "Indicator Circle",
-              "count": 110
-            },
-            {
               "name": "Line Tracking Vertical",
               "count": 110
-            },
-            {
-              "name": "Indicator step",
-              "count": 106
             },
             {
               "name": "Icon",
@@ -1539,6 +1442,22 @@
             {
               "name": "Bar Progress",
               "count": 70
+            },
+            {
+              "name": "Landing",
+              "count": 66
+            },
+            {
+              "name": "add",
+              "count": 55
+            },
+            {
+              "name": "Botón Primario",
+              "count": 54
+            },
+            {
+              "name": "DirectionRight",
+              "count": 47
             }
           ]
         },
@@ -1546,10 +1465,10 @@
           "key": "cwPxuq8YMgbHvlBb4dy9Yr",
           "name": "Portal de Suscripción & Emisión",
           "rfdFrameCount": 6,
-          "dsInstances": 4008,
-          "internalInstances": 4982,
-          "totalInstances": 8990,
-          "adoptionRate": 45,
+          "dsInstances": 4145,
+          "internalInstances": 4844,
+          "totalInstances": 8989,
+          "adoptionRate": 46,
           "top20Internal": [
             {
               "name": "desk Table cell",
@@ -1582,10 +1501,6 @@
             {
               "name": "list",
               "count": 86
-            },
-            {
-              "name": "Tag",
-              "count": 83
             },
             {
               "name": "download",
@@ -1624,12 +1539,16 @@
               "count": 42
             },
             {
-              "name": "Label in",
-              "count": 36
-            },
-            {
               "name": "Infotip",
               "count": 33
+            },
+            {
+              "name": "Póliza Salud",
+              "count": 33
+            },
+            {
+              "name": "DoubleArrowLeft",
+              "count": 17
             }
           ]
         },
@@ -1637,15 +1556,11 @@
           "key": "6QBFEXpu6r5ZDNuzYYtK97",
           "name": "Vida Ley & SCTR",
           "rfdFrameCount": 1,
-          "dsInstances": 1657,
-          "internalInstances": 559,
+          "dsInstances": 1749,
+          "internalInstances": 467,
           "totalInstances": 2216,
-          "adoptionRate": 75,
+          "adoptionRate": 79,
           "top20Internal": [
-            {
-              "name": "Tag",
-              "count": 51
-            },
             {
               "name": "barras",
               "count": 36
@@ -1671,10 +1586,6 @@
               "count": 31
             },
             {
-              "name": "Indicator Circle",
-              "count": 25
-            },
-            {
               "name": "Line Tracking Vertical",
               "count": 25
             },
@@ -1685,10 +1596,6 @@
             {
               "name": "eye_open",
               "count": 14
-            },
-            {
-              "name": "Left Label",
-              "count": 13
             },
             {
               "name": "Slider Controls",
@@ -1721,6 +1628,18 @@
             {
               "name": "Search Suggestion",
               "count": 8
+            },
+            {
+              "name": "Control",
+              "count": 7
+            },
+            {
+              "name": "Page",
+              "count": 7
+            },
+            {
+              "name": "Slider",
+              "count": 6
             }
           ]
         }
@@ -1729,85 +1648,45 @@
     {
       "name": "Ecommerce",
       "category": "Ecommerce",
-      "adoptionRate": 39,
+      "adoptionRate": 64,
       "totalRfdFrames": 16,
-      "totalDs": 6110,
-      "dsInstances": 6110,
-      "internalInstances": 9633,
-      "totalInternal": 9633,
-      "totalInstances": 15743,
+      "totalDs": 10028,
+      "dsInstances": 10028,
+      "internalInstances": 5579,
+      "totalInternal": 5579,
+      "totalInstances": 15607,
       "top20Internal": [
-        {
-          "name": "type_option",
-          "count": 1632
-        },
-        {
-          "name": "Tag",
-          "count": 635
-        },
         {
           "name": "Menu Item",
           "count": 380
         },
         {
           "name": "Discount Badge",
-          "count": 336
+          "count": 352
         },
         {
           "name": "celda",
           "count": 312
         },
         {
-          "name": "Property 33",
-          "count": 272
-        },
-        {
-          "name": "section_footer",
-          "count": 272
-        },
-        {
           "name": "Slider Controls",
           "count": 248
+        },
+        {
+          "name": "grid view",
+          "count": 224
         },
         {
           "name": "02",
           "count": 212
         },
         {
-          "name": "grid view",
-          "count": 210
-        },
-        {
-          "name": "Indicator step",
-          "count": 184
-        },
-        {
-          "name": "Left Label",
-          "count": 174
-        },
-        {
-          "name": "src_option_redes",
-          "count": 170
-        },
-        {
           "name": "add",
           "count": 159
         },
         {
-          "name": "Átomo",
-          "count": 153
-        },
-        {
           "name": "01",
           "count": 139
-        },
-        {
-          "name": "reemplazar slot",
-          "count": 136
-        },
-        {
-          "name": "compare_arrow",
-          "count": 136
         },
         {
           "name": "facebook",
@@ -1815,7 +1694,47 @@
         },
         {
           "name": "Toast",
-          "count": 106
+          "count": 118
+        },
+        {
+          "name": "Simple",
+          "count": 105
+        },
+        {
+          "name": "call",
+          "count": 104
+        },
+        {
+          "name": "Menu title",
+          "count": 95
+        },
+        {
+          "name": "Indicator Mobile",
+          "count": 86
+        },
+        {
+          "name": "whatsapp",
+          "count": 81
+        },
+        {
+          "name": "Title",
+          "count": 78
+        },
+        {
+          "name": "Infotip",
+          "count": 57
+        },
+        {
+          "name": "Component 120",
+          "count": 56
+        },
+        {
+          "name": "Smile",
+          "count": 55
+        },
+        {
+          "name": "directionLeft",
+          "count": 55
         }
       ],
       "files": [
@@ -1823,27 +1742,11 @@
           "key": "upcRdAiQNfadmghectZOhr",
           "name": "SOAT",
           "rfdFrameCount": 1,
-          "dsInstances": 1224,
-          "internalInstances": 963,
+          "dsInstances": 1508,
+          "internalInstances": 679,
           "totalInstances": 2187,
-          "adoptionRate": 56,
+          "adoptionRate": 69,
           "top20Internal": [
-            {
-              "name": "Tag",
-              "count": 83
-            },
-            {
-              "name": "Left Label",
-              "count": 54
-            },
-            {
-              "name": "Indicator step",
-              "count": 51
-            },
-            {
-              "name": "Property 33",
-              "count": 44
-            },
             {
               "name": "01",
               "count": 41
@@ -1863,10 +1766,6 @@
             {
               "name": "Infotip",
               "count": 29
-            },
-            {
-              "name": "Label in",
-              "count": 28
             },
             {
               "name": "number_deskop",
@@ -1905,8 +1804,28 @@
               "count": 16
             },
             {
-              "name": "Dropdown Input",
+              "name": "Póliza Salud",
               "count": 16
+            },
+            {
+              "name": "Bar Progress",
+              "count": 14
+            },
+            {
+              "name": "whatsapp",
+              "count": 13
+            },
+            {
+              "name": "call",
+              "count": 13
+            },
+            {
+              "name": "Toast",
+              "count": 12
+            },
+            {
+              "name": "Bottom Bar",
+              "count": 11
             }
           ]
         },
@@ -1914,22 +1833,14 @@
           "key": "FqXf8kbKEimlAkKleve0yT",
           "name": "Vehicular",
           "rfdFrameCount": 1,
-          "dsInstances": 1550,
-          "internalInstances": 1723,
+          "dsInstances": 2007,
+          "internalInstances": 1266,
           "totalInstances": 3273,
-          "adoptionRate": 47,
+          "adoptionRate": 61,
           "top20Internal": [
             {
               "name": "Discount Badge",
               "count": 149
-            },
-            {
-              "name": "Tag",
-              "count": 115
-            },
-            {
-              "name": "Property 33",
-              "count": 111
             },
             {
               "name": "02",
@@ -1940,24 +1851,12 @@
               "count": 102
             },
             {
-              "name": "Left Label",
-              "count": 72
-            },
-            {
               "name": "01",
               "count": 58
             },
             {
-              "name": "Átomo",
-              "count": 56
-            },
-            {
               "name": "add",
               "count": 50
-            },
-            {
-              "name": "Indicator step",
-              "count": 45
             },
             {
               "name": "call",
@@ -1974,10 +1873,6 @@
             {
               "name": "Toast",
               "count": 34
-            },
-            {
-              "name": "Átomo_avatar",
-              "count": 29
             },
             {
               "name": "Infotip",
@@ -1998,6 +1893,30 @@
             {
               "name": "Simple",
               "count": 22
+            },
+            {
+              "name": "eye_open",
+              "count": 21
+            },
+            {
+              "name": "torito",
+              "count": 20
+            },
+            {
+              "name": "tarjeta de crédito",
+              "count": 18
+            },
+            {
+              "name": "asset_promo",
+              "count": 17
+            },
+            {
+              "name": "Indicator Mobile",
+              "count": 17
+            },
+            {
+              "name": "Image Frame",
+              "count": 16
             }
           ]
         },
@@ -2005,19 +1924,11 @@
           "key": "b7nkcHmaq9SibdyBrCzVjt",
           "name": "Auto Efectivo",
           "rfdFrameCount": 1,
-          "dsInstances": 645,
-          "internalInstances": 649,
+          "dsInstances": 825,
+          "internalInstances": 469,
           "totalInstances": 1294,
-          "adoptionRate": 50,
+          "adoptionRate": 64,
           "top20Internal": [
-            {
-              "name": "Property 33",
-              "count": 95
-            },
-            {
-              "name": "Átomo",
-              "count": 65
-            },
             {
               "name": "Slider Controls Glass",
               "count": 30
@@ -2075,10 +1986,6 @@
               "count": 14
             },
             {
-              "name": "Tag",
-              "count": 14
-            },
-            {
               "name": "Complex",
               "count": 12
             },
@@ -2089,6 +1996,18 @@
             {
               "name": "Carousel",
               "count": 9
+            },
+            {
+              "name": "Card_Mobile_funciona 1",
+              "count": 9
+            },
+            {
+              "name": "Card_Mobile_funciona 3",
+              "count": 9
+            },
+            {
+              "name": "Card_Mobile_funciona 4",
+              "count": 9
             }
           ]
         },
@@ -2096,15 +2015,11 @@
           "key": "xShNTlhayoEAr0RpftFHUq",
           "name": "Vehicular Todo Riesgo",
           "rfdFrameCount": 2,
-          "dsInstances": 1830,
-          "internalInstances": 2241,
+          "dsInstances": 2329,
+          "internalInstances": 1742,
           "totalInstances": 4071,
-          "adoptionRate": 45,
+          "adoptionRate": 57,
           "top20Internal": [
-            {
-              "name": "Tag",
-              "count": 323
-            },
             {
               "name": "grid view",
               "count": 154
@@ -2138,20 +2053,8 @@
               "count": 60
             },
             {
-              "name": "Indicator step",
-              "count": 60
-            },
-            {
-              "name": "Left Label",
-              "count": 48
-            },
-            {
               "name": "01",
               "count": 40
-            },
-            {
-              "name": "Átomo",
-              "count": 32
             },
             {
               "name": "Smile",
@@ -2166,10 +2069,6 @@
               "count": 28
             },
             {
-              "name": "Átomo_avatar",
-              "count": 24
-            },
-            {
               "name": "Indicator Mobile",
               "count": 24
             },
@@ -2180,6 +2079,26 @@
             {
               "name": "Commercial Chips",
               "count": 22
+            },
+            {
+              "name": "mail",
+              "count": 22
+            },
+            {
+              "name": "call",
+              "count": 20
+            },
+            {
+              "name": "Step 01",
+              "count": 20
+            },
+            {
+              "name": "Step 02",
+              "count": 20
+            },
+            {
+              "name": "Step 03",
+              "count": 20
             }
           ]
         },
@@ -2187,15 +2106,11 @@
           "key": "a924JCQttuuzvRhcJNFiG3",
           "name": "Viajes",
           "rfdFrameCount": 11,
-          "dsInstances": 861,
-          "internalInstances": 4057,
-          "totalInstances": 4918,
-          "adoptionRate": 18,
+          "dsInstances": 3359,
+          "internalInstances": 1423,
+          "totalInstances": 4782,
+          "adoptionRate": 70,
           "top20Internal": [
-            {
-              "name": "type_option",
-              "count": 1632
-            },
             {
               "name": "Menu Item",
               "count": 380
@@ -2205,36 +2120,12 @@
               "count": 312
             },
             {
-              "name": "section_footer",
-              "count": 272
-            },
-            {
-              "name": "src_option_redes",
-              "count": 170
-            },
-            {
-              "name": "reemplazar slot",
-              "count": 136
-            },
-            {
-              "name": "compare_arrow",
-              "count": 136
-            },
-            {
               "name": "facebook",
               "count": 119
             },
             {
-              "name": "Tag",
-              "count": 100
-            },
-            {
               "name": "Menu title",
               "count": 95
-            },
-            {
-              "name": "title_+_options",
-              "count": 68
             },
             {
               "name": "Component 120",
@@ -2245,10 +2136,6 @@
               "count": 55
             },
             {
-              "name": "src_option_stores_download",
-              "count": 34
-            },
-            {
               "name": "call",
               "count": 33
             },
@@ -2257,20 +2144,52 @@
               "count": 30
             },
             {
-              "name": "Indicator step",
-              "count": 28
-            },
-            {
-              "name": "Property 33",
-              "count": 22
-            },
-            {
               "name": "Star",
               "count": 19
             },
             {
               "name": "Topbar",
               "count": 17
+            },
+            {
+              "name": "instagram",
+              "count": 17
+            },
+            {
+              "name": "tiktok",
+              "count": 17
+            },
+            {
+              "name": "youtube",
+              "count": 17
+            },
+            {
+              "name": "Discount Badge",
+              "count": 16
+            },
+            {
+              "name": "LocationPin",
+              "count": 15
+            },
+            {
+              "name": "grid view",
+              "count": 14
+            },
+            {
+              "name": "Indicator Mobile",
+              "count": 14
+            },
+            {
+              "name": "Step 01",
+              "count": 14
+            },
+            {
+              "name": "Bar Progress",
+              "count": 14
+            },
+            {
+              "name": "Step 02",
+              "count": 14
             }
           ]
         },
@@ -2289,184 +2208,184 @@
     {
       "name": "Web Corporativa",
       "category": "Web Corporativa",
-      "adoptionRate": 26,
-      "totalRfdFrames": 72,
-      "totalDs": 3604,
-      "dsInstances": 3604,
-      "internalInstances": 10108,
-      "totalInternal": 10108,
-      "totalInstances": 13712,
+      "adoptionRate": 79,
+      "totalRfdFrames": 66,
+      "totalDs": 10104,
+      "dsInstances": 10104,
+      "internalInstances": 2700,
+      "totalInternal": 2700,
+      "totalInstances": 12804,
       "top20Internal": [
         {
-          "name": "type_option",
-          "count": 3135
-        },
-        {
-          "name": "Tag",
-          "count": 1095
-        },
-        {
-          "name": "Property 33",
-          "count": 1058
-        },
-        {
-          "name": "section_footer",
-          "count": 495
-        },
-        {
-          "name": "Átomo",
-          "count": 373
-        },
-        {
-          "name": "src_option_redes",
-          "count": 300
-        },
-        {
           "name": "grid view",
-          "count": 270
+          "count": 280
         },
         {
-          "name": "reemplazar slot",
-          "count": 264
-        },
-        {
-          "name": "compare_arrow",
-          "count": 264
+          "name": "Icon",
+          "count": 215
         },
         {
           "name": "CardProductPromo",
           "count": 200
         },
         {
-          "name": "Icon",
-          "count": 195
-        },
-        {
           "name": "Slider Controls",
-          "count": 149
+          "count": 165
         },
         {
           "name": "Cotizar",
-          "count": 105
+          "count": 95
         },
         {
           "name": "Video",
-          "count": 105
+          "count": 95
         },
         {
           "name": "Close Icon",
-          "count": 96
+          "count": 88
         },
         {
           "name": "Scroll",
-          "count": 80
-        },
-        {
-          "name": "facebook",
-          "count": 77
+          "count": 73
         },
         {
           "name": "CardMenúMobile",
           "count": 73
         },
         {
-          "name": "WithoutShieldHeart",
-          "count": 72
+          "name": "Status Control",
+          "count": 73
         },
         {
           "name": "CardMenú",
           "count": 71
+        },
+        {
+          "name": "facebook",
+          "count": 70
+        },
+        {
+          "name": "BotónCategoría",
+          "count": 69
+        },
+        {
+          "name": "WithoutShieldHeart",
+          "count": 66
+        },
+        {
+          "name": "ShieldHeart",
+          "count": 63
+        },
+        {
+          "name": "Slider",
+          "count": 62
+        },
+        {
+          "name": "Car",
+          "count": 47
+        },
+        {
+          "name": "_Link Icon",
+          "count": 45
+        },
+        {
+          "name": "Trend",
+          "count": 45
+        },
+        {
+          "name": "MedicalService",
+          "count": 45
         }
       ],
       "files": [
         {
           "key": "XaZynqqaHNdtOL7E2TtbLq",
           "name": "Productos Vida",
-          "rfdFrameCount": 55,
-          "dsInstances": 2104,
-          "internalInstances": 4149,
-          "totalInstances": 6253,
-          "adoptionRate": 34,
+          "rfdFrameCount": 49,
+          "dsInstances": 4525,
+          "internalInstances": 1006,
+          "totalInstances": 5531,
+          "adoptionRate": 82,
           "top20Internal": [
             {
-              "name": "type_option",
-              "count": 950
-            },
-            {
-              "name": "Property 33",
-              "count": 810
-            },
-            {
-              "name": "Tag",
-              "count": 678
-            },
-            {
               "name": "grid view",
-              "count": 216
-            },
-            {
-              "name": "section_footer",
-              "count": 150
-            },
-            {
-              "name": "src_option_redes",
-              "count": 100
+              "count": 192
             },
             {
               "name": "Cotizar",
-              "count": 86
+              "count": 76
             },
             {
               "name": "Video",
-              "count": 86
-            },
-            {
-              "name": "reemplazar slot",
-              "count": 80
-            },
-            {
-              "name": "compare_arrow",
-              "count": 80
-            },
-            {
-              "name": "Átomo",
-              "count": 79
+              "count": 76
             },
             {
               "name": "facebook",
-              "count": 70
+              "count": 63
             },
             {
               "name": "Close Icon",
-              "count": 68
+              "count": 60
             },
             {
               "name": "Scroll",
-              "count": 58
-            },
-            {
-              "name": "_Link Icon",
               "count": 51
             },
             {
-              "name": "ShieldHeart",
-              "count": 48
-            },
-            {
-              "name": "WithoutShieldHeart",
-              "count": 48
-            },
-            {
-              "name": "_Button Icon",
+              "name": "_Link Icon",
               "count": 45
             },
             {
-              "name": "submenu",
+              "name": "ShieldHeart",
+              "count": 42
+            },
+            {
+              "name": "WithoutShieldHeart",
+              "count": 42
+            },
+            {
+              "name": "_Button Icon",
               "count": 40
             },
             {
+              "name": "submenu",
+              "count": 36
+            },
+            {
               "name": "Link Stamp",
-              "count": 34
+              "count": 30
+            },
+            {
+              "name": "Discount Badge",
+              "count": 23
+            },
+            {
+              "name": "link",
+              "count": 18
+            },
+            {
+              "name": "Icon",
+              "count": 16
+            },
+            {
+              "name": "support",
+              "count": 16
+            },
+            {
+              "name": "download",
+              "count": 16
+            },
+            {
+              "name": "Slider Controls",
+              "count": 16
+            },
+            {
+              "name": "Link Details",
+              "count": 15
+            },
+            {
+              "name": "vida inversión",
+              "count": 15
             }
           ]
         },
@@ -2474,27 +2393,11 @@
           "key": "m8OsFy9gG7vcZTzkTIKDOR",
           "name": "Menú / Home",
           "rfdFrameCount": 3,
-          "dsInstances": 912,
-          "internalInstances": 4879,
-          "totalInstances": 5791,
-          "adoptionRate": 16,
+          "dsInstances": 4204,
+          "internalInstances": 1427,
+          "totalInstances": 5631,
+          "adoptionRate": 75,
           "top20Internal": [
-            {
-              "name": "type_option",
-              "count": 1900
-            },
-            {
-              "name": "section_footer",
-              "count": 300
-            },
-            {
-              "name": "Tag",
-              "count": 293
-            },
-            {
-              "name": "Átomo",
-              "count": 264
-            },
             {
               "name": "CardProductPromo",
               "count": 200
@@ -2502,18 +2405,6 @@
             {
               "name": "Icon",
               "count": 195
-            },
-            {
-              "name": "src_option_redes",
-              "count": 190
-            },
-            {
-              "name": "reemplazar slot",
-              "count": 160
-            },
-            {
-              "name": "compare_arrow",
-              "count": 160
             },
             {
               "name": "Slider Controls",
@@ -2540,15 +2431,7 @@
               "count": 62
             },
             {
-              "name": "title_+_options",
-              "count": 60
-            },
-            {
               "name": "Car",
-              "count": 47
-            },
-            {
-              "name": "tag",
               "count": 47
             },
             {
@@ -2558,6 +2441,42 @@
             {
               "name": "MedicalService",
               "count": 45
+            },
+            {
+              "name": "call",
+              "count": 40
+            },
+            {
+              "name": "grid view",
+              "count": 34
+            },
+            {
+              "name": "ProductTabs",
+              "count": 33
+            },
+            {
+              "name": "DirectionDown",
+              "count": 30
+            },
+            {
+              "name": "Component 86",
+              "count": 22
+            },
+            {
+              "name": "Component 87",
+              "count": 21
+            },
+            {
+              "name": "Component 88",
+              "count": 21
+            },
+            {
+              "name": "Homework",
+              "count": 21
+            },
+            {
+              "name": "title_+_badges_download",
+              "count": 20
             }
           ]
         },
@@ -2565,46 +2484,18 @@
           "key": "qnAHAbm5nt9jLXAWUjf8ZY",
           "name": "Productos Líneas Personales",
           "rfdFrameCount": 14,
-          "dsInstances": 588,
-          "internalInstances": 1080,
-          "totalInstances": 1668,
-          "adoptionRate": 35,
+          "dsInstances": 1375,
+          "internalInstances": 267,
+          "totalInstances": 1642,
+          "adoptionRate": 84,
           "top20Internal": [
-            {
-              "name": "type_option",
-              "count": 285
-            },
-            {
-              "name": "Property 33",
-              "count": 248
-            },
-            {
-              "name": "Tag",
-              "count": 124
-            },
             {
               "name": "grid view",
               "count": 54
             },
             {
-              "name": "section_footer",
-              "count": 45
-            },
-            {
-              "name": "Átomo",
-              "count": 30
-            },
-            {
               "name": "Close Icon",
               "count": 28
-            },
-            {
-              "name": "reemplazar slot",
-              "count": 24
-            },
-            {
-              "name": "compare_arrow",
-              "count": 24
             },
             {
               "name": "WithoutShieldHeart",
@@ -2631,14 +2522,6 @@
               "count": 14
             },
             {
-              "name": "src_option_redes",
-              "count": 10
-            },
-            {
-              "name": "title_+_options",
-              "count": 9
-            },
-            {
               "name": "Slider Controls",
               "count": 8
             },
@@ -2649,6 +2532,42 @@
             {
               "name": "hogar",
               "count": 6
+            },
+            {
+              "name": "Status Control",
+              "count": 4
+            },
+            {
+              "name": "support",
+              "count": 4
+            },
+            {
+              "name": "download",
+              "count": 4
+            },
+            {
+              "name": "Icon",
+              "count": 4
+            },
+            {
+              "name": "_Button Icon",
+              "count": 4
+            },
+            {
+              "name": "submenu",
+              "count": 4
+            },
+            {
+              "name": "title_+_badges_download",
+              "count": 3
+            },
+            {
+              "name": "menu",
+              "count": 3
+            },
+            {
+              "name": "link",
+              "count": 2
             }
           ]
         }
@@ -2657,53 +2576,21 @@
     {
       "name": "Embebidos",
       "category": "Embebidos",
-      "adoptionRate": 19,
+      "adoptionRate": 81,
       "totalRfdFrames": 6,
-      "totalDs": 343,
-      "dsInstances": 343,
-      "internalInstances": 1464,
-      "totalInternal": 1464,
-      "totalInstances": 1807,
+      "totalDs": 1422,
+      "dsInstances": 1422,
+      "internalInstances": 337,
+      "totalInternal": 337,
+      "totalInstances": 1759,
       "top20Internal": [
-        {
-          "name": "type_option",
-          "count": 570
-        },
-        {
-          "name": "Property 33",
-          "count": 140
-        },
-        {
-          "name": "section_footer",
-          "count": 90
-        },
-        {
-          "name": "Tag",
-          "count": 81
-        },
-        {
-          "name": "src_option_redes",
-          "count": 60
-        },
         {
           "name": "grid view",
           "count": 52
         },
         {
-          "name": "reemplazar slot",
-          "count": 48
-        },
-        {
-          "name": "compare_arrow",
-          "count": 48
-        },
-        {
           "name": "facebook",
           "count": 42
-        },
-        {
-          "name": "Átomo",
-          "count": 36
         },
         {
           "name": "icon",
@@ -2722,10 +2609,6 @@
           "count": 18
         },
         {
-          "name": "title_+_options",
-          "count": 18
-        },
-        {
           "name": "operador",
           "count": 16
         },
@@ -2734,16 +2617,52 @@
           "count": 14
         },
         {
-          "name": "Átomo mobile",
-          "count": 12
-        },
-        {
           "name": "SeccionCanales",
           "count": 12
         },
         {
           "name": "PersonalInjuy",
           "count": 12
+        },
+        {
+          "name": "Information",
+          "count": 11
+        },
+        {
+          "name": "LogosCollab",
+          "count": 10
+        },
+        {
+          "name": "CoberturasIconos",
+          "count": 10
+        },
+        {
+          "name": "Scroll",
+          "count": 8
+        },
+        {
+          "name": "Complex",
+          "count": 6
+        },
+        {
+          "name": "menu",
+          "count": 6
+        },
+        {
+          "name": "title_+_badges_download",
+          "count": 6
+        },
+        {
+          "name": "instagram",
+          "count": 6
+        },
+        {
+          "name": "tiktok",
+          "count": 6
+        },
+        {
+          "name": "youtube",
+          "count": 6
         }
       ],
       "files": [
@@ -2751,50 +2670,18 @@
           "key": "X8aq9jmjEuGuWDblebqRFz",
           "name": "Landing Alianzas",
           "rfdFrameCount": 6,
-          "dsInstances": 343,
-          "internalInstances": 1464,
-          "totalInstances": 1807,
-          "adoptionRate": 19,
+          "dsInstances": 1422,
+          "internalInstances": 337,
+          "totalInstances": 1759,
+          "adoptionRate": 81,
           "top20Internal": [
-            {
-              "name": "type_option",
-              "count": 570
-            },
-            {
-              "name": "Property 33",
-              "count": 140
-            },
-            {
-              "name": "section_footer",
-              "count": 90
-            },
-            {
-              "name": "Tag",
-              "count": 81
-            },
-            {
-              "name": "src_option_redes",
-              "count": 60
-            },
             {
               "name": "grid view",
               "count": 52
             },
             {
-              "name": "reemplazar slot",
-              "count": 48
-            },
-            {
-              "name": "compare_arrow",
-              "count": 48
-            },
-            {
               "name": "facebook",
               "count": 42
-            },
-            {
-              "name": "Átomo",
-              "count": 36
             },
             {
               "name": "icon",
@@ -2813,10 +2700,6 @@
               "count": 18
             },
             {
-              "name": "title_+_options",
-              "count": 18
-            },
-            {
               "name": "operador",
               "count": 16
             },
@@ -2825,16 +2708,52 @@
               "count": 14
             },
             {
-              "name": "Átomo mobile",
-              "count": 12
-            },
-            {
               "name": "SeccionCanales",
               "count": 12
             },
             {
               "name": "PersonalInjuy",
               "count": 12
+            },
+            {
+              "name": "Information",
+              "count": 11
+            },
+            {
+              "name": "LogosCollab",
+              "count": 10
+            },
+            {
+              "name": "CoberturasIconos",
+              "count": 10
+            },
+            {
+              "name": "Scroll",
+              "count": 8
+            },
+            {
+              "name": "Complex",
+              "count": 6
+            },
+            {
+              "name": "menu",
+              "count": 6
+            },
+            {
+              "name": "title_+_badges_download",
+              "count": 6
+            },
+            {
+              "name": "instagram",
+              "count": 6
+            },
+            {
+              "name": "tiktok",
+              "count": 6
+            },
+            {
+              "name": "youtube",
+              "count": 6
             }
           ]
         }
@@ -2847,20 +2766,20 @@
       "category": "Modelo Día",
       "quarter": "Q2 2026",
       "date": "2026-06-17",
-      "adoptionRate": 55,
+      "adoptionRate": 62,
       "totalRfdFrames": 22,
-      "totalDs": 11902,
-      "totalInstances": 21833
+      "totalDs": 13591,
+      "totalInstances": 21832
     },
     {
       "team": "Ecommerce",
       "category": "Ecommerce",
       "quarter": "Q2 2026",
       "date": "2026-06-17",
-      "adoptionRate": 39,
+      "adoptionRate": 64,
       "totalRfdFrames": 16,
-      "totalDs": 6110,
-      "totalInstances": 15743
+      "totalDs": 10028,
+      "totalInstances": 15607
     },
     {
       "team": "Auto Efectivo",
@@ -2877,9 +2796,9 @@
       "category": "MEP",
       "quarter": "Q2 2026",
       "date": "2026-06-17",
-      "adoptionRate": 31,
+      "adoptionRate": 34,
       "totalRfdFrames": 17,
-      "totalDs": 2437,
+      "totalDs": 2680,
       "totalInstances": 7982
     },
     {
@@ -2887,60 +2806,60 @@
       "category": "Somos Corredores",
       "quarter": "Q2 2026",
       "date": "2026-06-17",
-      "adoptionRate": 25,
+      "adoptionRate": 79,
       "totalRfdFrames": 12,
-      "totalDs": 1215,
-      "totalInstances": 4772
+      "totalDs": 3647,
+      "totalInstances": 4614
     },
     {
       "team": "Protege 365",
       "category": "Protege 365",
       "quarter": "Q2 2026",
       "date": "2026-06-17",
-      "adoptionRate": 19,
-      "totalRfdFrames": 8,
-      "totalDs": 1900,
-      "totalInstances": 10203
+      "adoptionRate": 66,
+      "totalRfdFrames": 7,
+      "totalDs": 4743,
+      "totalInstances": 7155
     },
     {
       "team": "Nueva Web Empresas",
       "category": "Nueva Web Empresas",
       "quarter": "Q2 2026",
       "date": "2026-06-17",
-      "adoptionRate": 13,
-      "totalRfdFrames": 44,
-      "totalDs": 25727,
-      "totalInstances": 205592
+      "adoptionRate": 86,
+      "totalRfdFrames": 37,
+      "totalDs": 154195,
+      "totalInstances": 180198
     },
     {
       "team": "Portal Digital de Siniestros",
       "category": "Portal Digital de Siniestros",
       "quarter": "Q2 2026",
       "date": "2026-06-17",
-      "adoptionRate": 47,
+      "adoptionRate": 74,
       "totalRfdFrames": 5,
-      "totalDs": 6522,
-      "totalInstances": 13837
+      "totalDs": 10174,
+      "totalInstances": 13717
     },
     {
       "team": "Web Corporativa",
       "category": "Web Corporativa",
       "quarter": "Q2 2026",
       "date": "2026-06-17",
-      "adoptionRate": 26,
-      "totalRfdFrames": 72,
-      "totalDs": 3604,
-      "totalInstances": 13712
+      "adoptionRate": 79,
+      "totalRfdFrames": 66,
+      "totalDs": 10104,
+      "totalInstances": 12804
     },
     {
       "team": "Embebidos",
       "category": "Embebidos",
       "quarter": "Q2 2026",
       "date": "2026-06-17",
-      "adoptionRate": 19,
+      "adoptionRate": 81,
       "totalRfdFrames": 6,
-      "totalDs": 343,
-      "totalInstances": 1807
+      "totalDs": 1422,
+      "totalInstances": 1759
     }
   ]
 }
