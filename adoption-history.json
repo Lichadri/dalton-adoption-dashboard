@@ -54,10 +54,10 @@
     "category": "Protege 365",
     "quarter": "Q2 2026",
     "date": "2026-06-17",
-    "adoptionRate": 66,
-    "totalRfdFrames": 7,
-    "totalDs": 4743,
-    "totalInstances": 7155
+    "adoptionRate": 71,
+    "totalRfdFrames": 8,
+    "totalDs": 7035,
+    "totalInstances": 9931
   },
   {
     "team": "Nueva Web Empresas",
@@ -65,9 +65,9 @@
     "quarter": "Q2 2026",
     "date": "2026-06-17",
     "adoptionRate": 86,
-    "totalRfdFrames": 37,
-    "totalDs": 154195,
-    "totalInstances": 180198
+    "totalRfdFrames": 44,
+    "totalDs": 169195,
+    "totalInstances": 197336
   },
   {
     "team": "Portal Digital de Siniestros",
@@ -85,9 +85,9 @@
     "quarter": "Q2 2026",
     "date": "2026-06-17",
     "adoptionRate": 79,
-    "totalRfdFrames": 66,
-    "totalDs": 10104,
-    "totalInstances": 12804
+    "totalRfdFrames": 72,
+    "totalDs": 10619,
+    "totalInstances": 13445
   },
   {
     "team": "Embebidos",

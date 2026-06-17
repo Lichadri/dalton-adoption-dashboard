@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-17T17:47:58.565Z",
+  "generatedAt": "2026-06-17T23:05:42.372Z",
   "quarter": "Q2 2026",
   "teams": [
     {
@@ -621,25 +621,29 @@
     {
       "name": "Protege 365",
       "category": "Protege 365",
-      "adoptionRate": 66,
-      "totalRfdFrames": 7,
-      "totalDs": 4743,
-      "dsInstances": 4743,
-      "internalInstances": 2412,
-      "totalInternal": 2412,
-      "totalInstances": 7155,
+      "adoptionRate": 71,
+      "totalRfdFrames": 8,
+      "totalDs": 7035,
+      "dsInstances": 7035,
+      "internalInstances": 2896,
+      "totalInternal": 2896,
+      "totalInstances": 9931,
       "top20Internal": [
         {
           "name": "Menu Item",
-          "count": 520
+          "count": 640
         },
         {
           "name": "Menu title",
-          "count": 130
+          "count": 160
+        },
+        {
+          "name": "facebook",
+          "count": 160
         },
         {
           "name": "Commercial Chips",
-          "count": 103
+          "count": 105
         },
         {
           "name": "HealthAndSafe",
@@ -647,19 +651,19 @@
         },
         {
           "name": "Notification Item",
-          "count": 75
+          "count": 93
         },
         {
           "name": "eye_close",
-          "count": 75
+          "count": 93
         },
         {
           "name": "Slider Controls",
-          "count": 74
+          "count": 78
         },
         {
-          "name": "facebook",
-          "count": 70
+          "name": "menu",
+          "count": 74
         },
         {
           "name": "grid view",
@@ -674,40 +678,36 @@
           "count": 56
         },
         {
-          "name": "menu",
-          "count": 54
+          "name": "Apps",
+          "count": 52
         },
         {
           "name": "Beneficio | card",
           "count": 48
         },
         {
-          "name": "Apps",
-          "count": 42
+          "name": "Slider",
+          "count": 44
+        },
+        {
+          "name": "Status Control",
+          "count": 44
         },
         {
           "name": "Beneficio | card mobile",
           "count": 42
         },
         {
-          "name": "Slider",
-          "count": 38
-        },
-        {
-          "name": "Status Control",
-          "count": 38
+          "name": "Banner | errores",
+          "count": 41
         },
         {
           "name": "generate ai",
           "count": 37
         },
         {
-          "name": "Atajos | Beneficios (new)",
+          "name": "account",
           "count": 35
-        },
-        {
-          "name": "download",
-          "count": 34
         }
       ],
       "files": [
@@ -805,23 +805,27 @@
         {
           "key": "5IkYpIB7NzyRqmLyHEpSPa",
           "name": "Web Privada",
-          "rfdFrameCount": 5,
-          "dsInstances": 3471,
-          "internalInstances": 2137,
-          "totalInstances": 5608,
-          "adoptionRate": 62,
+          "rfdFrameCount": 6,
+          "dsInstances": 5763,
+          "internalInstances": 2621,
+          "totalInstances": 8384,
+          "adoptionRate": 69,
           "top20Internal": [
             {
               "name": "Menu Item",
-              "count": 520
+              "count": 640
             },
             {
               "name": "Menu title",
-              "count": 130
+              "count": 160
+            },
+            {
+              "name": "facebook",
+              "count": 160
             },
             {
               "name": "Commercial Chips",
-              "count": 103
+              "count": 105
             },
             {
               "name": "HealthAndSafe",
@@ -829,15 +833,15 @@
             },
             {
               "name": "Notification Item",
-              "count": 75
+              "count": 93
             },
             {
               "name": "eye_close",
-              "count": 75
+              "count": 93
             },
             {
-              "name": "facebook",
-              "count": 70
+              "name": "menu",
+              "count": 68
             },
             {
               "name": "grid view",
@@ -848,8 +852,8 @@
               "count": 56
             },
             {
-              "name": "menu",
-              "count": 48
+              "name": "Apps",
+              "count": 52
             },
             {
               "name": "Beneficio | card",
@@ -861,35 +865,31 @@
             },
             {
               "name": "Slider Controls",
-              "count": 42
-            },
-            {
-              "name": "Apps",
-              "count": 42
+              "count": 46
             },
             {
               "name": "Beneficio | card mobile",
               "count": 42
             },
             {
+              "name": "Banner | errores",
+              "count": 41
+            },
+            {
+              "name": "Slider",
+              "count": 40
+            },
+            {
+              "name": "Status Control",
+              "count": 40
+            },
+            {
               "name": "generate ai",
               "count": 37
             },
             {
-              "name": "Atajos | Beneficios (new)",
+              "name": "account",
               "count": 35
-            },
-            {
-              "name": "Slider",
-              "count": 34
-            },
-            {
-              "name": "Status Control",
-              "count": 34
-            },
-            {
-              "name": "Indicator number",
-              "count": 30
             }
           ]
         }
@@ -899,16 +899,16 @@
       "name": "Nueva Web Empresas",
       "category": "Nueva Web Empresas",
       "adoptionRate": 86,
-      "totalRfdFrames": 37,
-      "totalDs": 154195,
-      "dsInstances": 154195,
-      "internalInstances": 26003,
-      "totalInternal": 26003,
-      "totalInstances": 180198,
+      "totalRfdFrames": 44,
+      "totalDs": 169195,
+      "dsInstances": 169195,
+      "internalInstances": 28141,
+      "totalInternal": 28141,
+      "totalInstances": 197336,
       "top20Internal": [
         {
           "name": "facebook",
-          "count": 4980
+          "count": 5595
         },
         {
           "name": "celda S",
@@ -939,20 +939,20 @@
           "count": 780
         },
         {
-          "name": "Icon",
-          "count": 697
-        },
-        {
           "name": "instagram",
-          "count": 692
+          "count": 769
         },
         {
           "name": "tiktok",
-          "count": 692
+          "count": 769
         },
         {
           "name": "youtube",
-          "count": 692
+          "count": 769
+        },
+        {
+          "name": "Icon",
+          "count": 697
         },
         {
           "name": "account",
@@ -960,11 +960,11 @@
         },
         {
           "name": "title_+_badges_download",
-          "count": 518
+          "count": 550
         },
         {
           "name": "call",
-          "count": 514
+          "count": 523
         },
         {
           "name": "Home_Header",
@@ -991,12 +991,93 @@
         {
           "key": "gbvdlNhLYLRg7RCzNwI8yu",
           "name": "TRIN",
-          "rfdFrameCount": 0,
-          "dsInstances": 0,
-          "internalInstances": 0,
-          "totalInstances": 0,
-          "adoptionRate": 0,
-          "top20Internal": []
+          "rfdFrameCount": 7,
+          "dsInstances": 15000,
+          "internalInstances": 2138,
+          "totalInstances": 17138,
+          "adoptionRate": 88,
+          "top20Internal": [
+            {
+              "name": "facebook",
+              "count": 615
+            },
+            {
+              "name": "Line Tracking Vertical",
+              "count": 295
+            },
+            {
+              "name": "Indicator number",
+              "count": 200
+            },
+            {
+              "name": "generate ai",
+              "count": 200
+            },
+            {
+              "name": "day_format",
+              "count": 84
+            },
+            {
+              "name": "instagram",
+              "count": 77
+            },
+            {
+              "name": "tiktok",
+              "count": 77
+            },
+            {
+              "name": "youtube",
+              "count": 77
+            },
+            {
+              "name": "Step 1",
+              "count": 59
+            },
+            {
+              "name": "Step 2",
+              "count": 59
+            },
+            {
+              "name": "Step 3",
+              "count": 59
+            },
+            {
+              "name": "Step 4",
+              "count": 59
+            },
+            {
+              "name": "Step 5",
+              "count": 59
+            },
+            {
+              "name": "Userflow",
+              "count": 39
+            },
+            {
+              "name": "title_+_badges_download",
+              "count": 32
+            },
+            {
+              "name": "Indicator Mobile",
+              "count": 26
+            },
+            {
+              "name": "Option",
+              "count": 20
+            },
+            {
+              "name": "Respuesta",
+              "count": 14
+            },
+            {
+              "name": "call",
+              "count": 9
+            },
+            {
+              "name": "Location",
+              "count": 9
+            }
+          ]
         },
         {
           "key": "j4Uyzko4eQSDtEaWyVm2JM",
@@ -2209,20 +2290,20 @@
       "name": "Web Corporativa",
       "category": "Web Corporativa",
       "adoptionRate": 79,
-      "totalRfdFrames": 66,
-      "totalDs": 10104,
-      "dsInstances": 10104,
-      "internalInstances": 2700,
-      "totalInternal": 2700,
-      "totalInstances": 12804,
+      "totalRfdFrames": 72,
+      "totalDs": 10619,
+      "dsInstances": 10619,
+      "internalInstances": 2826,
+      "totalInternal": 2826,
+      "totalInstances": 13445,
       "top20Internal": [
         {
           "name": "grid view",
-          "count": 280
+          "count": 304
         },
         {
           "name": "Icon",
-          "count": 215
+          "count": 217
         },
         {
           "name": "CardProductPromo",
@@ -2230,23 +2311,27 @@
         },
         {
           "name": "Slider Controls",
-          "count": 165
+          "count": 167
         },
         {
           "name": "Cotizar",
-          "count": 95
+          "count": 105
         },
         {
           "name": "Video",
-          "count": 95
+          "count": 105
         },
         {
           "name": "Close Icon",
-          "count": 88
+          "count": 96
         },
         {
           "name": "Scroll",
-          "count": 73
+          "count": 80
+        },
+        {
+          "name": "facebook",
+          "count": 77
         },
         {
           "name": "CardMenúMobile",
@@ -2257,43 +2342,39 @@
           "count": 73
         },
         {
+          "name": "WithoutShieldHeart",
+          "count": 72
+        },
+        {
           "name": "CardMenú",
           "count": 71
         },
         {
-          "name": "facebook",
-          "count": 70
+          "name": "ShieldHeart",
+          "count": 69
         },
         {
           "name": "BotónCategoría",
           "count": 69
         },
         {
-          "name": "WithoutShieldHeart",
-          "count": 66
-        },
-        {
-          "name": "ShieldHeart",
-          "count": 63
-        },
-        {
           "name": "Slider",
           "count": 62
+        },
+        {
+          "name": "_Link Icon",
+          "count": 51
+        },
+        {
+          "name": "_Button Icon",
+          "count": 49
         },
         {
           "name": "Car",
           "count": 47
         },
         {
-          "name": "_Link Icon",
-          "count": 45
-        },
-        {
           "name": "Trend",
-          "count": 45
-        },
-        {
-          "name": "MedicalService",
           "count": 45
         }
       ],
@@ -2301,91 +2382,91 @@
         {
           "key": "XaZynqqaHNdtOL7E2TtbLq",
           "name": "Productos Vida",
-          "rfdFrameCount": 49,
-          "dsInstances": 4525,
-          "internalInstances": 1006,
-          "totalInstances": 5531,
+          "rfdFrameCount": 55,
+          "dsInstances": 5041,
+          "internalInstances": 1132,
+          "totalInstances": 6173,
           "adoptionRate": 82,
           "top20Internal": [
             {
               "name": "grid view",
-              "count": 192
+              "count": 216
             },
             {
               "name": "Cotizar",
-              "count": 76
+              "count": 86
             },
             {
               "name": "Video",
-              "count": 76
+              "count": 86
             },
             {
               "name": "facebook",
-              "count": 63
+              "count": 70
             },
             {
               "name": "Close Icon",
-              "count": 60
+              "count": 68
             },
             {
               "name": "Scroll",
-              "count": 51
+              "count": 58
             },
             {
               "name": "_Link Icon",
-              "count": 45
+              "count": 51
             },
             {
               "name": "ShieldHeart",
-              "count": 42
+              "count": 48
             },
             {
               "name": "WithoutShieldHeart",
-              "count": 42
+              "count": 48
             },
             {
               "name": "_Button Icon",
-              "count": 40
+              "count": 45
             },
             {
               "name": "submenu",
-              "count": 36
+              "count": 40
             },
             {
               "name": "Link Stamp",
-              "count": 30
+              "count": 34
             },
             {
               "name": "Discount Badge",
-              "count": 23
+              "count": 26
             },
             {
               "name": "link",
-              "count": 18
+              "count": 20
             },
             {
               "name": "Icon",
-              "count": 16
+              "count": 18
             },
             {
               "name": "support",
-              "count": 16
+              "count": 18
             },
             {
               "name": "download",
-              "count": 16
+              "count": 18
             },
             {
               "name": "Slider Controls",
-              "count": 16
+              "count": 18
             },
             {
               "name": "Link Details",
-              "count": 15
+              "count": 17
             },
             {
               "name": "vida inversión",
-              "count": 15
+              "count": 17
             }
           ]
         },
@@ -2484,9 +2565,9 @@
           "key": "qnAHAbm5nt9jLXAWUjf8ZY",
           "name": "Productos Líneas Personales",
           "rfdFrameCount": 14,
-          "dsInstances": 1375,
+          "dsInstances": 1374,
           "internalInstances": 267,
-          "totalInstances": 1642,
+          "totalInstances": 1641,
           "adoptionRate": 84,
           "top20Internal": [
             {
@@ -2816,10 +2897,10 @@
       "category": "Protege 365",
       "quarter": "Q2 2026",
       "date": "2026-06-17",
-      "adoptionRate": 66,
-      "totalRfdFrames": 7,
-      "totalDs": 4743,
-      "totalInstances": 7155
+      "adoptionRate": 71,
+      "totalRfdFrames": 8,
+      "totalDs": 7035,
+      "totalInstances": 9931
     },
     {
       "team": "Nueva Web Empresas",
@@ -2827,9 +2908,9 @@
       "quarter": "Q2 2026",
       "date": "2026-06-17",
       "adoptionRate": 86,
-      "totalRfdFrames": 37,
-      "totalDs": 154195,
-      "totalInstances": 180198
+      "totalRfdFrames": 44,
+      "totalDs": 169195,
+      "totalInstances": 197336
     },
     {
       "team": "Portal Digital de Siniestros",
@@ -2847,9 +2928,9 @@
       "quarter": "Q2 2026",
       "date": "2026-06-17",
       "adoptionRate": 79,
-      "totalRfdFrames": 66,
-      "totalDs": 10104,
-      "totalInstances": 12804
+      "totalRfdFrames": 72,
+      "totalDs": 10619,
+      "totalInstances": 13445
     },
     {
       "team": "Embebidos",
