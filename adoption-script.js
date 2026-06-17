@@ -16,6 +16,11 @@ const DALTON_COMPONENT_FAMILIES = [
   "Links", "Loader", "Main Search", "Modals", "Pagination", "Progress bar",
   "Radio", "Select", "Sidebar", "Status Message", "Stepper", "Tab",
   "Table", "Text Area", "Toggle", "Tooltips", "Tracking", "Whatsapp float",
+  // Sub-componentes Dalton
+  "type_option", "section_footer", "src_option_redes", "src_option_stores_download",
+  "title_+_options", "title_+_phones", "title_+_social media",
+  "Tag", "reemplazar slot", "compare_arrow", "Átomo", "Indicator step",
+  "Left Label", "Label in", "Dropdown Input", "Indicator Circle",
 ];
 const FAMILIES_LOWER = DALTON_COMPONENT_FAMILIES.map(f => f.toLowerCase());
 
@@ -24,7 +29,7 @@ const EXCLUDED_ICONS = new Set([
   "arrow down", "arrow right", "arrow left", "arrow up",
   "desktop", "home", "person", "search", "viajes",
   "work experience icon", "business center", "up", "arrowright",
-  "check", "edit", "delete", "plus", "minus", "close", "logo",
+  "check", "edit", "delete", "plus", "minus", "close", "logo","compare_arrow",
 ]);
 
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
