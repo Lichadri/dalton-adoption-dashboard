@@ -3,21 +3,21 @@
     "team": "Modelo Día",
     "category": "Modelo Día",
     "quarter": "Q2 2026",
-    "date": "2026-06-17",
+    "date": "2026-06-18",
     "adoptionRate": 62,
     "totalRfdFrames": 22,
-    "totalDs": 13591,
-    "totalInstances": 21832
+    "totalDs": 13615,
+    "totalInstances": 21824
   },
   {
     "team": "Ecommerce",
     "category": "Ecommerce",
     "quarter": "Q2 2026",
-    "date": "2026-06-17",
+    "date": "2026-06-18",
     "adoptionRate": 64,
-    "totalRfdFrames": 16,
-    "totalDs": 10028,
-    "totalInstances": 15607
+    "totalRfdFrames": 13,
+    "totalDs": 9789,
+    "totalInstances": 15276
   },
   {
     "team": "Auto Efectivo",
@@ -33,7 +33,7 @@
     "team": "MEP",
     "category": "MEP",
     "quarter": "Q2 2026",
-    "date": "2026-06-17",
+    "date": "2026-06-18",
     "adoptionRate": 34,
     "totalRfdFrames": 17,
     "totalDs": 2680,
@@ -43,7 +43,7 @@
     "team": "Somos Corredores",
     "category": "Somos Corredores",
     "quarter": "Q2 2026",
-    "date": "2026-06-17",
+    "date": "2026-06-18",
     "adoptionRate": 79,
     "totalRfdFrames": 12,
     "totalDs": 3647,
@@ -53,7 +53,7 @@
     "team": "Protege 365",
     "category": "Protege 365",
     "quarter": "Q2 2026",
-    "date": "2026-06-17",
+    "date": "2026-06-18",
     "adoptionRate": 71,
     "totalRfdFrames": 8,
     "totalDs": 7035,
@@ -63,7 +63,7 @@
     "team": "Nueva Web Empresas",
     "category": "Nueva Web Empresas",
     "quarter": "Q2 2026",
-    "date": "2026-06-17",
+    "date": "2026-06-18",
     "adoptionRate": 86,
     "totalRfdFrames": 44,
     "totalDs": 169195,
@@ -73,7 +73,7 @@
     "team": "Portal Digital de Siniestros",
     "category": "Portal Digital de Siniestros",
     "quarter": "Q2 2026",
-    "date": "2026-06-17",
+    "date": "2026-06-18",
     "adoptionRate": 74,
     "totalRfdFrames": 5,
     "totalDs": 10174,
@@ -83,20 +83,20 @@
     "team": "Web Corporativa",
     "category": "Web Corporativa",
     "quarter": "Q2 2026",
-    "date": "2026-06-17",
-    "adoptionRate": 79,
-    "totalRfdFrames": 72,
-    "totalDs": 10619,
-    "totalInstances": 13445
+    "date": "2026-06-18",
+    "adoptionRate": 82,
+    "totalRfdFrames": 21,
+    "totalDs": 1842,
+    "totalInstances": 2246
   },
   {
     "team": "Embebidos",
     "category": "Embebidos",
     "quarter": "Q2 2026",
-    "date": "2026-06-17",
+    "date": "2026-06-18",
     "adoptionRate": 81,
-    "totalRfdFrames": 6,
-    "totalDs": 1422,
-    "totalInstances": 1759
+    "totalRfdFrames": 2,
+    "totalDs": 450,
+    "totalInstances": 554
   }
 ]
