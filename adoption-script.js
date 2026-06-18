@@ -402,7 +402,7 @@ async function run() {
   for (const [name, count] of sorted) {
     console.log(`  ${count.toString().padStart(6)} | ${name}`);
   }
-  console.log(
+ console.log(`Total únicos: ${sorted.length}`);
 }
 
 run().catch(e => { console.error("Fatal error:", e); process.exit(1); });
