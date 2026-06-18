@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-18T17:59:27.205Z",
+  "generatedAt": "2026-06-18T21:27:34.811Z",
   "quarter": "Q2 2026",
   "teams": [
     {
@@ -1727,95 +1727,95 @@
       ]
     },
     {
-      "name": "Ecommerce",
+      "name": "SOAT",
       "category": "Ecommerce",
-      "adoptionRate": 64,
-      "totalRfdFrames": 13,
-      "totalDs": 9789,
-      "dsInstances": 9789,
-      "internalInstances": 5487,
-      "totalInternal": 5487,
-      "totalInstances": 15276,
+      "adoptionRate": 69,
+      "totalRfdFrames": 1,
+      "totalDs": 1508,
+      "dsInstances": 1508,
+      "internalInstances": 679,
+      "totalInternal": 679,
+      "totalInstances": 2187,
       "top20Internal": [
         {
-          "name": "Menu Item",
-          "count": 340
+          "name": "01",
+          "count": 41
         },
         {
           "name": "Discount Badge",
-          "count": 336
-        },
-        {
-          "name": "celda",
-          "count": 312
-        },
-        {
-          "name": "Slider Controls",
-          "count": 248
-        },
-        {
-          "name": "02",
-          "count": 212
-        },
-        {
-          "name": "grid view",
-          "count": 210
-        },
-        {
-          "name": "add",
-          "count": 159
-        },
-        {
-          "name": "01",
-          "count": 139
-        },
-        {
-          "name": "Toast",
-          "count": 118
-        },
-        {
-          "name": "facebook",
-          "count": 109
-        },
-        {
-          "name": "Simple",
-          "count": 105
-        },
-        {
-          "name": "call",
-          "count": 102
+          "count": 36
         },
         {
           "name": "Indicator Mobile",
-          "count": 86
-        },
-        {
-          "name": "Menu title",
-          "count": 85
-        },
-        {
-          "name": "whatsapp",
-          "count": 79
-        },
-        {
-          "name": "Title",
-          "count": 78
+          "count": 31
         },
         {
           "name": "torito",
-          "count": 64
+          "count": 30
         },
         {
           "name": "Infotip",
-          "count": 57
+          "count": 29
         },
         {
-          "name": "Component 120",
-          "count": 56
+          "name": "number_deskop",
+          "count": 24
         },
         {
-          "name": "Smile",
-          "count": 55
+          "name": "Simple",
+          "count": 23
+        },
+        {
+          "name": "grid view",
+          "count": 21
+        },
+        {
+          "name": "eye_open",
+          "count": 18
+        },
+        {
+          "name": "Step 01",
+          "count": 17
+        },
+        {
+          "name": "Step 02",
+          "count": 17
+        },
+        {
+          "name": "Step 03",
+          "count": 17
+        },
+        {
+          "name": "shield",
+          "count": 16
+        },
+        {
+          "name": "tarjeta de crédito",
+          "count": 16
+        },
+        {
+          "name": "Póliza Salud",
+          "count": 16
+        },
+        {
+          "name": "Bar Progress",
+          "count": 14
+        },
+        {
+          "name": "whatsapp",
+          "count": 13
+        },
+        {
+          "name": "call",
+          "count": 13
+        },
+        {
+          "name": "Toast",
+          "count": 12
+        },
+        {
+          "name": "Bottom Bar",
+          "count": 11
         }
       ],
       "files": [
@@ -1909,7 +1909,102 @@
               "count": 11
             }
           ]
+        }
+      ]
+    },
+    {
+      "name": "Vehicular",
+      "category": "Ecommerce",
+      "adoptionRate": 61,
+      "totalRfdFrames": 1,
+      "totalDs": 2007,
+      "dsInstances": 2007,
+      "internalInstances": 1266,
+      "totalInternal": 1266,
+      "totalInstances": 3273,
+      "top20Internal": [
+        {
+          "name": "Discount Badge",
+          "count": 149
         },
+        {
+          "name": "02",
+          "count": 105
+        },
+        {
+          "name": "Slider Controls",
+          "count": 102
+        },
+        {
+          "name": "01",
+          "count": 58
+        },
+        {
+          "name": "add",
+          "count": 50
+        },
+        {
+          "name": "call",
+          "count": 38
+        },
+        {
+          "name": "whatsapp",
+          "count": 38
+        },
+        {
+          "name": "grid view",
+          "count": 35
+        },
+        {
+          "name": "Toast",
+          "count": 34
+        },
+        {
+          "name": "Infotip",
+          "count": 28
+        },
+        {
+          "name": "Smile",
+          "count": 25
+        },
+        {
+          "name": "Image",
+          "count": 23
+        },
+        {
+          "name": "Background",
+          "count": 22
+        },
+        {
+          "name": "Simple",
+          "count": 22
+        },
+        {
+          "name": "eye_open",
+          "count": 21
+        },
+        {
+          "name": "torito",
+          "count": 20
+        },
+        {
+          "name": "tarjeta de crédito",
+          "count": 18
+        },
+        {
+          "name": "asset_promo",
+          "count": 17
+        },
+        {
+          "name": "Indicator Mobile",
+          "count": 17
+        },
+        {
+          "name": "Image Frame",
+          "count": 16
+        }
+      ],
+      "files": [
         {
           "key": "FqXf8kbKEimlAkKleve0yT",
           "name": "Vehicular",
@@ -2000,7 +2095,102 @@
               "count": 16
             }
           ]
+        }
+      ]
+    },
+    {
+      "name": "Auto Efectivo",
+      "category": "Ecommerce",
+      "adoptionRate": 64,
+      "totalRfdFrames": 1,
+      "totalDs": 825,
+      "dsInstances": 825,
+      "internalInstances": 469,
+      "totalInternal": 469,
+      "totalInstances": 1294,
+      "top20Internal": [
+        {
+          "name": "Slider Controls Glass",
+          "count": 30
         },
+        {
+          "name": "Slider Controls",
+          "count": 30
+        },
+        {
+          "name": "Spinner",
+          "count": 29
+        },
+        {
+          "name": "icon",
+          "count": 24
+        },
+        {
+          "name": "Caja formulario complex L M",
+          "count": 24
+        },
+        {
+          "name": "Contenido desktop",
+          "count": 24
+        },
+        {
+          "name": "Formulario L M complex",
+          "count": 24
+        },
+        {
+          "name": "Banner mobile",
+          "count": 15
+        },
+        {
+          "name": "Carrusel",
+          "count": 15
+        },
+        {
+          "name": "Slider",
+          "count": 15
+        },
+        {
+          "name": "Status Control",
+          "count": 15
+        },
+        {
+          "name": "Contenido mobile",
+          "count": 15
+        },
+        {
+          "name": "security",
+          "count": 14
+        },
+        {
+          "name": "menu",
+          "count": 14
+        },
+        {
+          "name": "Complex",
+          "count": 12
+        },
+        {
+          "name": "CajaFormulario",
+          "count": 9
+        },
+        {
+          "name": "Carousel",
+          "count": 9
+        },
+        {
+          "name": "Card_Mobile_funciona 1",
+          "count": 9
+        },
+        {
+          "name": "Card_Mobile_funciona 3",
+          "count": 9
+        },
+        {
+          "name": "Card_Mobile_funciona 4",
+          "count": 9
+        }
+      ],
+      "files": [
         {
           "key": "b7nkcHmaq9SibdyBrCzVjt",
           "name": "Auto Efectivo",
@@ -2091,7 +2281,102 @@
               "count": 9
             }
           ]
+        }
+      ]
+    },
+    {
+      "name": "Vehicular Todo Riesgo",
+      "category": "Ecommerce",
+      "adoptionRate": 57,
+      "totalRfdFrames": 2,
+      "totalDs": 2329,
+      "dsInstances": 2329,
+      "internalInstances": 1742,
+      "totalInternal": 1742,
+      "totalInstances": 4071,
+      "top20Internal": [
+        {
+          "name": "grid view",
+          "count": 154
         },
+        {
+          "name": "Discount Badge",
+          "count": 151
+        },
+        {
+          "name": "Slider Controls",
+          "count": 116
+        },
+        {
+          "name": "add",
+          "count": 109
+        },
+        {
+          "name": "02",
+          "count": 107
+        },
+        {
+          "name": "Title",
+          "count": 78
+        },
+        {
+          "name": "Toast",
+          "count": 72
+        },
+        {
+          "name": "Simple",
+          "count": 60
+        },
+        {
+          "name": "01",
+          "count": 40
+        },
+        {
+          "name": "Smile",
+          "count": 30
+        },
+        {
+          "name": "Car",
+          "count": 30
+        },
+        {
+          "name": "hoist",
+          "count": 28
+        },
+        {
+          "name": "Indicator Mobile",
+          "count": 24
+        },
+        {
+          "name": "emergency",
+          "count": 22
+        },
+        {
+          "name": "Commercial Chips",
+          "count": 22
+        },
+        {
+          "name": "mail",
+          "count": 22
+        },
+        {
+          "name": "call",
+          "count": 20
+        },
+        {
+          "name": "Step 01",
+          "count": 20
+        },
+        {
+          "name": "Step 02",
+          "count": 20
+        },
+        {
+          "name": "Step 03",
+          "count": 20
+        }
+      ],
+      "files": [
         {
           "key": "xShNTlhayoEAr0RpftFHUq",
           "name": "Vehicular Todo Riesgo",
@@ -2182,7 +2467,102 @@
               "count": 20
             }
           ]
+        }
+      ]
+    },
+    {
+      "name": "Viajes",
+      "category": "Ecommerce",
+      "adoptionRate": 70,
+      "totalRfdFrames": 8,
+      "totalDs": 3120,
+      "dsInstances": 3120,
+      "internalInstances": 1331,
+      "totalInternal": 1331,
+      "totalInstances": 4451,
+      "top20Internal": [
+        {
+          "name": "Menu Item",
+          "count": 340
         },
+        {
+          "name": "celda",
+          "count": 312
+        },
+        {
+          "name": "facebook",
+          "count": 109
+        },
+        {
+          "name": "Menu title",
+          "count": 85
+        },
+        {
+          "name": "Component 120",
+          "count": 56
+        },
+        {
+          "name": "directionLeft",
+          "count": 53
+        },
+        {
+          "name": "call",
+          "count": 31
+        },
+        {
+          "name": "whatsapp",
+          "count": 28
+        },
+        {
+          "name": "Star",
+          "count": 19
+        },
+        {
+          "name": "Topbar",
+          "count": 16
+        },
+        {
+          "name": "instagram",
+          "count": 15
+        },
+        {
+          "name": "tiktok",
+          "count": 15
+        },
+        {
+          "name": "youtube",
+          "count": 15
+        },
+        {
+          "name": "LocationPin",
+          "count": 15
+        },
+        {
+          "name": "Indicator Mobile",
+          "count": 14
+        },
+        {
+          "name": "Step 01",
+          "count": 14
+        },
+        {
+          "name": "Bar Progress",
+          "count": 14
+        },
+        {
+          "name": "Step 02",
+          "count": 14
+        },
+        {
+          "name": "torito",
+          "count": 14
+        },
+        {
+          "name": "mail",
+          "count": 13
+        }
+      ],
+      "files": [
         {
           "key": "a924JCQttuuzvRhcJNFiG3",
           "name": "Viajes",
@@ -2273,222 +2653,560 @@
               "count": 13
             }
           ]
+        }
+      ]
+    },
+    {
+      "name": "VDT",
+      "category": "Ecommerce",
+      "adoptionRate": 75,
+      "totalRfdFrames": 8,
+      "totalDs": 3684,
+      "dsInstances": 3684,
+      "internalInstances": 1197,
+      "totalInternal": 1197,
+      "totalInstances": 4881,
+      "top20Internal": [
+        {
+          "name": "Option",
+          "count": 174
         },
+        {
+          "name": "Slider Controls",
+          "count": 90
+        },
+        {
+          "name": "facebook",
+          "count": 84
+        },
+        {
+          "name": "Menu Item",
+          "count": 80
+        },
+        {
+          "name": "01 Info",
+          "count": 70
+        },
+        {
+          "name": "ArrowLeft",
+          "count": 58
+        },
+        {
+          "name": "Simple",
+          "count": 54
+        },
+        {
+          "name": "whatsapp",
+          "count": 50
+        },
+        {
+          "name": "Complex",
+          "count": 47
+        },
+        {
+          "name": "menu",
+          "count": 47
+        },
+        {
+          "name": "Chip Deleteable",
+          "count": 28
+        },
+        {
+          "name": "correo electronico",
+          "count": 27
+        },
+        {
+          "name": "Menu title",
+          "count": 20
+        },
+        {
+          "name": "addcircle",
+          "count": 19
+        },
+        {
+          "name": "call",
+          "count": 18
+        },
+        {
+          "name": "payments",
+          "count": 16
+        },
+        {
+          "name": "Trend",
+          "count": 16
+        },
+        {
+          "name": "generando ia",
+          "count": 16
+        },
+        {
+          "name": "creditcard",
+          "count": 16
+        },
+        {
+          "name": "A.white",
+          "count": 15
+        }
+      ],
+      "files": [
         {
           "key": "ZmHev0uWWs7m1h61BgUecU",
           "name": "VDT — Perfilador Productos Vida",
-          "rfdFrameCount": 0,
-          "dsInstances": 0,
-          "internalInstances": 0,
-          "totalInstances": 0,
-          "adoptionRate": 0,
-          "top20Internal": []
+          "rfdFrameCount": 8,
+          "dsInstances": 3684,
+          "internalInstances": 1197,
+          "totalInstances": 4881,
+          "adoptionRate": 75,
+          "top20Internal": [
+            {
+              "name": "Option",
+              "count": 174
+            },
+            {
+              "name": "Slider Controls",
+              "count": 90
+            },
+            {
+              "name": "facebook",
+              "count": 84
+            },
+            {
+              "name": "Menu Item",
+              "count": 80
+            },
+            {
+              "name": "01 Info",
+              "count": 70
+            },
+            {
+              "name": "ArrowLeft",
+              "count": 58
+            },
+            {
+              "name": "Simple",
+              "count": 54
+            },
+            {
+              "name": "whatsapp",
+              "count": 50
+            },
+            {
+              "name": "Complex",
+              "count": 47
+            },
+            {
+              "name": "menu",
+              "count": 47
+            },
+            {
+              "name": "Chip Deleteable",
+              "count": 28
+            },
+            {
+              "name": "correo electronico",
+              "count": 27
+            },
+            {
+              "name": "Menu title",
+              "count": 20
+            },
+            {
+              "name": "addcircle",
+              "count": 19
+            },
+            {
+              "name": "call",
+              "count": 18
+            },
+            {
+              "name": "payments",
+              "count": 16
+            },
+            {
+              "name": "Trend",
+              "count": 16
+            },
+            {
+              "name": "generando ia",
+              "count": 16
+            },
+            {
+              "name": "creditcard",
+              "count": 16
+            },
+            {
+              "name": "A.white",
+              "count": 15
+            }
+          ]
         }
       ]
     },
     {
       "name": "Web Corporativa",
       "category": "Web Corporativa",
-      "adoptionRate": 82,
-      "totalRfdFrames": 21,
-      "totalDs": 1842,
-      "dsInstances": 1842,
-      "internalInstances": 404,
-      "totalInternal": 404,
-      "totalInstances": 2246,
+      "adoptionRate": 79,
+      "totalRfdFrames": 72,
+      "totalDs": 10823,
+      "dsInstances": 10823,
+      "internalInstances": 2882,
+      "totalInternal": 2882,
+      "totalInstances": 13705,
       "top20Internal": [
         {
           "name": "grid view",
-          "count": 78
-        },
-        {
-          "name": "Cotizar",
-          "count": 30
-        },
-        {
-          "name": "Video",
-          "count": 30
-        },
-        {
-          "name": "facebook",
-          "count": 28
-        },
-        {
-          "name": "Close Icon",
-          "count": 22
-        },
-        {
-          "name": "Scroll",
-          "count": 19
-        },
-        {
-          "name": "_Link Icon",
-          "count": 18
-        },
-        {
-          "name": "_Button Icon",
-          "count": 17
-        },
-        {
-          "name": "submenu",
-          "count": 16
-        },
-        {
-          "name": "ShieldHeart",
-          "count": 15
-        },
-        {
-          "name": "WithoutShieldHeart",
-          "count": 15
-        },
-        {
-          "name": "Link Stamp",
-          "count": 12
+          "count": 314
         },
         {
           "name": "Icon",
-          "count": 8
+          "count": 221
         },
         {
-          "name": "link",
-          "count": 8
+          "name": "CardProductPromo",
+          "count": 206
         },
         {
-          "name": "Discount Badge",
-          "count": 8
+          "name": "Slider Controls",
+          "count": 172
         },
         {
-          "name": "Link Details",
-          "count": 6
+          "name": "Cotizar",
+          "count": 105
         },
         {
-          "name": "account",
-          "count": 6
+          "name": "Video",
+          "count": 105
         },
         {
-          "name": "payments",
-          "count": 6
+          "name": "Close Icon",
+          "count": 96
         },
         {
-          "name": "support",
-          "count": 6
+          "name": "Scroll",
+          "count": 80
         },
         {
-          "name": "download",
-          "count": 6
+          "name": "CardMenúMobile",
+          "count": 79
+        },
+        {
+          "name": "facebook",
+          "count": 77
+        },
+        {
+          "name": "CardMenú",
+          "count": 77
+        },
+        {
+          "name": "Status Control",
+          "count": 75
+        },
+        {
+          "name": "WithoutShieldHeart",
+          "count": 72
+        },
+        {
+          "name": "ShieldHeart",
+          "count": 69
+        },
+        {
+          "name": "BotónCategoría",
+          "count": 69
+        },
+        {
+          "name": "Slider",
+          "count": 64
+        },
+        {
+          "name": "_Link Icon",
+          "count": 51
+        },
+        {
+          "name": "_Button Icon",
+          "count": 49
+        },
+        {
+          "name": "Car",
+          "count": 48
+        },
+        {
+          "name": "Trend",
+          "count": 46
         }
       ],
       "files": [
         {
           "key": "XaZynqqaHNdtOL7E2TtbLq",
           "name": "Productos Vida",
-          "rfdFrameCount": 21,
-          "dsInstances": 1842,
-          "internalInstances": 404,
-          "totalInstances": 2246,
+          "rfdFrameCount": 55,
+          "dsInstances": 5041,
+          "internalInstances": 1132,
+          "totalInstances": 6173,
           "adoptionRate": 82,
           "top20Internal": [
             {
               "name": "grid view",
-              "count": 78
+              "count": 216
             },
             {
               "name": "Cotizar",
-              "count": 30
+              "count": 86
             },
             {
               "name": "Video",
-              "count": 30
+              "count": 86
             },
             {
               "name": "facebook",
-              "count": 28
+              "count": 70
             },
             {
               "name": "Close Icon",
-              "count": 22
+              "count": 68
             },
             {
               "name": "Scroll",
-              "count": 19
+              "count": 58
             },
             {
               "name": "_Link Icon",
-              "count": 18
-            },
-            {
-              "name": "_Button Icon",
-              "count": 17
-            },
-            {
-              "name": "submenu",
-              "count": 16
+              "count": 51
             },
             {
               "name": "ShieldHeart",
-              "count": 15
+              "count": 48
             },
             {
               "name": "WithoutShieldHeart",
-              "count": 15
+              "count": 48
+            },
+            {
+              "name": "_Button Icon",
+              "count": 45
+            },
+            {
+              "name": "submenu",
+              "count": 40
             },
             {
               "name": "Link Stamp",
-              "count": 12
-            },
-            {
-              "name": "Icon",
-              "count": 8
-            },
-            {
-              "name": "link",
-              "count": 8
+              "count": 34
             },
             {
               "name": "Discount Badge",
-              "count": 8
+              "count": 26
             },
             {
-              "name": "Link Details",
-              "count": 6
+              "name": "link",
+              "count": 20
             },
             {
-              "name": "account",
-              "count": 6
-            },
-            {
-              "name": "payments",
-              "count": 6
+              "name": "Icon",
+              "count": 18
             },
             {
               "name": "support",
-              "count": 6
+              "count": 18
             },
             {
               "name": "download",
-              "count": 6
+              "count": 18
+            },
+            {
+              "name": "Slider Controls",
+              "count": 18
+            },
+            {
+              "name": "Link Details",
+              "count": 17
+            },
+            {
+              "name": "vida inversión",
+              "count": 17
             }
           ]
         },
         {
           "key": "m8OsFy9gG7vcZTzkTIKDOR",
           "name": "Menú / Home",
-          "rfdFrameCount": 0,
-          "dsInstances": 0,
-          "internalInstances": 0,
-          "totalInstances": 0,
-          "adoptionRate": 0,
-          "top20Internal": []
+          "rfdFrameCount": 3,
+          "dsInstances": 4389,
+          "internalInstances": 1477,
+          "totalInstances": 5866,
+          "adoptionRate": 75,
+          "top20Internal": [
+            {
+              "name": "CardProductPromo",
+              "count": 206
+            },
+            {
+              "name": "Icon",
+              "count": 199
+            },
+            {
+              "name": "Slider Controls",
+              "count": 146
+            },
+            {
+              "name": "CardMenúMobile",
+              "count": 79
+            },
+            {
+              "name": "CardMenú",
+              "count": 77
+            },
+            {
+              "name": "Status Control",
+              "count": 71
+            },
+            {
+              "name": "BotónCategoría",
+              "count": 69
+            },
+            {
+              "name": "Slider",
+              "count": 64
+            },
+            {
+              "name": "Car",
+              "count": 48
+            },
+            {
+              "name": "Trend",
+              "count": 46
+            },
+            {
+              "name": "MedicalService",
+              "count": 46
+            },
+            {
+              "name": "call",
+              "count": 38
+            },
+            {
+              "name": "grid view",
+              "count": 36
+            },
+            {
+              "name": "ProductTabs",
+              "count": 34
+            },
+            {
+              "name": "DirectionDown",
+              "count": 30
+            },
+            {
+              "name": "Component 86",
+              "count": 23
+            },
+            {
+              "name": "Homework",
+              "count": 22
+            },
+            {
+              "name": "title_+_badges_download",
+              "count": 21
+            },
+            {
+              "name": "Component 88",
+              "count": 21
+            },
+            {
+              "name": "Component 89",
+              "count": 20
+            }
+          ]
         },
         {
           "key": "qnAHAbm5nt9jLXAWUjf8ZY",
           "name": "Productos Líneas Personales",
-          "rfdFrameCount": 0,
-          "dsInstances": 0,
-          "internalInstances": 0,
-          "totalInstances": 0,
-          "adoptionRate": 0,
-          "top20Internal": []
+          "rfdFrameCount": 14,
+          "dsInstances": 1393,
+          "internalInstances": 273,
+          "totalInstances": 1666,
+          "adoptionRate": 84,
+          "top20Internal": [
+            {
+              "name": "grid view",
+              "count": 62
+            },
+            {
+              "name": "Close Icon",
+              "count": 28
+            },
+            {
+              "name": "WithoutShieldHeart",
+              "count": 24
+            },
+            {
+              "name": "Scroll",
+              "count": 22
+            },
+            {
+              "name": "ShieldHeart",
+              "count": 21
+            },
+            {
+              "name": "Cotizar",
+              "count": 19
+            },
+            {
+              "name": "Video",
+              "count": 19
+            },
+            {
+              "name": "Discount Badge",
+              "count": 14
+            },
+            {
+              "name": "Slider Controls",
+              "count": 8
+            },
+            {
+              "name": "facebook",
+              "count": 7
+            },
+            {
+              "name": "hogar",
+              "count": 6
+            },
+            {
+              "name": "Status Control",
+              "count": 4
+            },
+            {
+              "name": "support",
+              "count": 4
+            },
+            {
+              "name": "download",
+              "count": 4
+            },
+            {
+              "name": "Icon",
+              "count": 4
+            },
+            {
+              "name": "_Button Icon",
+              "count": 4
+            },
+            {
+              "name": "submenu",
+              "count": 4
+            },
+            {
+              "name": "title_+_badges_download",
+              "count": 3
+            },
+            {
+              "name": "menu",
+              "count": 3
+            },
+            {
+              "name": "link",
+              "count": 2
+            }
+          ]
         }
       ]
     },
@@ -2496,183 +3214,183 @@
       "name": "Embebidos",
       "category": "Embebidos",
       "adoptionRate": 81,
-      "totalRfdFrames": 2,
-      "totalDs": 450,
-      "dsInstances": 450,
-      "internalInstances": 104,
-      "totalInternal": 104,
-      "totalInstances": 554,
+      "totalRfdFrames": 6,
+      "totalDs": 1422,
+      "dsInstances": 1422,
+      "internalInstances": 337,
+      "totalInternal": 337,
+      "totalInstances": 1759,
       "top20Internal": [
         {
           "name": "grid view",
-          "count": 16
+          "count": 52
         },
         {
           "name": "facebook",
-          "count": 14
+          "count": 42
         },
         {
           "name": "icon",
-          "count": 8
-        },
-        {
-          "name": "Icon",
-          "count": 6
-        },
-        {
-          "name": "Image",
-          "count": 6
+          "count": 24
         },
         {
           "name": "SecciónDescripción",
-          "count": 5
+          "count": 21
         },
         {
-          "name": "LogosCollab",
-          "count": 4
+          "name": "Icon",
+          "count": 18
         },
         {
-          "name": "SeccionCanales",
-          "count": 4
-        },
-        {
-          "name": "WithoutShieldHeart",
-          "count": 4
-        },
-        {
-          "name": "PersonalInjuy",
-          "count": 4
-        },
-        {
-          "name": "problema eléctrico",
-          "count": 3
-        },
-        {
-          "name": "Information",
-          "count": 3
-        },
-        {
-          "name": "Complex",
-          "count": 2
-        },
-        {
-          "name": "menu",
-          "count": 2
-        },
-        {
-          "name": "robo de autopartes",
-          "count": 2
+          "name": "Image",
+          "count": 18
         },
         {
           "name": "operador",
-          "count": 2
+          "count": 16
+        },
+        {
+          "name": "WithoutShieldHeart",
+          "count": 14
+        },
+        {
+          "name": "SeccionCanales",
+          "count": 12
+        },
+        {
+          "name": "PersonalInjuy",
+          "count": 12
+        },
+        {
+          "name": "Information",
+          "count": 11
+        },
+        {
+          "name": "LogosCollab",
+          "count": 10
         },
         {
           "name": "CoberturasIconos",
-          "count": 2
+          "count": 10
         },
         {
           "name": "Scroll",
-          "count": 2
+          "count": 8
+        },
+        {
+          "name": "Complex",
+          "count": 6
+        },
+        {
+          "name": "menu",
+          "count": 6
         },
         {
           "name": "title_+_badges_download",
-          "count": 2
+          "count": 6
         },
         {
           "name": "instagram",
-          "count": 2
+          "count": 6
+        },
+        {
+          "name": "tiktok",
+          "count": 6
+        },
+        {
+          "name": "youtube",
+          "count": 6
         }
       ],
       "files": [
         {
           "key": "X8aq9jmjEuGuWDblebqRFz",
           "name": "Landing Alianzas",
-          "rfdFrameCount": 2,
-          "dsInstances": 450,
-          "internalInstances": 104,
-          "totalInstances": 554,
+          "rfdFrameCount": 6,
+          "dsInstances": 1422,
+          "internalInstances": 337,
+          "totalInstances": 1759,
           "adoptionRate": 81,
           "top20Internal": [
             {
               "name": "grid view",
-              "count": 16
+              "count": 52
             },
             {
               "name": "facebook",
-              "count": 14
+              "count": 42
             },
             {
               "name": "icon",
-              "count": 8
-            },
-            {
-              "name": "Icon",
-              "count": 6
-            },
-            {
-              "name": "Image",
-              "count": 6
+              "count": 24
             },
             {
               "name": "SecciónDescripción",
-              "count": 5
+              "count": 21
             },
             {
-              "name": "LogosCollab",
-              "count": 4
+              "name": "Icon",
+              "count": 18
             },
             {
-              "name": "SeccionCanales",
-              "count": 4
-            },
-            {
-              "name": "WithoutShieldHeart",
-              "count": 4
-            },
-            {
-              "name": "PersonalInjuy",
-              "count": 4
-            },
-            {
-              "name": "problema eléctrico",
-              "count": 3
-            },
-            {
-              "name": "Information",
-              "count": 3
-            },
-            {
-              "name": "Complex",
-              "count": 2
-            },
-            {
-              "name": "menu",
-              "count": 2
-            },
-            {
-              "name": "robo de autopartes",
-              "count": 2
+              "name": "Image",
+              "count": 18
             },
             {
               "name": "operador",
-              "count": 2
+              "count": 16
+            },
+            {
+              "name": "WithoutShieldHeart",
+              "count": 14
+            },
+            {
+              "name": "SeccionCanales",
+              "count": 12
+            },
+            {
+              "name": "PersonalInjuy",
+              "count": 12
+            },
+            {
+              "name": "Information",
+              "count": 11
+            },
+            {
+              "name": "LogosCollab",
+              "count": 10
             },
             {
               "name": "CoberturasIconos",
-              "count": 2
+              "count": 10
             },
             {
               "name": "Scroll",
-              "count": 2
+              "count": 8
+            },
+            {
+              "name": "Complex",
+              "count": 6
+            },
+            {
+              "name": "menu",
+              "count": 6
             },
             {
               "name": "title_+_badges_download",
-              "count": 2
+              "count": 6
             },
             {
               "name": "instagram",
-              "count": 2
+              "count": 6
+            },
+            {
+              "name": "tiktok",
+              "count": 6
+            },
+            {
+              "name": "youtube",
+              "count": 6
             }
           ]
         }
@@ -2704,10 +3422,10 @@
       "team": "Auto Efectivo",
       "category": "Ecommerce",
       "quarter": "Q2 2026",
-      "date": "2026-06-16",
-      "adoptionRate": 50,
+      "date": "2026-06-18",
+      "adoptionRate": 64,
       "totalRfdFrames": 1,
-      "totalDs": 645,
+      "totalDs": 825,
       "totalInstances": 1294
     },
     {
@@ -2765,10 +3483,10 @@
       "category": "Web Corporativa",
       "quarter": "Q2 2026",
       "date": "2026-06-18",
-      "adoptionRate": 82,
-      "totalRfdFrames": 21,
-      "totalDs": 1842,
-      "totalInstances": 2246
+      "adoptionRate": 79,
+      "totalRfdFrames": 72,
+      "totalDs": 10823,
+      "totalInstances": 13705
     },
     {
       "team": "Embebidos",
@@ -2776,9 +3494,59 @@
       "quarter": "Q2 2026",
       "date": "2026-06-18",
       "adoptionRate": 81,
+      "totalRfdFrames": 6,
+      "totalDs": 1422,
+      "totalInstances": 1759
+    },
+    {
+      "team": "SOAT",
+      "category": "Ecommerce",
+      "quarter": "Q2 2026",
+      "date": "2026-06-18",
+      "adoptionRate": 69,
+      "totalRfdFrames": 1,
+      "totalDs": 1508,
+      "totalInstances": 2187
+    },
+    {
+      "team": "Vehicular",
+      "category": "Ecommerce",
+      "quarter": "Q2 2026",
+      "date": "2026-06-18",
+      "adoptionRate": 61,
+      "totalRfdFrames": 1,
+      "totalDs": 2007,
+      "totalInstances": 3273
+    },
+    {
+      "team": "Vehicular Todo Riesgo",
+      "category": "Ecommerce",
+      "quarter": "Q2 2026",
+      "date": "2026-06-18",
+      "adoptionRate": 57,
       "totalRfdFrames": 2,
-      "totalDs": 450,
-      "totalInstances": 554
+      "totalDs": 2329,
+      "totalInstances": 4071
+    },
+    {
+      "team": "Viajes",
+      "category": "Ecommerce",
+      "quarter": "Q2 2026",
+      "date": "2026-06-18",
+      "adoptionRate": 70,
+      "totalRfdFrames": 8,
+      "totalDs": 3120,
+      "totalInstances": 4451
+    },
+    {
+      "team": "VDT",
+      "category": "Ecommerce",
+      "quarter": "Q2 2026",
+      "date": "2026-06-18",
+      "adoptionRate": 75,
+      "totalRfdFrames": 8,
+      "totalDs": 3684,
+      "totalInstances": 4881
     }
   ]
 }

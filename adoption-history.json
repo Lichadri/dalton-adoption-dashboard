@@ -23,10 +23,10 @@
     "team": "Auto Efectivo",
     "category": "Ecommerce",
     "quarter": "Q2 2026",
-    "date": "2026-06-16",
-    "adoptionRate": 50,
+    "date": "2026-06-18",
+    "adoptionRate": 64,
     "totalRfdFrames": 1,
-    "totalDs": 645,
+    "totalDs": 825,
     "totalInstances": 1294
   },
   {
@@ -84,10 +84,10 @@
     "category": "Web Corporativa",
     "quarter": "Q2 2026",
     "date": "2026-06-18",
-    "adoptionRate": 82,
-    "totalRfdFrames": 21,
-    "totalDs": 1842,
-    "totalInstances": 2246
+    "adoptionRate": 79,
+    "totalRfdFrames": 72,
+    "totalDs": 10823,
+    "totalInstances": 13705
   },
   {
     "team": "Embebidos",
@@ -95,8 +95,58 @@
     "quarter": "Q2 2026",
     "date": "2026-06-18",
     "adoptionRate": 81,
+    "totalRfdFrames": 6,
+    "totalDs": 1422,
+    "totalInstances": 1759
+  },
+  {
+    "team": "SOAT",
+    "category": "Ecommerce",
+    "quarter": "Q2 2026",
+    "date": "2026-06-18",
+    "adoptionRate": 69,
+    "totalRfdFrames": 1,
+    "totalDs": 1508,
+    "totalInstances": 2187
+  },
+  {
+    "team": "Vehicular",
+    "category": "Ecommerce",
+    "quarter": "Q2 2026",
+    "date": "2026-06-18",
+    "adoptionRate": 61,
+    "totalRfdFrames": 1,
+    "totalDs": 2007,
+    "totalInstances": 3273
+  },
+  {
+    "team": "Vehicular Todo Riesgo",
+    "category": "Ecommerce",
+    "quarter": "Q2 2026",
+    "date": "2026-06-18",
+    "adoptionRate": 57,
     "totalRfdFrames": 2,
-    "totalDs": 450,
-    "totalInstances": 554
+    "totalDs": 2329,
+    "totalInstances": 4071
+  },
+  {
+    "team": "Viajes",
+    "category": "Ecommerce",
+    "quarter": "Q2 2026",
+    "date": "2026-06-18",
+    "adoptionRate": 70,
+    "totalRfdFrames": 8,
+    "totalDs": 3120,
+    "totalInstances": 4451
+  },
+  {
+    "team": "VDT",
+    "category": "Ecommerce",
+    "quarter": "Q2 2026",
+    "date": "2026-06-18",
+    "adoptionRate": 75,
+    "totalRfdFrames": 8,
+    "totalDs": 3684,
+    "totalInstances": 4881
   }
 ]
