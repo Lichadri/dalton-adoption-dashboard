@@ -385,10 +385,24 @@ async function run() {
   generateExcel(report, excelPath);
 
   console.log(`\nReport saved to docs/report.json`);
-  console.log("\n=== Summary ===");
+ console.log("\n=== Summary ===");
   for (const team of teamsData) {
     console.log(`[${team.category}] ${team.name}: ${team.adoptionRate}% | ${team.totalRfdFrames} RFD frames`);
   }
+
+  // Lista completa de componentes internos únicos
+  const allInternalNames = {};
+  for (const team of teamsData) {
+    for (const { name, count } of (team.top20Internal || [])) {
+      allInternalNames[name] = (allInternalNames[name] || 0) + count;
+    }
+  }
+  console.log("\n=== Componentes internos únicos (todos los equipos) ===");
+  const sorted = Object.entries(allInternalNames).sort((a, b) => b[1] - a[1]);
+  for (const [name, count] of sorted) {
+    console.log(`  ${count.toString().padStart(6)} | ${name}`);
+  }
+  console.log(
 }
 
 run().catch(e => { console.error("Fatal error:", e); process.exit(1); });
