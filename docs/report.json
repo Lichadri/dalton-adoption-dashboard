@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-18T21:27:34.811Z",
+  "generatedAt": "2026-06-18T23:24:12.888Z",
   "quarter": "Q2 2026",
   "teams": [
     {
@@ -2847,11 +2847,11 @@
       "category": "Web Corporativa",
       "adoptionRate": 79,
       "totalRfdFrames": 72,
-      "totalDs": 10823,
-      "dsInstances": 10823,
+      "totalDs": 10822,
+      "dsInstances": 10822,
       "internalInstances": 2882,
       "totalInternal": 2882,
-      "totalInstances": 13705,
+      "totalInstances": 13704,
       "top20Internal": [
         {
           "name": "grid view",
@@ -3030,9 +3030,9 @@
           "key": "m8OsFy9gG7vcZTzkTIKDOR",
           "name": "Menú / Home",
           "rfdFrameCount": 3,
-          "dsInstances": 4389,
+          "dsInstances": 4388,
           "internalInstances": 1477,
-          "totalInstances": 5866,
+          "totalInstances": 5865,
           "adoptionRate": 75,
           "top20Internal": [
             {
@@ -3485,8 +3485,8 @@
       "date": "2026-06-18",
       "adoptionRate": 79,
       "totalRfdFrames": 72,
-      "totalDs": 10823,
-      "totalInstances": 13705
+      "totalDs": 10822,
+      "totalInstances": 13704
     },
     {
       "team": "Embebidos",
