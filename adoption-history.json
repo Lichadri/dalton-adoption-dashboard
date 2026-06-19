@@ -3,11 +3,11 @@
     "team": "Modelo Día",
     "category": "Modelo Día",
     "quarter": "Q2 2026",
-    "date": "2026-06-18",
-    "adoptionRate": 62,
-    "totalRfdFrames": 22,
-    "totalDs": 13615,
-    "totalInstances": 21824
+    "date": "2026-06-19",
+    "adoptionRate": 63,
+    "totalRfdFrames": 13,
+    "totalDs": 11224,
+    "totalInstances": 17861
   },
   {
     "team": "Ecommerce",
@@ -23,130 +23,130 @@
     "team": "Auto Efectivo",
     "category": "Ecommerce",
     "quarter": "Q2 2026",
-    "date": "2026-06-18",
-    "adoptionRate": 64,
+    "date": "2026-06-19",
+    "adoptionRate": 73,
     "totalRfdFrames": 1,
-    "totalDs": 825,
-    "totalInstances": 1294
+    "totalDs": 921,
+    "totalInstances": 1255
   },
   {
     "team": "MEP",
     "category": "MEP",
     "quarter": "Q2 2026",
-    "date": "2026-06-18",
-    "adoptionRate": 34,
+    "date": "2026-06-19",
+    "adoptionRate": 73,
     "totalRfdFrames": 17,
-    "totalDs": 2680,
-    "totalInstances": 7982
+    "totalDs": 3018,
+    "totalInstances": 4130
   },
   {
     "team": "Somos Corredores",
     "category": "Somos Corredores",
     "quarter": "Q2 2026",
-    "date": "2026-06-18",
-    "adoptionRate": 79,
+    "date": "2026-06-19",
+    "adoptionRate": 87,
     "totalRfdFrames": 12,
-    "totalDs": 3647,
-    "totalInstances": 4614
+    "totalDs": 3852,
+    "totalInstances": 4452
   },
   {
     "team": "Protege 365",
     "category": "Protege 365",
     "quarter": "Q2 2026",
-    "date": "2026-06-18",
-    "adoptionRate": 71,
+    "date": "2026-06-19",
+    "adoptionRate": 91,
     "totalRfdFrames": 8,
-    "totalDs": 7035,
-    "totalInstances": 9931
+    "totalDs": 8343,
+    "totalInstances": 9188
   },
   {
     "team": "Nueva Web Empresas",
     "category": "Nueva Web Empresas",
     "quarter": "Q2 2026",
-    "date": "2026-06-18",
-    "adoptionRate": 86,
-    "totalRfdFrames": 44,
-    "totalDs": 169195,
-    "totalInstances": 197336
+    "date": "2026-06-19",
+    "adoptionRate": 93,
+    "totalRfdFrames": 28,
+    "totalDs": 34401,
+    "totalInstances": 36962
   },
   {
     "team": "Portal Digital de Siniestros",
     "category": "Portal Digital de Siniestros",
     "quarter": "Q2 2026",
-    "date": "2026-06-18",
-    "adoptionRate": 74,
-    "totalRfdFrames": 5,
-    "totalDs": 10174,
-    "totalInstances": 13717
+    "date": "2026-06-19",
+    "adoptionRate": 0,
+    "totalRfdFrames": 0,
+    "totalDs": 0,
+    "totalInstances": 0
   },
   {
     "team": "Web Corporativa",
     "category": "Web Corporativa",
     "quarter": "Q2 2026",
-    "date": "2026-06-18",
-    "adoptionRate": 79,
-    "totalRfdFrames": 72,
-    "totalDs": 10822,
-    "totalInstances": 13704
+    "date": "2026-06-19",
+    "adoptionRate": 89,
+    "totalRfdFrames": 15,
+    "totalDs": 1666,
+    "totalInstances": 1878
   },
   {
     "team": "Embebidos",
     "category": "Embebidos",
     "quarter": "Q2 2026",
-    "date": "2026-06-18",
-    "adoptionRate": 81,
-    "totalRfdFrames": 6,
-    "totalDs": 1422,
-    "totalInstances": 1759
+    "date": "2026-06-19",
+    "adoptionRate": 87,
+    "totalRfdFrames": 1,
+    "totalDs": 224,
+    "totalInstances": 258
   },
   {
     "team": "SOAT",
     "category": "Ecommerce",
     "quarter": "Q2 2026",
-    "date": "2026-06-18",
-    "adoptionRate": 69,
+    "date": "2026-06-19",
+    "adoptionRate": 75,
     "totalRfdFrames": 1,
-    "totalDs": 1508,
-    "totalInstances": 2187
+    "totalDs": 1583,
+    "totalInstances": 2109
   },
   {
     "team": "Vehicular",
     "category": "Ecommerce",
     "quarter": "Q2 2026",
-    "date": "2026-06-18",
-    "adoptionRate": 61,
+    "date": "2026-06-19",
+    "adoptionRate": 73,
     "totalRfdFrames": 1,
-    "totalDs": 2007,
-    "totalInstances": 3273
+    "totalDs": 2296,
+    "totalInstances": 3143
   },
   {
     "team": "Vehicular Todo Riesgo",
     "category": "Ecommerce",
     "quarter": "Q2 2026",
-    "date": "2026-06-18",
-    "adoptionRate": 57,
+    "date": "2026-06-19",
+    "adoptionRate": 69,
     "totalRfdFrames": 2,
-    "totalDs": 2329,
-    "totalInstances": 4071
+    "totalDs": 2650,
+    "totalInstances": 3813
   },
   {
     "team": "Viajes",
     "category": "Ecommerce",
     "quarter": "Q2 2026",
-    "date": "2026-06-18",
-    "adoptionRate": 70,
-    "totalRfdFrames": 8,
-    "totalDs": 3120,
-    "totalInstances": 4451
+    "date": "2026-06-19",
+    "adoptionRate": 0,
+    "totalRfdFrames": 0,
+    "totalDs": 0,
+    "totalInstances": 0
   },
   {
     "team": "VDT",
     "category": "Ecommerce",
     "quarter": "Q2 2026",
-    "date": "2026-06-18",
-    "adoptionRate": 75,
-    "totalRfdFrames": 8,
-    "totalDs": 3684,
-    "totalInstances": 4881
+    "date": "2026-06-19",
+    "adoptionRate": 0,
+    "totalRfdFrames": 0,
+    "totalDs": 0,
+    "totalInstances": 0
   }
 ]
