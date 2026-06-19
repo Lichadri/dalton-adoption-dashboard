@@ -323,10 +323,10 @@ function buildTeamCard(team,idx){
         <button class="tc-acc-btn" onclick="toggle('${id}-ints')">
           <div class="tc-acc-left">
             <span class="tc-acc-icon internals">⚠</span>
-            <span class="tc-acc-label internals">Internos frecuentes</span>
+            <span class="tc-acc-label internals">Top internos</span>
           </div>
           <div class="tc-acc-right">
-            <span class="tc-acc-count internals">${(team.top20Internal||[]).length}</span>
+            <span class="tc-acc-count internals">${top5Internal.length}</span>
             <span class="tc-chevron" id="ic-${id}-ints">▼</span>
           </div>
         </button>
