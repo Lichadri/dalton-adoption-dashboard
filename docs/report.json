@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-19T02:32:02.073Z",
+  "generatedAt": "2026-06-19T14:46:23.529Z",
   "quarter": "Q2 2026",
   "teams": [
     {
@@ -2603,14 +2603,14 @@
       "category": "Portal Digital de Siniestros",
       "adoptionRate": 78,
       "totalRfdFrames": 5,
-      "dsInstances": 10368,
-      "internalInstances": 2842,
-      "totalInstances": 13210,
+      "dsInstances": 10633,
+      "internalInstances": 2951,
+      "totalInstances": 13584,
       "uniqueFamiliesCount": 34,
       "uniqueFamilies": [
         {
           "name": "Button",
-          "count": 1495
+          "count": 1532
         },
         {
           "name": "type_option",
@@ -2618,55 +2618,55 @@
         },
         {
           "name": "Input",
-          "count": 1333
+          "count": 1358
         },
         {
           "name": "Alert",
-          "count": 1282
+          "count": 1341
         },
         {
           "name": "Select",
-          "count": 774
+          "count": 804
         },
         {
           "name": "Tag",
-          "count": 579
+          "count": 608
         },
         {
           "name": "Footer",
-          "count": 431
+          "count": 441
         },
         {
           "name": "Checkbox",
-          "count": 401
+          "count": 414
         },
         {
           "name": "Átomo",
-          "count": 306
+          "count": 316
         },
         {
           "name": "Radio",
           "count": 273
         },
         {
+          "name": "Label in",
+          "count": 249
+        },
+        {
+          "name": "Calendar",
+          "count": 246
+        },
+        {
           "name": "section_footer",
           "count": 240
         },
         {
-          "name": "Calendar",
-          "count": 236
-        },
-        {
-          "name": "Label in",
-          "count": 228
-        },
-        {
           "name": "Left Label",
-          "count": 204
+          "count": 209
         },
         {
           "name": "Dropdown Input",
-          "count": 190
+          "count": 200
         },
         {
           "name": "src_option_redes",
@@ -2682,19 +2682,19 @@
         },
         {
           "name": "Text Area",
-          "count": 75
+          "count": 79
         },
         {
           "name": "Logo Horizontal",
           "count": 73
         },
         {
-          "name": "title_+_options",
+          "name": "Breadcrumb",
           "count": 60
         },
         {
-          "name": "Breadcrumb",
-          "count": 58
+          "name": "title_+_options",
+          "count": 60
         },
         {
           "name": "Card Dashboard",
@@ -2756,54 +2756,62 @@
         },
         {
           "name": "DirectionDown",
-          "count": 328
+          "count": 341
         },
         {
           "name": "DirectionRight",
-          "count": 268
+          "count": 275
         },
         {
           "name": "Option",
-          "count": 139
+          "count": 165
+        },
+        {
+          "name": "Icon",
+          "count": 95
         },
         {
           "name": "Component 9",
           "count": 94
         },
         {
-          "name": "Icon",
-          "count": 93
-        },
-        {
           "name": "Action",
-          "count": 61
-        },
-        {
-          "name": "mail",
-          "count": 47
+          "count": 63
         },
         {
           "name": "Frame 1707479054",
-          "count": 46
+          "count": 51
+        },
+        {
+          "name": "mail",
+          "count": 48
         },
         {
           "name": "Frame 1707479133",
-          "count": 44
+          "count": 46
         },
         {
           "name": "download",
           "count": 32
         },
         {
-          "name": "Simple",
-          "count": 29
+          "name": "informacion de poliza",
+          "count": 28
         },
         {
-          "name": "informacion de poliza",
-          "count": 27
+          "name": "Simple",
+          "count": 28
+        },
+        {
+          "name": "File",
+          "count": 26
         },
         {
           "name": "Tooltip",
+          "count": 25
+        },
+        {
+          "name": "datos personales",
           "count": 25
         },
         {
@@ -2811,19 +2819,11 @@
           "count": 25
         },
         {
-          "name": "File",
+          "name": "directionLeft",
           "count": 24
         },
         {
-          "name": "directionLeft",
-          "count": 23
-        },
-        {
-          "name": "datos personales",
-          "count": 23
-        },
-        {
-          "name": "soles",
+          "name": "24.timer",
           "count": 23
         }
       ],
@@ -2832,15 +2832,15 @@
           "key": "y8YuwqsKA18BElJM0MFbFU",
           "name": "Portal Digital de Siniestros",
           "rfdFrameCount": 5,
-          "dsInstances": 10368,
-          "internalInstances": 2842,
-          "totalInstances": 13210,
+          "dsInstances": 10633,
+          "internalInstances": 2951,
+          "totalInstances": 13584,
           "adoptionRate": 78,
           "uniqueFamiliesCount": 34,
           "uniqueFamilies": [
             {
               "name": "Button",
-              "count": 1495
+              "count": 1532
             },
             {
               "name": "type_option",
@@ -2848,55 +2848,55 @@
             },
             {
               "name": "Input",
-              "count": 1333
+              "count": 1358
             },
             {
               "name": "Alert",
-              "count": 1282
+              "count": 1341
             },
             {
               "name": "Select",
-              "count": 774
+              "count": 804
             },
             {
               "name": "Tag",
-              "count": 579
+              "count": 608
             },
             {
               "name": "Footer",
-              "count": 431
+              "count": 441
             },
             {
               "name": "Checkbox",
-              "count": 401
+              "count": 414
             },
             {
               "name": "Átomo",
-              "count": 306
+              "count": 316
             },
             {
               "name": "Radio",
               "count": 273
             },
             {
+              "name": "Label in",
+              "count": 249
+            },
+            {
+              "name": "Calendar",
+              "count": 246
+            },
+            {
               "name": "section_footer",
               "count": 240
             },
             {
-              "name": "Calendar",
-              "count": 236
-            },
-            {
-              "name": "Label in",
-              "count": 228
-            },
-            {
               "name": "Left Label",
-              "count": 204
+              "count": 209
             },
             {
               "name": "Dropdown Input",
-              "count": 190
+              "count": 200
             },
             {
               "name": "src_option_redes",
@@ -2912,19 +2912,19 @@
             },
             {
               "name": "Text Area",
-              "count": 75
+              "count": 79
             },
             {
               "name": "Logo Horizontal",
               "count": 73
             },
             {
-              "name": "title_+_options",
+              "name": "Breadcrumb",
               "count": 60
             },
             {
-              "name": "Breadcrumb",
-              "count": 58
+              "name": "title_+_options",
+              "count": 60
             },
             {
               "name": "Card Dashboard",
@@ -2986,54 +2986,62 @@
             },
             {
               "name": "DirectionDown",
-              "count": 328
+              "count": 341
             },
             {
               "name": "DirectionRight",
-              "count": 268
+              "count": 275
             },
             {
               "name": "Option",
-              "count": 139
+              "count": 165
+            },
+            {
+              "name": "Icon",
+              "count": 95
             },
             {
               "name": "Component 9",
               "count": 94
             },
             {
-              "name": "Icon",
-              "count": 93
-            },
-            {
               "name": "Action",
-              "count": 61
-            },
-            {
-              "name": "mail",
-              "count": 47
+              "count": 63
             },
             {
               "name": "Frame 1707479054",
-              "count": 46
+              "count": 51
+            },
+            {
+              "name": "mail",
+              "count": 48
             },
             {
               "name": "Frame 1707479133",
-              "count": 44
+              "count": 46
             },
             {
               "name": "download",
               "count": 32
             },
             {
-              "name": "Simple",
-              "count": 29
+              "name": "informacion de poliza",
+              "count": 28
             },
             {
-              "name": "informacion de poliza",
-              "count": 27
+              "name": "Simple",
+              "count": 28
+            },
+            {
+              "name": "File",
+              "count": 26
             },
             {
               "name": "Tooltip",
+              "count": 25
+            },
+            {
+              "name": "datos personales",
               "count": 25
             },
             {
@@ -3041,19 +3049,11 @@
               "count": 25
             },
             {
-              "name": "File",
+              "name": "directionLeft",
               "count": 24
             },
             {
-              "name": "directionLeft",
-              "count": 23
-            },
-            {
-              "name": "datos personales",
-              "count": 23
-            },
-            {
-              "name": "soles",
+              "name": "24.timer",
               "count": 23
             }
           ]
@@ -3065,14 +3065,14 @@
       "category": "Modelo Día",
       "adoptionRate": 65,
       "totalRfdFrames": 22,
-      "dsInstances": 13859,
-      "internalInstances": 7467,
-      "totalInstances": 21326,
+      "dsInstances": 13997,
+      "internalInstances": 7557,
+      "totalInstances": 21554,
       "uniqueFamiliesCount": 36,
       "uniqueFamilies": [
         {
           "name": "Sidebar",
-          "count": 4145
+          "count": 4221
         },
         {
           "name": "Checkbox",
@@ -3080,7 +3080,7 @@
         },
         {
           "name": "Button",
-          "count": 1342
+          "count": 1356
         },
         {
           "name": "Table",
@@ -3088,35 +3088,35 @@
         },
         {
           "name": "Alert",
-          "count": 803
+          "count": 811
         },
         {
           "name": "Input",
-          "count": 789
+          "count": 802
         },
         {
           "name": "Left Label",
-          "count": 669
+          "count": 673
         },
         {
           "name": "Tag",
-          "count": 646
+          "count": 647
         },
         {
           "name": "Radio",
-          "count": 496
+          "count": 500
         },
         {
           "name": "Header",
-          "count": 404
+          "count": 414
+        },
+        {
+          "name": "Select",
+          "count": 257
         },
         {
           "name": "Chips",
           "count": 256
-        },
-        {
-          "name": "Select",
-          "count": 253
         },
         {
           "name": "Tab",
@@ -3124,7 +3124,7 @@
         },
         {
           "name": "Calendar",
-          "count": 182
+          "count": 186
         },
         {
           "name": "Progress bar",
@@ -3249,23 +3249,27 @@
           "count": 135
         },
         {
+          "name": "Article",
+          "count": 118
+        },
+        {
           "name": "DirectionUp",
           "count": 116
         },
         {
-          "name": "Article",
-          "count": 116
-        },
-        {
           "name": "barras",
-          "count": 112
-        },
-        {
-          "name": "Icon",
-          "count": 109
+          "count": 114
         },
         {
           "name": "billetera",
+          "count": 111
+        },
+        {
+          "name": "description",
+          "count": 110
+        },
+        {
+          "name": "create account",
           "count": 109
         },
         {
@@ -3273,12 +3277,8 @@
           "count": 109
         },
         {
-          "name": "description",
-          "count": 108
-        },
-        {
-          "name": "create account",
-          "count": 107
+          "name": "Icon",
+          "count": 103
         },
         {
           "name": "ArrowLeft",
@@ -3289,11 +3289,11 @@
           "count": 96
         },
         {
-          "name": "AGENDA",
-          "count": 92
+          "name": "download",
+          "count": 94
         },
         {
-          "name": "download",
+          "name": "AGENDA",
           "count": 92
         }
       ],
@@ -3710,31 +3710,31 @@
           "key": "6QBFEXpu6r5ZDNuzYYtK97",
           "name": "Vida Ley & SCTR",
           "rfdFrameCount": 1,
-          "dsInstances": 1801,
-          "internalInstances": 358,
-          "totalInstances": 2159,
-          "adoptionRate": 83,
+          "dsInstances": 1939,
+          "internalInstances": 448,
+          "totalInstances": 2387,
+          "adoptionRate": 81,
           "uniqueFamiliesCount": 27,
           "uniqueFamilies": [
             {
               "name": "Sidebar",
-              "count": 1216
+              "count": 1292
             },
             {
               "name": "Button",
-              "count": 126
+              "count": 140
             },
             {
               "name": "Input",
-              "count": 77
+              "count": 90
             },
             {
               "name": "Alert",
-              "count": 66
+              "count": 74
             },
             {
               "name": "Tag",
-              "count": 51
+              "count": 52
             },
             {
               "name": "Tab",
@@ -3742,7 +3742,11 @@
             },
             {
               "name": "Calendar",
-              "count": 35
+              "count": 39
+            },
+            {
+              "name": "Radio",
+              "count": 27
             },
             {
               "name": "Progress bar",
@@ -3753,16 +3757,16 @@
               "count": 25
             },
             {
-              "name": "Radio",
-              "count": 23
-            },
-            {
               "name": "Select",
-              "count": 16
+              "count": 20
             },
             {
               "name": "Left Label",
-              "count": 13
+              "count": 17
+            },
+            {
+              "name": "Header",
+              "count": 15
             },
             {
               "name": "Slider Controls",
@@ -3790,10 +3794,6 @@
             },
             {
               "name": "Tracking",
-              "count": 5
-            },
-            {
-              "name": "Header",
               "count": 5
             },
             {
@@ -3828,27 +3828,39 @@
           "top20Internal": [
             {
               "name": "barras",
-              "count": 37
+              "count": 39
             },
             {
               "name": "create account",
-              "count": 32
+              "count": 34
             },
             {
               "name": "Article",
-              "count": 32
+              "count": 34
             },
             {
               "name": "billetera",
-              "count": 32
+              "count": 34
             },
             {
               "name": "description",
-              "count": 32
+              "count": 34
             },
             {
               "name": "Line Tracking Vertical",
               "count": 25
+            },
+            {
+              "name": "Island",
+              "count": 22
+            },
+            {
+              "name": "Screenshot",
+              "count": 21
+            },
+            {
+              "name": "Device 14PM",
+              "count": 20
             },
             {
               "name": "ArrowLeft",
@@ -3856,7 +3868,7 @@
             },
             {
               "name": "download",
-              "count": 10
+              "count": 12
             },
             {
               "name": "play : pause",
@@ -3875,6 +3887,10 @@
               "count": 9
             },
             {
+              "name": "Right Label",
+              "count": 8
+            },
+            {
               "name": "Search Suggestion",
               "count": 8
             },
@@ -3889,22 +3905,6 @@
             {
               "name": "Slider",
               "count": 6
-            },
-            {
-              "name": "Icon",
-              "count": 6
-            },
-            {
-              "name": "information person",
-              "count": 6
-            },
-            {
-              "name": "Option",
-              "count": 6
-            },
-            {
-              "name": "filter",
-              "count": 5
             }
           ]
         }
@@ -7439,8 +7439,8 @@
       "date": "2026-06-19",
       "adoptionRate": 65,
       "totalRfdFrames": 22,
-      "totalDs": 13859,
-      "totalInstances": 21326
+      "totalDs": 13997,
+      "totalInstances": 21554
     },
     {
       "team": "Ecommerce",
@@ -7509,8 +7509,8 @@
       "date": "2026-06-19",
       "adoptionRate": 78,
       "totalRfdFrames": 5,
-      "totalDs": 10368,
-      "totalInstances": 13210
+      "totalDs": 10633,
+      "totalInstances": 13584
     },
     {
       "team": "Web Corporativa",
