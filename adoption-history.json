@@ -5,9 +5,9 @@
     "quarter": "Q2 2026",
     "date": "2026-06-19",
     "adoptionRate": 65,
-    "totalRfdFrames": 19,
-    "totalDs": 13064,
-    "totalInstances": 20071
+    "totalRfdFrames": 22,
+    "totalDs": 13859,
+    "totalInstances": 21326
   },
   {
     "team": "Ecommerce",
@@ -84,20 +84,20 @@
     "category": "Web Corporativa",
     "quarter": "Q2 2026",
     "date": "2026-06-19",
-    "adoptionRate": 89,
-    "totalRfdFrames": 14,
-    "totalDs": 1419,
-    "totalInstances": 1591
+    "adoptionRate": 84,
+    "totalRfdFrames": 72,
+    "totalDs": 11118,
+    "totalInstances": 13184
   },
   {
     "team": "Embebidos",
     "category": "Embebidos",
     "quarter": "Q2 2026",
     "date": "2026-06-19",
-    "adoptionRate": 87,
-    "totalRfdFrames": 1,
-    "totalDs": 233,
-    "totalInstances": 267
+    "adoptionRate": 88,
+    "totalRfdFrames": 6,
+    "totalDs": 1424,
+    "totalInstances": 1625
   },
   {
     "team": "SOAT",
@@ -134,19 +134,19 @@
     "category": "Ecommerce",
     "quarter": "Q2 2026",
     "date": "2026-06-19",
-    "adoptionRate": 0,
-    "totalRfdFrames": 0,
-    "totalDs": 0,
-    "totalInstances": 0
+    "adoptionRate": 86,
+    "totalRfdFrames": 8,
+    "totalDs": 3596,
+    "totalInstances": 4195
   },
   {
     "team": "VDT",
     "category": "Ecommerce",
     "quarter": "Q2 2026",
     "date": "2026-06-19",
-    "adoptionRate": 0,
-    "totalRfdFrames": 0,
-    "totalDs": 0,
-    "totalInstances": 0
+    "adoptionRate": 85,
+    "totalRfdFrames": 8,
+    "totalDs": 3906,
+    "totalInstances": 4593
   }
 ]

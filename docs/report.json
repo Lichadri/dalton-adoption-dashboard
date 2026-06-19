@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-19T01:51:40.737Z",
+  "generatedAt": "2026-06-19T02:32:02.073Z",
   "quarter": "Q2 2026",
   "teams": [
     {
@@ -3064,11 +3064,11 @@
       "name": "Modelo Día",
       "category": "Modelo Día",
       "adoptionRate": 65,
-      "totalRfdFrames": 19,
-      "dsInstances": 13064,
-      "internalInstances": 7007,
-      "totalInstances": 20071,
-      "uniqueFamiliesCount": 35,
+      "totalRfdFrames": 22,
+      "dsInstances": 13859,
+      "internalInstances": 7467,
+      "totalInstances": 21326,
+      "uniqueFamiliesCount": 36,
       "uniqueFamilies": [
         {
           "name": "Sidebar",
@@ -3076,35 +3076,35 @@
         },
         {
           "name": "Checkbox",
-          "count": 1402
+          "count": 1418
+        },
+        {
+          "name": "Button",
+          "count": 1342
         },
         {
           "name": "Table",
           "count": 1258
         },
         {
-          "name": "Button",
-          "count": 1146
+          "name": "Alert",
+          "count": 803
         },
         {
-          "name": "Alert",
-          "count": 720
+          "name": "Input",
+          "count": 789
         },
         {
           "name": "Left Label",
           "count": 669
         },
         {
-          "name": "Input",
-          "count": 668
+          "name": "Tag",
+          "count": 646
         },
         {
           "name": "Radio",
-          "count": 474
-        },
-        {
-          "name": "Tag",
-          "count": 457
+          "count": 496
         },
         {
           "name": "Header",
@@ -3112,19 +3112,19 @@
         },
         {
           "name": "Chips",
-          "count": 254
+          "count": 256
         },
         {
           "name": "Select",
-          "count": 241
+          "count": 253
         },
         {
           "name": "Tab",
-          "count": 157
+          "count": 237
         },
         {
           "name": "Calendar",
-          "count": 155
+          "count": 182
         },
         {
           "name": "Progress bar",
@@ -3139,12 +3139,12 @@
           "count": 106
         },
         {
-          "name": "Indicator number",
-          "count": 80
+          "name": "Pagination",
+          "count": 81
         },
         {
-          "name": "Pagination",
-          "count": 76
+          "name": "Indicator number",
+          "count": 80
         },
         {
           "name": "Bar Progress",
@@ -3152,7 +3152,7 @@
         },
         {
           "name": "Label in",
-          "count": 55
+          "count": 67
         },
         {
           "name": "Átomo",
@@ -3161,6 +3161,10 @@
         {
           "name": "Discount Badge",
           "count": 36
+        },
+        {
+          "name": "Dropdown Input",
+          "count": 28
         },
         {
           "name": "Tracking",
@@ -3175,12 +3179,12 @@
           "count": 24
         },
         {
-          "name": "Status Control",
-          "count": 21
+          "name": "Text Area",
+          "count": 23
         },
         {
-          "name": "Dropdown Input",
-          "count": 18
+          "name": "Status Control",
+          "count": 21
         },
         {
           "name": "Main Search",
@@ -3195,8 +3199,8 @@
           "count": 10
         },
         {
-          "name": "Text Area",
-          "count": 9
+          "name": "Toggle",
+          "count": 6
         },
         {
           "name": "Loader",
@@ -3221,12 +3225,12 @@
           "count": 643
         },
         {
-          "name": "Component 16",
-          "count": 270
+          "name": "DirectionDown",
+          "count": 311
         },
         {
-          "name": "DirectionDown",
-          "count": 238
+          "name": "Component 16",
+          "count": 270
         },
         {
           "name": "Botón Primario",
@@ -3281,92 +3285,92 @@
           "count": 97
         },
         {
-          "name": "download",
+          "name": "directionLeft",
+          "count": 96
+        },
+        {
+          "name": "AGENDA",
           "count": 92
         },
         {
-          "name": "BtnBackNext",
-          "count": 90
-        },
-        {
-          "name": "Pregunta formulario",
-          "count": 90
+          "name": "download",
+          "count": 92
         }
       ],
       "files": [
         {
           "key": "sDx9W33S6h0bwrHdGMBe00",
           "name": "Modelo Día 2026",
-          "rfdFrameCount": 12,
-          "dsInstances": 7100,
-          "internalInstances": 1954,
-          "totalInstances": 9054,
-          "adoptionRate": 78,
-          "uniqueFamiliesCount": 32,
+          "rfdFrameCount": 15,
+          "dsInstances": 7895,
+          "internalInstances": 2414,
+          "totalInstances": 10309,
+          "adoptionRate": 77,
+          "uniqueFamiliesCount": 34,
           "uniqueFamilies": [
             {
               "name": "Sidebar",
               "count": 2929
             },
             {
+              "name": "Button",
+              "count": 685
+            },
+            {
               "name": "Left Label",
               "count": 653
             },
             {
-              "name": "Button",
-              "count": 489
-            },
-            {
               "name": "Alert",
-              "count": 470
+              "count": 553
             },
             {
               "name": "Input",
-              "count": 430
+              "count": 551
+            },
+            {
+              "name": "Tag",
+              "count": 512
+            },
+            {
+              "name": "Radio",
+              "count": 347
             },
             {
               "name": "Header",
               "count": 335
             },
             {
-              "name": "Radio",
-              "count": 325
-            },
-            {
-              "name": "Tag",
-              "count": 323
+              "name": "Tab",
+              "count": 187
             },
             {
               "name": "Chips",
-              "count": 143
+              "count": 145
+            },
+            {
+              "name": "Calendar",
+              "count": 139
             },
             {
               "name": "Progress bar",
               "count": 120
             },
             {
-              "name": "Calendar",
-              "count": 112
-            },
-            {
               "name": "Indicator Circle",
               "count": 110
-            },
-            {
-              "name": "Tab",
-              "count": 107
             },
             {
               "name": "Indicator step",
               "count": 106
             },
             {
-              "name": "Indicator number",
-              "count": 80
+              "name": "Checkbox",
+              "count": 94
             },
             {
-              "name": "Checkbox",
-              "count": 78
+              "name": "Indicator number",
+              "count": 80
             },
             {
               "name": "Bar Progress",
@@ -3374,7 +3378,11 @@
             },
             {
               "name": "Select",
-              "count": 47
+              "count": 59
+            },
+            {
+              "name": "Label in",
+              "count": 30
             },
             {
               "name": "Stepper",
@@ -3385,20 +3393,20 @@
               "count": 25
             },
             {
-              "name": "Tracking",
-              "count": 22
+              "name": "Dropdown Input",
+              "count": 24
             },
             {
-              "name": "Label in",
-              "count": 18
+              "name": "Tracking",
+              "count": 22
             },
             {
               "name": "Discount Badge",
               "count": 18
             },
             {
-              "name": "Dropdown Input",
-              "count": 14
+              "name": "Text Area",
+              "count": 16
             },
             {
               "name": "Status Control",
@@ -3417,6 +3425,14 @@
               "count": 6
             },
             {
+              "name": "Toggle",
+              "count": 6
+            },
+            {
+              "name": "Pagination",
+              "count": 5
+            },
+            {
               "name": "Loader",
               "count": 4
             },
@@ -3427,16 +3443,12 @@
             {
               "name": "File uploader",
               "count": 2
-            },
-            {
-              "name": "Text Area",
-              "count": 2
             }
           ],
           "top20Internal": [
             {
               "name": "DirectionDown",
-              "count": 171
+              "count": 244
             },
             {
               "name": "DirectionUp",
@@ -3449,6 +3461,14 @@
             {
               "name": "Icon",
               "count": 103
+            },
+            {
+              "name": "directionLeft",
+              "count": 96
+            },
+            {
+              "name": "AGENDA",
+              "count": 92
             },
             {
               "name": "Article",
@@ -3479,12 +3499,16 @@
               "count": 66
             },
             {
+              "name": "add",
+              "count": 55
+            },
+            {
               "name": "Botón Primario",
               "count": 54
             },
             {
-              "name": "directionLeft",
-              "count": 46
+              "name": "DirectionRight",
+              "count": 47
             },
             {
               "name": "Suggested search",
@@ -3501,18 +3525,6 @@
             {
               "name": "BtnBackNext",
               "count": 27
-            },
-            {
-              "name": "Pregunta formulario",
-              "count": 27
-            },
-            {
-              "name": "Simple",
-              "count": 27
-            },
-            {
-              "name": "Step 01",
-              "count": 26
             }
           ]
         },
@@ -5533,256 +5545,1368 @@
     {
       "name": "Viajes",
       "category": "Ecommerce",
-      "adoptionRate": 0,
-      "totalRfdFrames": 0,
-      "dsInstances": 0,
-      "internalInstances": 0,
-      "totalInstances": 0,
-      "uniqueFamiliesCount": 0,
-      "uniqueFamilies": [],
-      "top20Internal": [],
+      "adoptionRate": 86,
+      "totalRfdFrames": 8,
+      "dsInstances": 3596,
+      "internalInstances": 599,
+      "totalInstances": 4195,
+      "uniqueFamiliesCount": 29,
+      "uniqueFamilies": [
+        {
+          "name": "type_option",
+          "count": 1536
+        },
+        {
+          "name": "Menu Item",
+          "count": 340
+        },
+        {
+          "name": "section_footer",
+          "count": 256
+        },
+        {
+          "name": "Button",
+          "count": 251
+        },
+        {
+          "name": "src_option_redes",
+          "count": 160
+        },
+        {
+          "name": "Input",
+          "count": 155
+        },
+        {
+          "name": "Alert",
+          "count": 131
+        },
+        {
+          "name": "reemplazar slot",
+          "count": 128
+        },
+        {
+          "name": "Tag",
+          "count": 87
+        },
+        {
+          "name": "Menu title",
+          "count": 85
+        },
+        {
+          "name": "title_+_options",
+          "count": 64
+        },
+        {
+          "name": "Header",
+          "count": 54
+        },
+        {
+          "name": "Checkbox",
+          "count": 48
+        },
+        {
+          "name": "Footer",
+          "count": 39
+        },
+        {
+          "name": "src_option_stores_download",
+          "count": 32
+        },
+        {
+          "name": "Stepper",
+          "count": 28
+        },
+        {
+          "name": "Indicator step",
+          "count": 28
+        },
+        {
+          "name": "Topbar",
+          "count": 22
+        },
+        {
+          "name": "Calendar",
+          "count": 22
+        },
+        {
+          "name": "Accordion",
+          "count": 20
+        },
+        {
+          "name": "title_+_phones",
+          "count": 16
+        },
+        {
+          "name": "title_+_social media",
+          "count": 16
+        },
+        {
+          "name": "Tab",
+          "count": 14
+        },
+        {
+          "name": "Loader",
+          "count": 14
+        },
+        {
+          "name": "Bar Progress",
+          "count": 14
+        },
+        {
+          "name": "Átomo",
+          "count": 11
+        },
+        {
+          "name": "Radio",
+          "count": 10
+        },
+        {
+          "name": "Discount Badge",
+          "count": 9
+        },
+        {
+          "name": "Slider Controls",
+          "count": 6
+        }
+      ],
+      "top20Internal": [
+        {
+          "name": "celda",
+          "count": 312
+        },
+        {
+          "name": "Component 120",
+          "count": 56
+        },
+        {
+          "name": "directionLeft",
+          "count": 53
+        },
+        {
+          "name": "whatsapp",
+          "count": 28
+        },
+        {
+          "name": "Indicator Mobile",
+          "count": 14
+        },
+        {
+          "name": "Step 01",
+          "count": 14
+        },
+        {
+          "name": "Step 02",
+          "count": 14
+        },
+        {
+          "name": "torito",
+          "count": 14
+        },
+        {
+          "name": "mail",
+          "count": 13
+        },
+        {
+          "name": "A.white",
+          "count": 10
+        },
+        {
+          "name": "Viajeros",
+          "count": 8
+        },
+        {
+          "name": "advertencia",
+          "count": 8
+        },
+        {
+          "name": "hiking",
+          "count": 7
+        },
+        {
+          "name": "Viajeros Mobile",
+          "count": 7
+        },
+        {
+          "name": "Cancel Icon",
+          "count": 6
+        },
+        {
+          "name": "Pasajeros",
+          "count": 4
+        },
+        {
+          "name": "Spinner mesagge",
+          "count": 4
+        },
+        {
+          "name": "Spinner",
+          "count": 4
+        },
+        {
+          "name": "DirectionUp",
+          "count": 3
+        },
+        {
+          "name": "Seguridad_72x72",
+          "count": 3
+        }
+      ],
       "files": [
         {
           "key": "a924JCQttuuzvRhcJNFiG3",
           "name": "Viajes",
-          "rfdFrameCount": 0,
-          "dsInstances": 0,
-          "internalInstances": 0,
-          "totalInstances": 0,
-          "adoptionRate": 0,
-          "uniqueFamiliesCount": 0,
-          "uniqueFamilies": [],
-          "top20Internal": []
+          "rfdFrameCount": 8,
+          "dsInstances": 3596,
+          "internalInstances": 599,
+          "totalInstances": 4195,
+          "adoptionRate": 86,
+          "uniqueFamiliesCount": 29,
+          "uniqueFamilies": [
+            {
+              "name": "type_option",
+              "count": 1536
+            },
+            {
+              "name": "Menu Item",
+              "count": 340
+            },
+            {
+              "name": "section_footer",
+              "count": 256
+            },
+            {
+              "name": "Button",
+              "count": 251
+            },
+            {
+              "name": "src_option_redes",
+              "count": 160
+            },
+            {
+              "name": "Input",
+              "count": 155
+            },
+            {
+              "name": "Alert",
+              "count": 131
+            },
+            {
+              "name": "reemplazar slot",
+              "count": 128
+            },
+            {
+              "name": "Tag",
+              "count": 87
+            },
+            {
+              "name": "Menu title",
+              "count": 85
+            },
+            {
+              "name": "title_+_options",
+              "count": 64
+            },
+            {
+              "name": "Header",
+              "count": 54
+            },
+            {
+              "name": "Checkbox",
+              "count": 48
+            },
+            {
+              "name": "Footer",
+              "count": 39
+            },
+            {
+              "name": "src_option_stores_download",
+              "count": 32
+            },
+            {
+              "name": "Stepper",
+              "count": 28
+            },
+            {
+              "name": "Indicator step",
+              "count": 28
+            },
+            {
+              "name": "Topbar",
+              "count": 22
+            },
+            {
+              "name": "Calendar",
+              "count": 22
+            },
+            {
+              "name": "Accordion",
+              "count": 20
+            },
+            {
+              "name": "title_+_phones",
+              "count": 16
+            },
+            {
+              "name": "title_+_social media",
+              "count": 16
+            },
+            {
+              "name": "Tab",
+              "count": 14
+            },
+            {
+              "name": "Loader",
+              "count": 14
+            },
+            {
+              "name": "Bar Progress",
+              "count": 14
+            },
+            {
+              "name": "Átomo",
+              "count": 11
+            },
+            {
+              "name": "Radio",
+              "count": 10
+            },
+            {
+              "name": "Discount Badge",
+              "count": 9
+            },
+            {
+              "name": "Slider Controls",
+              "count": 6
+            }
+          ],
+          "top20Internal": [
+            {
+              "name": "celda",
+              "count": 312
+            },
+            {
+              "name": "Component 120",
+              "count": 56
+            },
+            {
+              "name": "directionLeft",
+              "count": 53
+            },
+            {
+              "name": "whatsapp",
+              "count": 28
+            },
+            {
+              "name": "Indicator Mobile",
+              "count": 14
+            },
+            {
+              "name": "Step 01",
+              "count": 14
+            },
+            {
+              "name": "Step 02",
+              "count": 14
+            },
+            {
+              "name": "torito",
+              "count": 14
+            },
+            {
+              "name": "mail",
+              "count": 13
+            },
+            {
+              "name": "A.white",
+              "count": 10
+            },
+            {
+              "name": "Viajeros",
+              "count": 8
+            },
+            {
+              "name": "advertencia",
+              "count": 8
+            },
+            {
+              "name": "hiking",
+              "count": 7
+            },
+            {
+              "name": "Viajeros Mobile",
+              "count": 7
+            },
+            {
+              "name": "Cancel Icon",
+              "count": 6
+            },
+            {
+              "name": "Pasajeros",
+              "count": 4
+            },
+            {
+              "name": "Spinner mesagge",
+              "count": 4
+            },
+            {
+              "name": "Spinner",
+              "count": 4
+            },
+            {
+              "name": "DirectionUp",
+              "count": 3
+            },
+            {
+              "name": "Seguridad_72x72",
+              "count": 3
+            }
+          ]
         }
       ]
     },
     {
       "name": "VDT",
       "category": "Ecommerce",
-      "adoptionRate": 0,
-      "totalRfdFrames": 0,
-      "dsInstances": 0,
-      "internalInstances": 0,
-      "totalInstances": 0,
-      "uniqueFamiliesCount": 0,
-      "uniqueFamilies": [],
-      "top20Internal": [],
+      "adoptionRate": 85,
+      "totalRfdFrames": 8,
+      "dsInstances": 3906,
+      "internalInstances": 687,
+      "totalInstances": 4593,
+      "uniqueFamiliesCount": 29,
+      "uniqueFamilies": [
+        {
+          "name": "type_option",
+          "count": 1152
+        },
+        {
+          "name": "Alert",
+          "count": 618
+        },
+        {
+          "name": "Button",
+          "count": 440
+        },
+        {
+          "name": "Input",
+          "count": 375
+        },
+        {
+          "name": "section_footer",
+          "count": 192
+        },
+        {
+          "name": "src_option_redes",
+          "count": 120
+        },
+        {
+          "name": "Radio",
+          "count": 104
+        },
+        {
+          "name": "reemplazar slot",
+          "count": 96
+        },
+        {
+          "name": "Footer",
+          "count": 93
+        },
+        {
+          "name": "Slider Controls",
+          "count": 90
+        },
+        {
+          "name": "Menu Item",
+          "count": 80
+        },
+        {
+          "name": "Select",
+          "count": 71
+        },
+        {
+          "name": "Checkbox",
+          "count": 68
+        },
+        {
+          "name": "Label in",
+          "count": 57
+        },
+        {
+          "name": "Chips",
+          "count": 57
+        },
+        {
+          "name": "title_+_options",
+          "count": 48
+        },
+        {
+          "name": "Tag",
+          "count": 39
+        },
+        {
+          "name": "Accordion",
+          "count": 34
+        },
+        {
+          "name": "Átomo",
+          "count": 30
+        },
+        {
+          "name": "Chip Deleteable",
+          "count": 28
+        },
+        {
+          "name": "src_option_stores_download",
+          "count": 24
+        },
+        {
+          "name": "Menu title",
+          "count": 20
+        },
+        {
+          "name": "Calendar",
+          "count": 17
+        },
+        {
+          "name": "Header",
+          "count": 12
+        },
+        {
+          "name": "title_+_phones",
+          "count": 12
+        },
+        {
+          "name": "title_+_social media",
+          "count": 12
+        },
+        {
+          "name": "Dropdown Input",
+          "count": 7
+        },
+        {
+          "name": "Progress bar",
+          "count": 6
+        },
+        {
+          "name": "Topbar",
+          "count": 4
+        }
+      ],
+      "top20Internal": [
+        {
+          "name": "Option",
+          "count": 174
+        },
+        {
+          "name": "01 Info",
+          "count": 70
+        },
+        {
+          "name": "ArrowLeft",
+          "count": 58
+        },
+        {
+          "name": "Simple",
+          "count": 54
+        },
+        {
+          "name": "whatsapp",
+          "count": 50
+        },
+        {
+          "name": "Complex",
+          "count": 47
+        },
+        {
+          "name": "Trend",
+          "count": 16
+        },
+        {
+          "name": "A.white",
+          "count": 15
+        },
+        {
+          "name": "Cancel Icon",
+          "count": 14
+        },
+        {
+          "name": "Toast",
+          "count": 14
+        },
+        {
+          "name": "eye_open",
+          "count": 14
+        },
+        {
+          "name": "torito",
+          "count": 14
+        },
+        {
+          "name": "Tooltip",
+          "count": 13
+        },
+        {
+          "name": "send",
+          "count": 12
+        },
+        {
+          "name": "mail",
+          "count": 12
+        },
+        {
+          "name": "resumen",
+          "count": 12
+        },
+        {
+          "name": "Botón primario",
+          "count": 10
+        },
+        {
+          "name": "Scroll",
+          "count": 8
+        },
+        {
+          "name": "download",
+          "count": 8
+        },
+        {
+          "name": "Lock",
+          "count": 7
+        }
+      ],
       "files": [
         {
           "key": "ZmHev0uWWs7m1h61BgUecU",
           "name": "VDT — Perfilador Productos Vida",
-          "rfdFrameCount": 0,
-          "dsInstances": 0,
-          "internalInstances": 0,
-          "totalInstances": 0,
-          "adoptionRate": 0,
-          "uniqueFamiliesCount": 0,
-          "uniqueFamilies": [],
-          "top20Internal": []
+          "rfdFrameCount": 8,
+          "dsInstances": 3906,
+          "internalInstances": 687,
+          "totalInstances": 4593,
+          "adoptionRate": 85,
+          "uniqueFamiliesCount": 29,
+          "uniqueFamilies": [
+            {
+              "name": "type_option",
+              "count": 1152
+            },
+            {
+              "name": "Alert",
+              "count": 618
+            },
+            {
+              "name": "Button",
+              "count": 440
+            },
+            {
+              "name": "Input",
+              "count": 375
+            },
+            {
+              "name": "section_footer",
+              "count": 192
+            },
+            {
+              "name": "src_option_redes",
+              "count": 120
+            },
+            {
+              "name": "Radio",
+              "count": 104
+            },
+            {
+              "name": "reemplazar slot",
+              "count": 96
+            },
+            {
+              "name": "Footer",
+              "count": 93
+            },
+            {
+              "name": "Slider Controls",
+              "count": 90
+            },
+            {
+              "name": "Menu Item",
+              "count": 80
+            },
+            {
+              "name": "Select",
+              "count": 71
+            },
+            {
+              "name": "Checkbox",
+              "count": 68
+            },
+            {
+              "name": "Label in",
+              "count": 57
+            },
+            {
+              "name": "Chips",
+              "count": 57
+            },
+            {
+              "name": "title_+_options",
+              "count": 48
+            },
+            {
+              "name": "Tag",
+              "count": 39
+            },
+            {
+              "name": "Accordion",
+              "count": 34
+            },
+            {
+              "name": "Átomo",
+              "count": 30
+            },
+            {
+              "name": "Chip Deleteable",
+              "count": 28
+            },
+            {
+              "name": "src_option_stores_download",
+              "count": 24
+            },
+            {
+              "name": "Menu title",
+              "count": 20
+            },
+            {
+              "name": "Calendar",
+              "count": 17
+            },
+            {
+              "name": "Header",
+              "count": 12
+            },
+            {
+              "name": "title_+_phones",
+              "count": 12
+            },
+            {
+              "name": "title_+_social media",
+              "count": 12
+            },
+            {
+              "name": "Dropdown Input",
+              "count": 7
+            },
+            {
+              "name": "Progress bar",
+              "count": 6
+            },
+            {
+              "name": "Topbar",
+              "count": 4
+            }
+          ],
+          "top20Internal": [
+            {
+              "name": "Option",
+              "count": 174
+            },
+            {
+              "name": "01 Info",
+              "count": 70
+            },
+            {
+              "name": "ArrowLeft",
+              "count": 58
+            },
+            {
+              "name": "Simple",
+              "count": 54
+            },
+            {
+              "name": "whatsapp",
+              "count": 50
+            },
+            {
+              "name": "Complex",
+              "count": 47
+            },
+            {
+              "name": "Trend",
+              "count": 16
+            },
+            {
+              "name": "A.white",
+              "count": 15
+            },
+            {
+              "name": "Cancel Icon",
+              "count": 14
+            },
+            {
+              "name": "Toast",
+              "count": 14
+            },
+            {
+              "name": "eye_open",
+              "count": 14
+            },
+            {
+              "name": "torito",
+              "count": 14
+            },
+            {
+              "name": "Tooltip",
+              "count": 13
+            },
+            {
+              "name": "send",
+              "count": 12
+            },
+            {
+              "name": "mail",
+              "count": 12
+            },
+            {
+              "name": "resumen",
+              "count": 12
+            },
+            {
+              "name": "Botón primario",
+              "count": 10
+            },
+            {
+              "name": "Scroll",
+              "count": 8
+            },
+            {
+              "name": "download",
+              "count": 8
+            },
+            {
+              "name": "Lock",
+              "count": 7
+            }
+          ]
         }
       ]
     },
     {
       "name": "Web Corporativa",
       "category": "Web Corporativa",
-      "adoptionRate": 89,
-      "totalRfdFrames": 14,
-      "dsInstances": 1419,
-      "internalInstances": 172,
-      "totalInstances": 1591,
-      "uniqueFamiliesCount": 21,
+      "adoptionRate": 84,
+      "totalRfdFrames": 72,
+      "dsInstances": 11118,
+      "internalInstances": 2066,
+      "totalInstances": 13184,
+      "uniqueFamiliesCount": 22,
       "uniqueFamilies": [
         {
           "name": "type_option",
-          "count": 285
+          "count": 3230
         },
         {
           "name": "Átomo",
-          "count": 282
-        },
-        {
-          "name": "Accordion",
-          "count": 266
-        },
-        {
-          "name": "Tab",
-          "count": 132
+          "count": 1463
         },
         {
           "name": "Tag",
-          "count": 132
+          "count": 1160
+        },
+        {
+          "name": "Accordion",
+          "count": 1085
+        },
+        {
+          "name": "Tab",
+          "count": 918
         },
         {
           "name": "Button",
-          "count": 107
-        },
-        {
-          "name": "Alert",
-          "count": 48
+          "count": 842
         },
         {
           "name": "section_footer",
-          "count": 45
+          "count": 510
         },
         {
-          "name": "reemplazar slot",
-          "count": 24
-        },
-        {
-          "name": "Input",
-          "count": 19
-        },
-        {
-          "name": "Calendar",
-          "count": 19
-        },
-        {
-          "name": "Discount Badge",
-          "count": 14
+          "name": "Alert",
+          "count": 414
         },
         {
           "name": "src_option_redes",
-          "count": 10
+          "count": 310
         },
         {
-          "name": "title_+_options",
-          "count": 9
+          "name": "reemplazar slot",
+          "count": 272
         },
         {
           "name": "Slider Controls",
-          "count": 8
+          "count": 172
         },
         {
-          "name": "Breadcrumb",
-          "count": 5
+          "name": "Header",
+          "count": 155
+        },
+        {
+          "name": "Input",
+          "count": 105
+        },
+        {
+          "name": "Calendar",
+          "count": 105
+        },
+        {
+          "name": "title_+_options",
+          "count": 102
         },
         {
           "name": "Status Control",
-          "count": 4
-        },
-        {
-          "name": "title_+_phones",
-          "count": 3
-        },
-        {
-          "name": "title_+_social media",
-          "count": 3
-        },
-        {
-          "name": "Hero",
-          "count": 2
+          "count": 84
         },
         {
           "name": "src_option_stores_download",
-          "count": 2
+          "count": 62
+        },
+        {
+          "name": "Discount Badge",
+          "count": 40
+        },
+        {
+          "name": "title_+_phones",
+          "count": 34
+        },
+        {
+          "name": "title_+_social media",
+          "count": 34
+        },
+        {
+          "name": "Breadcrumb",
+          "count": 14
+        },
+        {
+          "name": "Hero",
+          "count": 7
         }
       ],
       "top20Internal": [
         {
-          "name": "Close Icon",
-          "count": 28
+          "name": "Icon",
+          "count": 221
         },
         {
-          "name": "WithoutShieldHeart",
-          "count": 24
-        },
-        {
-          "name": "Scroll",
-          "count": 22
-        },
-        {
-          "name": "ShieldHeart",
-          "count": 21
+          "name": "CardProductPromo",
+          "count": 206
         },
         {
           "name": "Cotizar",
-          "count": 19
+          "count": 105
         },
         {
           "name": "Video",
-          "count": 19
+          "count": 105
         },
         {
-          "name": "hogar",
-          "count": 6
+          "name": "Close Icon",
+          "count": 96
         },
         {
-          "name": "support",
-          "count": 4
+          "name": "Scroll",
+          "count": 80
         },
         {
-          "name": "download",
-          "count": 4
+          "name": "CardMenúMobile",
+          "count": 79
         },
         {
-          "name": "Icon",
-          "count": 4
+          "name": "CardMenú",
+          "count": 77
+        },
+        {
+          "name": "WithoutShieldHeart",
+          "count": 72
+        },
+        {
+          "name": "ShieldHeart",
+          "count": 69
+        },
+        {
+          "name": "BotónCategoría",
+          "count": 69
+        },
+        {
+          "name": "Slider",
+          "count": 64
+        },
+        {
+          "name": "_Link Icon",
+          "count": 51
         },
         {
           "name": "_Button Icon",
-          "count": 4
+          "count": 49
+        },
+        {
+          "name": "Car",
+          "count": 48
+        },
+        {
+          "name": "Trend",
+          "count": 46
+        },
+        {
+          "name": "MedicalService",
+          "count": 46
         },
         {
           "name": "submenu",
-          "count": 4
+          "count": 44
+        },
+        {
+          "name": "Link Stamp",
+          "count": 34
         },
         {
           "name": "title_+_badges_download",
-          "count": 3
-        },
-        {
-          "name": "link",
-          "count": 2
-        },
-        {
-          "name": "Beneficios",
-          "count": 2
-        },
-        {
-          "name": "SecciónMEP",
-          "count": 2
-        },
-        {
-          "name": "phone",
-          "count": 1
-        },
-        {
-          "name": "user",
-          "count": 1
-        },
-        {
-          "name": "notifications",
-          "count": 1
-        },
-        {
-          "name": "PricingSection",
-          "count": 1
+          "count": 34
         }
       ],
       "files": [
         {
           "key": "XaZynqqaHNdtOL7E2TtbLq",
           "name": "Productos Vida",
-          "rfdFrameCount": 0,
-          "dsInstances": 0,
-          "internalInstances": 0,
-          "totalInstances": 0,
-          "adoptionRate": 0,
-          "uniqueFamiliesCount": 0,
-          "uniqueFamilies": [],
-          "top20Internal": []
+          "rfdFrameCount": 55,
+          "dsInstances": 5094,
+          "internalInstances": 731,
+          "totalInstances": 5825,
+          "adoptionRate": 87,
+          "uniqueFamiliesCount": 21,
+          "uniqueFamilies": [
+            {
+              "name": "type_option",
+              "count": 950
+            },
+            {
+              "name": "Átomo",
+              "count": 909
+            },
+            {
+              "name": "Accordion",
+              "count": 819
+            },
+            {
+              "name": "Tag",
+              "count": 678
+            },
+            {
+              "name": "Tab",
+              "count": 484
+            },
+            {
+              "name": "Button",
+              "count": 404
+            },
+            {
+              "name": "Alert",
+              "count": 214
+            },
+            {
+              "name": "section_footer",
+              "count": 150
+            },
+            {
+              "name": "src_option_redes",
+              "count": 100
+            },
+            {
+              "name": "Input",
+              "count": 86
+            },
+            {
+              "name": "Calendar",
+              "count": 86
+            },
+            {
+              "name": "reemplazar slot",
+              "count": 80
+            },
+            {
+              "name": "title_+_options",
+              "count": 30
+            },
+            {
+              "name": "Discount Badge",
+              "count": 26
+            },
+            {
+              "name": "src_option_stores_download",
+              "count": 20
+            },
+            {
+              "name": "Slider Controls",
+              "count": 18
+            },
+            {
+              "name": "title_+_phones",
+              "count": 10
+            },
+            {
+              "name": "title_+_social media",
+              "count": 10
+            },
+            {
+              "name": "Breadcrumb",
+              "count": 9
+            },
+            {
+              "name": "Status Control",
+              "count": 9
+            },
+            {
+              "name": "Hero",
+              "count": 2
+            }
+          ],
+          "top20Internal": [
+            {
+              "name": "Cotizar",
+              "count": 86
+            },
+            {
+              "name": "Video",
+              "count": 86
+            },
+            {
+              "name": "Close Icon",
+              "count": 68
+            },
+            {
+              "name": "Scroll",
+              "count": 58
+            },
+            {
+              "name": "_Link Icon",
+              "count": 51
+            },
+            {
+              "name": "ShieldHeart",
+              "count": 48
+            },
+            {
+              "name": "WithoutShieldHeart",
+              "count": 48
+            },
+            {
+              "name": "_Button Icon",
+              "count": 45
+            },
+            {
+              "name": "submenu",
+              "count": 40
+            },
+            {
+              "name": "Link Stamp",
+              "count": 34
+            },
+            {
+              "name": "link",
+              "count": 20
+            },
+            {
+              "name": "Icon",
+              "count": 18
+            },
+            {
+              "name": "support",
+              "count": 18
+            },
+            {
+              "name": "download",
+              "count": 18
+            },
+            {
+              "name": "Link Details",
+              "count": 17
+            },
+            {
+              "name": "vida inversión",
+              "count": 17
+            },
+            {
+              "name": "phone",
+              "count": 10
+            },
+            {
+              "name": "user",
+              "count": 10
+            },
+            {
+              "name": "notifications",
+              "count": 10
+            },
+            {
+              "name": "title_+_badges_download",
+              "count": 10
+            }
+          ]
         },
         {
           "key": "m8OsFy9gG7vcZTzkTIKDOR",
           "name": "Menú / Home",
-          "rfdFrameCount": 0,
-          "dsInstances": 0,
-          "internalInstances": 0,
-          "totalInstances": 0,
-          "adoptionRate": 0,
-          "uniqueFamiliesCount": 0,
-          "uniqueFamilies": [],
-          "top20Internal": []
+          "rfdFrameCount": 3,
+          "dsInstances": 4605,
+          "internalInstances": 1163,
+          "totalInstances": 5768,
+          "adoptionRate": 80,
+          "uniqueFamiliesCount": 17,
+          "uniqueFamilies": [
+            {
+              "name": "type_option",
+              "count": 1995
+            },
+            {
+              "name": "Tag",
+              "count": 350
+            },
+            {
+              "name": "Button",
+              "count": 331
+            },
+            {
+              "name": "section_footer",
+              "count": 315
+            },
+            {
+              "name": "Tab",
+              "count": 302
+            },
+            {
+              "name": "Átomo",
+              "count": 272
+            },
+            {
+              "name": "src_option_redes",
+              "count": 200
+            },
+            {
+              "name": "reemplazar slot",
+              "count": 168
+            },
+            {
+              "name": "Header",
+              "count": 155
+            },
+            {
+              "name": "Alert",
+              "count": 152
+            },
+            {
+              "name": "Slider Controls",
+              "count": 146
+            },
+            {
+              "name": "Status Control",
+              "count": 71
+            },
+            {
+              "name": "title_+_options",
+              "count": 63
+            },
+            {
+              "name": "src_option_stores_download",
+              "count": 40
+            },
+            {
+              "name": "title_+_phones",
+              "count": 21
+            },
+            {
+              "name": "title_+_social media",
+              "count": 21
+            },
+            {
+              "name": "Hero",
+              "count": 3
+            }
+          ],
+          "top20Internal": [
+            {
+              "name": "CardProductPromo",
+              "count": 206
+            },
+            {
+              "name": "Icon",
+              "count": 199
+            },
+            {
+              "name": "CardMenúMobile",
+              "count": 79
+            },
+            {
+              "name": "CardMenú",
+              "count": 77
+            },
+            {
+              "name": "BotónCategoría",
+              "count": 69
+            },
+            {
+              "name": "Slider",
+              "count": 64
+            },
+            {
+              "name": "Car",
+              "count": 48
+            },
+            {
+              "name": "Trend",
+              "count": 46
+            },
+            {
+              "name": "MedicalService",
+              "count": 46
+            },
+            {
+              "name": "ProductTabs",
+              "count": 34
+            },
+            {
+              "name": "DirectionDown",
+              "count": 30
+            },
+            {
+              "name": "Component 86",
+              "count": 23
+            },
+            {
+              "name": "Homework",
+              "count": 22
+            },
+            {
+              "name": "title_+_badges_download",
+              "count": 21
+            },
+            {
+              "name": "Component 88",
+              "count": 21
+            },
+            {
+              "name": "Component 89",
+              "count": 20
+            },
+            {
+              "name": "Component 87",
+              "count": 15
+            },
+            {
+              "name": "group",
+              "count": 14
+            },
+            {
+              "name": "Frame 1707480235",
+              "count": 11
+            },
+            {
+              "name": "barras",
+              "count": 8
+            }
+          ]
         },
         {
           "key": "qnAHAbm5nt9jLXAWUjf8ZY",
@@ -5967,276 +7091,340 @@
     {
       "name": "Embebidos",
       "category": "Embebidos",
-      "adoptionRate": 87,
-      "totalRfdFrames": 1,
-      "dsInstances": 233,
-      "internalInstances": 34,
-      "totalInstances": 267,
-      "uniqueFamiliesCount": 16,
+      "adoptionRate": 88,
+      "totalRfdFrames": 6,
+      "dsInstances": 1424,
+      "internalInstances": 201,
+      "totalInstances": 1625,
+      "uniqueFamiliesCount": 19,
       "uniqueFamilies": [
         {
           "name": "type_option",
-          "count": 95
+          "count": 570
         },
         {
           "name": "Átomo",
-          "count": 31
+          "count": 188
         },
         {
           "name": "Accordion",
-          "count": 23
+          "count": 128
         },
         {
           "name": "Tab",
-          "count": 15
+          "count": 100
         },
         {
           "name": "section_footer",
-          "count": 15
+          "count": 90
         },
         {
           "name": "Button",
-          "count": 12
+          "count": 81
         },
         {
           "name": "Tag",
-          "count": 12
+          "count": 81
         },
         {
           "name": "src_option_redes",
-          "count": 10
+          "count": 60
         },
         {
           "name": "reemplazar slot",
-          "count": 8
+          "count": 48
         },
         {
           "name": "title_+_options",
-          "count": 3
-        },
-        {
-          "name": "Hero",
-          "count": 2
+          "count": 18
         },
         {
           "name": "Alert",
-          "count": 2
+          "count": 16
         },
         {
           "name": "src_option_stores_download",
-          "count": 2
+          "count": 12
+        },
+        {
+          "name": "Hero",
+          "count": 10
         },
         {
           "name": "Breadcrumb",
-          "count": 1
+          "count": 6
         },
         {
           "name": "title_+_phones",
-          "count": 1
+          "count": 6
         },
         {
           "name": "title_+_social media",
+          "count": 6
+        },
+        {
+          "name": "Logo Horizontal",
+          "count": 2
+        },
+        {
+          "name": "Input",
+          "count": 1
+        },
+        {
+          "name": "Calendar",
           "count": 1
         }
       ],
       "top20Internal": [
         {
-          "name": "SecciónDescripción",
-          "count": 4
-        },
-        {
           "name": "icon",
-          "count": 4
+          "count": 24
         },
         {
-          "name": "problema eléctrico",
-          "count": 3
+          "name": "SecciónDescripción",
+          "count": 21
         },
         {
           "name": "Icon",
-          "count": 3
+          "count": 18
         },
         {
           "name": "Image",
-          "count": 3
-        },
-        {
-          "name": "LogosCollab",
-          "count": 2
-        },
-        {
-          "name": "robo de autopartes",
-          "count": 2
-        },
-        {
-          "name": "SeccionCanales",
-          "count": 2
-        },
-        {
-          "name": "CoberturasIconos",
-          "count": 2
+          "count": 18
         },
         {
           "name": "WithoutShieldHeart",
-          "count": 2
+          "count": 14
+        },
+        {
+          "name": "SeccionCanales",
+          "count": 12
         },
         {
           "name": "PersonalInjuy",
-          "count": 2
+          "count": 12
         },
         {
           "name": "Information",
-          "count": 2
+          "count": 11
         },
         {
-          "name": "Complex",
-          "count": 1
+          "name": "LogosCollab",
+          "count": 10
+        },
+        {
+          "name": "CoberturasIconos",
+          "count": 10
         },
         {
           "name": "Scroll",
-          "count": 1
+          "count": 8
+        },
+        {
+          "name": "Complex",
+          "count": 6
         },
         {
           "name": "title_+_badges_download",
-          "count": 1
+          "count": 6
+        },
+        {
+          "name": "problema eléctrico",
+          "count": 5
+        },
+        {
+          "name": "robo de autopartes",
+          "count": 4
+        },
+        {
+          "name": "avión",
+          "count": 2
+        },
+        {
+          "name": "generales",
+          "count": 2
+        },
+        {
+          "name": "download",
+          "count": 2
+        },
+        {
+          "name": "fractura",
+          "count": 2
+        },
+        {
+          "name": "doctor",
+          "count": 2
         }
       ],
       "files": [
         {
           "key": "X8aq9jmjEuGuWDblebqRFz",
           "name": "Landing Alianzas",
-          "rfdFrameCount": 1,
-          "dsInstances": 233,
-          "internalInstances": 34,
-          "totalInstances": 267,
-          "adoptionRate": 87,
-          "uniqueFamiliesCount": 16,
+          "rfdFrameCount": 6,
+          "dsInstances": 1424,
+          "internalInstances": 201,
+          "totalInstances": 1625,
+          "adoptionRate": 88,
+          "uniqueFamiliesCount": 19,
           "uniqueFamilies": [
             {
               "name": "type_option",
-              "count": 95
+              "count": 570
             },
             {
               "name": "Átomo",
-              "count": 31
+              "count": 188
             },
             {
               "name": "Accordion",
-              "count": 23
+              "count": 128
             },
             {
               "name": "Tab",
-              "count": 15
+              "count": 100
             },
             {
               "name": "section_footer",
-              "count": 15
+              "count": 90
             },
             {
               "name": "Button",
-              "count": 12
+              "count": 81
             },
             {
               "name": "Tag",
-              "count": 12
+              "count": 81
             },
             {
               "name": "src_option_redes",
-              "count": 10
+              "count": 60
             },
             {
               "name": "reemplazar slot",
-              "count": 8
+              "count": 48
             },
             {
               "name": "title_+_options",
-              "count": 3
-            },
-            {
-              "name": "Hero",
-              "count": 2
+              "count": 18
             },
             {
               "name": "Alert",
-              "count": 2
+              "count": 16
             },
             {
               "name": "src_option_stores_download",
-              "count": 2
+              "count": 12
+            },
+            {
+              "name": "Hero",
+              "count": 10
             },
             {
               "name": "Breadcrumb",
-              "count": 1
+              "count": 6
             },
             {
               "name": "title_+_phones",
-              "count": 1
+              "count": 6
             },
             {
               "name": "title_+_social media",
+              "count": 6
+            },
+            {
+              "name": "Logo Horizontal",
+              "count": 2
+            },
+            {
+              "name": "Input",
+              "count": 1
+            },
+            {
+              "name": "Calendar",
               "count": 1
             }
           ],
           "top20Internal": [
             {
-              "name": "SecciónDescripción",
-              "count": 4
-            },
-            {
               "name": "icon",
-              "count": 4
+              "count": 24
             },
             {
-              "name": "problema eléctrico",
-              "count": 3
+              "name": "SecciónDescripción",
+              "count": 21
             },
             {
               "name": "Icon",
-              "count": 3
+              "count": 18
             },
             {
               "name": "Image",
-              "count": 3
-            },
-            {
-              "name": "LogosCollab",
-              "count": 2
-            },
-            {
-              "name": "robo de autopartes",
-              "count": 2
-            },
-            {
-              "name": "SeccionCanales",
-              "count": 2
-            },
-            {
-              "name": "CoberturasIconos",
-              "count": 2
+              "count": 18
             },
             {
               "name": "WithoutShieldHeart",
-              "count": 2
+              "count": 14
+            },
+            {
+              "name": "SeccionCanales",
+              "count": 12
             },
             {
               "name": "PersonalInjuy",
-              "count": 2
+              "count": 12
             },
             {
               "name": "Information",
-              "count": 2
+              "count": 11
             },
             {
-              "name": "Complex",
-              "count": 1
+              "name": "LogosCollab",
+              "count": 10
+            },
+            {
+              "name": "CoberturasIconos",
+              "count": 10
             },
             {
               "name": "Scroll",
-              "count": 1
+              "count": 8
+            },
+            {
+              "name": "Complex",
+              "count": 6
             },
             {
               "name": "title_+_badges_download",
-              "count": 1
+              "count": 6
+            },
+            {
+              "name": "problema eléctrico",
+              "count": 5
+            },
+            {
+              "name": "robo de autopartes",
+              "count": 4
+            },
+            {
+              "name": "avión",
+              "count": 2
+            },
+            {
+              "name": "generales",
+              "count": 2
+            },
+            {
+              "name": "download",
+              "count": 2
+            },
+            {
+              "name": "fractura",
+              "count": 2
+            },
+            {
+              "name": "doctor",
+              "count": 2
             }
           ]
         }
@@ -6250,9 +7438,9 @@
       "quarter": "Q2 2026",
       "date": "2026-06-19",
       "adoptionRate": 65,
-      "totalRfdFrames": 19,
-      "totalDs": 13064,
-      "totalInstances": 20071
+      "totalRfdFrames": 22,
+      "totalDs": 13859,
+      "totalInstances": 21326
     },
     {
       "team": "Ecommerce",
@@ -6329,20 +7517,20 @@
       "category": "Web Corporativa",
       "quarter": "Q2 2026",
       "date": "2026-06-19",
-      "adoptionRate": 89,
-      "totalRfdFrames": 14,
-      "totalDs": 1419,
-      "totalInstances": 1591
+      "adoptionRate": 84,
+      "totalRfdFrames": 72,
+      "totalDs": 11118,
+      "totalInstances": 13184
     },
     {
       "team": "Embebidos",
       "category": "Embebidos",
       "quarter": "Q2 2026",
       "date": "2026-06-19",
-      "adoptionRate": 87,
-      "totalRfdFrames": 1,
-      "totalDs": 233,
-      "totalInstances": 267
+      "adoptionRate": 88,
+      "totalRfdFrames": 6,
+      "totalDs": 1424,
+      "totalInstances": 1625
     },
     {
       "team": "SOAT",
@@ -6379,20 +7567,20 @@
       "category": "Ecommerce",
       "quarter": "Q2 2026",
       "date": "2026-06-19",
-      "adoptionRate": 0,
-      "totalRfdFrames": 0,
-      "totalDs": 0,
-      "totalInstances": 0
+      "adoptionRate": 86,
+      "totalRfdFrames": 8,
+      "totalDs": 3596,
+      "totalInstances": 4195
     },
     {
       "team": "VDT",
       "category": "Ecommerce",
       "quarter": "Q2 2026",
       "date": "2026-06-19",
-      "adoptionRate": 0,
-      "totalRfdFrames": 0,
-      "totalDs": 0,
-      "totalInstances": 0
+      "adoptionRate": 85,
+      "totalRfdFrames": 8,
+      "totalDs": 3906,
+      "totalInstances": 4593
     }
   ]
 }
