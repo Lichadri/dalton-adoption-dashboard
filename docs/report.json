@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-19T14:46:23.529Z",
+  "generatedAt": "2026-06-19T17:31:58.990Z",
   "quarter": "Q2 2026",
   "teams": [
     {
@@ -1847,9 +1847,9 @@
       "category": "Nueva Web Empresas",
       "adoptionRate": 94,
       "totalRfdFrames": 44,
-      "dsInstances": 172957,
-      "internalInstances": 11346,
-      "totalInstances": 184303,
+      "dsInstances": 172968,
+      "internalInstances": 11352,
+      "totalInstances": 184320,
       "uniqueFamiliesCount": 47,
       "uniqueFamilies": [
         {
@@ -1870,11 +1870,11 @@
         },
         {
           "name": "Button",
-          "count": 7909
+          "count": 7914
         },
         {
           "name": "Alert",
-          "count": 5287
+          "count": 5290
         },
         {
           "name": "title_+_options",
@@ -1910,7 +1910,7 @@
         },
         {
           "name": "Footer",
-          "count": 1189
+          "count": 1191
         },
         {
           "name": "Indicator step",
@@ -1970,7 +1970,7 @@
         },
         {
           "name": "Tab",
-          "count": 216
+          "count": 217
         },
         {
           "name": "Select",
@@ -2056,7 +2056,7 @@
         },
         {
           "name": "Home_Header",
-          "count": 511
+          "count": 512
         },
         {
           "name": "Action 1",
@@ -2120,7 +2120,7 @@
         },
         {
           "name": "width fixed pagination",
-          "count": 103
+          "count": 104
         }
       ],
       "files": [
@@ -2338,9 +2338,9 @@
           "key": "j4Uyzko4eQSDtEaWyVm2JM",
           "name": "Home Empresas",
           "rfdFrameCount": 37,
-          "dsInstances": 157752,
-          "internalInstances": 10480,
-          "totalInstances": 168232,
+          "dsInstances": 157763,
+          "internalInstances": 10486,
+          "totalInstances": 168249,
           "adoptionRate": 94,
           "uniqueFamiliesCount": 42,
           "uniqueFamilies": [
@@ -2362,11 +2362,11 @@
             },
             {
               "name": "Button",
-              "count": 7416
+              "count": 7421
             },
             {
               "name": "Alert",
-              "count": 5248
+              "count": 5251
             },
             {
               "name": "title_+_options",
@@ -2406,7 +2406,7 @@
             },
             {
               "name": "Footer",
-              "count": 1093
+              "count": 1095
             },
             {
               "name": "title_+_phones",
@@ -2454,7 +2454,7 @@
             },
             {
               "name": "Tab",
-              "count": 216
+              "count": 217
             },
             {
               "name": "Select",
@@ -2528,7 +2528,7 @@
             },
             {
               "name": "Home_Header",
-              "count": 511
+              "count": 512
             },
             {
               "name": "Action 1",
@@ -2588,7 +2588,7 @@
             },
             {
               "name": "width fixed pagination",
-              "count": 103
+              "count": 104
             },
             {
               "name": "File",
@@ -2603,14 +2603,14 @@
       "category": "Portal Digital de Siniestros",
       "adoptionRate": 78,
       "totalRfdFrames": 5,
-      "dsInstances": 10633,
-      "internalInstances": 2951,
-      "totalInstances": 13584,
+      "dsInstances": 10716,
+      "internalInstances": 3008,
+      "totalInstances": 13724,
       "uniqueFamiliesCount": 34,
       "uniqueFamilies": [
         {
           "name": "Button",
-          "count": 1532
+          "count": 1543
         },
         {
           "name": "type_option",
@@ -2618,11 +2618,11 @@
         },
         {
           "name": "Input",
-          "count": 1358
+          "count": 1363
         },
         {
           "name": "Alert",
-          "count": 1341
+          "count": 1346
         },
         {
           "name": "Select",
@@ -2630,19 +2630,19 @@
         },
         {
           "name": "Tag",
-          "count": 608
-        },
-        {
-          "name": "Footer",
-          "count": 441
+          "count": 610
         },
         {
           "name": "Checkbox",
-          "count": 414
+          "count": 454
+        },
+        {
+          "name": "Footer",
+          "count": 445
         },
         {
           "name": "Átomo",
-          "count": 316
+          "count": 326
         },
         {
           "name": "Radio",
@@ -2678,7 +2678,7 @@
         },
         {
           "name": "Chips",
-          "count": 105
+          "count": 108
         },
         {
           "name": "Text Area",
@@ -2686,11 +2686,11 @@
         },
         {
           "name": "Logo Horizontal",
-          "count": 73
+          "count": 74
         },
         {
           "name": "Breadcrumb",
-          "count": 60
+          "count": 62
         },
         {
           "name": "title_+_options",
@@ -2748,19 +2748,19 @@
       "top20Internal": [
         {
           "name": "Pegar Icon",
-          "count": 484
+          "count": 499
         },
         {
           "name": "copy",
-          "count": 439
+          "count": 454
         },
         {
           "name": "DirectionDown",
-          "count": 341
+          "count": 348
         },
         {
           "name": "DirectionRight",
-          "count": 275
+          "count": 281
         },
         {
           "name": "Option",
@@ -2795,11 +2795,11 @@
           "count": 32
         },
         {
-          "name": "informacion de poliza",
-          "count": 28
+          "name": "Simple",
+          "count": 29
         },
         {
-          "name": "Simple",
+          "name": "informacion de poliza",
           "count": 28
         },
         {
@@ -2807,20 +2807,20 @@
           "count": 26
         },
         {
-          "name": "Tooltip",
-          "count": 25
-        },
-        {
           "name": "datos personales",
-          "count": 25
+          "count": 26
         },
         {
           "name": "dólares",
-          "count": 25
+          "count": 26
         },
         {
           "name": "directionLeft",
-          "count": 24
+          "count": 25
+        },
+        {
+          "name": "Tooltip",
+          "count": 25
         },
         {
           "name": "24.timer",
@@ -2832,15 +2832,15 @@
           "key": "y8YuwqsKA18BElJM0MFbFU",
           "name": "Portal Digital de Siniestros",
           "rfdFrameCount": 5,
-          "dsInstances": 10633,
-          "internalInstances": 2951,
-          "totalInstances": 13584,
+          "dsInstances": 10716,
+          "internalInstances": 3008,
+          "totalInstances": 13724,
           "adoptionRate": 78,
           "uniqueFamiliesCount": 34,
           "uniqueFamilies": [
             {
               "name": "Button",
-              "count": 1532
+              "count": 1543
             },
             {
               "name": "type_option",
@@ -2848,11 +2848,11 @@
             },
             {
               "name": "Input",
-              "count": 1358
+              "count": 1363
             },
             {
               "name": "Alert",
-              "count": 1341
+              "count": 1346
             },
             {
               "name": "Select",
@@ -2860,19 +2860,19 @@
             },
             {
               "name": "Tag",
-              "count": 608
-            },
-            {
-              "name": "Footer",
-              "count": 441
+              "count": 610
             },
             {
               "name": "Checkbox",
-              "count": 414
+              "count": 454
+            },
+            {
+              "name": "Footer",
+              "count": 445
             },
             {
               "name": "Átomo",
-              "count": 316
+              "count": 326
             },
             {
               "name": "Radio",
@@ -2908,7 +2908,7 @@
             },
             {
               "name": "Chips",
-              "count": 105
+              "count": 108
             },
             {
               "name": "Text Area",
@@ -2916,11 +2916,11 @@
             },
             {
               "name": "Logo Horizontal",
-              "count": 73
+              "count": 74
             },
             {
               "name": "Breadcrumb",
-              "count": 60
+              "count": 62
             },
             {
               "name": "title_+_options",
@@ -2978,19 +2978,19 @@
           "top20Internal": [
             {
               "name": "Pegar Icon",
-              "count": 484
+              "count": 499
             },
             {
               "name": "copy",
-              "count": 439
+              "count": 454
             },
             {
               "name": "DirectionDown",
-              "count": 341
+              "count": 348
             },
             {
               "name": "DirectionRight",
-              "count": 275
+              "count": 281
             },
             {
               "name": "Option",
@@ -3025,11 +3025,11 @@
               "count": 32
             },
             {
-              "name": "informacion de poliza",
-              "count": 28
+              "name": "Simple",
+              "count": 29
             },
             {
-              "name": "Simple",
+              "name": "informacion de poliza",
               "count": 28
             },
             {
@@ -3037,20 +3037,20 @@
               "count": 26
             },
             {
-              "name": "Tooltip",
-              "count": 25
-            },
-            {
               "name": "datos personales",
-              "count": 25
+              "count": 26
             },
             {
               "name": "dólares",
-              "count": 25
+              "count": 26
             },
             {
               "name": "directionLeft",
-              "count": 24
+              "count": 25
+            },
+            {
+              "name": "Tooltip",
+              "count": 25
             },
             {
               "name": "24.timer",
@@ -3065,9 +3065,9 @@
       "category": "Modelo Día",
       "adoptionRate": 65,
       "totalRfdFrames": 22,
-      "dsInstances": 13997,
-      "internalInstances": 7557,
-      "totalInstances": 21554,
+      "dsInstances": 14039,
+      "internalInstances": 7579,
+      "totalInstances": 21618,
       "uniqueFamiliesCount": 36,
       "uniqueFamilies": [
         {
@@ -3080,7 +3080,7 @@
         },
         {
           "name": "Button",
-          "count": 1356
+          "count": 1363
         },
         {
           "name": "Table",
@@ -3088,23 +3088,23 @@
         },
         {
           "name": "Alert",
-          "count": 811
+          "count": 819
         },
         {
           "name": "Input",
-          "count": 802
+          "count": 808
         },
         {
           "name": "Left Label",
-          "count": 673
+          "count": 675
         },
         {
           "name": "Tag",
-          "count": 647
+          "count": 651
         },
         {
           "name": "Radio",
-          "count": 500
+          "count": 504
         },
         {
           "name": "Header",
@@ -3112,7 +3112,7 @@
         },
         {
           "name": "Select",
-          "count": 257
+          "count": 259
         },
         {
           "name": "Chips",
@@ -3124,7 +3124,7 @@
         },
         {
           "name": "Calendar",
-          "count": 186
+          "count": 189
         },
         {
           "name": "Progress bar",
@@ -3136,7 +3136,7 @@
         },
         {
           "name": "Indicator step",
-          "count": 106
+          "count": 109
         },
         {
           "name": "Pagination",
@@ -3148,7 +3148,7 @@
         },
         {
           "name": "Bar Progress",
-          "count": 70
+          "count": 72
         },
         {
           "name": "Label in",
@@ -3167,12 +3167,12 @@
           "count": 28
         },
         {
-          "name": "Tracking",
+          "name": "Stepper",
           "count": 27
         },
         {
-          "name": "Stepper",
-          "count": 26
+          "name": "Tracking",
+          "count": 27
         },
         {
           "name": "Slider Controls",
@@ -3710,11 +3710,11 @@
           "key": "6QBFEXpu6r5ZDNuzYYtK97",
           "name": "Vida Ley & SCTR",
           "rfdFrameCount": 1,
-          "dsInstances": 1939,
-          "internalInstances": 448,
-          "totalInstances": 2387,
+          "dsInstances": 1981,
+          "internalInstances": 470,
+          "totalInstances": 2451,
           "adoptionRate": 81,
-          "uniqueFamiliesCount": 27,
+          "uniqueFamiliesCount": 30,
           "uniqueFamilies": [
             {
               "name": "Sidebar",
@@ -3722,19 +3722,19 @@
             },
             {
               "name": "Button",
-              "count": 140
+              "count": 147
             },
             {
               "name": "Input",
-              "count": 90
+              "count": 96
             },
             {
               "name": "Alert",
-              "count": 74
+              "count": 82
             },
             {
               "name": "Tag",
-              "count": 52
+              "count": 56
             },
             {
               "name": "Tab",
@@ -3742,11 +3742,11 @@
             },
             {
               "name": "Calendar",
-              "count": 39
+              "count": 42
             },
             {
               "name": "Radio",
-              "count": 27
+              "count": 31
             },
             {
               "name": "Progress bar",
@@ -3758,11 +3758,11 @@
             },
             {
               "name": "Select",
-              "count": 20
+              "count": 22
             },
             {
               "name": "Left Label",
-              "count": 17
+              "count": 19
             },
             {
               "name": "Header",
@@ -3809,7 +3809,15 @@
               "count": 4
             },
             {
+              "name": "Indicator step",
+              "count": 3
+            },
+            {
               "name": "Text Area",
+              "count": 2
+            },
+            {
+              "name": "Bar Progress",
               "count": 2
             },
             {
@@ -3822,6 +3830,10 @@
             },
             {
               "name": "Átomo",
+              "count": 1
+            },
+            {
+              "name": "Stepper",
               "count": 1
             }
           ],
@@ -3871,6 +3883,10 @@
               "count": 12
             },
             {
+              "name": "Right Label",
+              "count": 10
+            },
+            {
               "name": "play : pause",
               "count": 9
             },
@@ -3885,10 +3901,6 @@
             {
               "name": "Search Button",
               "count": 9
-            },
-            {
-              "name": "Right Label",
-              "count": 8
             },
             {
               "name": "Search Suggestion",
@@ -7439,8 +7451,8 @@
       "date": "2026-06-19",
       "adoptionRate": 65,
       "totalRfdFrames": 22,
-      "totalDs": 13997,
-      "totalInstances": 21554
+      "totalDs": 14039,
+      "totalInstances": 21618
     },
     {
       "team": "Ecommerce",
@@ -7499,8 +7511,8 @@
       "date": "2026-06-19",
       "adoptionRate": 94,
       "totalRfdFrames": 44,
-      "totalDs": 172957,
-      "totalInstances": 184303
+      "totalDs": 172968,
+      "totalInstances": 184320
     },
     {
       "team": "Portal Digital de Siniestros",
@@ -7509,8 +7521,8 @@
       "date": "2026-06-19",
       "adoptionRate": 78,
       "totalRfdFrames": 5,
-      "totalDs": 10633,
-      "totalInstances": 13584
+      "totalDs": 10716,
+      "totalInstances": 13724
     },
     {
       "team": "Web Corporativa",
