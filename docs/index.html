@@ -1,24 +1,28 @@
 <!DOCTYPE html>
-<html lang="es"><head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Dalton DS — Adoption Dashboard</title>
 <style>
   :root {
     --cyan: #1A7FA8; --cyan-light: #e8f4f9;
-    --magenta: #D4206A;
+    --magenta: #D4206A; --magenta-light: #fce8f1;
     --green: #1D9E75; --green-light: #e6f7f2;
     --yellow: #F5A623; --yellow-light: #fef6e7;
     --red: #D94F3D; --red-light: #fdecea;
+    --purple: #6B4FBB; --purple-light: #f0ecfb;
     --gray-50: #f8f9fa; --gray-100: #f1f3f5; --gray-200: #e9ecef;
     --gray-400: #adb5bd; --gray-600: #6c757d; --gray-800: #343a40; --gray-900: #212529;
     --white: #ffffff;
     --font: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-    --radius: 12px; --shadow: 0 1px 3px rgba(0,0,0,0.08);
+    --radius: 12px; --radius-sm: 8px;
+    --shadow: 0 1px 3px rgba(0,0,0,0.08);
   }
   * { box-sizing: border-box; margin: 0; padding: 0; }
   body { font-family: var(--font); background: var(--gray-50); color: var(--gray-900); }
 
+  /* HEADER */
   .header { background: var(--white); border-bottom: 1px solid var(--gray-200); padding: 0 32px; height: 60px; display: flex; align-items: center; justify-content: space-between; position: sticky; top: 0; z-index: 100; }
   .header-brand { display: flex; align-items: center; gap: 10px; }
   .header-logo { width: 28px; height: 28px; background: var(--cyan); border-radius: 6px; display: flex; align-items: center; justify-content: center; }
@@ -30,63 +34,64 @@
   .last-updated { font-size: 12px; color: var(--gray-600); }
   .download-btn { display: flex; align-items: center; gap: 6px; background: var(--white); border: 1px solid var(--gray-200); border-radius: 8px; padding: 6px 12px; font-size: 12px; font-weight: 500; color: var(--gray-800); cursor: pointer; text-decoration: none; transition: background 0.15s; }
   .download-btn:hover { background: var(--gray-50); }
-  .download-btn svg { width: 14px; height: 14px; }
 
-  .main { max-width: 1100px; margin: 0 auto; padding: 32px 24px; }
+  .main { max-width: 1200px; margin: 0 auto; padding: 28px 24px; }
 
   .state-container { display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 400px; gap: 12px; }
   .spinner { width: 36px; height: 36px; border: 3px solid var(--gray-200); border-top-color: var(--cyan); border-radius: 50%; animation: spin 0.8s linear infinite; }
   @keyframes spin { to { transform: rotate(360deg); } }
   .state-label { font-size: 14px; color: var(--gray-600); }
 
-  .section-header { margin-bottom: 20px; display: flex; align-items: baseline; gap: 10px; }
-  .section-title { font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.6px; color: var(--gray-600); white-space: nowrap; }
+  .section-header { margin-bottom: 16px; display: flex; align-items: baseline; gap: 10px; }
+  .section-title { font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.6px; color: var(--gray-600); white-space: nowrap; }
   .section-divider { flex: 1; height: 1px; background: var(--gray-200); }
 
   /* SUMMARY */
-  .summary-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-bottom: 32px; }
-  .summary-card { background: var(--white); border: 1px solid var(--gray-200); border-radius: var(--radius); padding: 20px; box-shadow: var(--shadow); }
-  .summary-card-label { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; color: var(--gray-600); margin-bottom: 8px; }
-  .summary-card-value { font-size: 30px; font-weight: 700; letter-spacing: -1px; line-height: 1; }
+  .summary-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; margin-bottom: 20px; }
+  .summary-card { background: var(--white); border: 1px solid var(--gray-200); border-radius: var(--radius); padding: 18px; box-shadow: var(--shadow); }
+  .summary-card-label { font-size: 10px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; color: var(--gray-600); margin-bottom: 6px; }
+  .summary-card-value { font-size: 28px; font-weight: 700; letter-spacing: -1px; line-height: 1; }
   .summary-card-value.cyan { color: var(--cyan); }
   .summary-card-value.green { color: var(--green); }
-  .summary-card-sub { font-size: 12px; color: var(--gray-600); margin-top: 6px; }
+  .summary-card-sub { font-size: 11px; color: var(--gray-600); margin-top: 5px; }
 
-  /* DIST BAR */
-  .dist-card { background: var(--white); border: 1px solid var(--gray-200); border-radius: var(--radius); padding: 20px 24px; margin-bottom: 40px; box-shadow: var(--shadow); }
-  .dist-title { font-size: 13px; font-weight: 600; margin-bottom: 12px; }
-  .dist-bar { height: 8px; background: var(--gray-100); border-radius: 6px; overflow: hidden; display: flex; margin-bottom: 12px; }
+  /* DIST */
+  .dist-card { background: var(--white); border: 1px solid var(--gray-200); border-radius: var(--radius); padding: 16px 20px; margin-bottom: 32px; box-shadow: var(--shadow); display: flex; align-items: center; gap: 20px; }
+  .dist-label { font-size: 12px; font-weight: 600; color: var(--gray-800); white-space: nowrap; }
+  .dist-bar-wrap { flex: 1; }
+  .dist-bar { height: 8px; background: var(--gray-100); border-radius: 6px; overflow: hidden; display: flex; margin-bottom: 8px; }
   .dist-bar-ds { height: 100%; background: var(--cyan); }
   .dist-bar-int { height: 100%; background: var(--gray-200); }
-  .dist-legend { display: flex; gap: 20px; }
-  .dist-legend-item { display: flex; align-items: center; gap: 7px; font-size: 13px; }
-  .dist-dot { width: 10px; height: 10px; border-radius: 2px; }
+  .dist-legend { display: flex; gap: 16px; }
+  .dist-legend-item { display: flex; align-items: center; gap: 6px; font-size: 12px; }
+  .dist-dot { width: 8px; height: 8px; border-radius: 2px; }
   .dist-dot.ds { background: var(--cyan); }
-  .dist-dot.int { background: var(--gray-200); border: 1px solid var(--gray-300, #dee2e6); }
+  .dist-dot.int { background: var(--gray-300, #dee2e6); border: 1px solid var(--gray-200); }
   .dist-pct { font-weight: 700; }
   .dist-pct.ds { color: var(--cyan); }
   .dist-pct.int { color: var(--gray-600); }
 
-  /* CATEGORY SECTION */
-  .category-section { margin-bottom: 40px; }
-  .category-header { display: flex; align-items: center; gap: 10px; margin-bottom: 16px; }
+  /* CATEGORY */
+  .category-section { margin-bottom: 28px; }
+  .category-header { display: flex; align-items: center; gap: 10px; margin-bottom: 12px; }
   .category-label { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.8px; color: var(--white); background: var(--cyan); padding: 3px 10px; border-radius: 20px; }
-  .category-divider { flex: 1; height: 1px; background: var(--gray-200); }
   .category-rate { font-size: 12px; font-weight: 600; color: var(--gray-600); }
+  .category-divider { flex: 1; height: 1px; background: var(--gray-200); }
 
-  /* TEAM CARDS */
-  .teams-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 16px; }
+  /* TEAM CARDS GRID - 2 cols for single-team categories, auto for multi */
+  .teams-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 14px; }
+
   .team-card { background: var(--white); border: 1px solid var(--gray-200); border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); }
-  .team-card-header { padding: 16px 18px 12px; display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; }
-  .team-name { font-size: 14px; font-weight: 600; }
+  .team-card-header { padding: 14px 16px 10px; display: flex; align-items: flex-start; justify-content: space-between; gap: 10px; }
+  .team-name { font-size: 14px; font-weight: 600; line-height: 1.3; }
   .adoption-chip { font-size: 12px; font-weight: 700; padding: 3px 9px; border-radius: 20px; flex-shrink: 0; }
   .adoption-chip.high { background: var(--green-light); color: var(--green); }
   .adoption-chip.mid { background: var(--yellow-light); color: #b87400; }
   .adoption-chip.low { background: var(--red-light); color: var(--red); }
   .adoption-chip.empty { background: var(--gray-100); color: var(--gray-600); }
 
-  .team-bar-wrap { padding: 0 18px 14px; }
-  .team-bar-label { display: flex; justify-content: space-between; font-size: 10px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.4px; color: var(--gray-600); margin-bottom: 5px; }
+  .team-bar-wrap { padding: 0 16px 12px; }
+  .team-bar-label { display: flex; justify-content: space-between; font-size: 9px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.4px; color: var(--gray-600); margin-bottom: 4px; }
   .team-bar-bg { height: 5px; background: var(--gray-100); border-radius: 4px; overflow: hidden; }
   .team-bar-fill { height: 100%; border-radius: 4px; background: var(--cyan); transition: width 0.8s ease; }
   .team-bar-fill.high { background: var(--green); }
@@ -94,58 +99,78 @@
   .team-bar-fill.low { background: var(--red); }
 
   .team-stats { display: flex; border-top: 1px solid var(--gray-100); }
-  .team-stat { flex: 1; padding: 9px 10px; text-align: center; border-right: 1px solid var(--gray-100); }
+  .team-stat { flex: 1; padding: 8px 10px; text-align: center; border-right: 1px solid var(--gray-100); }
   .team-stat:last-child { border-right: none; }
-  .team-stat-value { font-size: 15px; font-weight: 700; line-height: 1; }
-  .team-stat-label { font-size: 9px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.4px; color: var(--gray-600); margin-top: 3px; }
+  .team-stat-value { font-size: 14px; font-weight: 700; line-height: 1; }
+  .team-stat-label { font-size: 9px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.4px; color: var(--gray-600); margin-top: 2px; }
 
-  .files-toggle { width: 100%; padding: 8px 18px; background: none; border: none; border-top: 1px solid var(--gray-100); cursor: pointer; display: flex; align-items: center; justify-content: space-between; font-size: 11px; font-weight: 600; color: var(--gray-600); text-transform: uppercase; letter-spacing: 0.4px; transition: background 0.15s; }
-  .files-toggle:hover { background: var(--gray-50); }
-  .toggle-icon { transition: transform 0.2s; font-size: 10px; }
+  /* UNIQUE FAMILIES */
+  .families-toggle { width: 100%; padding: 7px 16px; background: none; border: none; border-top: 1px solid var(--gray-100); cursor: pointer; display: flex; align-items: center; justify-content: space-between; font-size: 11px; font-weight: 600; color: var(--purple); letter-spacing: 0.2px; transition: background 0.15s; }
+  .families-toggle:hover { background: var(--purple-light); }
+  .families-toggle .fam-count { background: var(--purple-light); color: var(--purple); padding: 1px 7px; border-radius: 20px; font-size: 10px; }
+  .toggle-icon { transition: transform 0.2s; font-size: 10px; color: var(--gray-400); }
   .toggle-icon.open { transform: rotate(180deg); }
+  .families-list { display: none; border-top: 1px solid var(--gray-100); padding: 10px 16px; background: var(--purple-light); }
+  .families-list.open { display: block; }
+  .family-row { display: flex; align-items: center; justify-content: space-between; padding: 3px 0; border-bottom: 1px solid rgba(107,79,187,0.1); }
+  .family-row:last-child { border-bottom: none; }
+  .family-name { font-size: 11px; color: var(--purple); }
+  .family-count { font-size: 11px; font-weight: 600; color: var(--purple); }
+
+  /* FILES */
+  .files-toggle { width: 100%; padding: 7px 16px; background: none; border: none; border-top: 1px solid var(--gray-100); cursor: pointer; display: flex; align-items: center; justify-content: space-between; font-size: 10px; font-weight: 600; color: var(--gray-600); text-transform: uppercase; letter-spacing: 0.4px; transition: background 0.15s; }
+  .files-toggle:hover { background: var(--gray-50); }
   .files-list { display: none; border-top: 1px solid var(--gray-100); }
   .files-list.open { display: block; }
-  .file-row { padding: 8px 18px; display: flex; align-items: center; gap: 10px; border-bottom: 1px solid var(--gray-100); }
+  .file-row { padding: 7px 16px; display: flex; align-items: center; gap: 8px; border-bottom: 1px solid var(--gray-100); }
   .file-row:last-child { border-bottom: none; }
-  .file-name { font-size: 12px; color: var(--gray-800); flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-  .file-frames { font-size: 11px; color: var(--gray-600); white-space: nowrap; }
-  .file-rate { font-size: 12px; font-weight: 700; min-width: 32px; text-align: right; }
-  .no-rfd-note { font-size: 11px; color: var(--gray-600); padding: 8px 18px 12px; font-style: italic; }
+  .file-name { font-size: 11px; color: var(--gray-800); flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .file-frames { font-size: 10px; color: var(--gray-600); white-space: nowrap; }
+  .file-rate { font-size: 11px; font-weight: 700; min-width: 30px; text-align: right; }
+  .no-rfd-note { font-size: 11px; color: var(--gray-600); padding: 6px 16px 10px; font-style: italic; }
 
-  /* GAP */
-  .gap-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 16px; margin-bottom: 40px; }
-  .gap-card { background: var(--white); border: 1px solid var(--gray-200); border-radius: var(--radius); padding: 18px; box-shadow: var(--shadow); }
-  .gap-card-title { font-size: 13px; font-weight: 600; margin-bottom: 3px; }
-  .gap-card-sub { font-size: 11px; color: var(--gray-600); margin-bottom: 14px; }
-  .gap-row { display: flex; align-items: center; gap: 10px; margin-bottom: 6px; }
-  .gap-row:last-child { margin-bottom: 0; }
-  .gap-name { font-size: 12px; color: var(--gray-800); flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-  .gap-bar-wrap { width: 70px; height: 4px; background: var(--gray-100); border-radius: 3px; overflow: hidden; flex-shrink: 0; }
-  .gap-bar-fill { height: 100%; background: var(--magenta); border-radius: 3px; opacity: 0.7; }
-  .gap-count { font-size: 11px; font-weight: 600; color: var(--gray-600); min-width: 28px; text-align: right; }
+  /* GAP - compact table */
+  .gap-section { margin-bottom: 32px; }
+  .gap-accordion { background: var(--white); border: 1px solid var(--gray-200); border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); margin-bottom: 8px; }
+  .gap-header { width: 100%; padding: 12px 16px; background: none; border: none; cursor: pointer; display: flex; align-items: center; justify-content: space-between; font-size: 13px; font-weight: 600; color: var(--gray-900); text-align: left; transition: background 0.15s; }
+  .gap-header:hover { background: var(--gray-50); }
+  .gap-header-left { display: flex; align-items: center; gap: 10px; }
+  .gap-header-cat { font-size: 10px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; color: var(--gray-600); }
+  .gap-body { display: none; border-top: 1px solid var(--gray-100); }
+  .gap-body.open { display: block; }
+  .gap-table { width: 100%; border-collapse: collapse; }
+  .gap-table th { text-align: left; font-size: 10px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.4px; color: var(--gray-600); padding: 8px 16px; background: var(--gray-50); border-bottom: 1px solid var(--gray-200); }
+  .gap-table td { padding: 7px 16px; border-bottom: 1px solid var(--gray-100); font-size: 12px; color: var(--gray-800); }
+  .gap-table tr:last-child td { border-bottom: none; }
+  .gap-bar-cell { width: 80px; }
+  .gap-bar-mini { height: 4px; background: var(--gray-100); border-radius: 2px; overflow: hidden; }
+  .gap-bar-mini-fill { height: 100%; background: var(--magenta); opacity: 0.7; border-radius: 2px; }
+  .gap-count-cell { font-weight: 600; text-align: right; color: var(--gray-700); }
 
   /* TREND */
-  .trend-card { background: var(--white); border: 1px solid var(--gray-200); border-radius: var(--radius); padding: 24px; margin-bottom: 40px; box-shadow: var(--shadow); }
-  .trend-empty { text-align: center; padding: 32px; color: var(--gray-600); font-size: 13px; }
-  .trend-table { width: 100%; border-collapse: collapse; font-size: 13px; }
-  .trend-table th { text-align: left; font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; color: var(--gray-600); padding: 8px 12px; border-bottom: 2px solid var(--gray-200); }
-  .trend-table td { padding: 9px 12px; border-bottom: 1px solid var(--gray-100); color: var(--gray-800); }
+  .trend-card { background: var(--white); border: 1px solid var(--gray-200); border-radius: var(--radius); padding: 20px; margin-bottom: 32px; box-shadow: var(--shadow); overflow-x: auto; }
+  .trend-empty { text-align: center; padding: 28px; color: var(--gray-600); font-size: 13px; }
+  .trend-table { width: 100%; border-collapse: collapse; font-size: 12px; min-width: 500px; }
+  .trend-table th { text-align: left; font-size: 10px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; color: var(--gray-600); padding: 7px 10px; border-bottom: 2px solid var(--gray-200); }
+  .trend-table td { padding: 8px 10px; border-bottom: 1px solid var(--gray-100); color: var(--gray-800); }
   .trend-table tr:last-child td { border-bottom: none; }
   .trend-pct { font-weight: 700; }
   .trend-pct.high { color: var(--green); }
   .trend-pct.mid { color: #b87400; }
   .trend-pct.low { color: var(--red); }
-  .target-note { display: flex; align-items: center; gap: 8px; margin-top: 14px; font-size: 12px; color: var(--gray-600); }
+  .cat-badge { font-size: 9px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.4px; color: var(--gray-600); background: var(--gray-100); padding: 1px 6px; border-radius: 10px; }
+  .target-note { display: flex; align-items: center; gap: 8px; margin-top: 12px; font-size: 11px; color: var(--gray-600); }
   .target-dot { width: 12px; height: 2px; background: var(--cyan); border-radius: 1px; }
 
-  @media (max-width: 768px) { .summary-grid { grid-template-columns: repeat(2, 1fr); } .main { padding: 20px 16px; } .header { padding: 0 16px; } .header-subtitle, .download-btn span { display: none; } }
+  @media (max-width: 900px) { .summary-grid { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 600px) { .main { padding: 16px; } .header { padding: 0 16px; } .header-subtitle { display: none; } .dist-card { flex-direction: column; align-items: flex-start; } }
 </style>
 </head>
 <body>
 <header class="header">
   <div class="header-brand">
     <div class="header-logo">
-      <svg viewBox="0 0 16 16" fill="none"><rect x="2" y="2" width="5" height="5" rx="1" fill="white"></rect><rect x="9" y="2" width="5" height="5" rx="1" fill="white" opacity="0.6"></rect><rect x="2" y="9" width="5" height="5" rx="1" fill="white" opacity="0.6"></rect><rect x="9" y="9" width="5" height="5" rx="1" fill="white" opacity="0.3"></rect></svg>
+      <svg viewBox="0 0 16 16" fill="none"><rect x="2" y="2" width="5" height="5" rx="1" fill="white"/><rect x="9" y="2" width="5" height="5" rx="1" fill="white" opacity="0.6"/><rect x="2" y="9" width="5" height="5" rx="1" fill="white" opacity="0.6"/><rect x="9" y="9" width="5" height="5" rx="1" fill="white" opacity="0.3"/></svg>
     </div>
     <span class="header-title">Dalton DS</span>
     <span class="header-subtitle">· Adoption Dashboard</span>
@@ -153,14 +178,19 @@
   <div class="header-meta">
     <span class="quarter-badge" id="quarterLabel">—</span>
     <span class="last-updated" id="lastUpdated">Cargando...</span>
-    <a class="download-btn" id="excelLink" href="reporte-adopcion.xlsx" download="">
-      <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8 2v8M5 7l3 3 3-3M3 12h10"></path></svg>
-      <span>Descargar Excel</span>
+    <a class="download-btn" href="reporte-adopcion.xlsx" download>
+      <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8 2v8M5 7l3 3 3-3M3 12h10"/></svg>
+      Excel
     </a>
   </div>
 </header>
 
-<main class="main" id="mainContent"><div class="state-container"><div style="background:var(--red-light);border:1px solid #f5c6c2;border-radius:12px;padding:20px 24px;text-align:center;max-width:480px"><strong style="display:block;color:var(--red);margin-bottom:6px">No se pudo cargar el reporte</strong><span style="font-size:13px">Error: Failed to fetch</span></div></div></main>
+<main class="main" id="mainContent">
+  <div class="state-container">
+    <div class="spinner"></div>
+    <span class="state-label">Cargando reporte...</span>
+  </div>
+</main>
 
 <script>
 const TARGET = 75;
@@ -172,9 +202,9 @@ function fmtDate(iso) { if (!iso) return "—"; return new Date(iso).toLocaleDat
 function buildSummary(teams) {
   const totalFiles = teams.reduce((s,t) => s + t.files.length, 0);
   const totalFrames = teams.reduce((s,t) => s + t.totalRfdFrames, 0);
-  const totalDs = teams.reduce((s,t) => s + (t.dsInstances||t.totalDs||0), 0);
+  const totalDs = teams.reduce((s,t) => s + (t.dsInstances||0), 0);
   const totalInstances = teams.reduce((s,t) => s + t.totalInstances, 0);
-  const totalInternal = teams.reduce((s,t) => s + (t.internalInstances||t.totalInternal||0), 0);
+  const totalInternal = teams.reduce((s,t) => s + (t.internalInstances||0), 0);
   const avgRate = totalInstances > 0 ? Math.round((totalDs/totalInstances)*100) : 0;
   const dsPct = totalInstances > 0 ? Math.round((totalDs/totalInstances)*100) : 0;
   const intPct = 100 - dsPct;
@@ -189,7 +219,7 @@ function buildSummary(teams) {
       <div class="summary-card">
         <div class="summary-card-label">Frames Ready for Dev</div>
         <div class="summary-card-value">${fmtNum(totalFrames)}</div>
-        <div class="summary-card-sub">En ${totalFiles} archivo${totalFiles!==1?'s':''}</div>
+        <div class="summary-card-sub">En ${totalFiles} archivos</div>
       </div>
       <div class="summary-card">
         <div class="summary-card-label">Instancias DS</div>
@@ -203,14 +233,16 @@ function buildSummary(teams) {
       </div>
     </div>
     <div class="dist-card">
-      <div class="dist-title">Distribución — ${fmtNum(totalInstances)} instancias totales</div>
-      <div class="dist-bar">
-        <div class="dist-bar-ds" style="width:${dsPct}%"></div>
-        <div class="dist-bar-int" style="width:${intPct}%"></div>
-      </div>
-      <div class="dist-legend">
-        <div class="dist-legend-item"><div class="dist-dot ds"></div><span>Dalton DS</span><span class="dist-pct ds">${dsPct}% · ${fmtNum(totalDs)}</span></div>
-        <div class="dist-legend-item"><div class="dist-dot int"></div><span>Internos</span><span class="dist-pct int">${intPct}% · ${fmtNum(totalInternal)}</span></div>
+      <span class="dist-label">${fmtNum(totalInstances)} instancias</span>
+      <div class="dist-bar-wrap">
+        <div class="dist-bar">
+          <div class="dist-bar-ds" style="width:${dsPct}%"></div>
+          <div class="dist-bar-int" style="width:${intPct}%"></div>
+        </div>
+        <div class="dist-legend">
+          <div class="dist-legend-item"><div class="dist-dot ds"></div><span>Dalton DS</span><span class="dist-pct ds">${dsPct}% · ${fmtNum(totalDs)}</span></div>
+          <div class="dist-legend-item"><div class="dist-dot int"></div><span>Internos</span><span class="dist-pct int">${intPct}% · ${fmtNum(totalInternal)}</span></div>
+        </div>
       </div>
     </div>`;
 }
@@ -218,11 +250,15 @@ function buildSummary(teams) {
 function buildTeamCard(team) {
   const cls = rateClass(team.adoptionRate);
   const hasData = team.totalRfdFrames > 0;
-  const ds = team.dsInstances || team.totalDs || 0;
-  const internal = team.internalInstances || team.totalInternal || 0;
+  const ds = team.dsInstances || 0;
+  const internal = team.internalInstances || 0;
+  const uniqueCount = team.uniqueFamiliesCount || 0;
+  const uniqueFamilies = team.uniqueFamilies || [];
+  const cardId = `f-${team.name.replace(/[\s&—\/]/g,'_')}`;
+  const famId = `fam-${team.name.replace(/[\s&—\/]/g,'_')}`;
 
   const filesHtml = team.files.map(f => {
-    if (f.error) return `<div class="file-row"><span class="file-name">${f.name}</span><span style="font-size:11px;color:var(--red)">Error</span></div>`;
+    if (f.error) return `<div class="file-row"><span class="file-name">${f.name}</span><span style="font-size:10px;color:var(--red)">Error</span></div>`;
     return `<div class="file-row">
       <span class="file-name" title="${f.name}">${f.name}</span>
       <span class="file-frames">${f.rfdFrameCount>0?f.rfdFrameCount+' frame'+(f.rfdFrameCount!==1?'s':''):'Sin RFD'}</span>
@@ -230,7 +266,9 @@ function buildTeamCard(team) {
     </div>`;
   }).join("");
 
-  const cardId = `f-${team.name.replace(/[\s&—]/g,'_')}`;
+  const familiesHtml = uniqueFamilies.length > 0 ? uniqueFamilies.map(f =>
+    `<div class="family-row"><span class="family-name">${f.name}</span><span class="family-count">${fmtNum(f.count)}</span></div>`
+  ).join("") : '<div style="font-size:11px;color:var(--gray-600);padding:4px 0">Sin datos</div>';
 
   return `
     <div class="team-card">
@@ -248,7 +286,15 @@ function buildTeamCard(team) {
         <div class="team-stat"><div class="team-stat-value" style="color:var(--cyan)">${fmtNum(ds)}</div><div class="team-stat-label">Inst. DS</div></div>
         <div class="team-stat"><div class="team-stat-value" style="color:var(--gray-600)">${fmtNum(internal)}</div><div class="team-stat-label">Internos</div></div>
       </div>
-      <button class="files-toggle" onclick="toggleFiles('${cardId}',this)">
+      <button class="families-toggle" onclick="toggle('${famId}',this)">
+        <span>Familias DS únicas</span>
+        <div style="display:flex;align-items:center;gap:6px">
+          <span class="fam-count">${uniqueCount}</span>
+          <span class="toggle-icon" id="icon-${famId}">▼</span>
+        </div>
+      </button>
+      <div class="families-list" id="${famId}">${familiesHtml}</div>
+      <button class="files-toggle" onclick="toggle('${cardId}',this)" style="border-top:1px solid var(--gray-100)">
         <span>${team.files.length} archivo${team.files.length!==1?'s':''}</span>
         <span class="toggle-icon" id="icon-${cardId}">▼</span>
       </button>
@@ -257,49 +303,58 @@ function buildTeamCard(team) {
 }
 
 function buildCategories(teams) {
-  // Group by category
   const categories = {};
   for (const team of teams) {
     const cat = team.category || team.name;
     if (!categories[cat]) categories[cat] = [];
     categories[cat].push(team);
   }
-
   return Object.entries(categories).map(([cat, catTeams]) => {
-    const totalDs = catTeams.reduce((s,t) => s + (t.dsInstances||t.totalDs||0), 0);
+    const totalDs = catTeams.reduce((s,t) => s + (t.dsInstances||0), 0);
     const totalInst = catTeams.reduce((s,t) => s + t.totalInstances, 0);
     const catRate = totalInst > 0 ? Math.round((totalDs/totalInst)*100) : 0;
-
     return `
       <div class="category-section">
         <div class="category-header">
           <span class="category-label">${cat}</span>
-          <span class="category-rate">${catRate}% adopción</span>
+          <span class="category-rate" style="color:${rateColor(catRate)}">${catRate}% adopción</span>
           <div class="category-divider"></div>
         </div>
-        <div class="teams-grid">
-          ${catTeams.map(buildTeamCard).join('')}
-        </div>
+        <div class="teams-grid">${catTeams.map(buildTeamCard).join('')}</div>
       </div>`;
   }).join('');
 }
 
 function buildGap(teams) {
   if (!teams.some(t => t.top20Internal?.length)) return `<div class="trend-empty">No hay datos aún.</div>`;
-  return `<div class="gap-grid">${teams.map(team => {
+  return teams.map(team => {
     if (!team.top20Internal?.length) return '';
     const max = team.top20Internal[0].count || 1;
-    return `<div class="gap-card">
-      <div class="gap-card-title">${team.name}</div>
-      <div class="gap-card-sub">${team.category || ''} · Top componentes internos</div>
-      ${team.top20Internal.map(({name,count}) => `
-        <div class="gap-row">
-          <span class="gap-name" title="${name}">${name}</span>
-          <div class="gap-bar-wrap"><div class="gap-bar-fill" style="width:${Math.round((count/max)*100)}%"></div></div>
-          <span class="gap-count">${fmtNum(count)}</span>
-        </div>`).join('')}
-    </div>`;
-  }).join('')}</div>`;
+    const gapId = `gap-${team.name.replace(/[\s&—\/]/g,'_')}`;
+    return `
+      <div class="gap-accordion">
+        <button class="gap-header" onclick="toggle('${gapId}',this)">
+          <div class="gap-header-left">
+            <span class="gap-header-cat">${team.category||''}</span>
+            <span>${team.name}</span>
+          </div>
+          <span class="toggle-icon" id="icon-${gapId}">▼</span>
+        </button>
+        <div class="gap-body" id="${gapId}">
+          <table class="gap-table">
+            <thead><tr><th>Componente</th><th class="gap-bar-cell"></th><th>Instancias</th></tr></thead>
+            <tbody>
+              ${team.top20Internal.map(({name,count}) => `
+                <tr>
+                  <td>${name}</td>
+                  <td class="gap-bar-cell"><div class="gap-bar-mini"><div class="gap-bar-mini-fill" style="width:${Math.round((count/max)*100)}%"></div></div></td>
+                  <td class="gap-count-cell">${fmtNum(count)}</td>
+                </tr>`).join('')}
+            </tbody>
+          </table>
+        </div>
+      </div>`;
+  }).join('');
 }
 
 function buildTrend(history) {
@@ -310,7 +365,7 @@ function buildTrend(history) {
   let html = `<table class="trend-table"><thead><tr><th>Activo</th><th>Categoría</th>${quarters.map(q=>`<th>${q}</th>`).join('')}</tr></thead><tbody>`;
   for (const [team, entries] of Object.entries(byTeam)) {
     const cat = entries[0]?.category || '—';
-    html += `<tr><td><strong>${team}</strong></td><td style="color:var(--gray-600);font-size:12px">${cat}</td>`;
+    html += `<tr><td><strong>${team}</strong></td><td><span class="cat-badge">${cat}</span></td>`;
     for (const q of quarters) {
       const e = entries.find(x => x.quarter === q);
       if (e) { html += `<td><span class="trend-pct ${rateClass(e.adoptionRate)}">${e.adoptionRate}%</span></td>`; }
@@ -322,11 +377,12 @@ function buildTrend(history) {
   return html;
 }
 
-function toggleFiles(id, btn) {
-  const list = document.getElementById(id);
+function toggle(id, btn) {
+  const el = document.getElementById(id);
   const icon = document.getElementById(`icon-${id}`);
-  list.classList.toggle("open", !list.classList.contains("open"));
-  icon.classList.toggle("open", !icon.classList.contains("open"));
+  const isOpen = el.classList.contains("open");
+  el.classList.toggle("open", !isOpen);
+  if (icon) icon.classList.toggle("open", !isOpen);
 }
 
 async function loadReport() {
@@ -343,16 +399,15 @@ async function loadReport() {
       <div class="section-header"><span class="section-title">Por categoría y activo</span><div class="section-divider"></div></div>
       ${buildCategories(report.teams)}
       <div class="section-header"><span class="section-title">Componentes internos más frecuentes</span><div class="section-divider"></div></div>
-      ${buildGap(report.teams)}
+      <div class="gap-section">${buildGap(report.teams)}</div>
       <div class="section-header"><span class="section-title">Tendencia histórica</span><div class="section-divider"></div></div>
       <div class="trend-card">${buildTrend(report.history)}</div>
     `;
   } catch(e) {
-    main.innerHTML = `<div class="state-container"><div style="background:var(--red-light);border:1px solid #f5c6c2;border-radius:12px;padding:20px 24px;text-align:center;max-width:480px"><strong style="display:block;color:var(--red);margin-bottom:6px">No se pudo cargar el reporte</strong><span style="font-size:13px">${e.message==="HTTP 404"?"Corre el script primero.":"Error: "+e.message}</span></div></div>`;
+    main.innerHTML = `<div class="state-container"><div style="background:var(--red-light);border:1px solid #f5c6c2;border-radius:12px;padding:20px 24px;text-align:center;max-width:480px"><strong style="display:block;color:var(--red);margin-bottom:6px">No se pudo cargar</strong><span style="font-size:13px">${e.message==="HTTP 404"?"Corre el script primero.":"Error: "+e.message}</span></div></div>`;
   }
 }
 loadReport();
 </script>
-
-
-</body></html>
+</body>
+</html>
