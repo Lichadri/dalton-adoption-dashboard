@@ -19,8 +19,13 @@ const DALTON_COMPONENT_FAMILIES = [
   // Sub-componentes Dalton
   "type_option", "section_footer", "src_option_redes", "src_option_stores_download",
   "title_+_options", "title_+_phones", "title_+_social media",
-  "Tag", "reemplazar slot", "compare_arrow", "Átomo", "Indicator step",
+  "Tag", "reemplazar slot", "Átomo", "Indicator step",
   "Left Label", "Label in", "Dropdown Input", "Indicator Circle",
+  "Bar Progress", "Commercial Chips", "Bottom app bar", "Notification Item",
+  "Discount Badge", "Menu Item", "Menu title", "Slider Controls",
+  "Beneficio | card", "Beneficio | card mobile", "Banner | errores",
+  "Status Control", "Card Dashboard", "Logo Horizontal",
+  "Indicator number", "Chip Deleteable", "Bottom Bar", "Topbar", "Carrusel",
 ];
 const FAMILIES_LOWER = DALTON_COMPONENT_FAMILIES.map(f => f.toLowerCase());
 
@@ -29,7 +34,14 @@ const EXCLUDED_ICONS = new Set([
   "arrow down", "arrow right", "arrow left", "arrow up",
   "desktop", "home", "person", "search", "viajes",
   "work experience icon", "business center", "up", "arrowright",
-  "check", "edit", "delete", "plus", "minus", "close", "logo","compare_arrow",
+  "check", "edit", "delete", "plus", "minus", "close", "logo",
+  "shield", "grid view", "message", "shoppingcart", "chat", "star",
+  "menu", "facebook", "instagram", "tiktok", "youtube", "eye_close",
+  "location", "power", "call", "account", "time", "apps", "settings", "more",
+  "menú", "addcircle", "payments", "creditcard", "security", "locationpin",
+  "arrow_carrousel", "compare_arrow", "generate ai", "generando ia",
+  "operador", "correo electronico", "hoist", "emergency",
+  "sirena emergencia", "descarga documento", "ahorros",
 ]);
 
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
