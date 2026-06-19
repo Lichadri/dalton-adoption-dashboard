@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-19T17:31:58.990Z",
+  "generatedAt": "2026-06-19T22:22:01.922Z",
   "quarter": "Q2 2026",
   "teams": [
     {
@@ -3065,9 +3065,9 @@
       "category": "Modelo Día",
       "adoptionRate": 65,
       "totalRfdFrames": 22,
-      "dsInstances": 14039,
-      "internalInstances": 7579,
-      "totalInstances": 21618,
+      "dsInstances": 14009,
+      "internalInstances": 7570,
+      "totalInstances": 21579,
       "uniqueFamiliesCount": 36,
       "uniqueFamilies": [
         {
@@ -3080,7 +3080,7 @@
         },
         {
           "name": "Button",
-          "count": 1363
+          "count": 1360
         },
         {
           "name": "Table",
@@ -3088,23 +3088,23 @@
         },
         {
           "name": "Alert",
-          "count": 819
+          "count": 811
         },
         {
           "name": "Input",
-          "count": 808
+          "count": 802
         },
         {
           "name": "Left Label",
-          "count": 675
+          "count": 673
         },
         {
           "name": "Tag",
-          "count": 651
+          "count": 647
         },
         {
           "name": "Radio",
-          "count": 504
+          "count": 502
         },
         {
           "name": "Header",
@@ -3112,7 +3112,7 @@
         },
         {
           "name": "Select",
-          "count": 259
+          "count": 257
         },
         {
           "name": "Chips",
@@ -3124,7 +3124,7 @@
         },
         {
           "name": "Calendar",
-          "count": 189
+          "count": 186
         },
         {
           "name": "Progress bar",
@@ -3710,9 +3710,9 @@
           "key": "6QBFEXpu6r5ZDNuzYYtK97",
           "name": "Vida Ley & SCTR",
           "rfdFrameCount": 1,
-          "dsInstances": 1981,
-          "internalInstances": 470,
-          "totalInstances": 2451,
+          "dsInstances": 1951,
+          "internalInstances": 461,
+          "totalInstances": 2412,
           "adoptionRate": 81,
           "uniqueFamiliesCount": 30,
           "uniqueFamilies": [
@@ -3722,19 +3722,19 @@
             },
             {
               "name": "Button",
-              "count": 147
+              "count": 144
             },
             {
               "name": "Input",
-              "count": 96
+              "count": 90
             },
             {
               "name": "Alert",
-              "count": 82
+              "count": 74
             },
             {
               "name": "Tag",
-              "count": 56
+              "count": 52
             },
             {
               "name": "Tab",
@@ -3742,11 +3742,11 @@
             },
             {
               "name": "Calendar",
-              "count": 42
+              "count": 39
             },
             {
               "name": "Radio",
-              "count": 31
+              "count": 29
             },
             {
               "name": "Progress bar",
@@ -3758,11 +3758,11 @@
             },
             {
               "name": "Select",
-              "count": 22
+              "count": 20
             },
             {
               "name": "Left Label",
-              "count": 19
+              "count": 17
             },
             {
               "name": "Header",
@@ -3883,10 +3883,6 @@
               "count": 12
             },
             {
-              "name": "Right Label",
-              "count": 10
-            },
-            {
               "name": "play : pause",
               "count": 9
             },
@@ -3901,6 +3897,10 @@
             {
               "name": "Search Button",
               "count": 9
+            },
+            {
+              "name": "Right Label",
+              "count": 8
             },
             {
               "name": "Search Suggestion",
@@ -7451,8 +7451,8 @@
       "date": "2026-06-19",
       "adoptionRate": 65,
       "totalRfdFrames": 22,
-      "totalDs": 14039,
-      "totalInstances": 21618
+      "totalDs": 14009,
+      "totalInstances": 21579
     },
     {
       "team": "Ecommerce",
