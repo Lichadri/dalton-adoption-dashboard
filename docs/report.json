@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-19T22:22:01.922Z",
+  "generatedAt": "2026-06-22T19:06:54.292Z",
   "quarter": "Q2 2026",
   "teams": [
     {
@@ -1847,9 +1847,9 @@
       "category": "Nueva Web Empresas",
       "adoptionRate": 94,
       "totalRfdFrames": 44,
-      "dsInstances": 172968,
-      "internalInstances": 11352,
-      "totalInstances": 184320,
+      "dsInstances": 172970,
+      "internalInstances": 11356,
+      "totalInstances": 184326,
       "uniqueFamiliesCount": 47,
       "uniqueFamilies": [
         {
@@ -1870,7 +1870,7 @@
         },
         {
           "name": "Button",
-          "count": 7914
+          "count": 7916
         },
         {
           "name": "Alert",
@@ -2338,9 +2338,9 @@
           "key": "j4Uyzko4eQSDtEaWyVm2JM",
           "name": "Home Empresas",
           "rfdFrameCount": 37,
-          "dsInstances": 157763,
-          "internalInstances": 10486,
-          "totalInstances": 168249,
+          "dsInstances": 157765,
+          "internalInstances": 10490,
+          "totalInstances": 168255,
           "adoptionRate": 94,
           "uniqueFamiliesCount": 42,
           "uniqueFamilies": [
@@ -2362,7 +2362,7 @@
             },
             {
               "name": "Button",
-              "count": 7421
+              "count": 7423
             },
             {
               "name": "Alert",
@@ -6402,51 +6402,51 @@
       "name": "Web Corporativa",
       "category": "Web Corporativa",
       "adoptionRate": 84,
-      "totalRfdFrames": 72,
-      "dsInstances": 11118,
-      "internalInstances": 2066,
-      "totalInstances": 13184,
-      "uniqueFamiliesCount": 22,
+      "totalRfdFrames": 73,
+      "dsInstances": 11472,
+      "internalInstances": 2122,
+      "totalInstances": 13594,
+      "uniqueFamiliesCount": 23,
       "uniqueFamilies": [
         {
           "name": "type_option",
-          "count": 3230
+          "count": 3325
         },
         {
           "name": "Átomo",
-          "count": 1463
+          "count": 1513
         },
         {
           "name": "Tag",
-          "count": 1160
+          "count": 1181
         },
         {
           "name": "Accordion",
-          "count": 1085
+          "count": 1136
         },
         {
           "name": "Tab",
-          "count": 918
+          "count": 940
         },
         {
           "name": "Button",
-          "count": 842
+          "count": 882
         },
         {
           "name": "section_footer",
-          "count": 510
+          "count": 525
         },
         {
           "name": "Alert",
-          "count": 414
+          "count": 430
         },
         {
           "name": "src_option_redes",
-          "count": 310
+          "count": 320
         },
         {
           "name": "reemplazar slot",
-          "count": 272
+          "count": 280
         },
         {
           "name": "Slider Controls",
@@ -6458,15 +6458,15 @@
         },
         {
           "name": "Input",
-          "count": 105
+          "count": 114
         },
         {
           "name": "Calendar",
-          "count": 105
+          "count": 110
         },
         {
           "name": "title_+_options",
-          "count": 102
+          "count": 105
         },
         {
           "name": "Status Control",
@@ -6474,27 +6474,31 @@
         },
         {
           "name": "src_option_stores_download",
-          "count": 62
+          "count": 64
         },
         {
           "name": "Discount Badge",
-          "count": 40
+          "count": 41
         },
         {
           "name": "title_+_phones",
-          "count": 34
+          "count": 35
         },
         {
           "name": "title_+_social media",
-          "count": 34
+          "count": 35
         },
         {
           "name": "Breadcrumb",
-          "count": 14
+          "count": 15
         },
         {
           "name": "Hero",
           "count": 7
+        },
+        {
+          "name": "Checkbox",
+          "count": 3
         }
       ],
       "top20Internal": [
@@ -6508,19 +6512,19 @@
         },
         {
           "name": "Cotizar",
-          "count": 105
+          "count": 110
         },
         {
           "name": "Video",
-          "count": 105
+          "count": 110
         },
         {
           "name": "Close Icon",
-          "count": 96
+          "count": 101
         },
         {
           "name": "Scroll",
-          "count": 80
+          "count": 83
         },
         {
           "name": "CardMenúMobile",
@@ -6532,11 +6536,11 @@
         },
         {
           "name": "WithoutShieldHeart",
-          "count": 72
+          "count": 74
         },
         {
           "name": "ShieldHeart",
-          "count": 69
+          "count": 71
         },
         {
           "name": "BotónCategoría",
@@ -6548,11 +6552,15 @@
         },
         {
           "name": "_Link Icon",
-          "count": 51
+          "count": 54
         },
         {
           "name": "_Button Icon",
-          "count": 49
+          "count": 54
+        },
+        {
+          "name": "submenu",
+          "count": 48
         },
         {
           "name": "Car",
@@ -6567,88 +6575,84 @@
           "count": 46
         },
         {
-          "name": "submenu",
-          "count": 44
-        },
-        {
           "name": "Link Stamp",
-          "count": 34
+          "count": 36
         },
         {
           "name": "title_+_badges_download",
-          "count": 34
+          "count": 35
         }
       ],
       "files": [
         {
           "key": "XaZynqqaHNdtOL7E2TtbLq",
           "name": "Productos Vida",
-          "rfdFrameCount": 55,
-          "dsInstances": 5094,
-          "internalInstances": 731,
-          "totalInstances": 5825,
+          "rfdFrameCount": 56,
+          "dsInstances": 5448,
+          "internalInstances": 787,
+          "totalInstances": 6235,
           "adoptionRate": 87,
-          "uniqueFamiliesCount": 21,
+          "uniqueFamiliesCount": 22,
           "uniqueFamilies": [
             {
               "name": "type_option",
-              "count": 950
+              "count": 1045
             },
             {
               "name": "Átomo",
-              "count": 909
+              "count": 959
             },
             {
               "name": "Accordion",
-              "count": 819
+              "count": 870
             },
             {
               "name": "Tag",
-              "count": 678
+              "count": 699
             },
             {
               "name": "Tab",
-              "count": 484
+              "count": 506
             },
             {
               "name": "Button",
-              "count": 404
+              "count": 444
             },
             {
               "name": "Alert",
-              "count": 214
+              "count": 230
             },
             {
               "name": "section_footer",
-              "count": 150
+              "count": 165
             },
             {
               "name": "src_option_redes",
-              "count": 100
+              "count": 110
             },
             {
               "name": "Input",
-              "count": 86
+              "count": 95
             },
             {
               "name": "Calendar",
-              "count": 86
+              "count": 91
             },
             {
               "name": "reemplazar slot",
-              "count": 80
+              "count": 88
             },
             {
               "name": "title_+_options",
-              "count": 30
+              "count": 33
             },
             {
               "name": "Discount Badge",
-              "count": 26
+              "count": 27
             },
             {
               "name": "src_option_stores_download",
-              "count": 20
+              "count": 22
             },
             {
               "name": "Slider Controls",
@@ -6656,19 +6660,23 @@
             },
             {
               "name": "title_+_phones",
-              "count": 10
+              "count": 11
             },
             {
               "name": "title_+_social media",
-              "count": 10
+              "count": 11
             },
             {
               "name": "Breadcrumb",
-              "count": 9
+              "count": 10
             },
             {
               "name": "Status Control",
               "count": 9
+            },
+            {
+              "name": "Checkbox",
+              "count": 3
             },
             {
               "name": "Hero",
@@ -6678,83 +6686,83 @@
           "top20Internal": [
             {
               "name": "Cotizar",
-              "count": 86
+              "count": 91
             },
             {
               "name": "Video",
-              "count": 86
+              "count": 91
             },
             {
               "name": "Close Icon",
-              "count": 68
+              "count": 73
             },
             {
               "name": "Scroll",
-              "count": 58
+              "count": 61
             },
             {
               "name": "_Link Icon",
-              "count": 51
+              "count": 54
             },
             {
               "name": "ShieldHeart",
-              "count": 48
+              "count": 50
             },
             {
               "name": "WithoutShieldHeart",
-              "count": 48
+              "count": 50
             },
             {
               "name": "_Button Icon",
-              "count": 45
+              "count": 50
             },
             {
               "name": "submenu",
-              "count": 40
+              "count": 44
             },
             {
               "name": "Link Stamp",
-              "count": 34
+              "count": 36
             },
             {
               "name": "link",
+              "count": 22
+            },
+            {
+              "name": "support",
               "count": 20
+            },
+            {
+              "name": "download",
+              "count": 20
+            },
+            {
+              "name": "Link Details",
+              "count": 18
             },
             {
               "name": "Icon",
               "count": 18
             },
             {
-              "name": "support",
-              "count": 18
-            },
-            {
-              "name": "download",
-              "count": 18
-            },
-            {
-              "name": "Link Details",
-              "count": 17
-            },
-            {
               "name": "vida inversión",
-              "count": 17
+              "count": 18
             },
             {
               "name": "phone",
-              "count": 10
+              "count": 11
             },
             {
               "name": "user",
-              "count": 10
+              "count": 11
             },
             {
               "name": "notifications",
-              "count": 10
+              "count": 11
             },
             {
               "name": "title_+_badges_download",
-              "count": 10
+              "count": 11
             }
           ]
         },
@@ -7448,7 +7456,7 @@
       "team": "Modelo Día",
       "category": "Modelo Día",
       "quarter": "Q2 2026",
-      "date": "2026-06-19",
+      "date": "2026-06-22",
       "adoptionRate": 65,
       "totalRfdFrames": 22,
       "totalDs": 14009,
@@ -7468,7 +7476,7 @@
       "team": "Auto Efectivo",
       "category": "Ecommerce",
       "quarter": "Q2 2026",
-      "date": "2026-06-19",
+      "date": "2026-06-22",
       "adoptionRate": 73,
       "totalRfdFrames": 1,
       "totalDs": 921,
@@ -7478,7 +7486,7 @@
       "team": "MEP",
       "category": "MEP",
       "quarter": "Q2 2026",
-      "date": "2026-06-19",
+      "date": "2026-06-22",
       "adoptionRate": 51,
       "totalRfdFrames": 17,
       "totalDs": 3018,
@@ -7488,7 +7496,7 @@
       "team": "Somos Corredores",
       "category": "Somos Corredores",
       "quarter": "Q2 2026",
-      "date": "2026-06-19",
+      "date": "2026-06-22",
       "adoptionRate": 87,
       "totalRfdFrames": 12,
       "totalDs": 3852,
@@ -7498,7 +7506,7 @@
       "team": "Protege 365",
       "category": "Protege 365",
       "quarter": "Q2 2026",
-      "date": "2026-06-19",
+      "date": "2026-06-22",
       "adoptionRate": 91,
       "totalRfdFrames": 8,
       "totalDs": 8343,
@@ -7508,17 +7516,17 @@
       "team": "Nueva Web Empresas",
       "category": "Nueva Web Empresas",
       "quarter": "Q2 2026",
-      "date": "2026-06-19",
+      "date": "2026-06-22",
       "adoptionRate": 94,
       "totalRfdFrames": 44,
-      "totalDs": 172968,
-      "totalInstances": 184320
+      "totalDs": 172970,
+      "totalInstances": 184326
     },
     {
       "team": "Portal Digital de Siniestros",
       "category": "Portal Digital de Siniestros",
       "quarter": "Q2 2026",
-      "date": "2026-06-19",
+      "date": "2026-06-22",
       "adoptionRate": 78,
       "totalRfdFrames": 5,
       "totalDs": 10716,
@@ -7528,17 +7536,17 @@
       "team": "Web Corporativa",
       "category": "Web Corporativa",
       "quarter": "Q2 2026",
-      "date": "2026-06-19",
+      "date": "2026-06-22",
       "adoptionRate": 84,
-      "totalRfdFrames": 72,
-      "totalDs": 11118,
-      "totalInstances": 13184
+      "totalRfdFrames": 73,
+      "totalDs": 11472,
+      "totalInstances": 13594
     },
     {
       "team": "Embebidos",
       "category": "Embebidos",
       "quarter": "Q2 2026",
-      "date": "2026-06-19",
+      "date": "2026-06-22",
       "adoptionRate": 88,
       "totalRfdFrames": 6,
       "totalDs": 1424,
@@ -7548,7 +7556,7 @@
       "team": "SOAT",
       "category": "Ecommerce",
       "quarter": "Q2 2026",
-      "date": "2026-06-19",
+      "date": "2026-06-22",
       "adoptionRate": 75,
       "totalRfdFrames": 1,
       "totalDs": 1583,
@@ -7558,7 +7566,7 @@
       "team": "Vehicular",
       "category": "Ecommerce",
       "quarter": "Q2 2026",
-      "date": "2026-06-19",
+      "date": "2026-06-22",
       "adoptionRate": 73,
       "totalRfdFrames": 1,
       "totalDs": 2296,
@@ -7568,7 +7576,7 @@
       "team": "Vehicular Todo Riesgo",
       "category": "Ecommerce",
       "quarter": "Q2 2026",
-      "date": "2026-06-19",
+      "date": "2026-06-22",
       "adoptionRate": 69,
       "totalRfdFrames": 2,
       "totalDs": 2650,
@@ -7578,7 +7586,7 @@
       "team": "Viajes",
       "category": "Ecommerce",
       "quarter": "Q2 2026",
-      "date": "2026-06-19",
+      "date": "2026-06-22",
       "adoptionRate": 86,
       "totalRfdFrames": 8,
       "totalDs": 3596,
@@ -7588,7 +7596,7 @@
       "team": "VDT",
       "category": "Ecommerce",
       "quarter": "Q2 2026",
-      "date": "2026-06-19",
+      "date": "2026-06-22",
       "adoptionRate": 85,
       "totalRfdFrames": 8,
       "totalDs": 3906,
