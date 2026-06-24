@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-24T17:26:33.022Z",
+  "generatedAt": "2026-06-24T22:33:55.533Z",
   "quarter": "Q2 2026",
   "teams": [
     {
@@ -3057,38 +3057,38 @@
       "category": "Modelo Día",
       "adoptionRate": 65,
       "totalRfdFrames": 22,
-      "dsInstances": 14010,
-      "internalInstances": 7576,
-      "totalInstances": 21586,
+      "dsInstances": 14454,
+      "internalInstances": 7650,
+      "totalInstances": 22104,
       "uniqueFamiliesCount": 36,
       "uniqueFamilies": [
         {
           "name": "Sidebar",
-          "count": 4221
+          "count": 4525
         },
         {
           "name": "Checkbox",
-          "count": 1418
+          "count": 1422
         },
         {
           "name": "Button",
-          "count": 1360
+          "count": 1407
         },
         {
           "name": "Table",
           "count": 1258
         },
         {
-          "name": "Alert",
-          "count": 811
+          "name": "Input",
+          "count": 831
         },
         {
-          "name": "Input",
-          "count": 802
+          "name": "Alert",
+          "count": 824
         },
         {
           "name": "Left Label",
-          "count": 673
+          "count": 674
         },
         {
           "name": "Tag",
@@ -3096,7 +3096,7 @@
         },
         {
           "name": "Radio",
-          "count": 502
+          "count": 505
         },
         {
           "name": "Header",
@@ -3104,19 +3104,19 @@
         },
         {
           "name": "Select",
-          "count": 257
+          "count": 264
+        },
+        {
+          "name": "Tab",
+          "count": 262
         },
         {
           "name": "Chips",
           "count": 256
         },
         {
-          "name": "Tab",
-          "count": 237
-        },
-        {
           "name": "Calendar",
-          "count": 186
+          "count": 197
         },
         {
           "name": "Progress bar",
@@ -3152,7 +3152,7 @@
         },
         {
           "name": "Discount Badge",
-          "count": 36
+          "count": 37
         },
         {
           "name": "Dropdown Input",
@@ -3196,7 +3196,7 @@
         },
         {
           "name": "Loader",
-          "count": 5
+          "count": 4
         },
         {
           "name": "File uploader",
@@ -3241,48 +3241,48 @@
           "count": 135
         },
         {
+          "name": "barras",
+          "count": 128
+        },
+        {
           "name": "Article",
+          "count": 126
+        },
+        {
+          "name": "billetera",
+          "count": 119
+        },
+        {
+          "name": "description",
           "count": 118
+        },
+        {
+          "name": "create account",
+          "count": 117
         },
         {
           "name": "DirectionUp",
           "count": 116
         },
         {
-          "name": "barras",
-          "count": 114
-        },
-        {
-          "name": "billetera",
-          "count": 111
-        },
-        {
-          "name": "description",
-          "count": 110
-        },
-        {
-          "name": "create account",
-          "count": 109
-        },
-        {
           "name": "Page",
           "count": 109
+        },
+        {
+          "name": "ArrowLeft",
+          "count": 104
         },
         {
           "name": "Icon",
           "count": 103
         },
         {
-          "name": "ArrowLeft",
+          "name": "download",
           "count": 97
         },
         {
           "name": "directionLeft",
           "count": 96
-        },
-        {
-          "name": "download",
-          "count": 94
         },
         {
           "name": "AGENDA",
@@ -3702,43 +3702,47 @@
           "key": "6QBFEXpu6r5ZDNuzYYtK97",
           "name": "Vida Ley & SCTR",
           "rfdFrameCount": 1,
-          "dsInstances": 1952,
-          "internalInstances": 467,
-          "totalInstances": 2419,
-          "adoptionRate": 81,
-          "uniqueFamiliesCount": 31,
+          "dsInstances": 2396,
+          "internalInstances": 541,
+          "totalInstances": 2937,
+          "adoptionRate": 82,
+          "uniqueFamiliesCount": 30,
           "uniqueFamilies": [
             {
               "name": "Sidebar",
-              "count": 1292
+              "count": 1596
             },
             {
               "name": "Button",
-              "count": 144
+              "count": 191
             },
             {
               "name": "Input",
-              "count": 90
+              "count": 119
             },
             {
               "name": "Alert",
-              "count": 74
+              "count": 87
+            },
+            {
+              "name": "Tab",
+              "count": 75
             },
             {
               "name": "Tag",
               "count": 52
             },
             {
-              "name": "Tab",
+              "name": "Calendar",
               "count": 50
             },
             {
-              "name": "Calendar",
-              "count": 39
+              "name": "Radio",
+              "count": 32
             },
             {
-              "name": "Radio",
-              "count": 29
+              "name": "Select",
+              "count": 27
             },
             {
               "name": "Progress bar",
@@ -3749,16 +3753,16 @@
               "count": 25
             },
             {
-              "name": "Select",
-              "count": 20
-            },
-            {
               "name": "Left Label",
-              "count": 17
+              "count": 18
             },
             {
               "name": "Header",
               "count": 15
+            },
+            {
+              "name": "Checkbox",
+              "count": 12
             },
             {
               "name": "Slider Controls",
@@ -3769,19 +3773,15 @@
               "count": 11
             },
             {
-              "name": "Checkbox",
-              "count": 8
-            },
-            {
               "name": "Pagination",
               "count": 8
             },
             {
-              "name": "Status Control",
-              "count": 6
+              "name": "Discount Badge",
+              "count": 7
             },
             {
-              "name": "Discount Badge",
+              "name": "Status Control",
               "count": 6
             },
             {
@@ -3827,32 +3827,28 @@
             {
               "name": "Stepper",
               "count": 1
-            },
-            {
-              "name": "Loader",
-              "count": 1
             }
           ],
           "top20Internal": [
             {
               "name": "barras",
-              "count": 39
+              "count": 53
             },
             {
               "name": "create account",
-              "count": 34
+              "count": 42
             },
             {
               "name": "Article",
-              "count": 34
+              "count": 42
             },
             {
               "name": "billetera",
-              "count": 34
+              "count": 42
             },
             {
               "name": "description",
-              "count": 34
+              "count": 42
             },
             {
               "name": "Line Tracking Vertical",
@@ -3863,6 +3859,10 @@
               "count": 22
             },
             {
+              "name": "ArrowLeft",
+              "count": 21
+            },
+            {
               "name": "Screenshot",
               "count": 21
             },
@@ -3871,12 +3871,12 @@
               "count": 20
             },
             {
-              "name": "ArrowLeft",
-              "count": 14
+              "name": "download",
+              "count": 15
             },
             {
-              "name": "download",
-              "count": 12
+              "name": "Right Label",
+              "count": 10
             },
             {
               "name": "play : pause",
@@ -3893,10 +3893,6 @@
             {
               "name": "Search Button",
               "count": 9
-            },
-            {
-              "name": "Right Label",
-              "count": 8
             },
             {
               "name": "Search Suggestion",
@@ -5553,11 +5549,11 @@
     {
       "name": "Viajes",
       "category": "Ecommerce",
-      "adoptionRate": 86,
+      "adoptionRate": 85,
       "totalRfdFrames": 8,
       "dsInstances": 3566,
-      "internalInstances": 593,
-      "totalInstances": 4159,
+      "internalInstances": 638,
+      "totalInstances": 4204,
       "uniqueFamiliesCount": 29,
       "uniqueFamilies": [
         {
@@ -5695,6 +5691,10 @@
           "count": 28
         },
         {
+          "name": "DirectionDown",
+          "count": 27
+        },
+        {
           "name": "Indicator Mobile",
           "count": 14
         },
@@ -5717,6 +5717,14 @@
         {
           "name": "mail",
           "count": 10
+        },
+        {
+          "name": "iaSpark",
+          "count": 9
+        },
+        {
+          "name": "DirectionRight",
+          "count": 9
         },
         {
           "name": "Viajeros",
@@ -5745,18 +5753,6 @@
         {
           "name": "Spinner mesagge",
           "count": 4
-        },
-        {
-          "name": "Spinner",
-          "count": 4
-        },
-        {
-          "name": "DirectionUp",
-          "count": 3
-        },
-        {
-          "name": "Emergencias",
-          "count": 2
         }
       ],
       "files": [
@@ -5765,9 +5761,9 @@
           "name": "Viajes",
           "rfdFrameCount": 8,
           "dsInstances": 3566,
-          "internalInstances": 593,
-          "totalInstances": 4159,
-          "adoptionRate": 86,
+          "internalInstances": 638,
+          "totalInstances": 4204,
+          "adoptionRate": 85,
           "uniqueFamiliesCount": 29,
           "uniqueFamilies": [
             {
@@ -5905,6 +5901,10 @@
               "count": 28
             },
             {
+              "name": "DirectionDown",
+              "count": 27
+            },
+            {
               "name": "Indicator Mobile",
               "count": 14
             },
@@ -5927,6 +5927,14 @@
             {
               "name": "mail",
               "count": 10
+            },
+            {
+              "name": "iaSpark",
+              "count": 9
+            },
+            {
+              "name": "DirectionRight",
+              "count": 9
             },
             {
               "name": "Viajeros",
@@ -5955,18 +5963,6 @@
             {
               "name": "Spinner mesagge",
               "count": 4
-            },
-            {
-              "name": "Spinner",
-              "count": 4
-            },
-            {
-              "name": "DirectionUp",
-              "count": 3
-            },
-            {
-              "name": "Emergencias",
-              "count": 2
             }
           ]
         }
@@ -7455,8 +7451,8 @@
       "date": "2026-06-24",
       "adoptionRate": 65,
       "totalRfdFrames": 22,
-      "totalDs": 14010,
-      "totalInstances": 21586
+      "totalDs": 14454,
+      "totalInstances": 22104
     },
     {
       "team": "Ecommerce",
@@ -7583,10 +7579,10 @@
       "category": "Ecommerce",
       "quarter": "Q2 2026",
       "date": "2026-06-24",
-      "adoptionRate": 86,
+      "adoptionRate": 85,
       "totalRfdFrames": 8,
       "totalDs": 3566,
-      "totalInstances": 4159
+      "totalInstances": 4204
     },
     {
       "team": "VDT",

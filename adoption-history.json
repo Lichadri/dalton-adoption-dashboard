@@ -6,8 +6,8 @@
     "date": "2026-06-24",
     "adoptionRate": 65,
     "totalRfdFrames": 22,
-    "totalDs": 14010,
-    "totalInstances": 21586
+    "totalDs": 14454,
+    "totalInstances": 22104
   },
   {
     "team": "Ecommerce",
@@ -134,10 +134,10 @@
     "category": "Ecommerce",
     "quarter": "Q2 2026",
     "date": "2026-06-24",
-    "adoptionRate": 86,
+    "adoptionRate": 85,
     "totalRfdFrames": 8,
     "totalDs": 3566,
-    "totalInstances": 4159
+    "totalInstances": 4204
   },
   {
     "team": "VDT",
