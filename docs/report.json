@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-24T22:33:55.533Z",
+  "generatedAt": "2026-06-25T06:14:00.490Z",
   "quarter": "Q2 2026",
   "teams": [
     {
@@ -4325,18 +4325,18 @@
       "category": "Ecommerce",
       "adoptionRate": 73,
       "totalRfdFrames": 1,
-      "dsInstances": 2301,
+      "dsInstances": 2286,
       "internalInstances": 846,
-      "totalInstances": 3147,
+      "totalInstances": 3132,
       "uniqueFamiliesCount": 28,
       "uniqueFamilies": [
         {
           "name": "Button",
-          "count": 433
+          "count": 432
         },
         {
           "name": "Alert",
-          "count": 217
+          "count": 213
         },
         {
           "name": "Átomo",
@@ -4372,7 +4372,7 @@
         },
         {
           "name": "Select",
-          "count": 88
+          "count": 82
         },
         {
           "name": "Left Label",
@@ -4431,12 +4431,12 @@
           "count": 9
         },
         {
-          "name": "Label in",
-          "count": 9
-        },
-        {
           "name": "Chips",
           "count": 6
+        },
+        {
+          "name": "Label in",
+          "count": 5
         },
         {
           "name": "Links",
@@ -4530,19 +4530,19 @@
           "key": "FqXf8kbKEimlAkKleve0yT",
           "name": "Vehicular",
           "rfdFrameCount": 1,
-          "dsInstances": 2301,
+          "dsInstances": 2286,
           "internalInstances": 846,
-          "totalInstances": 3147,
+          "totalInstances": 3132,
           "adoptionRate": 73,
           "uniqueFamiliesCount": 28,
           "uniqueFamilies": [
             {
               "name": "Button",
-              "count": 433
+              "count": 432
             },
             {
               "name": "Alert",
-              "count": 217
+              "count": 213
             },
             {
               "name": "Átomo",
@@ -4578,7 +4578,7 @@
             },
             {
               "name": "Select",
-              "count": 88
+              "count": 82
             },
             {
               "name": "Left Label",
@@ -4637,12 +4637,12 @@
               "count": 9
             },
             {
-              "name": "Label in",
-              "count": 9
-            },
-            {
               "name": "Chips",
               "count": 6
+            },
+            {
+              "name": "Label in",
+              "count": 5
             },
             {
               "name": "Links",
@@ -6391,6 +6391,476 @@
       ]
     },
     {
+      "name": "Venta Directa",
+      "category": "Ecommerce",
+      "adoptionRate": 94,
+      "totalRfdFrames": 2,
+      "dsInstances": 11371,
+      "internalInstances": 706,
+      "totalInstances": 12077,
+      "uniqueFamiliesCount": 35,
+      "uniqueFamilies": [
+        {
+          "name": "type_option",
+          "count": 6432
+        },
+        {
+          "name": "section_footer",
+          "count": 1072
+        },
+        {
+          "name": "src_option_redes",
+          "count": 670
+        },
+        {
+          "name": "reemplazar slot",
+          "count": 536
+        },
+        {
+          "name": "Button",
+          "count": 409
+        },
+        {
+          "name": "title_+_options",
+          "count": 268
+        },
+        {
+          "name": "Chips",
+          "count": 171
+        },
+        {
+          "name": "Indicator Circle",
+          "count": 155
+        },
+        {
+          "name": "Progress bar",
+          "count": 151
+        },
+        {
+          "name": "Indicator number",
+          "count": 150
+        },
+        {
+          "name": "Alert",
+          "count": 149
+        },
+        {
+          "name": "src_option_stores_download",
+          "count": 134
+        },
+        {
+          "name": "Input",
+          "count": 101
+        },
+        {
+          "name": "Accordion",
+          "count": 90
+        },
+        {
+          "name": "Átomo",
+          "count": 81
+        },
+        {
+          "name": "Menu Item",
+          "count": 80
+        },
+        {
+          "name": "Select",
+          "count": 75
+        },
+        {
+          "name": "Footer",
+          "count": 67
+        },
+        {
+          "name": "title_+_phones",
+          "count": 67
+        },
+        {
+          "name": "title_+_social media",
+          "count": 67
+        },
+        {
+          "name": "Radio",
+          "count": 65
+        },
+        {
+          "name": "Left Label",
+          "count": 58
+        },
+        {
+          "name": "Discount Badge",
+          "count": 46
+        },
+        {
+          "name": "Tab",
+          "count": 45
+        },
+        {
+          "name": "Tag",
+          "count": 36
+        },
+        {
+          "name": "Loader",
+          "count": 35
+        },
+        {
+          "name": "Checkbox",
+          "count": 33
+        },
+        {
+          "name": "Tracking",
+          "count": 30
+        },
+        {
+          "name": "Stepper",
+          "count": 27
+        },
+        {
+          "name": "Header",
+          "count": 25
+        },
+        {
+          "name": "Menu title",
+          "count": 20
+        },
+        {
+          "name": "File uploader",
+          "count": 10
+        },
+        {
+          "name": "Toggle",
+          "count": 8
+        },
+        {
+          "name": "Calendar",
+          "count": 6
+        },
+        {
+          "name": "Status Control",
+          "count": 2
+        }
+      ],
+      "top20Internal": [
+        {
+          "name": "Line Tracking Vertical",
+          "count": 155
+        },
+        {
+          "name": "Step 3",
+          "count": 31
+        },
+        {
+          "name": "Step 1",
+          "count": 30
+        },
+        {
+          "name": "Step 2",
+          "count": 30
+        },
+        {
+          "name": "Step 4",
+          "count": 30
+        },
+        {
+          "name": "Step 5",
+          "count": 30
+        },
+        {
+          "name": "title_+_badges_download",
+          "count": 29
+        },
+        {
+          "name": "download",
+          "count": 29
+        },
+        {
+          "name": "Indicator Mobile",
+          "count": 27
+        },
+        {
+          "name": "Cancel Icon",
+          "count": 26
+        },
+        {
+          "name": "Simple",
+          "count": 23
+        },
+        {
+          "name": "Cargador circular",
+          "count": 16
+        },
+        {
+          "name": "advertencia",
+          "count": 15
+        },
+        {
+          "name": "add",
+          "count": 14
+        },
+        {
+          "name": "Close Icon",
+          "count": 14
+        },
+        {
+          "name": "cloudupload",
+          "count": 12
+        },
+        {
+          "name": "card-selector",
+          "count": 12
+        },
+        {
+          "name": "[SCTR] Planes cotizador",
+          "count": 12
+        },
+        {
+          "name": "description",
+          "count": 9
+        },
+        {
+          "name": "Bullet Icon",
+          "count": 8
+        }
+      ],
+      "files": [
+        {
+          "key": "qIBm00tpmJ21ylQvmxQyDB",
+          "name": "Vida Ley & SCTR",
+          "rfdFrameCount": 2,
+          "dsInstances": 11371,
+          "internalInstances": 706,
+          "totalInstances": 12077,
+          "adoptionRate": 94,
+          "uniqueFamiliesCount": 35,
+          "uniqueFamilies": [
+            {
+              "name": "type_option",
+              "count": 6432
+            },
+            {
+              "name": "section_footer",
+              "count": 1072
+            },
+            {
+              "name": "src_option_redes",
+              "count": 670
+            },
+            {
+              "name": "reemplazar slot",
+              "count": 536
+            },
+            {
+              "name": "Button",
+              "count": 409
+            },
+            {
+              "name": "title_+_options",
+              "count": 268
+            },
+            {
+              "name": "Chips",
+              "count": 171
+            },
+            {
+              "name": "Indicator Circle",
+              "count": 155
+            },
+            {
+              "name": "Progress bar",
+              "count": 151
+            },
+            {
+              "name": "Indicator number",
+              "count": 150
+            },
+            {
+              "name": "Alert",
+              "count": 149
+            },
+            {
+              "name": "src_option_stores_download",
+              "count": 134
+            },
+            {
+              "name": "Input",
+              "count": 101
+            },
+            {
+              "name": "Accordion",
+              "count": 90
+            },
+            {
+              "name": "Átomo",
+              "count": 81
+            },
+            {
+              "name": "Menu Item",
+              "count": 80
+            },
+            {
+              "name": "Select",
+              "count": 75
+            },
+            {
+              "name": "Footer",
+              "count": 67
+            },
+            {
+              "name": "title_+_phones",
+              "count": 67
+            },
+            {
+              "name": "title_+_social media",
+              "count": 67
+            },
+            {
+              "name": "Radio",
+              "count": 65
+            },
+            {
+              "name": "Left Label",
+              "count": 58
+            },
+            {
+              "name": "Discount Badge",
+              "count": 46
+            },
+            {
+              "name": "Tab",
+              "count": 45
+            },
+            {
+              "name": "Tag",
+              "count": 36
+            },
+            {
+              "name": "Loader",
+              "count": 35
+            },
+            {
+              "name": "Checkbox",
+              "count": 33
+            },
+            {
+              "name": "Tracking",
+              "count": 30
+            },
+            {
+              "name": "Stepper",
+              "count": 27
+            },
+            {
+              "name": "Header",
+              "count": 25
+            },
+            {
+              "name": "Menu title",
+              "count": 20
+            },
+            {
+              "name": "File uploader",
+              "count": 10
+            },
+            {
+              "name": "Toggle",
+              "count": 8
+            },
+            {
+              "name": "Calendar",
+              "count": 6
+            },
+            {
+              "name": "Status Control",
+              "count": 2
+            }
+          ],
+          "top20Internal": [
+            {
+              "name": "Line Tracking Vertical",
+              "count": 155
+            },
+            {
+              "name": "Step 3",
+              "count": 31
+            },
+            {
+              "name": "Step 1",
+              "count": 30
+            },
+            {
+              "name": "Step 2",
+              "count": 30
+            },
+            {
+              "name": "Step 4",
+              "count": 30
+            },
+            {
+              "name": "Step 5",
+              "count": 30
+            },
+            {
+              "name": "title_+_badges_download",
+              "count": 29
+            },
+            {
+              "name": "download",
+              "count": 29
+            },
+            {
+              "name": "Indicator Mobile",
+              "count": 27
+            },
+            {
+              "name": "Cancel Icon",
+              "count": 26
+            },
+            {
+              "name": "Simple",
+              "count": 23
+            },
+            {
+              "name": "Cargador circular",
+              "count": 16
+            },
+            {
+              "name": "advertencia",
+              "count": 15
+            },
+            {
+              "name": "add",
+              "count": 14
+            },
+            {
+              "name": "Close Icon",
+              "count": 14
+            },
+            {
+              "name": "cloudupload",
+              "count": 12
+            },
+            {
+              "name": "card-selector",
+              "count": 12
+            },
+            {
+              "name": "[SCTR] Planes cotizador",
+              "count": 12
+            },
+            {
+              "name": "description",
+              "count": 9
+            },
+            {
+              "name": "Bullet Icon",
+              "count": 8
+            }
+          ]
+        }
+      ]
+    },
+    {
       "name": "Web Corporativa",
       "category": "Web Corporativa",
       "adoptionRate": 84,
@@ -7448,7 +7918,7 @@
       "team": "Modelo Día",
       "category": "Modelo Día",
       "quarter": "Q2 2026",
-      "date": "2026-06-24",
+      "date": "2026-06-25",
       "adoptionRate": 65,
       "totalRfdFrames": 22,
       "totalDs": 14454,
@@ -7468,7 +7938,7 @@
       "team": "Auto Efectivo",
       "category": "Ecommerce",
       "quarter": "Q2 2026",
-      "date": "2026-06-24",
+      "date": "2026-06-25",
       "adoptionRate": 73,
       "totalRfdFrames": 1,
       "totalDs": 921,
@@ -7478,7 +7948,7 @@
       "team": "MEP",
       "category": "MEP",
       "quarter": "Q2 2026",
-      "date": "2026-06-24",
+      "date": "2026-06-25",
       "adoptionRate": 51,
       "totalRfdFrames": 17,
       "totalDs": 3018,
@@ -7488,7 +7958,7 @@
       "team": "Somos Corredores",
       "category": "Somos Corredores",
       "quarter": "Q2 2026",
-      "date": "2026-06-24",
+      "date": "2026-06-25",
       "adoptionRate": 87,
       "totalRfdFrames": 12,
       "totalDs": 3852,
@@ -7498,7 +7968,7 @@
       "team": "Protege 365",
       "category": "Protege 365",
       "quarter": "Q2 2026",
-      "date": "2026-06-24",
+      "date": "2026-06-25",
       "adoptionRate": 91,
       "totalRfdFrames": 8,
       "totalDs": 8343,
@@ -7508,7 +7978,7 @@
       "team": "Nueva Web Empresas",
       "category": "Nueva Web Empresas",
       "quarter": "Q2 2026",
-      "date": "2026-06-24",
+      "date": "2026-06-25",
       "adoptionRate": 94,
       "totalRfdFrames": 44,
       "totalDs": 172970,
@@ -7518,7 +7988,7 @@
       "team": "Portal Digital de Siniestros",
       "category": "Portal Digital de Siniestros",
       "quarter": "Q2 2026",
-      "date": "2026-06-24",
+      "date": "2026-06-25",
       "adoptionRate": 84,
       "totalRfdFrames": 5,
       "totalDs": 8539,
@@ -7528,7 +7998,7 @@
       "team": "Web Corporativa",
       "category": "Web Corporativa",
       "quarter": "Q2 2026",
-      "date": "2026-06-24",
+      "date": "2026-06-25",
       "adoptionRate": 84,
       "totalRfdFrames": 73,
       "totalDs": 11472,
@@ -7538,7 +8008,7 @@
       "team": "Embebidos",
       "category": "Embebidos",
       "quarter": "Q2 2026",
-      "date": "2026-06-24",
+      "date": "2026-06-25",
       "adoptionRate": 88,
       "totalRfdFrames": 6,
       "totalDs": 1424,
@@ -7548,7 +8018,7 @@
       "team": "SOAT",
       "category": "Ecommerce",
       "quarter": "Q2 2026",
-      "date": "2026-06-24",
+      "date": "2026-06-25",
       "adoptionRate": 75,
       "totalRfdFrames": 1,
       "totalDs": 1583,
@@ -7558,17 +8028,17 @@
       "team": "Vehicular",
       "category": "Ecommerce",
       "quarter": "Q2 2026",
-      "date": "2026-06-24",
+      "date": "2026-06-25",
       "adoptionRate": 73,
       "totalRfdFrames": 1,
-      "totalDs": 2301,
-      "totalInstances": 3147
+      "totalDs": 2286,
+      "totalInstances": 3132
     },
     {
       "team": "Vehicular Todo Riesgo",
       "category": "Ecommerce",
       "quarter": "Q2 2026",
-      "date": "2026-06-24",
+      "date": "2026-06-25",
       "adoptionRate": 69,
       "totalRfdFrames": 2,
       "totalDs": 2650,
@@ -7578,7 +8048,7 @@
       "team": "Viajes",
       "category": "Ecommerce",
       "quarter": "Q2 2026",
-      "date": "2026-06-24",
+      "date": "2026-06-25",
       "adoptionRate": 85,
       "totalRfdFrames": 8,
       "totalDs": 3566,
@@ -7588,11 +8058,21 @@
       "team": "VDT",
       "category": "Ecommerce",
       "quarter": "Q2 2026",
-      "date": "2026-06-24",
+      "date": "2026-06-25",
       "adoptionRate": 85,
       "totalRfdFrames": 8,
       "totalDs": 3906,
       "totalInstances": 4593
+    },
+    {
+      "team": "Venta Directa",
+      "category": "Ecommerce",
+      "quarter": "Q2 2026",
+      "date": "2026-06-25",
+      "adoptionRate": 94,
+      "totalRfdFrames": 2,
+      "totalDs": 11371,
+      "totalInstances": 12077
     }
   ]
 }
