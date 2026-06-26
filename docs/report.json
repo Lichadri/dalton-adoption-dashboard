@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-26T17:22:05.294Z",
+  "generatedAt": "2026-06-26T22:27:49.786Z",
   "quarter": "Q2 2026",
   "teams": [
     {
@@ -1177,20 +1177,20 @@
     {
       "name": "Protege 365",
       "category": "Protege 365",
-      "adoptionRate": 91,
+      "adoptionRate": 90,
       "totalRfdFrames": 8,
-      "dsInstances": 8343,
-      "internalInstances": 845,
-      "totalInstances": 9188,
+      "dsInstances": 7739,
+      "internalInstances": 821,
+      "totalInstances": 8560,
       "uniqueFamiliesCount": 38,
       "uniqueFamilies": [
         {
           "name": "type_option",
-          "count": 3264
+          "count": 2880
         },
         {
           "name": "Button",
-          "count": 748
+          "count": 736
         },
         {
           "name": "Menu Item",
@@ -1198,27 +1198,27 @@
         },
         {
           "name": "section_footer",
-          "count": 544
+          "count": 480
         },
         {
           "name": "Átomo",
-          "count": 352
-        },
-        {
-          "name": "src_option_redes",
-          "count": 316
+          "count": 332
         },
         {
           "name": "Alert",
-          "count": 304
+          "count": 292
+        },
+        {
+          "name": "src_option_redes",
+          "count": 292
         },
         {
           "name": "reemplazar slot",
-          "count": 272
+          "count": 240
         },
         {
           "name": "Header",
-          "count": 222
+          "count": 198
         },
         {
           "name": "Menu title",
@@ -1226,11 +1226,11 @@
         },
         {
           "name": "title_+_options",
-          "count": 136
+          "count": 120
         },
         {
           "name": "Chips",
-          "count": 120
+          "count": 116
         },
         {
           "name": "Tag",
@@ -1281,20 +1281,20 @@
           "count": 41
         },
         {
-          "name": "Footer",
-          "count": 40
-        },
-        {
           "name": "Input",
           "count": 37
         },
         {
+          "name": "Footer",
+          "count": 36
+        },
+        {
           "name": "title_+_phones",
-          "count": 34
+          "count": 30
         },
         {
           "name": "title_+_social media",
-          "count": 34
+          "count": 30
         },
         {
           "name": "Indicator number",
@@ -1344,7 +1344,7 @@
         },
         {
           "name": "download",
-          "count": 58
+          "count": 54
         },
         {
           "name": "Slider",
@@ -1359,10 +1359,6 @@
           "count": 34
         },
         {
-          "name": "whatsapp",
-          "count": 33
-        },
-        {
           "name": "NorthEast",
           "count": 32
         },
@@ -1373,6 +1369,10 @@
         {
           "name": "Line Tracking Vertical",
           "count": 30
+        },
+        {
+          "name": "whatsapp",
+          "count": 29
         },
         {
           "name": "datos personales",
@@ -1424,38 +1424,30 @@
           "key": "XTTjedhXUghJApM4YxDILE",
           "name": "Web Pública",
           "rfdFrameCount": 2,
-          "dsInstances": 1308,
-          "internalInstances": 211,
-          "totalInstances": 1519,
-          "adoptionRate": 86,
+          "dsInstances": 704,
+          "internalInstances": 187,
+          "totalInstances": 891,
+          "adoptionRate": 79,
           "uniqueFamiliesCount": 20,
           "uniqueFamilies": [
             {
               "name": "type_option",
-              "count": 576
+              "count": 192
             },
             {
               "name": "Button",
-              "count": 114
-            },
-            {
-              "name": "section_footer",
-              "count": 96
-            },
-            {
-              "name": "Átomo",
-              "count": 90
+              "count": 102
             },
             {
               "name": "Alert",
-              "count": 85
+              "count": 73
+            },
+            {
+              "name": "Átomo",
+              "count": 70
             },
             {
               "name": "Tag",
-              "count": 48
-            },
-            {
-              "name": "reemplazar slot",
               "count": 48
             },
             {
@@ -1467,36 +1459,32 @@
               "count": 38
             },
             {
-              "name": "Header",
-              "count": 36
-            },
-            {
-              "name": "src_option_redes",
-              "count": 36
-            },
-            {
               "name": "Slider Controls",
               "count": 32
             },
             {
-              "name": "title_+_options",
-              "count": 24
+              "name": "section_footer",
+              "count": 32
             },
             {
-              "name": "Footer",
+              "name": "reemplazar slot",
+              "count": 16
+            },
+            {
+              "name": "Header",
               "count": 12
             },
             {
-              "name": "Chips",
+              "name": "src_option_redes",
+              "count": 12
+            },
+            {
+              "name": "Footer",
               "count": 8
             },
             {
-              "name": "title_+_phones",
-              "count": 6
-            },
-            {
-              "name": "title_+_social media",
-              "count": 6
+              "name": "title_+_options",
+              "count": 8
             },
             {
               "name": "Breadcrumb",
@@ -1509,24 +1497,32 @@
             {
               "name": "Input",
               "count": 4
+            },
+            {
+              "name": "Chips",
+              "count": 4
+            },
+            {
+              "name": "title_+_phones",
+              "count": 2
+            },
+            {
+              "name": "title_+_social media",
+              "count": 2
             }
           ],
           "top20Internal": [
-            {
-              "name": "download",
-              "count": 34
-            },
-            {
-              "name": "whatsapp",
-              "count": 33
-            },
             {
               "name": "NorthEast",
               "count": 32
             },
             {
-              "name": "Component 86",
-              "count": 12
+              "name": "download",
+              "count": 30
+            },
+            {
+              "name": "whatsapp",
+              "count": 29
             },
             {
               "name": "PersonalInjuy",
@@ -1557,12 +1553,8 @@
               "count": 7
             },
             {
-              "name": "Component 87",
-              "count": 6
-            },
-            {
-              "name": "Component 88",
-              "count": 6
+              "name": "Component 86",
+              "count": 4
             },
             {
               "name": "Slider",
@@ -1583,6 +1575,14 @@
             {
               "name": "location city",
               "count": 4
+            },
+            {
+              "name": "Component 87",
+              "count": 2
+            },
+            {
+              "name": "Component 88",
+              "count": 2
             },
             {
               "name": "Scroll",
@@ -7605,10 +7605,10 @@
       "category": "Protege 365",
       "quarter": "Q2 2026",
       "date": "2026-06-26",
-      "adoptionRate": 91,
+      "adoptionRate": 90,
       "totalRfdFrames": 8,
-      "totalDs": 8343,
-      "totalInstances": 9188
+      "totalDs": 7739,
+      "totalInstances": 8560
     },
     {
       "team": "Nueva Web Empresas",
