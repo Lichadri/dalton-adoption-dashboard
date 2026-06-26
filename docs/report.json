@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-25T22:40:48.984Z",
+  "generatedAt": "2026-06-26T17:22:05.294Z",
   "quarter": "Q2 2026",
   "teams": [
     {
@@ -3057,22 +3057,22 @@
       "category": "Modelo Día",
       "adoptionRate": 65,
       "totalRfdFrames": 22,
-      "dsInstances": 14454,
-      "internalInstances": 7650,
-      "totalInstances": 22104,
+      "dsInstances": 14386,
+      "internalInstances": 7654,
+      "totalInstances": 22040,
       "uniqueFamiliesCount": 36,
       "uniqueFamilies": [
         {
           "name": "Sidebar",
-          "count": 4525
+          "count": 4487
         },
         {
           "name": "Checkbox",
-          "count": 1422
+          "count": 1420
         },
         {
           "name": "Button",
-          "count": 1407
+          "count": 1404
         },
         {
           "name": "Table",
@@ -3080,34 +3080,34 @@
         },
         {
           "name": "Input",
-          "count": 831
+          "count": 825
         },
         {
           "name": "Alert",
-          "count": 824
+          "count": 815
         },
         {
           "name": "Left Label",
-          "count": 674
+          "count": 672
         },
         {
           "name": "Tag",
-          "count": 647
+          "count": 643
         },
         {
           "name": "Radio",
-          "count": 505
+          "count": 507
         },
         {
           "name": "Header",
           "count": 414
         },
         {
-          "name": "Select",
-          "count": 264
+          "name": "Tab",
+          "count": 262
         },
         {
-          "name": "Tab",
+          "name": "Select",
           "count": 262
         },
         {
@@ -3116,7 +3116,7 @@
         },
         {
           "name": "Calendar",
-          "count": 197
+          "count": 193
         },
         {
           "name": "Progress bar",
@@ -3222,11 +3222,11 @@
         },
         {
           "name": "Component 16",
-          "count": 270
+          "count": 282
         },
         {
           "name": "Botón Primario",
-          "count": 180
+          "count": 188
         },
         {
           "name": "Dropdown filter page",
@@ -3242,22 +3242,18 @@
         },
         {
           "name": "barras",
-          "count": 128
+          "count": 127
         },
         {
           "name": "Article",
-          "count": 126
+          "count": 125
         },
         {
           "name": "billetera",
-          "count": 119
-        },
-        {
-          "name": "description",
           "count": 118
         },
         {
-          "name": "create account",
+          "name": "description",
           "count": 117
         },
         {
@@ -3265,8 +3261,8 @@
           "count": 116
         },
         {
-          "name": "Page",
-          "count": 109
+          "name": "create account",
+          "count": 116
         },
         {
           "name": "ArrowLeft",
@@ -3277,8 +3273,12 @@
           "count": 103
         },
         {
+          "name": "Page",
+          "count": 102
+        },
+        {
           "name": "download",
-          "count": 97
+          "count": 98
         },
         {
           "name": "directionLeft",
@@ -3702,27 +3702,27 @@
           "key": "6QBFEXpu6r5ZDNuzYYtK97",
           "name": "Vida Ley & SCTR",
           "rfdFrameCount": 1,
-          "dsInstances": 2396,
-          "internalInstances": 541,
-          "totalInstances": 2937,
-          "adoptionRate": 82,
+          "dsInstances": 2328,
+          "internalInstances": 545,
+          "totalInstances": 2873,
+          "adoptionRate": 81,
           "uniqueFamiliesCount": 30,
           "uniqueFamilies": [
             {
               "name": "Sidebar",
-              "count": 1596
+              "count": 1558
             },
             {
               "name": "Button",
-              "count": 191
+              "count": 188
             },
             {
               "name": "Input",
-              "count": 119
+              "count": 113
             },
             {
               "name": "Alert",
-              "count": 87
+              "count": 78
             },
             {
               "name": "Tab",
@@ -3730,19 +3730,19 @@
             },
             {
               "name": "Tag",
-              "count": 52
+              "count": 48
             },
             {
               "name": "Calendar",
-              "count": 50
+              "count": 46
             },
             {
               "name": "Radio",
-              "count": 32
+              "count": 34
             },
             {
               "name": "Select",
-              "count": 27
+              "count": 25
             },
             {
               "name": "Progress bar",
@@ -3754,15 +3754,11 @@
             },
             {
               "name": "Left Label",
-              "count": 18
+              "count": 16
             },
             {
               "name": "Header",
               "count": 15
-            },
-            {
-              "name": "Checkbox",
-              "count": 12
             },
             {
               "name": "Slider Controls",
@@ -3771,6 +3767,10 @@
             {
               "name": "Main Search",
               "count": 11
+            },
+            {
+              "name": "Checkbox",
+              "count": 10
             },
             {
               "name": "Pagination",
@@ -3832,23 +3832,23 @@
           "top20Internal": [
             {
               "name": "barras",
-              "count": 53
+              "count": 52
             },
             {
               "name": "create account",
-              "count": 42
+              "count": 41
             },
             {
               "name": "Article",
-              "count": 42
+              "count": 41
             },
             {
               "name": "billetera",
-              "count": 42
+              "count": 41
             },
             {
               "name": "description",
-              "count": 42
+              "count": 41
             },
             {
               "name": "Line Tracking Vertical",
@@ -3856,6 +3856,10 @@
             },
             {
               "name": "Island",
+              "count": 23
+            },
+            {
+              "name": "Screenshot",
               "count": 22
             },
             {
@@ -3863,20 +3867,16 @@
               "count": 21
             },
             {
-              "name": "Screenshot",
+              "name": "Device 14PM",
               "count": 21
             },
             {
-              "name": "Device 14PM",
-              "count": 20
-            },
-            {
               "name": "download",
-              "count": 15
+              "count": 16
             },
             {
-              "name": "Right Label",
-              "count": 10
+              "name": "Component 16",
+              "count": 12
             },
             {
               "name": "play : pause",
@@ -3895,20 +3895,20 @@
               "count": 9
             },
             {
+              "name": "Right Label",
+              "count": 8
+            },
+            {
               "name": "Search Suggestion",
+              "count": 8
+            },
+            {
+              "name": "Botón Primario",
               "count": 8
             },
             {
               "name": "Control",
               "count": 7
-            },
-            {
-              "name": "Page",
-              "count": 7
-            },
-            {
-              "name": "Slider",
-              "count": 6
             }
           ]
         }
@@ -4737,390 +4737,26 @@
     {
       "name": "Auto Efectivo",
       "category": "Ecommerce",
-      "adoptionRate": 73,
-      "totalRfdFrames": 1,
-      "dsInstances": 921,
-      "internalInstances": 334,
-      "totalInstances": 1255,
-      "uniqueFamiliesCount": 25,
-      "uniqueFamilies": [
-        {
-          "name": "Átomo",
-          "count": 160
-        },
-        {
-          "name": "Alert",
-          "count": 149
-        },
-        {
-          "name": "Button",
-          "count": 136
-        },
-        {
-          "name": "Accordion",
-          "count": 107
-        },
-        {
-          "name": "Input",
-          "count": 77
-        },
-        {
-          "name": "Header",
-          "count": 63
-        },
-        {
-          "name": "Slider Controls",
-          "count": 60
-        },
-        {
-          "name": "Checkbox",
-          "count": 48
-        },
-        {
-          "name": "Tab",
-          "count": 20
-        },
-        {
-          "name": "Carrusel",
-          "count": 15
-        },
-        {
-          "name": "Status Control",
-          "count": 15
-        },
-        {
-          "name": "Tag",
-          "count": 14
-        },
-        {
-          "name": "Footer",
-          "count": 11
-        },
-        {
-          "name": "Select",
-          "count": 10
-        },
-        {
-          "name": "Hero",
-          "count": 9
-        },
-        {
-          "name": "Discount Badge",
-          "count": 6
-        },
-        {
-          "name": "Calendar",
-          "count": 4
-        },
-        {
-          "name": "Cards",
-          "count": 3
-        },
-        {
-          "name": "Infografia",
-          "count": 3
-        },
-        {
-          "name": "Progress bar",
-          "count": 3
-        },
-        {
-          "name": "Label in",
-          "count": 3
-        },
-        {
-          "name": "Left Label",
-          "count": 2
-        },
-        {
-          "name": "Chips",
-          "count": 1
-        },
-        {
-          "name": "Dropdown Input",
-          "count": 1
-        },
-        {
-          "name": "Loader",
-          "count": 1
-        }
-      ],
-      "top20Internal": [
-        {
-          "name": "Spinner",
-          "count": 29
-        },
-        {
-          "name": "icon",
-          "count": 24
-        },
-        {
-          "name": "Caja formulario complex L M",
-          "count": 24
-        },
-        {
-          "name": "Contenido desktop",
-          "count": 24
-        },
-        {
-          "name": "Formulario L M complex",
-          "count": 24
-        },
-        {
-          "name": "Banner mobile",
-          "count": 15
-        },
-        {
-          "name": "Slider",
-          "count": 15
-        },
-        {
-          "name": "Contenido mobile",
-          "count": 15
-        },
-        {
-          "name": "Complex",
-          "count": 12
-        },
-        {
-          "name": "CajaFormulario",
-          "count": 9
-        },
-        {
-          "name": "Carousel",
-          "count": 9
-        },
-        {
-          "name": "Card_Mobile_funciona 1",
-          "count": 9
-        },
-        {
-          "name": "Card_Mobile_funciona 3",
-          "count": 9
-        },
-        {
-          "name": "Card_Mobile_funciona 4",
-          "count": 9
-        },
-        {
-          "name": "Card_Mobile_funciona 5",
-          "count": 9
-        },
-        {
-          "name": "Card_Mobile_funciona 6",
-          "count": 9
-        },
-        {
-          "name": "Emergencias",
-          "count": 7
-        },
-        {
-          "name": "add",
-          "count": 6
-        },
-        {
-          "name": "01",
-          "count": 6
-        },
-        {
-          "name": "Scroll",
-          "count": 5
-        }
-      ],
+      "adoptionRate": 0,
+      "totalRfdFrames": 0,
+      "dsInstances": 0,
+      "internalInstances": 0,
+      "totalInstances": 0,
+      "uniqueFamiliesCount": 0,
+      "uniqueFamilies": [],
+      "top20Internal": [],
       "files": [
         {
           "key": "b7nkcHmaq9SibdyBrCzVjt",
           "name": "Auto Efectivo",
-          "rfdFrameCount": 1,
-          "dsInstances": 921,
-          "internalInstances": 334,
-          "totalInstances": 1255,
-          "adoptionRate": 73,
-          "uniqueFamiliesCount": 25,
-          "uniqueFamilies": [
-            {
-              "name": "Átomo",
-              "count": 160
-            },
-            {
-              "name": "Alert",
-              "count": 149
-            },
-            {
-              "name": "Button",
-              "count": 136
-            },
-            {
-              "name": "Accordion",
-              "count": 107
-            },
-            {
-              "name": "Input",
-              "count": 77
-            },
-            {
-              "name": "Header",
-              "count": 63
-            },
-            {
-              "name": "Slider Controls",
-              "count": 60
-            },
-            {
-              "name": "Checkbox",
-              "count": 48
-            },
-            {
-              "name": "Tab",
-              "count": 20
-            },
-            {
-              "name": "Carrusel",
-              "count": 15
-            },
-            {
-              "name": "Status Control",
-              "count": 15
-            },
-            {
-              "name": "Tag",
-              "count": 14
-            },
-            {
-              "name": "Footer",
-              "count": 11
-            },
-            {
-              "name": "Select",
-              "count": 10
-            },
-            {
-              "name": "Hero",
-              "count": 9
-            },
-            {
-              "name": "Discount Badge",
-              "count": 6
-            },
-            {
-              "name": "Calendar",
-              "count": 4
-            },
-            {
-              "name": "Cards",
-              "count": 3
-            },
-            {
-              "name": "Infografia",
-              "count": 3
-            },
-            {
-              "name": "Progress bar",
-              "count": 3
-            },
-            {
-              "name": "Label in",
-              "count": 3
-            },
-            {
-              "name": "Left Label",
-              "count": 2
-            },
-            {
-              "name": "Chips",
-              "count": 1
-            },
-            {
-              "name": "Dropdown Input",
-              "count": 1
-            },
-            {
-              "name": "Loader",
-              "count": 1
-            }
-          ],
-          "top20Internal": [
-            {
-              "name": "Spinner",
-              "count": 29
-            },
-            {
-              "name": "icon",
-              "count": 24
-            },
-            {
-              "name": "Caja formulario complex L M",
-              "count": 24
-            },
-            {
-              "name": "Contenido desktop",
-              "count": 24
-            },
-            {
-              "name": "Formulario L M complex",
-              "count": 24
-            },
-            {
-              "name": "Banner mobile",
-              "count": 15
-            },
-            {
-              "name": "Slider",
-              "count": 15
-            },
-            {
-              "name": "Contenido mobile",
-              "count": 15
-            },
-            {
-              "name": "Complex",
-              "count": 12
-            },
-            {
-              "name": "CajaFormulario",
-              "count": 9
-            },
-            {
-              "name": "Carousel",
-              "count": 9
-            },
-            {
-              "name": "Card_Mobile_funciona 1",
-              "count": 9
-            },
-            {
-              "name": "Card_Mobile_funciona 3",
-              "count": 9
-            },
-            {
-              "name": "Card_Mobile_funciona 4",
-              "count": 9
-            },
-            {
-              "name": "Card_Mobile_funciona 5",
-              "count": 9
-            },
-            {
-              "name": "Card_Mobile_funciona 6",
-              "count": 9
-            },
-            {
-              "name": "Emergencias",
-              "count": 7
-            },
-            {
-              "name": "add",
-              "count": 6
-            },
-            {
-              "name": "01",
-              "count": 6
-            },
-            {
-              "name": "Scroll",
-              "count": 5
-            }
-          ]
+          "rfdFrameCount": 0,
+          "dsInstances": 0,
+          "internalInstances": 0,
+          "totalInstances": 0,
+          "adoptionRate": 0,
+          "uniqueFamiliesCount": 0,
+          "uniqueFamilies": [],
+          "top20Internal": []
         }
       ]
     },
@@ -7918,11 +7554,11 @@
       "team": "Modelo Día",
       "category": "Modelo Día",
       "quarter": "Q2 2026",
-      "date": "2026-06-25",
+      "date": "2026-06-26",
       "adoptionRate": 65,
       "totalRfdFrames": 22,
-      "totalDs": 14454,
-      "totalInstances": 22104
+      "totalDs": 14386,
+      "totalInstances": 22040
     },
     {
       "team": "Ecommerce",
@@ -7938,17 +7574,17 @@
       "team": "Auto Efectivo",
       "category": "Ecommerce",
       "quarter": "Q2 2026",
-      "date": "2026-06-25",
-      "adoptionRate": 73,
-      "totalRfdFrames": 1,
-      "totalDs": 921,
-      "totalInstances": 1255
+      "date": "2026-06-26",
+      "adoptionRate": 0,
+      "totalRfdFrames": 0,
+      "totalDs": 0,
+      "totalInstances": 0
     },
     {
       "team": "MEP",
       "category": "MEP",
       "quarter": "Q2 2026",
-      "date": "2026-06-25",
+      "date": "2026-06-26",
       "adoptionRate": 51,
       "totalRfdFrames": 17,
       "totalDs": 3018,
@@ -7958,7 +7594,7 @@
       "team": "Somos Corredores",
       "category": "Somos Corredores",
       "quarter": "Q2 2026",
-      "date": "2026-06-25",
+      "date": "2026-06-26",
       "adoptionRate": 87,
       "totalRfdFrames": 12,
       "totalDs": 3852,
@@ -7968,7 +7604,7 @@
       "team": "Protege 365",
       "category": "Protege 365",
       "quarter": "Q2 2026",
-      "date": "2026-06-25",
+      "date": "2026-06-26",
       "adoptionRate": 91,
       "totalRfdFrames": 8,
       "totalDs": 8343,
@@ -7978,7 +7614,7 @@
       "team": "Nueva Web Empresas",
       "category": "Nueva Web Empresas",
       "quarter": "Q2 2026",
-      "date": "2026-06-25",
+      "date": "2026-06-26",
       "adoptionRate": 94,
       "totalRfdFrames": 44,
       "totalDs": 172970,
@@ -7988,7 +7624,7 @@
       "team": "Portal Digital de Siniestros",
       "category": "Portal Digital de Siniestros",
       "quarter": "Q2 2026",
-      "date": "2026-06-25",
+      "date": "2026-06-26",
       "adoptionRate": 84,
       "totalRfdFrames": 5,
       "totalDs": 8539,
@@ -7998,7 +7634,7 @@
       "team": "Web Corporativa",
       "category": "Web Corporativa",
       "quarter": "Q2 2026",
-      "date": "2026-06-25",
+      "date": "2026-06-26",
       "adoptionRate": 84,
       "totalRfdFrames": 73,
       "totalDs": 11472,
@@ -8008,7 +7644,7 @@
       "team": "Embebidos",
       "category": "Embebidos",
       "quarter": "Q2 2026",
-      "date": "2026-06-25",
+      "date": "2026-06-26",
       "adoptionRate": 88,
       "totalRfdFrames": 6,
       "totalDs": 1424,
@@ -8018,7 +7654,7 @@
       "team": "SOAT",
       "category": "Ecommerce",
       "quarter": "Q2 2026",
-      "date": "2026-06-25",
+      "date": "2026-06-26",
       "adoptionRate": 75,
       "totalRfdFrames": 1,
       "totalDs": 1583,
@@ -8028,7 +7664,7 @@
       "team": "Vehicular",
       "category": "Ecommerce",
       "quarter": "Q2 2026",
-      "date": "2026-06-25",
+      "date": "2026-06-26",
       "adoptionRate": 73,
       "totalRfdFrames": 1,
       "totalDs": 2286,
@@ -8038,7 +7674,7 @@
       "team": "Vehicular Todo Riesgo",
       "category": "Ecommerce",
       "quarter": "Q2 2026",
-      "date": "2026-06-25",
+      "date": "2026-06-26",
       "adoptionRate": 69,
       "totalRfdFrames": 2,
       "totalDs": 2650,
@@ -8048,7 +7684,7 @@
       "team": "Viajes",
       "category": "Ecommerce",
       "quarter": "Q2 2026",
-      "date": "2026-06-25",
+      "date": "2026-06-26",
       "adoptionRate": 85,
       "totalRfdFrames": 8,
       "totalDs": 3566,
@@ -8058,7 +7694,7 @@
       "team": "VDT",
       "category": "Ecommerce",
       "quarter": "Q2 2026",
-      "date": "2026-06-25",
+      "date": "2026-06-26",
       "adoptionRate": 85,
       "totalRfdFrames": 8,
       "totalDs": 3906,
@@ -8068,7 +7704,7 @@
       "team": "Venta Directa",
       "category": "Ecommerce",
       "quarter": "Q2 2026",
-      "date": "2026-06-25",
+      "date": "2026-06-26",
       "adoptionRate": 94,
       "totalRfdFrames": 2,
       "totalDs": 11371,
