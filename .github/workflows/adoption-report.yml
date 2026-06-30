@@ -1,44 +1,35 @@
 name: Dalton Adoption Report
-
 on:
   schedule:
     - cron: "0 15 * * 1-5"
     - cron: "0 21 * * 1-5"
   workflow_dispatch:
-
 jobs:
   run-report:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
-
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: "20"
-
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
-
       - name: Install openpyxl
         run: pip install openpyxl
-
       - name: Run adoption script
         env:
           FIGMA_TOKEN: ${{ secrets.FIGMA_TOKEN }}
-        run: node adoption-script.js
-
+        run: node adoption-script-with-detach.js
       - name: Upload Excel as artifact
         uses: actions/upload-artifact@v4
         with:
           name: reporte-adopcion-${{ github.run_number }}
           path: docs/reporte-adopcion.xlsx
           retention-days: 30
-
       - name: Commit & push report
         run: |
           git config user.name "dalton-bot"
