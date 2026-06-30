@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-30T17:35:43.906Z",
+  "generatedAt": "2026-06-30T22:33:49.694Z",
   "quarter": "Q2 2026",
   "teams": [
     {
@@ -7265,26 +7265,342 @@
     {
       "name": "Embebidos",
       "category": "Embebidos",
-      "adoptionRate": 0,
-      "totalRfdFrames": 0,
-      "dsInstances": 0,
-      "internalInstances": 0,
-      "totalInstances": 0,
-      "uniqueFamiliesCount": 0,
-      "uniqueFamilies": [],
-      "top20Internal": [],
+      "adoptionRate": 88,
+      "totalRfdFrames": 6,
+      "dsInstances": 1424,
+      "internalInstances": 201,
+      "totalInstances": 1625,
+      "uniqueFamiliesCount": 19,
+      "uniqueFamilies": [
+        {
+          "name": "type_option",
+          "count": 570
+        },
+        {
+          "name": "Átomo",
+          "count": 188
+        },
+        {
+          "name": "Accordion",
+          "count": 128
+        },
+        {
+          "name": "Tab",
+          "count": 100
+        },
+        {
+          "name": "section_footer",
+          "count": 90
+        },
+        {
+          "name": "Button",
+          "count": 81
+        },
+        {
+          "name": "Tag",
+          "count": 81
+        },
+        {
+          "name": "src_option_redes",
+          "count": 60
+        },
+        {
+          "name": "reemplazar slot",
+          "count": 48
+        },
+        {
+          "name": "title_+_options",
+          "count": 18
+        },
+        {
+          "name": "Alert",
+          "count": 16
+        },
+        {
+          "name": "src_option_stores_download",
+          "count": 12
+        },
+        {
+          "name": "Hero",
+          "count": 10
+        },
+        {
+          "name": "Breadcrumb",
+          "count": 6
+        },
+        {
+          "name": "title_+_phones",
+          "count": 6
+        },
+        {
+          "name": "title_+_social media",
+          "count": 6
+        },
+        {
+          "name": "Logo Horizontal",
+          "count": 2
+        },
+        {
+          "name": "Input",
+          "count": 1
+        },
+        {
+          "name": "Calendar",
+          "count": 1
+        }
+      ],
+      "top20Internal": [
+        {
+          "name": "icon",
+          "count": 24
+        },
+        {
+          "name": "SecciónDescripción",
+          "count": 21
+        },
+        {
+          "name": "Icon",
+          "count": 18
+        },
+        {
+          "name": "Image",
+          "count": 18
+        },
+        {
+          "name": "WithoutShieldHeart",
+          "count": 14
+        },
+        {
+          "name": "SeccionCanales",
+          "count": 12
+        },
+        {
+          "name": "PersonalInjuy",
+          "count": 12
+        },
+        {
+          "name": "Information",
+          "count": 11
+        },
+        {
+          "name": "LogosCollab",
+          "count": 10
+        },
+        {
+          "name": "CoberturasIconos",
+          "count": 10
+        },
+        {
+          "name": "Scroll",
+          "count": 8
+        },
+        {
+          "name": "Complex",
+          "count": 6
+        },
+        {
+          "name": "title_+_badges_download",
+          "count": 6
+        },
+        {
+          "name": "problema eléctrico",
+          "count": 5
+        },
+        {
+          "name": "robo de autopartes",
+          "count": 4
+        },
+        {
+          "name": "avión",
+          "count": 2
+        },
+        {
+          "name": "generales",
+          "count": 2
+        },
+        {
+          "name": "download",
+          "count": 2
+        },
+        {
+          "name": "fractura",
+          "count": 2
+        },
+        {
+          "name": "doctor",
+          "count": 2
+        }
+      ],
       "files": [
         {
           "key": "X8aq9jmjEuGuWDblebqRFz",
           "name": "Landing Alianzas",
-          "rfdFrameCount": 0,
-          "dsInstances": 0,
-          "internalInstances": 0,
-          "totalInstances": 0,
-          "adoptionRate": 0,
-          "uniqueFamiliesCount": 0,
-          "uniqueFamilies": [],
-          "top20Internal": []
+          "rfdFrameCount": 6,
+          "dsInstances": 1424,
+          "internalInstances": 201,
+          "totalInstances": 1625,
+          "adoptionRate": 88,
+          "uniqueFamiliesCount": 19,
+          "uniqueFamilies": [
+            {
+              "name": "type_option",
+              "count": 570
+            },
+            {
+              "name": "Átomo",
+              "count": 188
+            },
+            {
+              "name": "Accordion",
+              "count": 128
+            },
+            {
+              "name": "Tab",
+              "count": 100
+            },
+            {
+              "name": "section_footer",
+              "count": 90
+            },
+            {
+              "name": "Button",
+              "count": 81
+            },
+            {
+              "name": "Tag",
+              "count": 81
+            },
+            {
+              "name": "src_option_redes",
+              "count": 60
+            },
+            {
+              "name": "reemplazar slot",
+              "count": 48
+            },
+            {
+              "name": "title_+_options",
+              "count": 18
+            },
+            {
+              "name": "Alert",
+              "count": 16
+            },
+            {
+              "name": "src_option_stores_download",
+              "count": 12
+            },
+            {
+              "name": "Hero",
+              "count": 10
+            },
+            {
+              "name": "Breadcrumb",
+              "count": 6
+            },
+            {
+              "name": "title_+_phones",
+              "count": 6
+            },
+            {
+              "name": "title_+_social media",
+              "count": 6
+            },
+            {
+              "name": "Logo Horizontal",
+              "count": 2
+            },
+            {
+              "name": "Input",
+              "count": 1
+            },
+            {
+              "name": "Calendar",
+              "count": 1
+            }
+          ],
+          "top20Internal": [
+            {
+              "name": "icon",
+              "count": 24
+            },
+            {
+              "name": "SecciónDescripción",
+              "count": 21
+            },
+            {
+              "name": "Icon",
+              "count": 18
+            },
+            {
+              "name": "Image",
+              "count": 18
+            },
+            {
+              "name": "WithoutShieldHeart",
+              "count": 14
+            },
+            {
+              "name": "SeccionCanales",
+              "count": 12
+            },
+            {
+              "name": "PersonalInjuy",
+              "count": 12
+            },
+            {
+              "name": "Information",
+              "count": 11
+            },
+            {
+              "name": "LogosCollab",
+              "count": 10
+            },
+            {
+              "name": "CoberturasIconos",
+              "count": 10
+            },
+            {
+              "name": "Scroll",
+              "count": 8
+            },
+            {
+              "name": "Complex",
+              "count": 6
+            },
+            {
+              "name": "title_+_badges_download",
+              "count": 6
+            },
+            {
+              "name": "problema eléctrico",
+              "count": 5
+            },
+            {
+              "name": "robo de autopartes",
+              "count": 4
+            },
+            {
+              "name": "avión",
+              "count": 2
+            },
+            {
+              "name": "generales",
+              "count": 2
+            },
+            {
+              "name": "download",
+              "count": 2
+            },
+            {
+              "name": "fractura",
+              "count": 2
+            },
+            {
+              "name": "doctor",
+              "count": 2
+            }
+          ]
         }
       ],
       "detachRate": 0,
@@ -7405,10 +7721,10 @@
       "category": "Embebidos",
       "quarter": "Q2 2026",
       "date": "2026-06-30",
-      "adoptionRate": 0,
-      "totalRfdFrames": 0,
-      "totalDs": 0,
-      "totalInstances": 0,
+      "adoptionRate": 88,
+      "totalRfdFrames": 6,
+      "totalDs": 1424,
+      "totalInstances": 1625,
       "detachRate": 0,
       "detachments": 34
     },
