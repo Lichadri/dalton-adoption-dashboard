@@ -13,6 +13,7 @@
     --red: #D94F3D; --red-light: #fdecea;
     --purple: #6B4FBB; --purple-light: #f0ecfb;
     --orange: #E07B2A; --orange-light: #fdf0e6;
+    --amber: #BA7517; --amber-light: #FAEEDA; --amber-text: #633806;
     --gray-50: #f8f9fa; --gray-100: #f1f3f5; --gray-200: #e9ecef;
     --gray-300: #dee2e6; --gray-400: #adb5bd; --gray-600: #6c757d;
     --gray-800: #343a40; --gray-900: #212529;
@@ -48,13 +49,28 @@
   .section-divider { flex: 1; height: 1px; background: var(--gray-200); }
   .mb32 { margin-bottom: 32px; }
 
+  /* TABS */
+  .tabs-bar { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-bottom: 20px; flex-wrap: wrap; }
+  .tabs { display: flex; gap: 4px; background: var(--gray-100); border-radius: 10px; padding: 4px; }
+  .tab-btn { border: none; background: none; padding: 7px 16px; font-size: 13px; font-weight: 600; color: var(--gray-600); border-radius: 8px; cursor: pointer; transition: all 0.15s; white-space: nowrap; }
+  .tab-btn:hover { color: var(--gray-900); }
+  .tab-btn.active { background: var(--white); color: var(--gray-900); box-shadow: var(--shadow); }
+  .tab-panel { display: none; }
+  .tab-panel.active { display: block; }
+
+  /* FILTER */
+  .filter-select { font-family: var(--font); font-size: 13px; font-weight: 500; color: var(--gray-800); background: var(--white); border: 1px solid var(--gray-200); border-radius: 8px; padding: 7px 32px 7px 12px; cursor: pointer; appearance: none; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M1 1l4 4 4-4' stroke='%236c757d' stroke-width='1.5' fill='none'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 12px center; }
+  .filter-select:focus { outline: none; border-color: var(--cyan); }
+
   /* SUMMARY */
   .summary-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; margin-bottom: 16px; }
+  .summary-grid.summary-grid-5 { grid-template-columns: repeat(5, 1fr); }
   .summary-card { background: var(--white); border: 1px solid var(--gray-200); border-radius: var(--radius); padding: 18px; box-shadow: var(--shadow); }
   .summary-card-label { font-size: 10px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; color: var(--gray-600); margin-bottom: 6px; }
   .summary-card-value { font-size: 28px; font-weight: 700; letter-spacing: -1px; line-height: 1; }
   .summary-card-value.cyan { color: var(--cyan); }
   .summary-card-value.green { color: var(--green); }
+  .summary-card-value.amber { color: var(--amber); }
   .summary-card-sub { font-size: 11px; color: var(--gray-600); margin-top: 5px; }
 
   .dist-card { background: var(--white); border: 1px solid var(--gray-200); border-radius: var(--radius); padding: 14px 20px; margin-bottom: 32px; box-shadow: var(--shadow); display: flex; align-items: center; gap: 20px; }
@@ -77,22 +93,27 @@
   .category-header { display: flex; align-items: center; gap: 10px; margin-bottom: 12px; }
   .category-label { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.8px; color: var(--white); background: var(--cyan); padding: 3px 10px; border-radius: 20px; }
   .category-rate { font-size: 12px; font-weight: 600; }
+  .category-rate-sep { font-size: 11px; color: var(--gray-400); }
   .category-divider { flex: 1; height: 1px; background: var(--gray-200); }
   .teams-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 14px; }
 
   /* TEAM CARD */
   .team-card { background: var(--white); border: 1px solid var(--gray-200); border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); display: flex; flex-direction: column; }
 
-  /* Header */
   .tc-header { padding: 14px 16px 10px; display: flex; align-items: flex-start; justify-content: space-between; gap: 10px; }
   .tc-name { font-size: 14px; font-weight: 600; line-height: 1.3; }
-  .adoption-chip { font-size: 12px; font-weight: 700; padding: 3px 9px; border-radius: 20px; flex-shrink: 0; }
+  .tc-chips { display: flex; gap: 6px; flex-shrink: 0; flex-wrap: wrap; justify-content: flex-end; }
+  .adoption-chip { font-size: 12px; font-weight: 700; padding: 3px 9px; border-radius: 20px; }
   .adoption-chip.high { background: var(--green-light); color: var(--green); }
   .adoption-chip.mid { background: var(--yellow-light); color: #b87400; }
   .adoption-chip.low { background: var(--red-light); color: var(--red); }
   .adoption-chip.empty { background: var(--gray-100); color: var(--gray-600); }
+  .detach-chip { font-size: 11px; font-weight: 700; padding: 3px 9px; border-radius: 20px; display: flex; align-items: center; gap: 4px; }
+  .detach-chip.low { background: var(--green-light); color: var(--green); }
+  .detach-chip.mid { background: var(--yellow-light); color: #b87400; }
+  .detach-chip.high { background: var(--red-light); color: var(--red); }
+  .detach-chip.empty { background: var(--gray-100); color: var(--gray-400); }
 
-  /* Progress bar */
   .tc-bar { padding: 0 16px 12px; }
   .tc-bar-label { display: flex; justify-content: space-between; font-size: 9px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.4px; color: var(--gray-600); margin-bottom: 4px; }
   .tc-bar-bg { height: 5px; background: var(--gray-100); border-radius: 4px; overflow: hidden; }
@@ -101,14 +122,12 @@
   .tc-bar-fill.mid { background: var(--yellow); }
   .tc-bar-fill.low { background: var(--red); }
 
-  /* Stats */
   .tc-stats { display: flex; border-top: 1px solid var(--gray-100); border-bottom: 1px solid var(--gray-100); }
   .tc-stat { flex: 1; padding: 10px 8px; text-align: center; border-right: 1px solid var(--gray-100); }
   .tc-stat:last-child { border-right: none; }
   .tc-stat-value { font-size: 15px; font-weight: 700; line-height: 1; }
   .tc-stat-label { font-size: 9px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.4px; color: var(--gray-600); margin-top: 2px; }
 
-  /* Accordion rows */
   .tc-accordion { border-bottom: 1px solid var(--gray-100); }
   .tc-accordion:last-child { border-bottom: none; }
   .tc-acc-btn { width: 100%; padding: 8px 16px; background: none; border: none; cursor: pointer; display: flex; align-items: center; justify-content: space-between; font-size: 11px; font-weight: 600; text-align: left; transition: background 0.15s; }
@@ -118,41 +137,63 @@
   .tc-acc-icon.files { background: var(--gray-100); color: var(--gray-600); }
   .tc-acc-icon.families { background: var(--purple-light); color: var(--purple); }
   .tc-acc-icon.internals { background: var(--orange-light); color: var(--orange); }
-  .tc-acc-label { }
+  .tc-acc-icon.detach { background: var(--amber-light); color: var(--amber); }
   .tc-acc-label.files { color: var(--gray-700); }
   .tc-acc-label.families { color: var(--purple); }
   .tc-acc-label.internals { color: var(--orange); }
+  .tc-acc-label.detach { color: var(--amber-text); }
   .tc-acc-right { display: flex; align-items: center; gap: 6px; }
   .tc-acc-count { font-size: 10px; font-weight: 700; padding: 1px 7px; border-radius: 20px; }
   .tc-acc-count.files { background: var(--gray-100); color: var(--gray-600); }
   .tc-acc-count.families { background: var(--purple-light); color: var(--purple); }
   .tc-acc-count.internals { background: var(--orange-light); color: var(--orange); }
+  .tc-acc-count.detach { background: var(--amber-light); color: var(--amber-text); }
   .tc-chevron { font-size: 10px; color: var(--gray-400); transition: transform 0.2s; }
   .tc-chevron.open { transform: rotate(180deg); }
 
   .tc-acc-body { display: none; }
   .tc-acc-body.open { display: block; }
 
-  /* Files list */
   .tc-file-row { padding: 6px 16px 6px 36px; display: flex; align-items: center; gap: 8px; border-top: 1px solid var(--gray-100); }
   .tc-file-name { font-size: 11px; color: var(--gray-800); flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
   .tc-file-frames { font-size: 10px; color: var(--gray-600); white-space: nowrap; }
   .tc-file-rate { font-size: 11px; font-weight: 700; min-width: 30px; text-align: right; }
 
-  /* Families list */
   .tc-fam-row { padding: 5px 16px 5px 36px; display: flex; align-items: center; justify-content: space-between; border-top: 1px solid rgba(107,79,187,0.08); background: rgba(107,79,187,0.02); }
   .tc-fam-name { font-size: 11px; color: var(--purple); }
   .tc-fam-count { font-size: 11px; font-weight: 600; color: var(--purple); }
 
-  /* Internals list */
   .tc-int-row { padding: 5px 16px 5px 36px; display: flex; align-items: center; gap: 8px; border-top: 1px solid rgba(224,123,42,0.08); background: rgba(224,123,42,0.02); }
   .tc-int-name { font-size: 11px; color: var(--gray-800); flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
   .tc-int-bar { width: 50px; height: 3px; background: var(--gray-100); border-radius: 2px; overflow: hidden; flex-shrink: 0; }
   .tc-int-bar-fill { height: 100%; background: var(--orange); opacity: 0.7; border-radius: 2px; }
   .tc-int-count { font-size: 10px; font-weight: 600; color: var(--gray-600); min-width: 28px; text-align: right; }
 
+  .tc-detach-row { padding: 10px 16px 10px 36px; border-top: 1px solid rgba(186,117,23,0.08); background: rgba(186,117,23,0.02); }
+  .tc-detach-stat { display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px; }
+  .tc-detach-stat:last-child { margin-bottom: 0; }
+  .tc-detach-label { font-size: 11px; color: var(--gray-700); }
+  .tc-detach-value { font-size: 11px; font-weight: 600; color: var(--amber-text); }
+  .tc-detach-note { font-size: 10px; color: var(--gray-600); margin-top: 6px; line-height: 1.5; }
+
   .tc-empty { padding: 8px 16px 8px 36px; font-size: 11px; color: var(--gray-400); font-style: italic; border-top: 1px solid var(--gray-100); }
   .tc-norfd { font-size: 11px; color: var(--gray-600); padding: 6px 16px 10px; font-style: italic; }
+
+  /* QUALITY TAB — focused detach view */
+  .quality-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 14px; }
+  .quality-card { background: var(--white); border: 1px solid var(--gray-200); border-radius: var(--radius); padding: 18px; box-shadow: var(--shadow); }
+  .quality-card-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px; }
+  .quality-card-name { font-size: 14px; font-weight: 600; }
+  .quality-bar-bg { height: 8px; background: var(--gray-100); border-radius: 6px; overflow: hidden; margin-bottom: 10px; }
+  .quality-bar-fill { height: 100%; border-radius: 6px; transition: width 0.8s ease; }
+  .quality-bar-fill.low { background: var(--green); }
+  .quality-bar-fill.mid { background: var(--yellow); }
+  .quality-bar-fill.high { background: var(--red); }
+  .quality-stats-row { display: flex; gap: 16px; font-size: 12px; color: var(--gray-600); }
+  .quality-stats-row b { color: var(--gray-900); }
+  .quality-empty-note { font-size: 11px; color: var(--gray-400); font-style: italic; }
+  .quality-intro { background: var(--white); border: 1px solid var(--gray-200); border-radius: var(--radius); padding: 16px 20px; margin-bottom: 20px; box-shadow: var(--shadow); font-size: 12px; color: var(--gray-600); line-height: 1.6; }
+  .quality-intro b { color: var(--gray-900); }
 
   /* TREND */
   .trend-card { background: var(--white); border: 1px solid var(--gray-200); border-radius: var(--radius); padding: 20px; margin-bottom: 32px; box-shadow: var(--shadow); overflow-x: auto; }
@@ -165,12 +206,13 @@
   .trend-pct.high { color: var(--green); }
   .trend-pct.mid { color: #b87400; }
   .trend-pct.low { color: var(--red); }
+  .trend-sub { font-size: 10px; color: var(--gray-600); display: block; margin-top: 1px; }
   .cat-badge { font-size: 9px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.4px; color: var(--gray-600); background: var(--gray-100); padding: 1px 6px; border-radius: 10px; }
   .target-note { display: flex; align-items: center; gap: 8px; margin-top: 12px; font-size: 11px; color: var(--gray-600); }
   .target-dot { width: 12px; height: 2px; background: var(--cyan); border-radius: 1px; }
 
-  @media (max-width: 900px) { .summary-grid { grid-template-columns: repeat(2,1fr); } }
-  @media (max-width: 600px) { .main { padding: 16px; } .header { padding: 0 16px; } .header-subtitle { display: none; } .dist-card { flex-direction: column; align-items: flex-start; } }
+  @media (max-width: 900px) { .summary-grid, .summary-grid.summary-grid-5 { grid-template-columns: repeat(2,1fr); } }
+  @media (max-width: 600px) { .main { padding: 16px; } .header { padding: 0 16px; } .header-subtitle { display: none; } .dist-card { flex-direction: column; align-items: flex-start; } .tabs-bar { flex-direction: column; align-items: stretch; } }
 </style>
 </head>
 <body>
@@ -201,10 +243,18 @@
 
 <script>
 const TARGET = 75;
+const DETACH_TARGET = 15; // por debajo de esto es "bueno"
+
 function rateClass(r){if(!r)return"empty";if(r>=TARGET)return"high";if(r>=50)return"mid";return"low";}
 function rateColor(r){if(!r)return"var(--gray-400)";if(r>=TARGET)return"var(--green)";if(r>=50)return"var(--yellow)";return"var(--red)";}
+function detachClass(r){if(r===null||r===undefined)return"empty";if(r<15)return"low";if(r<30)return"mid";return"high";}
+function detachColor(r){if(r===null||r===undefined)return"var(--gray-400)";if(r<15)return"var(--green)";if(r<30)return"var(--yellow)";return"var(--red)";}
 function fmtNum(n){return(n||0).toLocaleString("es-PE");}
 function fmtDate(iso){if(!iso)return"—";return new Date(iso).toLocaleDateString("es-PE",{day:"2-digit",month:"short",year:"numeric",hour:"2-digit",minute:"2-digit"});}
+
+let currentReport = null;
+let activeCategory = "all";
+let activeTab = "resumen";
 
 function toggle(id){
   const el=document.getElementById(id);
@@ -212,6 +262,12 @@ function toggle(id){
   if(!el)return;
   const open=el.classList.toggle("open");
   if(icon)icon.classList.toggle("open",open);
+}
+
+function getFilteredTeams(){
+  if(!currentReport)return[];
+  if(activeCategory==="all")return currentReport.teams;
+  return currentReport.teams.filter(t=>(t.category||t.name)===activeCategory);
 }
 
 function buildSummary(teams){
@@ -223,9 +279,17 @@ function buildSummary(teams){
   const avgRate=totalInst>0?Math.round((totalDs/totalInst)*100):0;
   const dsPct=totalInst>0?Math.round((totalDs/totalInst)*100):0;
   const intPct=100-dsPct;
+
+  const withDetach=teams.filter(t=>t.detachRate!==null&&t.detachRate!==undefined);
+  const totalDetach=withDetach.reduce((s,t)=>s+(t.detachments||0),0);
+  const totalInsertDetach=withDetach.reduce((s,t)=>s+(t.detachInsertions||0),0);
+  const totalDetachActions=totalDetach+totalInsertDetach;
+  const avgDetachRate=totalDetachActions>0?Math.round((totalDetach/totalDetachActions)*100):null;
+
   return`
-    <div class="summary-grid">
+    <div class="summary-grid summary-grid-5">
       <div class="summary-card"><div class="summary-card-label">Adopción DS</div><div class="summary-card-value ${avgRate>=TARGET?'green':'cyan'}">${avgRate}%</div><div class="summary-card-sub">Target: ${TARGET}%</div></div>
+      <div class="summary-card"><div class="summary-card-label">Detach rate</div><div class="summary-card-value" style="color:${detachColor(avgDetachRate)}">${avgDetachRate!==null?avgDetachRate+'%':'—'}</div><div class="summary-card-sub">${avgDetachRate!==null?'Target: <'+DETACH_TARGET+'%':'Sin datos del periodo'}</div></div>
       <div class="summary-card"><div class="summary-card-label">Frames Ready for Dev</div><div class="summary-card-value">${fmtNum(totalFrames)}</div><div class="summary-card-sub">En ${totalFiles} archivos</div></div>
       <div class="summary-card"><div class="summary-card-label">Instancias DS</div><div class="summary-card-value cyan">${fmtNum(totalDs)}</div><div class="summary-card-sub">De ${fmtNum(totalInst)} totales</div></div>
       <div class="summary-card"><div class="summary-card-label">Activos medidos</div><div class="summary-card-value">${teams.length}</div><div class="summary-card-sub">Archivos: ${totalFiles}</div></div>
@@ -252,6 +316,8 @@ function buildTeamCard(team,idx){
   const top5Internal=(team.top20Internal||[]).slice(0,5);
   const maxInt=top5Internal[0]?.count||1;
   const id=`tc${idx}`;
+  const hasDetach=team.detachRate!==null&&team.detachRate!==undefined;
+  const dCls=detachClass(team.detachRate);
 
   const filesHtml=team.files.map(f=>{
     if(f.error)return`<div class="tc-file-row"><span class="tc-file-name">${f.name}</span><span style="font-size:10px;color:var(--red)">Error</span></div>`;
@@ -274,11 +340,22 @@ function buildTeamCard(team,idx){
       </div>`).join('')
     :`<div class="tc-empty">Sin datos</div>`;
 
+  const detachHtml=hasDetach
+    ?`<div class="tc-detach-row">
+        <div class="tc-detach-stat"><span class="tc-detach-label">Desvinculaciones</span><span class="tc-detach-value">${fmtNum(team.detachments)}</span></div>
+        <div class="tc-detach-stat"><span class="tc-detach-label">Inserciones</span><span class="tc-detach-value">${fmtNum(team.detachInsertions)}</span></div>
+        <div class="tc-detach-note">Datos de la librería Dalton vía Figma Analytics, agregados a nivel de Figma Team — no por archivo individual.</div>
+      </div>`
+    :`<div class="tc-empty">Sin datos de detach para esta categoría en el periodo</div>`;
+
   return`
     <div class="team-card">
       <div class="tc-header">
         <div class="tc-name">${team.name}</div>
-        <div class="adoption-chip ${cls}">${hasData?team.adoptionRate+'%':'Sin datos'}</div>
+        <div class="tc-chips">
+          <div class="adoption-chip ${cls}">${hasData?team.adoptionRate+'%':'Sin datos'}</div>
+          ${hasDetach?`<div class="detach-chip ${dCls}">⚠ ${team.detachRate}%</div>`:''}
+        </div>
       </div>
       <div class="tc-bar">
         <div class="tc-bar-label"><span>Adopción DS</span><span>${TARGET}% target</span></div>
@@ -332,26 +409,79 @@ function buildTeamCard(team,idx){
         </button>
         <div class="tc-acc-body" id="${id}-ints">${intsHtml}</div>
       </div>
+
+      <div class="tc-accordion">
+        <button class="tc-acc-btn" onclick="toggle('${id}-detach')">
+          <div class="tc-acc-left">
+            <span class="tc-acc-icon detach">⛓</span>
+            <span class="tc-acc-label detach">Detach rate</span>
+          </div>
+          <div class="tc-acc-right">
+            <span class="tc-acc-count detach">${hasDetach?team.detachRate+'%':'—'}</span>
+            <span class="tc-chevron" id="ic-${id}-detach">▼</span>
+          </div>
+        </button>
+        <div class="tc-acc-body" id="${id}-detach">${detachHtml}</div>
+      </div>
     </div>`;
 }
 
 function buildCategories(teams){
   const cats={};
-  teams.forEach((t,i)=>{const c=t.category||t.name;if(!cats[c])cats[c]=[];cats[c].push({team:t,idx:i});});
+  let globalIdx=0;
+  teams.forEach((t)=>{
+    t.__idx = globalIdx++;
+    const c=t.category||t.name;
+    if(!cats[c])cats[c]=[];
+    cats[c].push(t);
+  });
   return Object.entries(cats).map(([cat,items])=>{
-    const totalDs=items.reduce((s,{team:t})=>s+(t.dsInstances||0),0);
-    const totalInst=items.reduce((s,{team:t})=>s+t.totalInstances,0);
+    const totalDs=items.reduce((s,t)=>s+(t.dsInstances||0),0);
+    const totalInst=items.reduce((s,t)=>s+t.totalInstances,0);
     const catRate=totalInst>0?Math.round((totalDs/totalInst)*100):0;
+    const detachVal=items.find(t=>t.detachRate!==null&&t.detachRate!==undefined)?.detachRate;
     return`
       <div class="category-section">
         <div class="category-header">
           <span class="category-label">${cat}</span>
           <span class="category-rate" style="color:${rateColor(catRate)}">${catRate}% adopción</span>
+          ${detachVal!==undefined?`<span class="category-rate-sep">·</span><span class="category-rate" style="color:${detachColor(detachVal)}">${detachVal}% detach</span>`:''}
           <div class="category-divider"></div>
         </div>
-        <div class="teams-grid">${items.map(({team,idx})=>buildTeamCard(team,idx)).join('')}</div>
+        <div class="teams-grid">${items.map((t)=>buildTeamCard(t,t.__idx)).join('')}</div>
       </div>`;
   }).join('');
+}
+
+function buildQualityView(teams){
+  const cats={};
+  teams.forEach((t)=>{const c=t.category||t.name;if(!cats[c])cats[c]=[];cats[c].push(t);});
+
+  const cards=Object.entries(cats).map(([cat,items])=>{
+    const team=items[0]; // detach is per-category, same value across activos in same category
+    const hasDetach=team.detachRate!==null&&team.detachRate!==undefined;
+    const cls=hasDetach?detachClass(team.detachRate):"empty";
+    return`
+      <div class="quality-card">
+        <div class="quality-card-header">
+          <span class="quality-card-name">${cat}</span>
+          <span class="detach-chip ${cls}">${hasDetach?team.detachRate+'%':'Sin datos'}</span>
+        </div>
+        ${hasDetach?`
+          <div class="quality-bar-bg"><div class="quality-bar-fill ${cls}" style="width:${team.detachRate}%"></div></div>
+          <div class="quality-stats-row">
+            <span>Desvinculaciones: <b>${fmtNum(team.detachments)}</b></span>
+            <span>Inserciones: <b>${fmtNum(team.detachInsertions)}</b></span>
+          </div>
+        `:`<div class="quality-empty-note">No hay datos de Library Analytics para este Figma Team en el periodo actual.</div>`}
+      </div>`;
+  }).join('');
+
+  return`
+    <div class="quality-intro">
+      <b>Detach rate</b> mide qué porción de las interacciones con componentes de Dalton terminaron en una desvinculación (detach) en vez de mantenerse conectadas a la librería, durante el quarter actual. Fórmula: desvinculaciones ÷ (desvinculaciones + inserciones). Dato oficial de Figma Library Analytics — requiere plan Enterprise. Se agrega por <b>Figma Team</b>, por lo que activos que comparten un mismo team de Figma muestran el mismo valor.
+    </div>
+    <div class="quality-grid">${cards}</div>`;
 }
 
 function buildTrend(history){
@@ -365,13 +495,44 @@ function buildTrend(history){
     html+=`<tr><td><strong>${team}</strong></td><td><span class="cat-badge">${cat}</span></td>`;
     for(const q of quarters){
       const e=entries.find(x=>x.quarter===q);
-      if(e){html+=`<td><span class="trend-pct ${rateClass(e.adoptionRate)}">${e.adoptionRate}%</span></td>`;}
+      if(e){
+        const dr=e.detachRate;
+        html+=`<td><span class="trend-pct ${rateClass(e.adoptionRate)}">${e.adoptionRate}%</span>${dr!==null&&dr!==undefined?`<span class="trend-sub" style="color:${detachColor(dr)}">⚠ ${dr}%</span>`:''}</td>`;
+      }
       else{html+=`<td style="color:var(--gray-400)">—</td>`;}
     }
     html+=`</tr>`;
   }
-  html+=`</tbody></table><div class="target-note"><div class="target-dot"></div>Target: ${TARGET}% — Verde ≥${TARGET}% · Amarillo ≥50% · Rojo &lt;50%</div>`;
+  html+=`</tbody></table><div class="target-note"><div class="target-dot"></div>Adopción target: ${TARGET}% · Detach target: &lt;${DETACH_TARGET}%</div>`;
   return html;
+}
+
+function buildCategoryOptions(teams){
+  const cats=[...new Set(teams.map(t=>t.category||t.name))];
+  return `<option value="all">Todas las categorías</option>` + cats.map(c=>`<option value="${c}">${c}</option>`).join('');
+}
+
+function renderTabContent(){
+  const filtered=getFilteredTeams();
+  document.getElementById("panel-resumen").innerHTML = activeTab==="resumen" ? `
+    ${buildSummary(filtered)}
+    <div class="section-header"><span class="section-title">Por categoría y activo</span><div class="section-divider"></div></div>
+    ${buildCategories(filtered)}
+  ` : "";
+  document.getElementById("panel-calidad").innerHTML = activeTab==="calidad" ? buildQualityView(filtered) : "";
+  document.getElementById("panel-tendencia").innerHTML = activeTab==="tendencia" ? `<div class="trend-card">${buildTrend(currentReport.history)}</div>` : "";
+}
+
+function switchTab(tab){
+  activeTab=tab;
+  document.querySelectorAll(".tab-btn").forEach(b=>b.classList.toggle("active",b.dataset.tab===tab));
+  document.querySelectorAll(".tab-panel").forEach(p=>p.classList.toggle("active",p.id==="panel-"+tab));
+  renderTabContent();
+}
+
+function onCategoryChange(val){
+  activeCategory=val;
+  renderTabContent();
 }
 
 async function loadReport(){
@@ -380,16 +541,24 @@ async function loadReport(){
     const res=await fetch("report.json?t="+Date.now());
     if(!res.ok)throw new Error(`HTTP ${res.status}`);
     const report=await res.json();
+    currentReport=report;
     document.getElementById("quarterLabel").textContent=report.quarter||"—";
     document.getElementById("lastUpdated").textContent="Actualizado: "+fmtDate(report.generatedAt);
+
     main.innerHTML=`
-      <div class="section-header mb32"><span class="section-title">Resumen</span><div class="section-divider"></div></div>
-      ${buildSummary(report.teams)}
-      <div class="section-header"><span class="section-title">Por categoría y activo</span><div class="section-divider"></div></div>
-      ${buildCategories(report.teams)}
-      <div class="section-header mb32"><span class="section-title">Tendencia histórica</span><div class="section-divider"></div></div>
-      <div class="trend-card">${buildTrend(report.history)}</div>
+      <div class="tabs-bar">
+        <div class="tabs">
+          <button class="tab-btn active" data-tab="resumen" onclick="switchTab('resumen')">Resumen</button>
+          <button class="tab-btn" data-tab="calidad" onclick="switchTab('calidad')">Calidad (Detach)</button>
+          <button class="tab-btn" data-tab="tendencia" onclick="switchTab('tendencia')">Tendencia histórica</button>
+        </div>
+        <select class="filter-select" onchange="onCategoryChange(this.value)">${buildCategoryOptions(report.teams)}</select>
+      </div>
+      <div class="tab-panel active" id="panel-resumen"></div>
+      <div class="tab-panel" id="panel-calidad"></div>
+      <div class="tab-panel" id="panel-tendencia"></div>
     `;
+    renderTabContent();
   }catch(e){
     main.innerHTML=`<div class="state-container"><div style="background:var(--red-light);border:1px solid #f5c6c2;border-radius:12px;padding:20px 24px;text-align:center;max-width:480px"><strong style="display:block;color:var(--red);margin-bottom:6px">No se pudo cargar</strong><span style="font-size:13px">${e.message==="HTTP 404"?"Corre el script primero.":"Error: "+e.message}</span></div></div>`;
   }
