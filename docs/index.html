@@ -249,6 +249,7 @@ function rateClass(r){if(!r)return"empty";if(r>=TARGET)return"high";if(r>=50)ret
 function rateColor(r){if(!r)return"var(--gray-400)";if(r>=TARGET)return"var(--green)";if(r>=50)return"var(--yellow)";return"var(--red)";}
 function detachClass(r){if(r===null||r===undefined)return"empty";if(r<15)return"low";if(r<30)return"mid";return"high";}
 function detachColor(r){if(r===null||r===undefined)return"var(--gray-400)";if(r<15)return"var(--green)";if(r<30)return"var(--yellow)";return"var(--red)";}
+function fmtDetachExact(r){if(r===null||r===undefined)return"—";if(r<0.1)return"<0.1%";return r.toFixed(r<10?1:0)+"%";}
 function fmtNum(n){return(n||0).toLocaleString("es-PE");}
 function fmtDate(iso){if(!iso)return"—";return new Date(iso).toLocaleDateString("es-PE",{day:"2-digit",month:"short",year:"numeric",hour:"2-digit",minute:"2-digit"});}
 
@@ -289,7 +290,7 @@ function buildSummary(teams){
   return`
     <div class="summary-grid summary-grid-5">
       <div class="summary-card"><div class="summary-card-label">Adopción DS</div><div class="summary-card-value ${avgRate>=TARGET?'green':'cyan'}">${avgRate}%</div><div class="summary-card-sub">Target: ${TARGET}%</div></div>
-      <div class="summary-card"><div class="summary-card-label">Detach rate</div><div class="summary-card-value" style="color:${detachColor(avgDetachRate)}">${avgDetachRate!==null?avgDetachRate+'%':'—'}</div><div class="summary-card-sub">${avgDetachRate!==null?'Target: <'+DETACH_TARGET+'%':'Sin datos del periodo'}</div></div>
+      <div class="summary-card"><div class="summary-card-label">Desvinculaciones</div><div class="summary-card-value" style="color:${detachColor(avgDetachRate)}">${totalDetachActions>0?fmtNum(totalDetach):'—'}</div><div class="summary-card-sub">${totalDetachActions>0?fmtDetachExact((totalDetach/totalDetachActions)*100)+' del total de acciones':'Sin datos del periodo'}</div></div>
       <div class="summary-card"><div class="summary-card-label">Frames Ready for Dev</div><div class="summary-card-value">${fmtNum(totalFrames)}</div><div class="summary-card-sub">En ${totalFiles} archivos</div></div>
       <div class="summary-card"><div class="summary-card-label">Instancias DS</div><div class="summary-card-value cyan">${fmtNum(totalDs)}</div><div class="summary-card-sub">De ${fmtNum(totalInst)} totales</div></div>
       <div class="summary-card"><div class="summary-card-label">Activos medidos</div><div class="summary-card-value">${teams.length}</div><div class="summary-card-sub">Archivos: ${totalFiles}</div></div>
@@ -342,9 +343,10 @@ function buildTeamCard(team,idx){
 
   const detachHtml=hasDetach
     ?`<div class="tc-detach-row">
-        <div class="tc-detach-stat"><span class="tc-detach-label">Desvinculaciones</span><span class="tc-detach-value">${fmtNum(team.detachments)}</span></div>
+        <div class="tc-detach-stat"><span class="tc-detach-label">Desvinculaciones</span><span class="tc-detach-value" style="font-size:13px;font-weight:700">${fmtNum(team.detachments)}</span></div>
         <div class="tc-detach-stat"><span class="tc-detach-label">Inserciones</span><span class="tc-detach-value">${fmtNum(team.detachInsertions)}</span></div>
-        <div class="tc-detach-note">Datos de la librería Dalton vía Figma Analytics, agregados a nivel de Figma Team — no por archivo individual.</div>
+        <div class="tc-detach-stat"><span class="tc-detach-label">% sobre el total</span><span class="tc-detach-value">${fmtDetachExact(team.detachRateExact)}</span></div>
+        <div class="tc-detach-note">Datos de la librería Dalton vía Figma Analytics, agregados a nivel de Figma Team — no por archivo individual. El % suele verse bajo porque el volumen de inserciones es alto.</div>
       </div>`
     :`<div class="tc-empty">Sin datos de detach para esta categoría en el periodo</div>`;
 
@@ -354,7 +356,7 @@ function buildTeamCard(team,idx){
         <div class="tc-name">${team.name}</div>
         <div class="tc-chips">
           <div class="adoption-chip ${cls}">${hasData?team.adoptionRate+'%':'Sin datos'}</div>
-          ${hasDetach?`<div class="detach-chip ${dCls}">⚠ ${team.detachRate}%</div>`:''}
+          ${hasDetach?`<div class="detach-chip ${dCls}">⚠ ${fmtNum(team.detachments)}</div>`:''}
         </div>
       </div>
       <div class="tc-bar">
@@ -417,7 +419,7 @@ function buildTeamCard(team,idx){
             <span class="tc-acc-label detach">Detach rate</span>
           </div>
           <div class="tc-acc-right">
-            <span class="tc-acc-count detach">${hasDetach?team.detachRate+'%':'—'}</span>
+            <span class="tc-acc-count detach">${hasDetach?fmtNum(team.detachments):'—'}</span>
             <span class="tc-chevron" id="ic-${id}-detach">▼</span>
           </div>
         </button>
@@ -439,13 +441,13 @@ function buildCategories(teams){
     const totalDs=items.reduce((s,t)=>s+(t.dsInstances||0),0);
     const totalInst=items.reduce((s,t)=>s+t.totalInstances,0);
     const catRate=totalInst>0?Math.round((totalDs/totalInst)*100):0;
-    const detachVal=items.find(t=>t.detachRate!==null&&t.detachRate!==undefined)?.detachRate;
+    const detachTeam=items.find(t=>t.detachments!==null&&t.detachments!==undefined);
     return`
       <div class="category-section">
         <div class="category-header">
           <span class="category-label">${cat}</span>
           <span class="category-rate" style="color:${rateColor(catRate)}">${catRate}% adopción</span>
-          ${detachVal!==undefined?`<span class="category-rate-sep">·</span><span class="category-rate" style="color:${detachColor(detachVal)}">${detachVal}% detach</span>`:''}
+          ${detachTeam?`<span class="category-rate-sep">·</span><span class="category-rate" style="color:${detachColor(detachTeam.detachRate)}">${fmtNum(detachTeam.detachments)} desvinculaciones</span>`:''}
           <div class="category-divider"></div>
         </div>
         <div class="teams-grid">${items.map((t)=>buildTeamCard(t,t.__idx)).join('')}</div>
@@ -453,35 +455,61 @@ function buildCategories(teams){
   }).join('');
 }
 
-function buildQualityView(teams){
+function buildQualityView(teams,topDetachedComponents){
   const cats={};
   teams.forEach((t)=>{const c=t.category||t.name;if(!cats[c])cats[c]=[];cats[c].push(t);});
 
-  const cards=Object.entries(cats).map(([cat,items])=>{
-    const team=items[0]; // detach is per-category, same value across activos in same category
-    const hasDetach=team.detachRate!==null&&team.detachRate!==undefined;
+  // Sort categories by detachment count descending (most affected first)
+  const sortedCats=Object.entries(cats).sort((a,b)=>{
+    const da=a[1][0].detachments||0, db=b[1][0].detachments||0;
+    return db-da;
+  });
+
+  const cards=sortedCats.map(([cat,items])=>{
+    const team=items[0];
+    const hasDetach=team.detachments!==null&&team.detachments!==undefined;
     const cls=hasDetach?detachClass(team.detachRate):"empty";
     return`
       <div class="quality-card">
         <div class="quality-card-header">
           <span class="quality-card-name">${cat}</span>
-          <span class="detach-chip ${cls}">${hasDetach?team.detachRate+'%':'Sin datos'}</span>
+          <span class="detach-chip ${cls}">${hasDetach?fmtNum(team.detachments):'Sin datos'}</span>
         </div>
         ${hasDetach?`
-          <div class="quality-bar-bg"><div class="quality-bar-fill ${cls}" style="width:${team.detachRate}%"></div></div>
           <div class="quality-stats-row">
-            <span>Desvinculaciones: <b>${fmtNum(team.detachments)}</b></span>
             <span>Inserciones: <b>${fmtNum(team.detachInsertions)}</b></span>
+            <span>% del total: <b>${fmtDetachExact(team.detachRateExact)}</b></span>
           </div>
         `:`<div class="quality-empty-note">No hay datos de Library Analytics para este Figma Team en el periodo actual.</div>`}
       </div>`;
   }).join('');
 
+  const topCompsHtml=(topDetachedComponents&&topDetachedComponents.length>0)
+    ?(()=>{
+        const max=topDetachedComponents[0].detachments||1;
+        return topDetachedComponents.map(c=>{
+          const total=c.detachments+c.insertions;
+          const rate=total>0?+(c.detachments/total*100).toFixed(2):0;
+          return`<div class="tc-int-row" style="padding:7px 16px;background:none">
+            <span class="tc-int-name" style="font-weight:500;color:var(--gray-900)" title="${c.name}">${c.name}</span>
+            <div class="tc-int-bar" style="width:70px"><div class="tc-int-bar-fill" style="width:${Math.round((c.detachments/max)*100)}%;background:var(--amber)"></div></div>
+            <span class="tc-int-count" style="min-width:50px">${fmtNum(c.detachments)}</span>
+          </div>`;
+        }).join('');
+      })()
+    :`<div class="quality-empty-note">Sin datos de componentes desvinculados disponibles.</div>`;
+
   return`
     <div class="quality-intro">
-      <b>Detach rate</b> mide qué porción de las interacciones con componentes de Dalton terminaron en una desvinculación (detach) en vez de mantenerse conectadas a la librería, durante el quarter actual. Fórmula: desvinculaciones ÷ (desvinculaciones + inserciones). Dato oficial de Figma Library Analytics — requiere plan Enterprise. Se agrega por <b>Figma Team</b>, por lo que activos que comparten un mismo team de Figma muestran el mismo valor.
+      <b>Desvinculaciones (detach)</b> cuenta cuántas veces, durante el quarter actual, alguien desconectó una instancia de un componente Dalton de su componente maestro — perdiendo las actualizaciones automáticas del sistema. Dato oficial de Figma Library Analytics (requiere plan Enterprise), agregado por <b>Figma Team</b>: activos que comparten un mismo team de Figma muestran el mismo valor. El % es referencial — con volúmenes altos de inserción suele verse cercano a 0 aunque haya desvinculaciones reales, por eso priorizamos el conteo absoluto.
     </div>
-    <div class="quality-grid">${cards}</div>`;
+    <div class="quality-grid">${cards}</div>
+
+    <div class="section-header mb32" style="margin-top:28px"><span class="section-title">Componentes más desvinculados (toda la librería)</span><div class="section-divider"></div></div>
+    <div class="quality-intro" style="margin-bottom:14px">
+      Ranking a nivel de toda la organización — no filtrado por categoría, porque la API de Figma no permite ese cruce. Útil para detectar qué componentes del sistema tienden a romperse más, sin importar qué equipo los usa.
+    </div>
+    <div class="trend-card">${topCompsHtml}</div>`;
 }
 
 function buildTrend(history){
@@ -496,8 +524,8 @@ function buildTrend(history){
     for(const q of quarters){
       const e=entries.find(x=>x.quarter===q);
       if(e){
-        const dr=e.detachRate;
-        html+=`<td><span class="trend-pct ${rateClass(e.adoptionRate)}">${e.adoptionRate}%</span>${dr!==null&&dr!==undefined?`<span class="trend-sub" style="color:${detachColor(dr)}">⚠ ${dr}%</span>`:''}</td>`;
+        const dch=e.detachments;
+        html+=`<td><span class="trend-pct ${rateClass(e.adoptionRate)}">${e.adoptionRate}%</span>${dch!==null&&dch!==undefined?`<span class="trend-sub" style="color:${detachColor(e.detachRate)}">⚠ ${fmtNum(dch)}</span>`:''}</td>`;
       }
       else{html+=`<td style="color:var(--gray-400)">—</td>`;}
     }
@@ -519,7 +547,7 @@ function renderTabContent(){
     <div class="section-header"><span class="section-title">Por categoría y activo</span><div class="section-divider"></div></div>
     ${buildCategories(filtered)}
   ` : "";
-  document.getElementById("panel-calidad").innerHTML = activeTab==="calidad" ? buildQualityView(filtered) : "";
+  document.getElementById("panel-calidad").innerHTML = activeTab==="calidad" ? buildQualityView(filtered, currentReport.topDetachedComponents) : "";
   document.getElementById("panel-tendencia").innerHTML = activeTab==="tendencia" ? `<div class="trend-card">${buildTrend(currentReport.history)}</div>` : "";
 }
 
