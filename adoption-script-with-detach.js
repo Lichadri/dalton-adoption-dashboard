@@ -247,15 +247,87 @@ async function getDetachRateByCategory() {
   for (const [category, totals] of Object.entries(categoryTotals)) {
     const total = totals.detachments + totals.insertions;
     const rate = total > 0 ? Math.round((totals.detachments / total) * 100) : 0;
+    const rateExact = total > 0 ? +((totals.detachments / total) * 100).toFixed(2) : 0;
     result[category] = {
       detachments: totals.detachments,
       insertions: totals.insertions,
       detachRate: rate,
+      detachRateExact: rateExact,
     };
-    console.log(`  [${category}] detach rate: ${rate}% (${totals.detachments} detach / ${totals.insertions} insert)`);
+    console.log(`  [${category}] detachments: ${totals.detachments} (${rateExact}% of ${total} actions)`);
   }
 
   return result;
+}
+
+// Top componentes con más desvinculaciones a nivel de toda la librería Dalton
+// (no filtrado por categoría — la API no permite ese cruce de forma directa)
+async function getTopDetachedComponents(limit = 15) {
+  console.log("\nFetching top detached components (library-wide)...");
+  const { start, end } = getQuarterDateRange();
+
+  const componentTotals = {}; // component_key -> { name, setName, detachments, insertions }
+  let cursor = null;
+  let pageCount = 0;
+
+  try {
+    do {
+      pageCount++;
+      const params = new URLSearchParams({
+        group_by: "component",
+        start_date: start,
+        end_date: end,
+      });
+      if (cursor) params.set("cursor", cursor);
+
+      const data = await figmaFetch(
+        `/analytics/libraries/${DALTON_LIBRARY_KEY}/component/actions?${params.toString()}`
+      );
+
+      for (const row of data.rows || []) {
+        const key = row.component_key;
+        if (!componentTotals[key]) {
+          componentTotals[key] = {
+            name: row.component_name,
+            setName: row.component_set_name || row.component_name,
+            detachments: 0,
+            insertions: 0,
+          };
+        }
+        componentTotals[key].detachments += row.detachments || 0;
+        componentTotals[key].insertions += row.insertions || 0;
+      }
+
+      cursor = data.next_page ? data.cursor : null;
+      await sleep(500);
+    } while (cursor && pageCount < 20);
+
+    console.log(`  Fetched ${pageCount} page(s) of component-level detach data`);
+  } catch (e) {
+    console.warn(`  WARNING: Could not fetch top detached components — ${e.message}`);
+    return [];
+  }
+
+  // Aggregate by component SET (family), summing variant-level detachments
+  const familyTotals = {};
+  for (const c of Object.values(componentTotals)) {
+    const fam = c.setName;
+    if (!familyTotals[fam]) familyTotals[fam] = { name: fam, detachments: 0, insertions: 0 };
+    familyTotals[fam].detachments += c.detachments;
+    familyTotals[fam].insertions += c.insertions;
+  }
+
+  const sorted = Object.values(familyTotals)
+    .filter(f => f.detachments > 0)
+    .sort((a, b) => b.detachments - a.detachments)
+    .slice(0, limit);
+
+  console.log(`  Top ${sorted.length} components with detachments:`);
+  for (const f of sorted) {
+    console.log(`    ${f.detachments.toString().padStart(4)} detach | ${f.name} (${f.insertions} insert)`);
+  }
+
+  return sorted;
 }
 
 function generateExcel(report, outputPath) {
@@ -302,11 +374,11 @@ ws1 = wb.active; ws1.title = "Resumen"; ws1.sheet_view.showGridLines = False
 ws1.row_dimensions[1].height = 36
 t = ws1.cell(row=1, column=1, value="Dalton DS — Reporte de Adopción")
 t.font = Font(bold=True, size=14, color=DARK, name="Arial")
-ws1.merge_cells("A1:I1")
+ws1.merge_cells("A1:J1")
 ws1.cell(row=2, column=1, value=f"Quarter: {report['quarter']}  |  {report['generatedAt'][:10]}").font = Font(size=9, color="FF6C757D", name="Arial")
-ws1.merge_cells("A2:I2")
+ws1.merge_cells("A2:J2")
 ws1.row_dimensions[4].height = 26
-for i, h in enumerate(["Categoría","Activo","Archivos","Frames RFD","Inst. DS","Internos","Familias únicas DS","Adopción %","Detach %"], 1):
+for i, h in enumerate(["Categoría","Activo","Archivos","Frames RFD","Inst. DS","Internos","Familias únicas DS","Adopción %","Desvinculaciones","Detach %"], 1):
     hdr(ws1, 4, i, h)
 row = 5
 for team in report["teams"]:
@@ -321,9 +393,11 @@ for team in report["teams"]:
     r = team["adoptionRate"]
     dat(ws1, row, 8, f"{r}%", bold=True, align="center", color=rc(r))
     dr = team.get("detachRate")
-    dat(ws1, row, 9, f"{dr}%" if dr is not None else "—", bold=True, align="center", color=detach_color(dr))
+    dch = team.get("detachments")
+    dat(ws1, row, 9, dch if dch is not None else "—", bold=True, align="center", color=detach_color(dr))
+    dat(ws1, row, 10, f"{dr}%" if dr is not None else "—", align="center", color="FF8C8880")
     row += 1
-for col, w in zip(range(1,10), [18,24,10,12,12,12,16,12,11]):
+for col, w in zip(range(1,11), [18,24,10,12,12,12,16,12,15,11]):
     ws1.column_dimensions[get_column_letter(col)].width = w
 
 # POR ARCHIVO
@@ -348,11 +422,11 @@ for col, w in zip(range(1,9), [18,22,30,12,12,12,14,12]):
 
 # DETACH RATE
 ws3a = wb.create_sheet("Detach rate"); ws3a.sheet_view.showGridLines = False
-ws3a.cell(row=1, column=1, value="Detach rate por categoría — Library Analytics API").font = Font(bold=True, size=12, color=DARK, name="Arial")
+ws3a.cell(row=1, column=1, value="Desvinculaciones por categoría — Library Analytics API").font = Font(bold=True, size=12, color=DARK, name="Arial")
 ws3a.merge_cells("A1:E1")
-ws3a.cell(row=2, column=1, value="Fuente: Figma Library Analytics (Enterprise). Fórmula: detachments / (detachments + insertions) del quarter actual.").font = Font(size=9, color="FF6C757D", italic=True, name="Arial")
+ws3a.cell(row=2, column=1, value="Fuente: Figma Library Analytics (Enterprise), agregado por Figma Team del quarter actual. El % es referencial (volumen de inserciones suele ser alto, por lo que el % puede verse cercano a 0 aunque haya desvinculaciones reales).").font = Font(size=9, color="FF6C757D", italic=True, name="Arial")
 ws3a.merge_cells("A2:E2")
-for i, h in enumerate(["Categoría","Detachments","Insertions","Total acciones","Detach %"], 1):
+for i, h in enumerate(["Categoría","Desvinculaciones","Inserciones","Total acciones","Detach %"], 1):
     hdr(ws3a, 4, i, h, bg="FFBA7517")
 row = 5
 for team in report["teams"]:
@@ -362,18 +436,37 @@ for team in report["teams"]:
     insertions = team.get("detachInsertions")
     if dr is None:
         continue
-    # avoid duplicate categories (multiple activos share one category's detach data)
     already = any(ws3a.cell(row=r, column=1).value == cat for r in range(5, row))
     if already:
         continue
     dat(ws3a, row, 1, cat, bold=True)
-    dat(ws3a, row, 2, detachments, align="center")
+    dat(ws3a, row, 2, detachments, align="center", bold=True, color=detach_color(dr))
     dat(ws3a, row, 3, insertions, align="center")
     dat(ws3a, row, 4, (detachments or 0) + (insertions or 0), align="center")
-    dat(ws3a, row, 5, f"{dr}%", bold=True, align="center", color=detach_color(dr))
+    dat(ws3a, row, 5, f"{dr}%", align="center", color="FF8C8880")
     row += 1
-for col, w in zip(range(1,6), [26,14,14,14,12]):
+for col, w in zip(range(1,6), [26,16,14,14,12]):
     ws3a.column_dimensions[get_column_letter(col)].width = w
+
+# TOP COMPONENTES DESVINCULADOS (a nivel de toda la librería, no por categoría)
+ws3b = wb.create_sheet("Top componentes detach"); ws3b.sheet_view.showGridLines = False
+ws3b.cell(row=1, column=1, value="Componentes con más desvinculaciones — toda la librería Dalton").font = Font(bold=True, size=12, color=DARK, name="Arial")
+ws3b.merge_cells("A1:D1")
+ws3b.cell(row=2, column=1, value="No filtrado por categoría/equipo — la API de Figma no permite ese cruce. Útil para ver qué componentes del sistema tienden a romperse más, independientemente de quién los usa.").font = Font(size=9, color="FF6C757D", italic=True, name="Arial")
+ws3b.merge_cells("A2:D2")
+for i, h in enumerate(["Componente","Desvinculaciones","Inserciones","Detach %"], 1):
+    hdr(ws3b, 4, i, h, bg="FFBA7517")
+row = 5
+for comp in (report.get("topDetachedComponents") or []):
+    total = comp["detachments"] + comp["insertions"]
+    rate = round((comp["detachments"] / total) * 100, 2) if total > 0 else 0
+    dat(ws3b, row, 1, comp["name"], bold=True)
+    dat(ws3b, row, 2, comp["detachments"], align="center", bold=True, color="FFD94F3D")
+    dat(ws3b, row, 3, comp["insertions"], align="center")
+    dat(ws3b, row, 4, f"{rate}%", align="center", color="FF8C8880")
+    row += 1
+for col, w in zip(range(1,5), [28,16,14,12]):
+    ws3b.column_dimensions[get_column_letter(col)].width = w
 
 # FAMILIAS ÚNICAS DS
 ws3 = wb.create_sheet("Familias DS usadas"); ws3.sheet_view.showGridLines = False
@@ -501,14 +594,19 @@ async function run() {
     const detach = detachByCategory[team.category];
     if (detach) {
       team.detachRate = detach.detachRate;
+      team.detachRateExact = detach.detachRateExact;
       team.detachments = detach.detachments;
       team.detachInsertions = detach.insertions;
     } else {
       team.detachRate = null;
+      team.detachRateExact = null;
       team.detachments = null;
       team.detachInsertions = null;
     }
   }
+
+  // --- TOP DETACHED COMPONENTS (library-wide, not per-category) ---
+  const topDetachedComponents = await getTopDetachedComponents(15);
 
   const now = new Date();
   const quarter = `Q${Math.ceil((now.getMonth() + 1) / 3)} ${now.getFullYear()}`;
@@ -529,7 +627,7 @@ async function run() {
   }
 
   fs.writeFileSync(HISTORY_PATH, JSON.stringify(history, null, 2));
-  const report = { generatedAt: now.toISOString(), quarter, teams: teamsData, history };
+  const report = { generatedAt: now.toISOString(), quarter, teams: teamsData, history, topDetachedComponents };
   if (!fs.existsSync(path.join(__dirname, "docs"))) fs.mkdirSync(path.join(__dirname, "docs"));
   fs.writeFileSync(REPORT_PATH, JSON.stringify(report, null, 2));
 
@@ -539,7 +637,7 @@ async function run() {
   console.log(`\nReport saved to docs/report.json`);
   console.log("\n=== Summary ===");
   for (const team of teamsData) {
-    const dr = team.detachRate !== null ? `${team.detachRate}%` : "N/A";
+    const dr = team.detachments !== null ? `${team.detachments} detach (${team.detachRateExact}%)` : "N/A";
     console.log(`[${team.category}] ${team.name}: Adoption ${team.adoptionRate}% | Detach ${dr} | ${team.totalRfdFrames} RFD | ${team.uniqueFamiliesCount} familias únicas`);
   }
 
