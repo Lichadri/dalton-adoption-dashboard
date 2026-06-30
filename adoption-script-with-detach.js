@@ -18,6 +18,7 @@ const FIGMA_TEAM_TO_CATEGORY = {
   "Portal Digital de Siniestros": "Portal Digital de Siniestros",
   "WEB Corporativa": "Web Corporativa",
   "FFVV y Modelo día": "Modelo Día",
+  "FFVV": "Modelo Día",
   "Embebidos": "Embebidos",
   "Protege 365": "Protege 365",
   "MEP: Mi Espacio Pacífico": "MEP",
