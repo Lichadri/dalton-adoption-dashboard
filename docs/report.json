@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-29T22:28:55.788Z",
+  "generatedAt": "2026-06-30T16:11:25.633Z",
   "quarter": "Q2 2026",
   "teams": [
     {
@@ -564,7 +564,10 @@
             }
           ]
         }
-      ]
+      ],
+      "detachRate": 0,
+      "detachments": 22,
+      "detachInsertions": 17415
     },
     {
       "name": "Somos Corredores",
@@ -1172,7 +1175,10 @@
             }
           ]
         }
-      ]
+      ],
+      "detachRate": 0,
+      "detachments": 87,
+      "detachInsertions": 31512
     },
     {
       "name": "Protege 365",
@@ -1840,7 +1846,10 @@
             }
           ]
         }
-      ]
+      ],
+      "detachRate": 5,
+      "detachments": 317,
+      "detachInsertions": 6526
     },
     {
       "name": "Nueva Web Empresas",
@@ -2596,7 +2605,10 @@
             }
           ]
         }
-      ]
+      ],
+      "detachRate": 0,
+      "detachments": 17,
+      "detachInsertions": 69191
     },
     {
       "name": "Portal Digital de Siniestros",
@@ -3050,16 +3062,19 @@
             }
           ]
         }
-      ]
+      ],
+      "detachRate": 0,
+      "detachments": 1,
+      "detachInsertions": 6637
     },
     {
       "name": "Modelo Día",
       "category": "Modelo Día",
       "adoptionRate": 65,
       "totalRfdFrames": 22,
-      "dsInstances": 14386,
-      "internalInstances": 7654,
-      "totalInstances": 22040,
+      "dsInstances": 14419,
+      "internalInstances": 7680,
+      "totalInstances": 22099,
       "uniqueFamiliesCount": 36,
       "uniqueFamilies": [
         {
@@ -3067,12 +3082,12 @@
           "count": 4487
         },
         {
-          "name": "Checkbox",
-          "count": 1420
+          "name": "Button",
+          "count": 1425
         },
         {
-          "name": "Button",
-          "count": 1404
+          "name": "Checkbox",
+          "count": 1420
         },
         {
           "name": "Table",
@@ -3084,7 +3099,7 @@
         },
         {
           "name": "Alert",
-          "count": 815
+          "count": 817
         },
         {
           "name": "Left Label",
@@ -3096,7 +3111,7 @@
         },
         {
           "name": "Radio",
-          "count": 507
+          "count": 517
         },
         {
           "name": "Header",
@@ -3214,7 +3229,7 @@
         },
         {
           "name": "Control",
-          "count": 643
+          "count": 636
         },
         {
           "name": "DirectionDown",
@@ -3222,11 +3237,11 @@
         },
         {
           "name": "Component 16",
-          "count": 282
+          "count": 297
         },
         {
           "name": "Botón Primario",
-          "count": 188
+          "count": 198
         },
         {
           "name": "Dropdown filter page",
@@ -3278,15 +3293,15 @@
         },
         {
           "name": "download",
-          "count": 98
+          "count": 100
+        },
+        {
+          "name": "BtnBackNext",
+          "count": 99
         },
         {
           "name": "directionLeft",
           "count": 96
-        },
-        {
-          "name": "AGENDA",
-          "count": 92
         }
       ],
       "files": [
@@ -3702,9 +3717,9 @@
           "key": "6QBFEXpu6r5ZDNuzYYtK97",
           "name": "Vida Ley & SCTR",
           "rfdFrameCount": 1,
-          "dsInstances": 2328,
-          "internalInstances": 545,
-          "totalInstances": 2873,
+          "dsInstances": 2361,
+          "internalInstances": 571,
+          "totalInstances": 2932,
           "adoptionRate": 81,
           "uniqueFamiliesCount": 30,
           "uniqueFamilies": [
@@ -3714,7 +3729,7 @@
             },
             {
               "name": "Button",
-              "count": 188
+              "count": 209
             },
             {
               "name": "Input",
@@ -3722,7 +3737,7 @@
             },
             {
               "name": "Alert",
-              "count": 78
+              "count": 80
             },
             {
               "name": "Tab",
@@ -3738,7 +3753,7 @@
             },
             {
               "name": "Radio",
-              "count": 34
+              "count": 44
             },
             {
               "name": "Select",
@@ -3851,6 +3866,10 @@
               "count": 41
             },
             {
+              "name": "Component 16",
+              "count": 27
+            },
+            {
               "name": "Line Tracking Vertical",
               "count": 25
             },
@@ -3859,24 +3878,24 @@
               "count": 23
             },
             {
-              "name": "Screenshot",
-              "count": 22
-            },
-            {
               "name": "ArrowLeft",
               "count": 21
             },
             {
-              "name": "Device 14PM",
-              "count": 21
-            },
-            {
               "name": "download",
-              "count": 16
+              "count": 18
             },
             {
-              "name": "Component 16",
-              "count": 12
+              "name": "Botón Primario",
+              "count": 18
+            },
+            {
+              "name": "Device 14PM",
+              "count": 17
+            },
+            {
+              "name": "Screenshot",
+              "count": 17
             },
             {
               "name": "play : pause",
@@ -3895,24 +3914,23 @@
               "count": 9
             },
             {
+              "name": "BtnBackNext",
+              "count": 9
+            },
+            {
+              "name": "Pregunta formulario",
+              "count": 9
+            },
+            {
               "name": "Right Label",
               "count": 8
-            },
-            {
-              "name": "Search Suggestion",
-              "count": 8
-            },
-            {
-              "name": "Botón Primario",
-              "count": 8
-            },
-            {
-              "name": "Control",
-              "count": 7
             }
           ]
         }
-      ]
+      ],
+      "detachRate": 0,
+      "detachments": 5,
+      "detachInsertions": 4334
     },
     {
       "name": "SOAT",
@@ -4318,7 +4336,10 @@
             }
           ]
         }
-      ]
+      ],
+      "detachRate": 2,
+      "detachments": 615,
+      "detachInsertions": 27625
     },
     {
       "name": "Vehicular",
@@ -4732,7 +4753,10 @@
             }
           ]
         }
-      ]
+      ],
+      "detachRate": 2,
+      "detachments": 615,
+      "detachInsertions": 27625
     },
     {
       "name": "Auto Efectivo",
@@ -4758,7 +4782,10 @@
           "uniqueFamilies": [],
           "top20Internal": []
         }
-      ]
+      ],
+      "detachRate": 2,
+      "detachments": 615,
+      "detachInsertions": 27625
     },
     {
       "name": "Vehicular Todo Riesgo",
@@ -5180,7 +5207,10 @@
             }
           ]
         }
-      ]
+      ],
+      "detachRate": 2,
+      "detachments": 615,
+      "detachInsertions": 27625
     },
     {
       "name": "Viajes",
@@ -5602,7 +5632,10 @@
             }
           ]
         }
-      ]
+      ],
+      "detachRate": 2,
+      "detachments": 615,
+      "detachInsertions": 27625
     },
     {
       "name": "VDT",
@@ -6024,16 +6057,19 @@
             }
           ]
         }
-      ]
+      ],
+      "detachRate": 2,
+      "detachments": 615,
+      "detachInsertions": 27625
     },
     {
       "name": "Venta Directa",
       "category": "Ecommerce",
       "adoptionRate": 94,
       "totalRfdFrames": 2,
-      "dsInstances": 11371,
+      "dsInstances": 11370,
       "internalInstances": 706,
-      "totalInstances": 12077,
+      "totalInstances": 12076,
       "uniqueFamiliesCount": 35,
       "uniqueFamilies": [
         {
@@ -6138,7 +6174,7 @@
         },
         {
           "name": "Loader",
-          "count": 35
+          "count": 34
         },
         {
           "name": "Checkbox",
@@ -6264,9 +6300,9 @@
           "key": "qIBm00tpmJ21ylQvmxQyDB",
           "name": "Vida Ley & SCTR",
           "rfdFrameCount": 2,
-          "dsInstances": 11371,
+          "dsInstances": 11370,
           "internalInstances": 706,
-          "totalInstances": 12077,
+          "totalInstances": 12076,
           "adoptionRate": 94,
           "uniqueFamiliesCount": 35,
           "uniqueFamilies": [
@@ -6372,7 +6408,7 @@
             },
             {
               "name": "Loader",
-              "count": 35
+              "count": 34
             },
             {
               "name": "Checkbox",
@@ -6494,7 +6530,10 @@
             }
           ]
         }
-      ]
+      ],
+      "detachRate": 2,
+      "detachments": 615,
+      "detachInsertions": 27625
     },
     {
       "name": "Web Corporativa",
@@ -7204,7 +7243,10 @@
             }
           ]
         }
-      ]
+      ],
+      "detachRate": 0,
+      "detachments": 27,
+      "detachInsertions": 19514
     },
     {
       "name": "Embebidos",
@@ -7546,7 +7588,10 @@
             }
           ]
         }
-      ]
+      ],
+      "detachRate": 0,
+      "detachments": 34,
+      "detachInsertions": 10670
     }
   ],
   "history": [
@@ -7554,11 +7599,13 @@
       "team": "Modelo Día",
       "category": "Modelo Día",
       "quarter": "Q2 2026",
-      "date": "2026-06-29",
+      "date": "2026-06-30",
       "adoptionRate": 65,
       "totalRfdFrames": 22,
-      "totalDs": 14386,
-      "totalInstances": 22040
+      "totalDs": 14419,
+      "totalInstances": 22099,
+      "detachRate": 0,
+      "detachments": 5
     },
     {
       "team": "Ecommerce",
@@ -7574,141 +7621,169 @@
       "team": "Auto Efectivo",
       "category": "Ecommerce",
       "quarter": "Q2 2026",
-      "date": "2026-06-29",
+      "date": "2026-06-30",
       "adoptionRate": 0,
       "totalRfdFrames": 0,
       "totalDs": 0,
-      "totalInstances": 0
+      "totalInstances": 0,
+      "detachRate": 2,
+      "detachments": 615
     },
     {
       "team": "MEP",
       "category": "MEP",
       "quarter": "Q2 2026",
-      "date": "2026-06-29",
+      "date": "2026-06-30",
       "adoptionRate": 51,
       "totalRfdFrames": 17,
       "totalDs": 3018,
-      "totalInstances": 5891
+      "totalInstances": 5891,
+      "detachRate": 0,
+      "detachments": 22
     },
     {
       "team": "Somos Corredores",
       "category": "Somos Corredores",
       "quarter": "Q2 2026",
-      "date": "2026-06-29",
+      "date": "2026-06-30",
       "adoptionRate": 87,
       "totalRfdFrames": 12,
       "totalDs": 3852,
-      "totalInstances": 4452
+      "totalInstances": 4452,
+      "detachRate": 0,
+      "detachments": 87
     },
     {
       "team": "Protege 365",
       "category": "Protege 365",
       "quarter": "Q2 2026",
-      "date": "2026-06-29",
+      "date": "2026-06-30",
       "adoptionRate": 90,
       "totalRfdFrames": 8,
       "totalDs": 7739,
-      "totalInstances": 8560
+      "totalInstances": 8560,
+      "detachRate": 5,
+      "detachments": 317
     },
     {
       "team": "Nueva Web Empresas",
       "category": "Nueva Web Empresas",
       "quarter": "Q2 2026",
-      "date": "2026-06-29",
+      "date": "2026-06-30",
       "adoptionRate": 94,
       "totalRfdFrames": 44,
       "totalDs": 172970,
-      "totalInstances": 184326
+      "totalInstances": 184326,
+      "detachRate": 0,
+      "detachments": 17
     },
     {
       "team": "Portal Digital de Siniestros",
       "category": "Portal Digital de Siniestros",
       "quarter": "Q2 2026",
-      "date": "2026-06-29",
+      "date": "2026-06-30",
       "adoptionRate": 84,
       "totalRfdFrames": 5,
       "totalDs": 8539,
-      "totalInstances": 10226
+      "totalInstances": 10226,
+      "detachRate": 0,
+      "detachments": 1
     },
     {
       "team": "Web Corporativa",
       "category": "Web Corporativa",
       "quarter": "Q2 2026",
-      "date": "2026-06-29",
+      "date": "2026-06-30",
       "adoptionRate": 84,
       "totalRfdFrames": 73,
       "totalDs": 11472,
-      "totalInstances": 13594
+      "totalInstances": 13594,
+      "detachRate": 0,
+      "detachments": 27
     },
     {
       "team": "Embebidos",
       "category": "Embebidos",
       "quarter": "Q2 2026",
-      "date": "2026-06-29",
+      "date": "2026-06-30",
       "adoptionRate": 88,
       "totalRfdFrames": 6,
       "totalDs": 1424,
-      "totalInstances": 1625
+      "totalInstances": 1625,
+      "detachRate": 0,
+      "detachments": 34
     },
     {
       "team": "SOAT",
       "category": "Ecommerce",
       "quarter": "Q2 2026",
-      "date": "2026-06-29",
+      "date": "2026-06-30",
       "adoptionRate": 75,
       "totalRfdFrames": 1,
       "totalDs": 1583,
-      "totalInstances": 2109
+      "totalInstances": 2109,
+      "detachRate": 2,
+      "detachments": 615
     },
     {
       "team": "Vehicular",
       "category": "Ecommerce",
       "quarter": "Q2 2026",
-      "date": "2026-06-29",
+      "date": "2026-06-30",
       "adoptionRate": 73,
       "totalRfdFrames": 1,
       "totalDs": 2286,
-      "totalInstances": 3132
+      "totalInstances": 3132,
+      "detachRate": 2,
+      "detachments": 615
     },
     {
       "team": "Vehicular Todo Riesgo",
       "category": "Ecommerce",
       "quarter": "Q2 2026",
-      "date": "2026-06-29",
+      "date": "2026-06-30",
       "adoptionRate": 69,
       "totalRfdFrames": 2,
       "totalDs": 2650,
-      "totalInstances": 3813
+      "totalInstances": 3813,
+      "detachRate": 2,
+      "detachments": 615
     },
     {
       "team": "Viajes",
       "category": "Ecommerce",
       "quarter": "Q2 2026",
-      "date": "2026-06-29",
+      "date": "2026-06-30",
       "adoptionRate": 85,
       "totalRfdFrames": 8,
       "totalDs": 3566,
-      "totalInstances": 4204
+      "totalInstances": 4204,
+      "detachRate": 2,
+      "detachments": 615
     },
     {
       "team": "VDT",
       "category": "Ecommerce",
       "quarter": "Q2 2026",
-      "date": "2026-06-29",
+      "date": "2026-06-30",
       "adoptionRate": 85,
       "totalRfdFrames": 8,
       "totalDs": 3906,
-      "totalInstances": 4593
+      "totalInstances": 4593,
+      "detachRate": 2,
+      "detachments": 615
     },
     {
       "team": "Venta Directa",
       "category": "Ecommerce",
       "quarter": "Q2 2026",
-      "date": "2026-06-29",
+      "date": "2026-06-30",
       "adoptionRate": 94,
       "totalRfdFrames": 2,
-      "totalDs": 11371,
-      "totalInstances": 12077
+      "totalDs": 11370,
+      "totalInstances": 12076,
+      "detachRate": 2,
+      "detachments": 615
     }
   ]
 }
