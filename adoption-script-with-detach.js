@@ -60,12 +60,21 @@ const EXCLUDED_ICONS = new Set([
 
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
-async function figmaFetch(endpoint) {
-  const res = await fetch(`https://api.figma.com/v1${endpoint}`, {
-    headers: { "X-Figma-Token": FIGMA_TOKEN },
-  });
-  if (!res.ok) throw new Error(`Figma API ${res.status}: ${await res.text()}`);
-  return res.json();
+async function figmaFetch(endpoint, retries = 3) {
+  for (let attempt = 1; attempt <= retries; attempt++) {
+    const res = await fetch(`https://api.figma.com/v1${endpoint}`, {
+      headers: { "X-Figma-Token": FIGMA_TOKEN },
+    });
+    if (res.status === 429) {
+      const wait = attempt * 10000; // 10s, 20s, 30s
+      console.warn(`  429 rate limit — waiting ${wait/1000}s (attempt ${attempt}/${retries})`);
+      await sleep(wait);
+      continue;
+    }
+    if (!res.ok) throw new Error(`Figma API ${res.status}: ${await res.text()}`);
+    return res.json();
+  }
+  throw new Error(`Figma API 429: rate limit exceeded after ${retries} retries`);
 }
 
 function classify(name) {
@@ -142,7 +151,7 @@ async function analyzeFile(fileKey, fileName) {
 
   const pages = await getPages(fileKey);
   console.log(`  Pages: ${pages.length}`);
-  await sleep(800);
+  await sleep(2500);
 
   for (const page of pages) {
     if (page.editorType === "figjam") continue;
@@ -156,7 +165,7 @@ async function analyzeFile(fileKey, fileName) {
       rfdFrameCount++;
       countInstances(rfdNode, result);
     }
-    await sleep(800);
+    await sleep(2500);
   }
 
   const totalInstances = result.ds.count + result.internal.count;
@@ -239,15 +248,14 @@ async function fetchDetachByRange(start, end, label) {
 }
 
 async function getDetachAllPeriods() {
-  console.log("\nFetching detach from Library Analytics API (3 periods)...");
+  console.log("\nFetching detach from Library Analytics API (Q2 only)...");
   const ranges = getDateRanges();
-  // Sequential to avoid rate limiting
-  const q2      = await fetchDetachByRange(ranges.q2.start,      ranges.q2.end,      ranges.q2.label);
-  await sleep(1000);
-  const current = await fetchDetachByRange(ranges.current.start, ranges.current.end, ranges.current.label);
-  await sleep(1000);
-  const annual  = await fetchDetachByRange(ranges.annual.start,  ranges.annual.end,  ranges.annual.label);
-  return { q2, current, annual,
+  // Only Q2 for now — Q3 has insufficient data (< 2 weeks)
+  const q2 = await fetchDetachByRange(ranges.q2.start, ranges.q2.end, ranges.q2.label);
+  return {
+    q2,
+    current: {},   // Q3 omitted until sufficient data
+    annual: {},    // Annual omitted until Q3 has data
     q2Label: ranges.q2.label,
     currentLabel: ranges.current.label,
     annualLabel: ranges.annual.label,
@@ -535,7 +543,7 @@ async function run() {
         console.error(`  Error: ${file.name}:`, e.message);
         filesData.push({ key: file.key, name: file.name, error: e.message, rfdFrameCount: 0, dsInstances: 0, internalInstances: 0, totalInstances: 0, adoptionRate: 0, uniqueFamiliesCount: 0, uniqueFamilies: [], top20Internal: [] });
       }
-      await sleep(1500);
+      await sleep(2500);
     }
 
     const totalRfdFrames = filesData.reduce((s, f) => s + f.rfdFrameCount, 0);
