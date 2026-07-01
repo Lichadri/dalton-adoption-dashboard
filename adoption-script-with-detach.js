@@ -187,73 +187,72 @@ async function analyzeFile(fileKey, fileName) {
 // DETACH RATE — Library Analytics API (requiere Enterprise plan)
 // ============================================================
 
-function getQuarterDateRange(date = new Date()) {
-  const year = date.getFullYear();
-  const quarter = Math.ceil((date.getMonth() + 1) / 3);
-  const startMonth = (quarter - 1) * 3;
-  const start = new Date(year, startMonth, 1);
-  const end = new Date(year, startMonth + 3, 0);
+function getDateRanges(now = new Date()) {
   const fmt = (d) => d.toISOString().split("T")[0];
-  return { start: fmt(start), end: fmt(end), quarter: `Q${quarter} ${year}` };
+  const year = now.getFullYear();
+  const q = Math.ceil((now.getMonth() + 1) / 3);
+
+  const q2Start = new Date(year, 3, 1);   // April 1
+  const q2End   = new Date(year, 5, 30);  // June 30
+  const qCurrentStart = new Date(year, (q - 1) * 3, 1);
+  const annualStart = new Date(year, 3, 1); // April 1 — no Q1 data
+
+  return {
+    q2:      { start: fmt(q2Start),      end: fmt(q2End),      label: "Q2 2026" },
+    current: { start: fmt(qCurrentStart), end: fmt(now),        label: `Q${q} ${year}` },
+    annual:  { start: fmt(annualStart),   end: fmt(now),        label: `Anual ${year}` },
+  };
 }
 
-async function getDetachRateByCategory() {
-  console.log("\nFetching detach rate from Library Analytics API...");
-  const { start, end, quarter } = getQuarterDateRange();
-  console.log(`  Quarter range: ${start} to ${end} (${quarter})`);
-
+async function fetchDetachByRange(start, end, label) {
+  console.log(`  Fetching detach ${label} (${start} → ${end})...`);
   const categoryTotals = {};
   let cursor = null;
   let pageCount = 0;
-
   try {
     do {
       pageCount++;
-      const params = new URLSearchParams({
-        group_by: "team",
-        start_date: start,
-        end_date: end,
-      });
+      const params = new URLSearchParams({ group_by: "team", start_date: start, end_date: end });
       if (cursor) params.set("cursor", cursor);
-
       const data = await figmaFetch(
         `/analytics/libraries/${DALTON_LIBRARY_KEY}/component/actions?${params.toString()}`
       );
-
       for (const row of data.rows || []) {
-        const teamName = row.team_name;
-        const category = FIGMA_TEAM_TO_CATEGORY[teamName];
-        if (!category) {
-          console.log(`    (sin mapeo) team: "${teamName}" — det:${row.detachments} ins:${row.insertions}`);
-          continue;
-        }
-        if (!categoryTotals[category]) categoryTotals[category] = { detachments: 0, insertions: 0 };
-        categoryTotals[category].detachments += row.detachments || 0;
-        categoryTotals[category].insertions += row.insertions || 0;
+        const category = FIGMA_TEAM_TO_CATEGORY[row.team_name];
+        if (!category) continue;
+        if (!categoryTotals[category]) categoryTotals[category] = 0;
+        categoryTotals[category] += row.detachments || 0;
       }
-
       cursor = data.next_page ? data.cursor : null;
       await sleep(500);
     } while (cursor && pageCount < 20);
-
-    console.log(`  Fetched ${pageCount} page(s) of detach data`);
   } catch (e) {
-    console.warn(`  WARNING: Could not fetch detach rate — ${e.message}`);
-    console.warn(`  This requires Enterprise plan + library_analytics:read scope on the token.`);
+    console.warn(`  WARNING: Could not fetch detach ${label} — ${e.message}`);
     return {};
   }
-
   const result = {};
-  for (const [category, totals] of Object.entries(categoryTotals)) {
-    result[category] = {
-      detachments: totals.detachments,
-    };
-    console.log(`  [${category}] detachments: ${totals.detachments}`);
+  for (const [cat, count] of Object.entries(categoryTotals)) {
+    result[cat] = count;
+    console.log(`    [${cat}] ${count} desvinculaciones`);
   }
-
   return result;
 }
 
+async function getDetachAllPeriods() {
+  console.log("\nFetching detach from Library Analytics API (3 periods)...");
+  const ranges = getDateRanges();
+  // Sequential to avoid rate limiting
+  const q2      = await fetchDetachByRange(ranges.q2.start,      ranges.q2.end,      ranges.q2.label);
+  await sleep(1000);
+  const current = await fetchDetachByRange(ranges.current.start, ranges.current.end, ranges.current.label);
+  await sleep(1000);
+  const annual  = await fetchDetachByRange(ranges.annual.start,  ranges.annual.end,  ranges.annual.label);
+  return { q2, current, annual,
+    q2Label: ranges.q2.label,
+    currentLabel: ranges.current.label,
+    annualLabel: ranges.annual.label,
+  };
+}
 // Top componentes con más desvinculaciones a nivel de toda la librería Dalton
 // (no filtrado por categoría — la API no permite ese cruce de forma directa)
 async function getTopDetachedComponents(limit = 15) {
@@ -570,15 +569,14 @@ async function run() {
     });
   }
 
-  // --- DETACH RATE: fetch and attach to each team by category ---
-  const detachByCategory = await getDetachRateByCategory();
+  // --- DETACH RATE: fetch all periods ---
+  const detachPeriods = await getDetachAllPeriods();
   for (const team of teamsData) {
-    const detach = detachByCategory[team.category];
-    if (detach) {
-      team.detachments = detach.detachments;
-    } else {
-      team.detachments = null;
-    }
+    const cat = team.category;
+    team.detachQ2 = detachPeriods.q2[cat] ?? null;
+    team.detachCurrent = detachPeriods.current[cat] ?? null;
+    team.detachAnnual = detachPeriods.annual[cat] ?? null;
+    team.detachments = team.detachCurrent; // backwards compat
   }
 
   // --- TOP DETACHED COMPONENTS (library-wide, not per-category) ---
@@ -596,13 +594,15 @@ async function run() {
       totalRfdFrames: team.totalRfdFrames,
       totalDs: team.dsInstances,
       totalInstances: team.totalInstances,
-      detachments: team.detachments,
+      detachments: team.detachCurrent,
+      detachQ2: team.detachQ2,
     };
     if (existingIdx >= 0) { history[existingIdx] = entry; } else { history.push(entry); }
   }
 
   fs.writeFileSync(HISTORY_PATH, JSON.stringify(history, null, 2));
-  const report = { generatedAt: now.toISOString(), quarter, teams: teamsData, history, topDetachedComponents };
+  const report = { generatedAt: now.toISOString(), quarter, teams: teamsData, history, topDetachedComponents,
+    detachPeriods: { q2Label: detachPeriods.q2Label, currentLabel: detachPeriods.currentLabel, annualLabel: detachPeriods.annualLabel } };
   if (!fs.existsSync(path.join(__dirname, "docs"))) fs.mkdirSync(path.join(__dirname, "docs"));
   fs.writeFileSync(REPORT_PATH, JSON.stringify(report, null, 2));
 
@@ -612,7 +612,7 @@ async function run() {
   console.log(`\nReport saved to docs/report.json`);
   console.log("\n=== Summary ===");
   for (const team of teamsData) {
-    const dr = team.detachments !== null ? `${team.detachments} desvinculaciones` : "N/A";
+    const dr = `Q2:${team.detachQ2??'—'} | ${detachPeriods.currentLabel}:${team.detachCurrent??'—'} | Anual:${team.detachAnnual??'—'}`;
     console.log(`[${team.category}] ${team.name}: Adoption ${team.adoptionRate}% | Detach ${dr} | ${team.totalRfdFrames} RFD | ${team.uniqueFamiliesCount} familias únicas`);
   }
 
