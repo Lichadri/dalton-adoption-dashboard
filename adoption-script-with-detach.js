@@ -245,16 +245,10 @@ async function getDetachRateByCategory() {
 
   const result = {};
   for (const [category, totals] of Object.entries(categoryTotals)) {
-    const total = totals.detachments + totals.insertions;
-    const rate = total > 0 ? Math.round((totals.detachments / total) * 100) : 0;
-    const rateExact = total > 0 ? +((totals.detachments / total) * 100).toFixed(2) : 0;
     result[category] = {
       detachments: totals.detachments,
-      insertions: totals.insertions,
-      detachRate: rate,
-      detachRateExact: rateExact,
     };
-    console.log(`  [${category}] detachments: ${totals.detachments} (${rateExact}% of ${total} actions)`);
+    console.log(`  [${category}] detachments: ${totals.detachments}`);
   }
 
   return result;
@@ -363,22 +357,18 @@ def rc(rate):
     if rate >= 50: return YELLOW
     return RED
 
-def detach_color(rate):
-    if rate is None: return "FF8C8880"
-    if rate < 15: return GREEN
-    if rate < 30: return YELLOW
-    return RED
+# detach_color removed — no longer measuring detach rate as percentage
 
 # RESUMEN
 ws1 = wb.active; ws1.title = "Resumen"; ws1.sheet_view.showGridLines = False
 ws1.row_dimensions[1].height = 36
 t = ws1.cell(row=1, column=1, value="Dalton DS — Reporte de Adopción")
 t.font = Font(bold=True, size=14, color=DARK, name="Arial")
-ws1.merge_cells("A1:J1")
+ws1.merge_cells("A1:I1")
 ws1.cell(row=2, column=1, value=f"Quarter: {report['quarter']}  |  {report['generatedAt'][:10]}").font = Font(size=9, color="FF6C757D", name="Arial")
-ws1.merge_cells("A2:J2")
+ws1.merge_cells("A2:I2")
 ws1.row_dimensions[4].height = 26
-for i, h in enumerate(["Categoría","Activo","Archivos","Frames RFD","Inst. DS","Internos","Familias únicas DS","Adopción %","Desvinculaciones","Detach %"], 1):
+for i, h in enumerate(["Categoría","Activo","Archivos","Frames RFD","Inst. DS","Internos","Familias únicas DS","Adopción %","Desvinculaciones Q"], 1):
     hdr(ws1, 4, i, h)
 row = 5
 for team in report["teams"]:
@@ -392,12 +382,10 @@ for team in report["teams"]:
     dat(ws1, row, 7, team.get("uniqueFamiliesCount",0), align="center", color="FF6B4FBB")
     r = team["adoptionRate"]
     dat(ws1, row, 8, f"{r}%", bold=True, align="center", color=rc(r))
-    dr = team.get("detachRate")
     dch = team.get("detachments")
-    dat(ws1, row, 9, dch if dch is not None else "—", bold=True, align="center", color=detach_color(dr))
-    dat(ws1, row, 10, f"{dr}%" if dr is not None else "—", align="center", color="FF8C8880")
+    dat(ws1, row, 9, dch if dch is not None else "—", bold=True, align="center", color="FFBA7517" if dch else "FF8C8880")
     row += 1
-for col, w in zip(range(1,11), [18,24,10,12,12,12,16,12,15,11]):
+for col, w in zip(range(1,10), [18,24,10,12,12,12,16,12,15]):
     ws1.column_dimensions[get_column_letter(col)].width = w
 
 # POR ARCHIVO
@@ -426,26 +414,20 @@ ws3a.cell(row=1, column=1, value="Desvinculaciones por categoría — Library An
 ws3a.merge_cells("A1:E1")
 ws3a.cell(row=2, column=1, value="Fuente: Figma Library Analytics (Enterprise), agregado por Figma Team del quarter actual. El % es referencial (volumen de inserciones suele ser alto, por lo que el % puede verse cercano a 0 aunque haya desvinculaciones reales).").font = Font(size=9, color="FF6C757D", italic=True, name="Arial")
 ws3a.merge_cells("A2:E2")
-for i, h in enumerate(["Categoría","Desvinculaciones","Inserciones","Total acciones","Detach %"], 1):
+for i, h in enumerate(["Categoría","Desvinculaciones Q"], 1):
     hdr(ws3a, 4, i, h, bg="FFBA7517")
 row = 5
+seen_cats = set()
 for team in report["teams"]:
     cat = team.get("category", team["name"])
-    dr = team.get("detachRate")
     detachments = team.get("detachments")
-    insertions = team.get("detachInsertions")
-    if dr is None:
+    if detachments is None or cat in seen_cats:
         continue
-    already = any(ws3a.cell(row=r, column=1).value == cat for r in range(5, row))
-    if already:
-        continue
+    seen_cats.add(cat)
     dat(ws3a, row, 1, cat, bold=True)
-    dat(ws3a, row, 2, detachments, align="center", bold=True, color=detach_color(dr))
-    dat(ws3a, row, 3, insertions, align="center")
-    dat(ws3a, row, 4, (detachments or 0) + (insertions or 0), align="center")
-    dat(ws3a, row, 5, f"{dr}%", align="center", color="FF8C8880")
+    dat(ws3a, row, 2, detachments, align="center", bold=True, color="FFBA7517")
     row += 1
-for col, w in zip(range(1,6), [26,16,14,14,12]):
+for col, w in zip(range(1,3), [26,18]):
     ws3a.column_dimensions[get_column_letter(col)].width = w
 
 # TOP COMPONENTES DESVINCULADOS (a nivel de toda la librería, no por categoría)
@@ -502,7 +484,7 @@ for col, w in zip(range(1,5), [18,22,36,14]):
 
 # HISTORIAL
 ws5 = wb.create_sheet("Historial"); ws5.sheet_view.showGridLines = False
-for i, h in enumerate(["Equipo","Categoría","Quarter","Fecha","Adopción %","Detach %","Frames RFD","Inst. DS","Total"], 1):
+for i, h in enumerate(["Equipo","Categoría","Quarter","Fecha","Adopción %","Desvinculaciones Q","Frames RFD","Inst. DS","Total"], 1):
     hdr(ws5, 1, i, h)
 row = 2
 for entry in sorted(report.get("history",[]), key=lambda x: (x["team"], x["quarter"])):
@@ -512,13 +494,13 @@ for entry in sorted(report.get("history",[]), key=lambda x: (x["team"], x["quart
     dat(ws5, row, 4, entry.get("date",""))
     r = entry["adoptionRate"]
     dat(ws5, row, 5, f"{r}%", bold=True, align="center", color=rc(r))
-    dr = entry.get("detachRate")
-    dat(ws5, row, 6, f"{dr}%" if dr is not None else "—", bold=True, align="center", color=detach_color(dr))
+    dch = entry.get("detachments")
+    dat(ws5, row, 6, dch if dch is not None else "—", bold=True, align="center", color="FFBA7517" if dch else "FF8C8880")
     dat(ws5, row, 7, entry.get("totalRfdFrames",0), align="center")
     dat(ws5, row, 8, entry.get("totalDs",0), align="center", color="FF1A7FA8")
     dat(ws5, row, 9, entry.get("totalInstances",0), align="center")
     row += 1
-for col, w in zip(range(1,10), [24,18,12,14,12,11,12,12,12]):
+for col, w in zip(range(1,10), [24,18,12,14,12,16,12,12,12]):
     ws5.column_dimensions[get_column_letter(col)].width = w
 
 wb.save("${outputPath}")
@@ -593,15 +575,9 @@ async function run() {
   for (const team of teamsData) {
     const detach = detachByCategory[team.category];
     if (detach) {
-      team.detachRate = detach.detachRate;
-      team.detachRateExact = detach.detachRateExact;
       team.detachments = detach.detachments;
-      team.detachInsertions = detach.insertions;
     } else {
-      team.detachRate = null;
-      team.detachRateExact = null;
       team.detachments = null;
-      team.detachInsertions = null;
     }
   }
 
@@ -620,7 +596,6 @@ async function run() {
       totalRfdFrames: team.totalRfdFrames,
       totalDs: team.dsInstances,
       totalInstances: team.totalInstances,
-      detachRate: team.detachRate,
       detachments: team.detachments,
     };
     if (existingIdx >= 0) { history[existingIdx] = entry; } else { history.push(entry); }
@@ -637,7 +612,7 @@ async function run() {
   console.log(`\nReport saved to docs/report.json`);
   console.log("\n=== Summary ===");
   for (const team of teamsData) {
-    const dr = team.detachments !== null ? `${team.detachments} detach (${team.detachRateExact}%)` : "N/A";
+    const dr = team.detachments !== null ? `${team.detachments} desvinculaciones` : "N/A";
     console.log(`[${team.category}] ${team.name}: Adoption ${team.adoptionRate}% | Detach ${dr} | ${team.totalRfdFrames} RFD | ${team.uniqueFamiliesCount} familias únicas`);
   }
 
