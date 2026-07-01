@@ -198,7 +198,7 @@
     "totalRfdFrames": 17,
     "totalDs": 3084,
     "totalInstances": 6001,
-    "detachments": 0,
+    "detachments": null,
     "detachQ2": 22
   },
   {
@@ -210,7 +210,7 @@
     "totalRfdFrames": 12,
     "totalDs": 3852,
     "totalInstances": 4452,
-    "detachments": 1,
+    "detachments": null,
     "detachQ2": 88
   },
   {
@@ -222,7 +222,7 @@
     "totalRfdFrames": 8,
     "totalDs": 7739,
     "totalInstances": 8560,
-    "detachments": 0,
+    "detachments": null,
     "detachQ2": 317
   },
   {
@@ -234,7 +234,7 @@
     "totalRfdFrames": 44,
     "totalDs": 172970,
     "totalInstances": 184326,
-    "detachments": 0,
+    "detachments": null,
     "detachQ2": 17
   },
   {
@@ -246,7 +246,7 @@
     "totalRfdFrames": 5,
     "totalDs": 8539,
     "totalInstances": 10226,
-    "detachments": 0,
+    "detachments": null,
     "detachQ2": 1
   },
   {
@@ -258,7 +258,7 @@
     "totalRfdFrames": 22,
     "totalDs": 14419,
     "totalInstances": 22099,
-    "detachments": 0,
+    "detachments": null,
     "detachQ2": 5
   },
   {
@@ -270,7 +270,7 @@
     "totalRfdFrames": 1,
     "totalDs": 1583,
     "totalInstances": 2109,
-    "detachments": 530,
+    "detachments": null,
     "detachQ2": 615
   },
   {
@@ -282,7 +282,7 @@
     "totalRfdFrames": 1,
     "totalDs": 2286,
     "totalInstances": 3132,
-    "detachments": 530,
+    "detachments": null,
     "detachQ2": 615
   },
   {
@@ -294,7 +294,7 @@
     "totalRfdFrames": 0,
     "totalDs": 0,
     "totalInstances": 0,
-    "detachments": 530,
+    "detachments": null,
     "detachQ2": 615
   },
   {
@@ -306,7 +306,7 @@
     "totalRfdFrames": 2,
     "totalDs": 2650,
     "totalInstances": 3813,
-    "detachments": 530,
+    "detachments": null,
     "detachQ2": 615
   },
   {
@@ -318,7 +318,7 @@
     "totalRfdFrames": 8,
     "totalDs": 3566,
     "totalInstances": 4204,
-    "detachments": 530,
+    "detachments": null,
     "detachQ2": 615
   },
   {
@@ -330,7 +330,7 @@
     "totalRfdFrames": 8,
     "totalDs": 3906,
     "totalInstances": 4593,
-    "detachments": 530,
+    "detachments": null,
     "detachQ2": 615
   },
   {
@@ -342,7 +342,7 @@
     "totalRfdFrames": 2,
     "totalDs": 11370,
     "totalInstances": 12076,
-    "detachments": 530,
+    "detachments": null,
     "detachQ2": 615
   },
   {
@@ -350,10 +350,10 @@
     "category": "Web Corporativa",
     "quarter": "Q3 2026",
     "date": "2026-07-01",
-    "adoptionRate": 87,
-    "totalRfdFrames": 56,
-    "totalDs": 5448,
-    "totalInstances": 6235,
+    "adoptionRate": 84,
+    "totalRfdFrames": 73,
+    "totalDs": 11472,
+    "totalInstances": 13594,
     "detachments": null,
     "detachQ2": 27
   },
@@ -362,11 +362,11 @@
     "category": "Embebidos",
     "quarter": "Q3 2026",
     "date": "2026-07-01",
-    "adoptionRate": 0,
-    "totalRfdFrames": 0,
-    "totalDs": 0,
-    "totalInstances": 0,
-    "detachments": 1,
+    "adoptionRate": 88,
+    "totalRfdFrames": 6,
+    "totalDs": 1424,
+    "totalInstances": 1625,
+    "detachments": null,
     "detachQ2": 35
   }
 ]
