@@ -96,6 +96,7 @@
   .category-rate-sep { font-size: 11px; color: var(--gray-400); }
   .category-divider { flex: 1; height: 1px; background: var(--gray-200); }
   .teams-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 14px; }
+  .teams-grid.compact { grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); }
 
   /* TEAM CARD */
   .team-card { background: var(--white); border: 1px solid var(--gray-200); border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); display: flex; flex-direction: column; }
@@ -371,7 +372,7 @@ function buildTeamCard(team,idx){
         <div class="tc-name">${team.name}</div>
         <div class="tc-chips">
           <div class="adoption-chip ${cls}">${hasData?team.adoptionRate+'%':'Sin datos'}</div>
-          ${(()=>{const dv=getDetachForPeriod(team,activePeriod);return dv!==null&&dv!==undefined?`<div class="detach-chip empty" style="color:var(--amber);background:var(--amber-light)">⚠ ${fmtNum(dv)}`:''})()}
+          ${(()=>{const dv=getDetachForPeriod(team,activePeriod);return dv!==null&&dv!==undefined?`<div class="detach-chip empty" style="color:var(--amber);background:var(--amber-light)">⚠ ${fmtNum(dv)}</div>`:''})()}
         </div>
       </div>
       <div class="tc-bar">
@@ -465,7 +466,7 @@ function buildCategories(teams){
           ${detachTeam?`<span class="category-rate-sep">·</span><span class="category-rate" style="color:var(--amber)">${fmtNum(getDetachForPeriod(detachTeam,activePeriod))} desvinculaciones</span>`:''}
           <div class="category-divider"></div>
         </div>
-        <div class="teams-grid">${items.map((t)=>buildTeamCard(t,t.__idx)).join('')}</div>
+        <div class="teams-grid ${items.length>=4?'compact':''}">${items.map((t)=>buildTeamCard(t,t.__idx)).join('')}</div>
       </div>`;
   }).join('');
 }
