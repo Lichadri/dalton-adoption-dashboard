@@ -198,7 +198,8 @@
     "totalRfdFrames": 17,
     "totalDs": 3084,
     "totalInstances": 6001,
-    "detachments": null
+    "detachments": 0,
+    "detachQ2": 22
   },
   {
     "team": "Somos Corredores",
@@ -209,18 +210,20 @@
     "totalRfdFrames": 12,
     "totalDs": 3852,
     "totalInstances": 4452,
-    "detachments": null
+    "detachments": 1,
+    "detachQ2": 88
   },
   {
     "team": "Protege 365",
     "category": "Protege 365",
     "quarter": "Q3 2026",
     "date": "2026-07-01",
-    "adoptionRate": 90,
-    "totalRfdFrames": 8,
-    "totalDs": 7739,
-    "totalInstances": 8560,
-    "detachments": null
+    "adoptionRate": 88,
+    "totalRfdFrames": 5,
+    "totalDs": 4898,
+    "totalInstances": 5571,
+    "detachments": 0,
+    "detachQ2": 317
   },
   {
     "team": "Nueva Web Empresas",
@@ -231,7 +234,8 @@
     "totalRfdFrames": 44,
     "totalDs": 172970,
     "totalInstances": 184326,
-    "detachments": null
+    "detachments": 0,
+    "detachQ2": 17
   },
   {
     "team": "Portal Digital de Siniestros",
@@ -242,7 +246,8 @@
     "totalRfdFrames": 5,
     "totalDs": 8539,
     "totalInstances": 10226,
-    "detachments": null
+    "detachments": 0,
+    "detachQ2": 1
   },
   {
     "team": "Modelo Día",
@@ -253,7 +258,8 @@
     "totalRfdFrames": 22,
     "totalDs": 14419,
     "totalInstances": 22099,
-    "detachments": null
+    "detachments": 0,
+    "detachQ2": 5
   },
   {
     "team": "SOAT",
@@ -264,7 +270,8 @@
     "totalRfdFrames": 1,
     "totalDs": 1583,
     "totalInstances": 2109,
-    "detachments": 530
+    "detachments": 530,
+    "detachQ2": 615
   },
   {
     "team": "Vehicular",
@@ -275,7 +282,8 @@
     "totalRfdFrames": 1,
     "totalDs": 2286,
     "totalInstances": 3132,
-    "detachments": 530
+    "detachments": 530,
+    "detachQ2": 615
   },
   {
     "team": "Auto Efectivo",
@@ -286,7 +294,8 @@
     "totalRfdFrames": 0,
     "totalDs": 0,
     "totalInstances": 0,
-    "detachments": 530
+    "detachments": 530,
+    "detachQ2": 615
   },
   {
     "team": "Vehicular Todo Riesgo",
@@ -297,7 +306,8 @@
     "totalRfdFrames": 2,
     "totalDs": 2650,
     "totalInstances": 3813,
-    "detachments": 530
+    "detachments": 530,
+    "detachQ2": 615
   },
   {
     "team": "Viajes",
@@ -308,7 +318,8 @@
     "totalRfdFrames": 8,
     "totalDs": 3566,
     "totalInstances": 4204,
-    "detachments": 530
+    "detachments": 530,
+    "detachQ2": 615
   },
   {
     "team": "VDT",
@@ -319,39 +330,43 @@
     "totalRfdFrames": 8,
     "totalDs": 3906,
     "totalInstances": 4593,
-    "detachments": 530
+    "detachments": 530,
+    "detachQ2": 615
   },
   {
     "team": "Venta Directa",
     "category": "Ecommerce",
     "quarter": "Q3 2026",
     "date": "2026-07-01",
-    "adoptionRate": 94,
-    "totalRfdFrames": 2,
-    "totalDs": 11370,
-    "totalInstances": 12076,
-    "detachments": 530
+    "adoptionRate": 95,
+    "totalRfdFrames": 1,
+    "totalDs": 6030,
+    "totalInstances": 6362,
+    "detachments": 530,
+    "detachQ2": 615
   },
   {
     "team": "Web Corporativa",
     "category": "Web Corporativa",
     "quarter": "Q3 2026",
     "date": "2026-07-01",
-    "adoptionRate": 84,
-    "totalRfdFrames": 73,
-    "totalDs": 11472,
-    "totalInstances": 13594,
-    "detachments": null
+    "adoptionRate": 87,
+    "totalRfdFrames": 5,
+    "totalDs": 359,
+    "totalInstances": 412,
+    "detachments": null,
+    "detachQ2": 27
   },
   {
     "team": "Embebidos",
     "category": "Embebidos",
     "quarter": "Q3 2026",
     "date": "2026-07-01",
-    "adoptionRate": 88,
-    "totalRfdFrames": 6,
-    "totalDs": 1424,
-    "totalInstances": 1625,
-    "detachments": null
+    "adoptionRate": 89,
+    "totalRfdFrames": 1,
+    "totalDs": 296,
+    "totalInstances": 334,
+    "detachments": 1,
+    "detachQ2": 35
   }
 ]
