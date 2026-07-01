@@ -257,7 +257,8 @@ async function getDetachAllPeriods() {
 // (no filtrado por categoría — la API no permite ese cruce de forma directa)
 async function getTopDetachedComponents(limit = 15) {
   console.log("\nFetching top detached components (library-wide)...");
-  const { start, end } = getQuarterDateRange();
+  const ranges = getDateRanges();
+  const { start, end } = ranges.annual; // usar rango anual para top componentes
 
   const componentTotals = {}; // component_key -> { name, setName, detachments, insertions }
   let cursor = null;
