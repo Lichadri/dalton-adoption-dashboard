@@ -243,13 +243,10 @@
 
 <script>
 const TARGET = 75;
-const DETACH_TARGET = 15; // por debajo de esto es "bueno"
 
 function rateClass(r){if(!r)return"empty";if(r>=TARGET)return"high";if(r>=50)return"mid";return"low";}
 function rateColor(r){if(!r)return"var(--gray-400)";if(r>=TARGET)return"var(--green)";if(r>=50)return"var(--yellow)";return"var(--red)";}
-function detachClass(r){if(r===null||r===undefined)return"empty";if(r<15)return"low";if(r<30)return"mid";return"high";}
-function detachColor(r){if(r===null||r===undefined)return"var(--gray-400)";if(r<15)return"var(--green)";if(r<30)return"var(--yellow)";return"var(--red)";}
-function fmtDetachExact(r){if(r===null||r===undefined)return"—";if(r<0.1)return"<0.1%";return r.toFixed(r<10?1:0)+"%";}
+// detach helpers removed — measuring only absolute count, not rate
 function fmtNum(n){return(n||0).toLocaleString("es-PE");}
 function fmtDate(iso){if(!iso)return"—";return new Date(iso).toLocaleDateString("es-PE",{day:"2-digit",month:"short",year:"numeric",hour:"2-digit",minute:"2-digit"});}
 
@@ -281,16 +278,12 @@ function buildSummary(teams){
   const dsPct=totalInst>0?Math.round((totalDs/totalInst)*100):0;
   const intPct=100-dsPct;
 
-  const withDetach=teams.filter(t=>t.detachRate!==null&&t.detachRate!==undefined);
-  const totalDetach=withDetach.reduce((s,t)=>s+(t.detachments||0),0);
-  const totalInsertDetach=withDetach.reduce((s,t)=>s+(t.detachInsertions||0),0);
-  const totalDetachActions=totalDetach+totalInsertDetach;
-  const avgDetachRate=totalDetachActions>0?Math.round((totalDetach/totalDetachActions)*100):null;
+  const totalDetach=teams.reduce((s,t)=>s+(t.detachments||0),0);
 
   return`
     <div class="summary-grid summary-grid-5">
       <div class="summary-card"><div class="summary-card-label">Adopción DS</div><div class="summary-card-value ${avgRate>=TARGET?'green':'cyan'}">${avgRate}%</div><div class="summary-card-sub">Target: ${TARGET}%</div></div>
-      <div class="summary-card"><div class="summary-card-label">Desvinculaciones</div><div class="summary-card-value" style="color:${detachColor(avgDetachRate)}">${totalDetachActions>0?fmtNum(totalDetach):'—'}</div><div class="summary-card-sub">${totalDetachActions>0?fmtDetachExact((totalDetach/totalDetachActions)*100)+' del total de acciones':'Sin datos del periodo'}</div></div>
+      <div class="summary-card"><div class="summary-card-label">Desvinculaciones</div><div class="summary-card-value" style="color:var(--amber)">${totalDetach>0?fmtNum(totalDetach):'—'}</div><div class="summary-card-sub">${totalDetach>0?'En el quarter actual':'Sin datos del periodo'}</div></div>
       <div class="summary-card"><div class="summary-card-label">Frames Ready for Dev</div><div class="summary-card-value">${fmtNum(totalFrames)}</div><div class="summary-card-sub">En ${totalFiles} archivos</div></div>
       <div class="summary-card"><div class="summary-card-label">Instancias DS</div><div class="summary-card-value cyan">${fmtNum(totalDs)}</div><div class="summary-card-sub">De ${fmtNum(totalInst)} totales</div></div>
       <div class="summary-card"><div class="summary-card-label">Activos medidos</div><div class="summary-card-value">${teams.length}</div><div class="summary-card-sub">Archivos: ${totalFiles}</div></div>
@@ -317,8 +310,7 @@ function buildTeamCard(team,idx){
   const top5Internal=(team.top20Internal||[]).slice(0,5);
   const maxInt=top5Internal[0]?.count||1;
   const id=`tc${idx}`;
-  const hasDetach=team.detachRate!==null&&team.detachRate!==undefined;
-  const dCls=detachClass(team.detachRate);
+  const hasDetach=team.detachments!==null&&team.detachments!==undefined;
 
   const filesHtml=team.files.map(f=>{
     if(f.error)return`<div class="tc-file-row"><span class="tc-file-name">${f.name}</span><span style="font-size:10px;color:var(--red)">Error</span></div>`;
@@ -343,12 +335,10 @@ function buildTeamCard(team,idx){
 
   const detachHtml=hasDetach
     ?`<div class="tc-detach-row">
-        <div class="tc-detach-stat"><span class="tc-detach-label">Desvinculaciones</span><span class="tc-detach-value" style="font-size:13px;font-weight:700">${fmtNum(team.detachments)}</span></div>
-        <div class="tc-detach-stat"><span class="tc-detach-label">Inserciones</span><span class="tc-detach-value">${fmtNum(team.detachInsertions)}</span></div>
-        <div class="tc-detach-stat"><span class="tc-detach-label">% sobre el total</span><span class="tc-detach-value">${fmtDetachExact(team.detachRateExact)}</span></div>
-        <div class="tc-detach-note">Datos de la librería Dalton vía Figma Analytics, agregados a nivel de Figma Team — no por archivo individual. El % suele verse bajo porque el volumen de inserciones es alto.</div>
+        <div class="tc-detach-stat"><span class="tc-detach-label">Desvinculaciones este quarter</span><span class="tc-detach-value" style="font-size:15px;font-weight:700;color:var(--amber)">${fmtNum(team.detachments)}</span></div>
+        <div class="tc-detach-note">Dato de Figma Library Analytics, agregado a nivel de Figma Team — no por archivo individual.</div>
       </div>`
-    :`<div class="tc-empty">Sin datos de detach para esta categoría en el periodo</div>`;
+    :`<div class="tc-empty">Sin datos de desvinculaciones para esta categoría en el periodo</div>`;
 
   return`
     <div class="team-card">
@@ -356,7 +346,7 @@ function buildTeamCard(team,idx){
         <div class="tc-name">${team.name}</div>
         <div class="tc-chips">
           <div class="adoption-chip ${cls}">${hasData?team.adoptionRate+'%':'Sin datos'}</div>
-          ${hasDetach?`<div class="detach-chip ${dCls}">⚠ ${fmtNum(team.detachments)}</div>`:''}
+          ${hasDetach?`<div class="detach-chip empty" style="color:var(--amber);background:var(--amber-light)">⚠ ${fmtNum(team.detachments)}</div>`:''}
         </div>
       </div>
       <div class="tc-bar">
@@ -447,7 +437,7 @@ function buildCategories(teams){
         <div class="category-header">
           <span class="category-label">${cat}</span>
           <span class="category-rate" style="color:${rateColor(catRate)}">${catRate}% adopción</span>
-          ${detachTeam?`<span class="category-rate-sep">·</span><span class="category-rate" style="color:${detachColor(detachTeam.detachRate)}">${fmtNum(detachTeam.detachments)} desvinculaciones</span>`:''}
+          ${detachTeam?`<span class="category-rate-sep">·</span><span class="category-rate" style="color:var(--amber)">${fmtNum(detachTeam.detachments)} desvinculaciones</span>`:''}
           <div class="category-divider"></div>
         </div>
         <div class="teams-grid">${items.map((t)=>buildTeamCard(t,t.__idx)).join('')}</div>
@@ -468,17 +458,15 @@ function buildQualityView(teams,topDetachedComponents){
   const cards=sortedCats.map(([cat,items])=>{
     const team=items[0];
     const hasDetach=team.detachments!==null&&team.detachments!==undefined;
-    const cls=hasDetach?detachClass(team.detachRate):"empty";
     return`
       <div class="quality-card">
         <div class="quality-card-header">
           <span class="quality-card-name">${cat}</span>
-          <span class="detach-chip ${cls}">${hasDetach?fmtNum(team.detachments):'Sin datos'}</span>
+          <span class="detach-chip empty" style="color:var(--amber);background:var(--amber-light)">${hasDetach?fmtNum(team.detachments):'Sin datos'}</span>
         </div>
         ${hasDetach?`
           <div class="quality-stats-row">
-            <span>Inserciones: <b>${fmtNum(team.detachInsertions)}</b></span>
-            <span>% del total: <b>${fmtDetachExact(team.detachRateExact)}</b></span>
+            <span>Desvinculaciones: <b style="color:var(--amber)">${fmtNum(team.detachments)}</b></span>
           </div>
         `:`<div class="quality-empty-note">No hay datos de Library Analytics para este Figma Team en el periodo actual.</div>`}
       </div>`;
@@ -525,13 +513,13 @@ function buildTrend(history){
       const e=entries.find(x=>x.quarter===q);
       if(e){
         const dch=e.detachments;
-        html+=`<td><span class="trend-pct ${rateClass(e.adoptionRate)}">${e.adoptionRate}%</span>${dch!==null&&dch!==undefined?`<span class="trend-sub" style="color:${detachColor(e.detachRate)}">⚠ ${fmtNum(dch)}</span>`:''}</td>`;
+        html+=`<td><span class="trend-pct ${rateClass(e.adoptionRate)}">${e.adoptionRate}%</span>${dch!==null&&dch!==undefined?`<span class="trend-sub" style="color:var(--amber)">⚠ ${fmtNum(dch)}</span>`:''}</td>`;
       }
       else{html+=`<td style="color:var(--gray-400)">—</td>`;}
     }
     html+=`</tr>`;
   }
-  html+=`</tbody></table><div class="target-note"><div class="target-dot"></div>Adopción target: ${TARGET}% · Detach target: &lt;${DETACH_TARGET}%</div>`;
+  html+=`</tbody></table><div class="target-note"><div class="target-dot"></div>Adopción target: ${TARGET}% — Verde ≥${TARGET}% · Amarillo ≥50% · Rojo &lt;50%</div>`;
   return html;
 }
 
