@@ -1,32 +1,32 @@
 {
-  "generatedAt": "2026-06-30T22:33:49.694Z",
-  "quarter": "Q2 2026",
+  "generatedAt": "2026-07-01T03:38:41.422Z",
+  "quarter": "Q3 2026",
   "teams": [
     {
       "name": "MEP",
       "category": "MEP",
       "adoptionRate": 51,
       "totalRfdFrames": 17,
-      "dsInstances": 3018,
-      "internalInstances": 2873,
-      "totalInstances": 5891,
+      "dsInstances": 3084,
+      "internalInstances": 2917,
+      "totalInstances": 6001,
       "uniqueFamiliesCount": 24,
       "uniqueFamilies": [
         {
           "name": "Chips",
-          "count": 728
+          "count": 752
         },
         {
           "name": "Tab",
-          "count": 661
+          "count": 677
         },
         {
           "name": "Alert",
-          "count": 403
+          "count": 413
         },
         {
           "name": "Button",
-          "count": 297
+          "count": 301
         },
         {
           "name": "Accordion",
@@ -34,15 +34,15 @@
         },
         {
           "name": "Tag",
-          "count": 206
+          "count": 209
         },
         {
           "name": "Commercial Chips",
-          "count": 174
+          "count": 180
         },
         {
           "name": "Bottom app bar",
-          "count": 138
+          "count": 140
         },
         {
           "name": "Checkbox",
@@ -50,7 +50,7 @@
         },
         {
           "name": "Comparador",
-          "count": 27
+          "count": 28
         },
         {
           "name": "Slider Controls",
@@ -112,15 +112,15 @@
       "top20Internal": [
         {
           "name": "menú",
-          "count": 1761
+          "count": 1786
         },
         {
           "name": "card_accion",
-          "count": 217
+          "count": 220
         },
         {
           "name": "card_atajo_home",
-          "count": 212
+          "count": 218
         },
         {
           "name": "documento simple",
@@ -128,31 +128,31 @@
         },
         {
           "name": "Seguros card",
-          "count": 45
+          "count": 48
         },
         {
           "name": "Card_ beneficios",
-          "count": 37
+          "count": 38
         },
         {
           "name": "beneficios vehiculares",
-          "count": 36
+          "count": 37
         },
         {
           "name": "informacion de poliza",
-          "count": 34
+          "count": 35
         },
         {
           "name": "carro",
-          "count": 26
+          "count": 27
         },
         {
           "name": "buscar clínicas",
-          "count": 26
+          "count": 27
         },
         {
           "name": "hogar",
-          "count": 26
+          "count": 27
         },
         {
           "name": "drag",
@@ -163,11 +163,11 @@
           "count": 25
         },
         {
-          "name": "error duda",
-          "count": 23
+          "name": "logo beneficios",
+          "count": 24
         },
         {
-          "name": "logo beneficios",
+          "name": "error duda",
           "count": 23
         },
         {
@@ -362,23 +362,23 @@
           "key": "dJJGQrXarbfgwuowDQt5LS",
           "name": "Seguros MEP 2025",
           "rfdFrameCount": 11,
-          "dsInstances": 2395,
-          "internalInstances": 2420,
-          "totalInstances": 4815,
+          "dsInstances": 2461,
+          "internalInstances": 2464,
+          "totalInstances": 4925,
           "adoptionRate": 50,
           "uniqueFamiliesCount": 12,
           "uniqueFamilies": [
             {
               "name": "Chips",
-              "count": 691
+              "count": 715
             },
             {
               "name": "Tab",
-              "count": 524
+              "count": 540
             },
             {
               "name": "Alert",
-              "count": 329
+              "count": 339
             },
             {
               "name": "Accordion",
@@ -386,23 +386,23 @@
             },
             {
               "name": "Button",
-              "count": 148
+              "count": 152
             },
             {
               "name": "Commercial Chips",
-              "count": 144
+              "count": 150
             },
             {
               "name": "Tag",
-              "count": 143
+              "count": 146
             },
             {
               "name": "Bottom app bar",
-              "count": 138
+              "count": 140
             },
             {
               "name": "Comparador",
-              "count": 27
+              "count": 28
             },
             {
               "name": "Slider Controls",
@@ -420,15 +420,15 @@
           "top20Internal": [
             {
               "name": "menú",
-              "count": 1561
+              "count": 1586
             },
             {
               "name": "card_accion",
-              "count": 217
+              "count": 220
             },
             {
               "name": "card_atajo_home",
-              "count": 172
+              "count": 178
             },
             {
               "name": "documento simple",
@@ -436,42 +436,42 @@
             },
             {
               "name": "Seguros card",
-              "count": 45
+              "count": 48
             },
             {
               "name": "Card_ beneficios",
-              "count": 31
+              "count": 32
             },
             {
               "name": "beneficios vehiculares",
-              "count": 30
+              "count": 31
             },
             {
               "name": "informacion de poliza",
-              "count": 27
+              "count": 28
             },
             {
               "name": "carro",
-              "count": 26
+              "count": 27
             },
             {
               "name": "buscar clínicas",
-              "count": 26
+              "count": 27
             },
             {
               "name": "hogar",
-              "count": 26
+              "count": 27
             },
             {
               "name": "drag",
               "count": 26
             },
             {
-              "name": "error duda",
-              "count": 23
+              "name": "logo beneficios",
+              "count": 24
             },
             {
-              "name": "logo beneficios",
+              "name": "error duda",
               "count": 23
             },
             {
@@ -565,10 +565,7 @@
           ]
         }
       ],
-      "detachRate": 0,
-      "detachRateExact": 0.13,
-      "detachments": 22,
-      "detachInsertions": 17415
+      "detachments": null
     },
     {
       "name": "Somos Corredores",
@@ -1177,10 +1174,7 @@
           ]
         }
       ],
-      "detachRate": 0,
-      "detachRateExact": 0.28,
-      "detachments": 87,
-      "detachInsertions": 31512
+      "detachments": null
     },
     {
       "name": "Protege 365",
@@ -1849,10 +1843,7 @@
           ]
         }
       ],
-      "detachRate": 5,
-      "detachRateExact": 4.63,
-      "detachments": 317,
-      "detachInsertions": 6526
+      "detachments": null
     },
     {
       "name": "Nueva Web Empresas",
@@ -2609,10 +2600,7 @@
           ]
         }
       ],
-      "detachRate": 0,
-      "detachRateExact": 0.02,
-      "detachments": 17,
-      "detachInsertions": 69191
+      "detachments": null
     },
     {
       "name": "Portal Digital de Siniestros",
@@ -3067,10 +3055,7 @@
           ]
         }
       ],
-      "detachRate": 0,
-      "detachRateExact": 0.02,
-      "detachments": 1,
-      "detachInsertions": 6637
+      "detachments": null
     },
     {
       "name": "Modelo Día",
@@ -3933,10 +3918,7 @@
           ]
         }
       ],
-      "detachRate": 0,
-      "detachRateExact": 0.12,
-      "detachments": 5,
-      "detachInsertions": 4334
+      "detachments": null
     },
     {
       "name": "SOAT",
@@ -4343,10 +4325,7 @@
           ]
         }
       ],
-      "detachRate": 2,
-      "detachRateExact": 2.18,
-      "detachments": 615,
-      "detachInsertions": 27625
+      "detachments": 530
     },
     {
       "name": "Vehicular",
@@ -4761,10 +4740,7 @@
           ]
         }
       ],
-      "detachRate": 2,
-      "detachRateExact": 2.18,
-      "detachments": 615,
-      "detachInsertions": 27625
+      "detachments": 530
     },
     {
       "name": "Auto Efectivo",
@@ -4791,10 +4767,7 @@
           "top20Internal": []
         }
       ],
-      "detachRate": 2,
-      "detachRateExact": 2.18,
-      "detachments": 615,
-      "detachInsertions": 27625
+      "detachments": 530
     },
     {
       "name": "Vehicular Todo Riesgo",
@@ -5217,10 +5190,7 @@
           ]
         }
       ],
-      "detachRate": 2,
-      "detachRateExact": 2.18,
-      "detachments": 615,
-      "detachInsertions": 27625
+      "detachments": 530
     },
     {
       "name": "Viajes",
@@ -5643,10 +5613,7 @@
           ]
         }
       ],
-      "detachRate": 2,
-      "detachRateExact": 2.18,
-      "detachments": 615,
-      "detachInsertions": 27625
+      "detachments": 530
     },
     {
       "name": "VDT",
@@ -6069,10 +6036,7 @@
           ]
         }
       ],
-      "detachRate": 2,
-      "detachRateExact": 2.18,
-      "detachments": 615,
-      "detachInsertions": 27625
+      "detachments": 530
     },
     {
       "name": "Venta Directa",
@@ -6543,10 +6507,7 @@
           ]
         }
       ],
-      "detachRate": 2,
-      "detachRateExact": 2.18,
-      "detachments": 615,
-      "detachInsertions": 27625
+      "detachments": 530
     },
     {
       "name": "Web Corporativa",
@@ -7257,10 +7218,7 @@
           ]
         }
       ],
-      "detachRate": 0,
-      "detachRateExact": 0.14,
-      "detachments": 27,
-      "detachInsertions": 19514
+      "detachments": null
     },
     {
       "name": "Embebidos",
@@ -7603,10 +7561,7 @@
           ]
         }
       ],
-      "detachRate": 0,
-      "detachRateExact": 0.32,
-      "detachments": 34,
-      "detachInsertions": 10670
+      "detachments": null
     }
   ],
   "history": [
@@ -7799,83 +7754,248 @@
       "totalInstances": 12076,
       "detachRate": 2,
       "detachments": 615
+    },
+    {
+      "team": "MEP",
+      "category": "MEP",
+      "quarter": "Q3 2026",
+      "date": "2026-07-01",
+      "adoptionRate": 51,
+      "totalRfdFrames": 17,
+      "totalDs": 3084,
+      "totalInstances": 6001,
+      "detachments": null
+    },
+    {
+      "team": "Somos Corredores",
+      "category": "Somos Corredores",
+      "quarter": "Q3 2026",
+      "date": "2026-07-01",
+      "adoptionRate": 87,
+      "totalRfdFrames": 12,
+      "totalDs": 3852,
+      "totalInstances": 4452,
+      "detachments": null
+    },
+    {
+      "team": "Protege 365",
+      "category": "Protege 365",
+      "quarter": "Q3 2026",
+      "date": "2026-07-01",
+      "adoptionRate": 90,
+      "totalRfdFrames": 8,
+      "totalDs": 7739,
+      "totalInstances": 8560,
+      "detachments": null
+    },
+    {
+      "team": "Nueva Web Empresas",
+      "category": "Nueva Web Empresas",
+      "quarter": "Q3 2026",
+      "date": "2026-07-01",
+      "adoptionRate": 94,
+      "totalRfdFrames": 44,
+      "totalDs": 172970,
+      "totalInstances": 184326,
+      "detachments": null
+    },
+    {
+      "team": "Portal Digital de Siniestros",
+      "category": "Portal Digital de Siniestros",
+      "quarter": "Q3 2026",
+      "date": "2026-07-01",
+      "adoptionRate": 84,
+      "totalRfdFrames": 5,
+      "totalDs": 8539,
+      "totalInstances": 10226,
+      "detachments": null
+    },
+    {
+      "team": "Modelo Día",
+      "category": "Modelo Día",
+      "quarter": "Q3 2026",
+      "date": "2026-07-01",
+      "adoptionRate": 65,
+      "totalRfdFrames": 22,
+      "totalDs": 14419,
+      "totalInstances": 22099,
+      "detachments": null
+    },
+    {
+      "team": "SOAT",
+      "category": "Ecommerce",
+      "quarter": "Q3 2026",
+      "date": "2026-07-01",
+      "adoptionRate": 75,
+      "totalRfdFrames": 1,
+      "totalDs": 1583,
+      "totalInstances": 2109,
+      "detachments": 530
+    },
+    {
+      "team": "Vehicular",
+      "category": "Ecommerce",
+      "quarter": "Q3 2026",
+      "date": "2026-07-01",
+      "adoptionRate": 73,
+      "totalRfdFrames": 1,
+      "totalDs": 2286,
+      "totalInstances": 3132,
+      "detachments": 530
+    },
+    {
+      "team": "Auto Efectivo",
+      "category": "Ecommerce",
+      "quarter": "Q3 2026",
+      "date": "2026-07-01",
+      "adoptionRate": 0,
+      "totalRfdFrames": 0,
+      "totalDs": 0,
+      "totalInstances": 0,
+      "detachments": 530
+    },
+    {
+      "team": "Vehicular Todo Riesgo",
+      "category": "Ecommerce",
+      "quarter": "Q3 2026",
+      "date": "2026-07-01",
+      "adoptionRate": 69,
+      "totalRfdFrames": 2,
+      "totalDs": 2650,
+      "totalInstances": 3813,
+      "detachments": 530
+    },
+    {
+      "team": "Viajes",
+      "category": "Ecommerce",
+      "quarter": "Q3 2026",
+      "date": "2026-07-01",
+      "adoptionRate": 85,
+      "totalRfdFrames": 8,
+      "totalDs": 3566,
+      "totalInstances": 4204,
+      "detachments": 530
+    },
+    {
+      "team": "VDT",
+      "category": "Ecommerce",
+      "quarter": "Q3 2026",
+      "date": "2026-07-01",
+      "adoptionRate": 85,
+      "totalRfdFrames": 8,
+      "totalDs": 3906,
+      "totalInstances": 4593,
+      "detachments": 530
+    },
+    {
+      "team": "Venta Directa",
+      "category": "Ecommerce",
+      "quarter": "Q3 2026",
+      "date": "2026-07-01",
+      "adoptionRate": 94,
+      "totalRfdFrames": 2,
+      "totalDs": 11370,
+      "totalInstances": 12076,
+      "detachments": 530
+    },
+    {
+      "team": "Web Corporativa",
+      "category": "Web Corporativa",
+      "quarter": "Q3 2026",
+      "date": "2026-07-01",
+      "adoptionRate": 84,
+      "totalRfdFrames": 73,
+      "totalDs": 11472,
+      "totalInstances": 13594,
+      "detachments": null
+    },
+    {
+      "team": "Embebidos",
+      "category": "Embebidos",
+      "quarter": "Q3 2026",
+      "date": "2026-07-01",
+      "adoptionRate": 88,
+      "totalRfdFrames": 6,
+      "totalDs": 1424,
+      "totalInstances": 1625,
+      "detachments": null
     }
   ],
   "topDetachedComponents": [
     {
       "name": "type_option",
-      "detachments": 485,
-      "insertions": 2331
-    },
-    {
-      "name": "section_footer",
-      "detachments": 86,
-      "insertions": 4193
-    },
-    {
-      "name": "Modal Informative",
-      "detachments": 58,
-      "insertions": 767
-    },
-    {
-      "name": "Button",
-      "detachments": 53,
-      "insertions": 69524
-    },
-    {
-      "name": "src_option_redes",
-      "detachments": 50,
+      "detachments": 288,
       "insertions": 0
     },
     {
-      "name": "reemplazar slot",
-      "detachments": 40,
-      "insertions": 3726
+      "name": "section_footer",
+      "detachments": 48,
+      "insertions": 0
     },
     {
-      "name": "Radio Outline",
-      "detachments": 34,
-      "insertions": 851
+      "name": "src_option_redes",
+      "detachments": 30,
+      "insertions": 0
+    },
+    {
+      "name": "Button",
+      "detachments": 24,
+      "insertions": 220
+    },
+    {
+      "name": "reemplazar slot",
+      "detachments": 24,
+      "insertions": 0
     },
     {
       "name": "Radio Atom",
-      "detachments": 24,
-      "insertions": 8156
+      "detachments": 20,
+      "insertions": 0
     },
     {
-      "name": "Chips Status",
-      "detachments": 23,
-      "insertions": 10545
+      "name": "Radio Outline",
+      "detachments": 18,
+      "insertions": 6
     },
     {
       "name": "title_+_options",
-      "detachments": 23,
-      "insertions": 1396
-    },
-    {
-      "name": "Accordion",
-      "detachments": 21,
-      "insertions": 932
-    },
-    {
-      "name": "Input",
-      "detachments": 19,
-      "insertions": 16685
+      "detachments": 12,
+      "insertions": 0
     },
     {
       "name": "Checkbox With Text",
-      "detachments": 16,
-      "insertions": 4019
-    },
-    {
-      "name": "01",
-      "detachments": 13,
-      "insertions": 1097
+      "detachments": 10,
+      "insertions": 16
     },
     {
       "name": "Checkbox Atom",
-      "detachments": 11,
-      "insertions": 3789
+      "detachments": 10,
+      "insertions": 0
+    },
+    {
+      "name": "01",
+      "detachments": 9,
+      "insertions": 129
+    },
+    {
+      "name": "Chips Status",
+      "detachments": 8,
+      "insertions": 2
+    },
+    {
+      "name": "src_option_stores_download",
+      "detachments": 6,
+      "insertions": 0
+    },
+    {
+      "name": "Simple",
+      "detachments": 5,
+      "insertions": 28
+    },
+    {
+      "name": "Stepper Desktop",
+      "detachments": 3,
+      "insertions": 14
     }
   ]
 }
