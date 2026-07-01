@@ -232,11 +232,7 @@
     <span class="header-subtitle">· Adoption Dashboard</span>
   </div>
   <div class="header-meta">
-    <div class="period-toggle" id="headerPeriodToggle" style="display:none">
-      <button class="period-btn active" data-period="q2" onclick="switchPeriod('q2')">Q2 2026</button>
-      <button class="period-btn" data-period="current" onclick="switchPeriod('current')">Q actual</button>
-      <button class="period-btn" data-period="annual" onclick="switchPeriod('annual')">Anual 2026</button>
-    </div>
+    <span id="detachPeriodBadge" style="display:none;font-size:11px;font-weight:600;color:var(--amber);background:var(--amber-light);padding:3px 10px;border-radius:20px">Detach: Q2 2026</span>
     <span class="quarter-badge" id="quarterLabel">—</span>
     <span class="last-updated" id="lastUpdated">Cargando...</span>
     <a class="download-btn" href="reporte-adopcion.xlsx" download>
@@ -276,7 +272,7 @@ function fmtDate(iso){if(!iso)return"—";return new Date(iso).toLocaleDateStrin
 let currentReport = null;
 let activeCategory = "all";
 let activeTab = "resumen";
-let activePeriod = "current"; // "q2" | "current" | "annual"
+let activePeriod = "q2"; // fixed to Q2 until Q3 has sufficient data
 
 function toggle(id){
   const el=document.getElementById(id);
@@ -516,13 +512,9 @@ function buildQualityView(teams,topDetachedComponents){
       })()
     :`<div class="quality-empty-note">Sin datos de componentes desvinculados disponibles.</div>`;
 
-  const q2Label=getPeriodLabel(report,"q2");
-  const currentLabel=getPeriodLabel(report,"current");
-  const annualLabel=getPeriodLabel(report,"annual");
-
   return`
     <div class="quality-intro">
-      <b>Desvinculaciones (detach)</b> cuenta cuántas veces, en el periodo seleccionado, alguien desconectó una instancia de un componente Dalton de su componente maestro — perdiendo las actualizaciones automáticas del sistema. Dato oficial de Figma Library Analytics (requiere plan Enterprise), agregado por <b>Figma Team</b>: activos que comparten un mismo team de Figma muestran el mismo valor. El % es referencial — con volúmenes altos de inserción suele verse cercano a 0 aunque haya desvinculaciones reales, por eso priorizamos el conteo absoluto.
+      <b>Desvinculaciones (detach) — Q2 2026</b> cuenta cuántas veces entre abril y junio 2026 alguien desconectó una instancia de un componente Dalton de su componente maestro — perdiendo las actualizaciones automáticas del sistema. Dato oficial de Figma Library Analytics (requiere plan Enterprise), agregado por <b>Figma Team</b>: activos que comparten un mismo team de Figma muestran el mismo valor. El % es referencial — con volúmenes altos de inserción suele verse cercano a 0 aunque haya desvinculaciones reales, por eso priorizamos el conteo absoluto.
     </div>
     <div class="quality-grid">${cards}</div>
 
@@ -602,14 +594,9 @@ async function loadReport(){
     currentReport=report;
     document.getElementById("quarterLabel").textContent=report.quarter||"—";
     document.getElementById("lastUpdated").textContent="Actualizado: "+fmtDate(report.generatedAt);
-    // Show period toggle and update labels from report data
-    const toggle=document.getElementById("headerPeriodToggle");
-    if(toggle && report.detachPeriods){
-      const btns=toggle.querySelectorAll(".period-btn");
-      const labels={q2:report.detachPeriods.q2Label, current:report.detachPeriods.currentLabel, annual:report.detachPeriods.annualLabel};
-      btns.forEach(b=>{ if(labels[b.dataset.period]) b.textContent=labels[b.dataset.period]; });
-      toggle.style.display="flex";
-    }
+    // Show detach period badge
+    const badge=document.getElementById("detachPeriodBadge");
+    if(badge && report.detachPeriods){ badge.textContent="Detach: "+report.detachPeriods.q2Label; badge.style.display="inline"; }
 
     main.innerHTML=`
       <div class="tabs-bar">
