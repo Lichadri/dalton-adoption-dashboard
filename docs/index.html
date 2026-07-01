@@ -211,6 +211,12 @@
   .target-note { display: flex; align-items: center; gap: 8px; margin-top: 12px; font-size: 11px; color: var(--gray-600); }
   .target-dot { width: 12px; height: 2px; background: var(--cyan); border-radius: 1px; }
 
+  /* PERIOD TOGGLE */
+  .period-toggle { display:flex; gap:4px; background:var(--gray-100); border-radius:10px; padding:4px; }
+  .period-btn { border:none; background:none; padding:6px 14px; font-size:12px; font-weight:600; color:var(--gray-600); border-radius:7px; cursor:pointer; transition:all 0.15s; white-space:nowrap; }
+  .period-btn:hover { color:var(--gray-900); }
+  .period-btn.active { background:var(--white); color:var(--gray-900); box-shadow:var(--shadow); }
+
   @media (max-width: 900px) { .summary-grid, .summary-grid.summary-grid-5 { grid-template-columns: repeat(2,1fr); } }
   @media (max-width: 600px) { .main { padding: 16px; } .header { padding: 0 16px; } .header-subtitle { display: none; } .dist-card { flex-direction: column; align-items: flex-start; } .tabs-bar { flex-direction: column; align-items: stretch; } }
 </style>
@@ -247,12 +253,24 @@ const TARGET = 75;
 function rateClass(r){if(!r)return"empty";if(r>=TARGET)return"high";if(r>=50)return"mid";return"low";}
 function rateColor(r){if(!r)return"var(--gray-400)";if(r>=TARGET)return"var(--green)";if(r>=50)return"var(--yellow)";return"var(--red)";}
 // detach helpers removed — measuring only absolute count, not rate
+function getDetachForPeriod(team, period) {
+  if (period === "q2") return team.detachQ2 ?? null;
+  if (period === "annual") return team.detachAnnual ?? null;
+  return team.detachCurrent ?? null;
+}
+function getPeriodLabel(report, period) {
+  if (!report?.detachPeriods) return period === "q2" ? "Q2 2026" : period === "annual" ? "Anual 2026" : "Q actual";
+  if (period === "q2") return report.detachPeriods.q2Label;
+  if (period === "annual") return report.detachPeriods.annualLabel;
+  return report.detachPeriods.currentLabel;
+}
 function fmtNum(n){return(n||0).toLocaleString("es-PE");}
 function fmtDate(iso){if(!iso)return"—";return new Date(iso).toLocaleDateString("es-PE",{day:"2-digit",month:"short",year:"numeric",hour:"2-digit",minute:"2-digit"});}
 
 let currentReport = null;
 let activeCategory = "all";
 let activeTab = "resumen";
+let activePeriod = "current"; // "q2" | "current" | "annual"
 
 function toggle(id){
   const el=document.getElementById(id);
@@ -278,12 +296,12 @@ function buildSummary(teams){
   const dsPct=totalInst>0?Math.round((totalDs/totalInst)*100):0;
   const intPct=100-dsPct;
 
-  const totalDetach=teams.reduce((s,t)=>s+(t.detachments||0),0);
+  const totalDetach=teams.reduce((s,t)=>s+(t.detachCurrent||0),0);
 
   return`
     <div class="summary-grid summary-grid-5">
       <div class="summary-card"><div class="summary-card-label">Adopción DS</div><div class="summary-card-value ${avgRate>=TARGET?'green':'cyan'}">${avgRate}%</div><div class="summary-card-sub">Target: ${TARGET}%</div></div>
-      <div class="summary-card"><div class="summary-card-label">Desvinculaciones</div><div class="summary-card-value" style="color:var(--amber)">${totalDetach>0?fmtNum(totalDetach):'—'}</div><div class="summary-card-sub">${totalDetach>0?'En el quarter actual':'Sin datos del periodo'}</div></div>
+      <div class="summary-card"><div class="summary-card-label">Desvinculaciones</div><div class="summary-card-value" style="color:var(--amber)">${totalDetach>0?fmtNum(totalDetach):'—'}</div><div class="summary-card-sub">${totalDetach>0?'Quarter actual · Ver Calidad':'Sin datos del periodo'}</div></div>
       <div class="summary-card"><div class="summary-card-label">Frames Ready for Dev</div><div class="summary-card-value">${fmtNum(totalFrames)}</div><div class="summary-card-sub">En ${totalFiles} archivos</div></div>
       <div class="summary-card"><div class="summary-card-label">Instancias DS</div><div class="summary-card-value cyan">${fmtNum(totalDs)}</div><div class="summary-card-sub">De ${fmtNum(totalInst)} totales</div></div>
       <div class="summary-card"><div class="summary-card-label">Activos medidos</div><div class="summary-card-value">${teams.length}</div><div class="summary-card-sub">Archivos: ${totalFiles}</div></div>
@@ -310,7 +328,6 @@ function buildTeamCard(team,idx){
   const top5Internal=(team.top20Internal||[]).slice(0,5);
   const maxInt=top5Internal[0]?.count||1;
   const id=`tc${idx}`;
-  const hasDetach=team.detachments!==null&&team.detachments!==undefined;
 
   const filesHtml=team.files.map(f=>{
     if(f.error)return`<div class="tc-file-row"><span class="tc-file-name">${f.name}</span><span style="font-size:10px;color:var(--red)">Error</span></div>`;
@@ -333,12 +350,15 @@ function buildTeamCard(team,idx){
       </div>`).join('')
     :`<div class="tc-empty">Sin datos</div>`;
 
+  const hasDetach=(team.detachQ2!==null||team.detachCurrent!==null||team.detachAnnual!==null);
   const detachHtml=hasDetach
     ?`<div class="tc-detach-row">
-        <div class="tc-detach-stat"><span class="tc-detach-label">Desvinculaciones este quarter</span><span class="tc-detach-value" style="font-size:15px;font-weight:700;color:var(--amber)">${fmtNum(team.detachments)}</span></div>
+        <div class="tc-detach-stat"><span class="tc-detach-label">Q2 2026</span><span class="tc-detach-value" style="font-weight:700;color:var(--amber)">${team.detachQ2!==null?fmtNum(team.detachQ2):'—'}</span></div>
+        <div class="tc-detach-stat"><span class="tc-detach-label">Q3 2026 (en curso)</span><span class="tc-detach-value" style="font-weight:700;color:var(--amber)">${team.detachCurrent!==null?fmtNum(team.detachCurrent):'—'}</span></div>
+        <div class="tc-detach-stat"><span class="tc-detach-label">Anual 2026</span><span class="tc-detach-value" style="font-weight:700;color:var(--amber)">${team.detachAnnual!==null?fmtNum(team.detachAnnual):'—'}</span></div>
         <div class="tc-detach-note">Dato de Figma Library Analytics, agregado a nivel de Figma Team — no por archivo individual.</div>
       </div>`
-    :`<div class="tc-empty">Sin datos de desvinculaciones para esta categoría en el periodo</div>`;
+    :`<div class="tc-empty">Sin datos de desvinculaciones disponibles</div>`;
 
   return`
     <div class="team-card">
@@ -346,7 +366,7 @@ function buildTeamCard(team,idx){
         <div class="tc-name">${team.name}</div>
         <div class="tc-chips">
           <div class="adoption-chip ${cls}">${hasData?team.adoptionRate+'%':'Sin datos'}</div>
-          ${hasDetach?`<div class="detach-chip empty" style="color:var(--amber);background:var(--amber-light)">⚠ ${fmtNum(team.detachments)}</div>`:''}
+          ${(team.detachQ2!==null||team.detachCurrent!==null)?`<div class="detach-chip empty" style="color:var(--amber);background:var(--amber-light)">⚠ ${fmtNum(team.detachCurrent??team.detachQ2)}</div>`:''}
         </div>
       </div>
       <div class="tc-bar">
@@ -409,7 +429,7 @@ function buildTeamCard(team,idx){
             <span class="tc-acc-label detach">Detach rate</span>
           </div>
           <div class="tc-acc-right">
-            <span class="tc-acc-count detach">${hasDetach?fmtNum(team.detachments):'—'}</span>
+            <span class="tc-acc-count detach">${team.detachCurrent!==null?fmtNum(team.detachCurrent):team.detachQ2!==null?fmtNum(team.detachQ2):'—'}</span>
             <span class="tc-chevron" id="ic-${id}-detach">▼</span>
           </div>
         </button>
@@ -431,13 +451,13 @@ function buildCategories(teams){
     const totalDs=items.reduce((s,t)=>s+(t.dsInstances||0),0);
     const totalInst=items.reduce((s,t)=>s+t.totalInstances,0);
     const catRate=totalInst>0?Math.round((totalDs/totalInst)*100):0;
-    const detachTeam=items.find(t=>t.detachments!==null&&t.detachments!==undefined);
+    const detachTeam=items.find(t=>t.detachCurrent!==null&&t.detachCurrent!==undefined);
     return`
       <div class="category-section">
         <div class="category-header">
           <span class="category-label">${cat}</span>
           <span class="category-rate" style="color:${rateColor(catRate)}">${catRate}% adopción</span>
-          ${detachTeam?`<span class="category-rate-sep">·</span><span class="category-rate" style="color:var(--amber)">${fmtNum(detachTeam.detachments)} desvinculaciones</span>`:''}
+          ${detachTeam?`<span class="category-rate-sep">·</span><span class="category-rate" style="color:var(--amber)">${fmtNum(detachTeam.detachCurrent)} desvinculaciones</span>`:''}
           <div class="category-divider"></div>
         </div>
         <div class="teams-grid">${items.map((t)=>buildTeamCard(t,t.__idx)).join('')}</div>
@@ -445,28 +465,29 @@ function buildCategories(teams){
   }).join('');
 }
 
-function buildQualityView(teams,topDetachedComponents){
+function buildQualityView(teams,topDetachedComponents,period,report){
   const cats={};
   teams.forEach((t)=>{const c=t.category||t.name;if(!cats[c])cats[c]=[];cats[c].push(t);});
 
   // Sort categories by detachment count descending (most affected first)
   const sortedCats=Object.entries(cats).sort((a,b)=>{
-    const da=a[1][0].detachments||0, db=b[1][0].detachments||0;
+    const da=getDetachForPeriod(a[1][0],period)||0, db=getDetachForPeriod(b[1][0],period)||0;
     return db-da;
   });
 
   const cards=sortedCats.map(([cat,items])=>{
     const team=items[0];
-    const hasDetach=team.detachments!==null&&team.detachments!==undefined;
+    const detachVal=getDetachForPeriod(team,period);
+    const hasDetach=detachVal!==null&&detachVal!==undefined;
     return`
       <div class="quality-card">
         <div class="quality-card-header">
           <span class="quality-card-name">${cat}</span>
-          <span class="detach-chip empty" style="color:var(--amber);background:var(--amber-light)">${hasDetach?fmtNum(team.detachments):'Sin datos'}</span>
+          <span class="detach-chip empty" style="color:var(--amber);background:var(--amber-light)">${hasDetach?fmtNum(detachVal):'Sin datos'}</span>
         </div>
         ${hasDetach?`
           <div class="quality-stats-row">
-            <span>Desvinculaciones: <b style="color:var(--amber)">${fmtNum(team.detachments)}</b></span>
+            <span>Desvinculaciones: <b style="color:var(--amber)">${fmtNum(detachVal)}</b></span>
           </div>
         `:`<div class="quality-empty-note">No hay datos de Library Analytics para este Figma Team en el periodo actual.</div>`}
       </div>`;
@@ -487,9 +508,21 @@ function buildQualityView(teams,topDetachedComponents){
       })()
     :`<div class="quality-empty-note">Sin datos de componentes desvinculados disponibles.</div>`;
 
+  const q2Label=getPeriodLabel(report,"q2");
+  const currentLabel=getPeriodLabel(report,"current");
+  const annualLabel=getPeriodLabel(report,"annual");
+
   return`
+    <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:16px;flex-wrap:wrap;gap:10px">
+      <div class="period-toggle">
+        <button class="period-btn ${period==='q2'?'active':''}" onclick="switchPeriod('q2')">${q2Label}</button>
+        <button class="period-btn ${period==='current'?'active':''}" onclick="switchPeriod('current')">${currentLabel}</button>
+        <button class="period-btn ${period==='annual'?'active':''}" onclick="switchPeriod('annual')">${annualLabel}</button>
+      </div>
+      <span style="font-size:11px;color:var(--gray-600)">Datos de Figma Library Analytics · Agrupado por Figma Team</span>
+    </div>
     <div class="quality-intro">
-      <b>Desvinculaciones (detach)</b> cuenta cuántas veces, durante el quarter actual, alguien desconectó una instancia de un componente Dalton de su componente maestro — perdiendo las actualizaciones automáticas del sistema. Dato oficial de Figma Library Analytics (requiere plan Enterprise), agregado por <b>Figma Team</b>: activos que comparten un mismo team de Figma muestran el mismo valor. El % es referencial — con volúmenes altos de inserción suele verse cercano a 0 aunque haya desvinculaciones reales, por eso priorizamos el conteo absoluto.
+      <b>Desvinculaciones (detach)</b> cuenta cuántas veces, en el periodo seleccionado, alguien desconectó una instancia de un componente Dalton de su componente maestro — perdiendo las actualizaciones automáticas del sistema. Dato oficial de Figma Library Analytics (requiere plan Enterprise), agregado por <b>Figma Team</b>: activos que comparten un mismo team de Figma muestran el mismo valor. El % es referencial — con volúmenes altos de inserción suele verse cercano a 0 aunque haya desvinculaciones reales, por eso priorizamos el conteo absoluto.
     </div>
     <div class="quality-grid">${cards}</div>
 
@@ -512,7 +545,7 @@ function buildTrend(history){
     for(const q of quarters){
       const e=entries.find(x=>x.quarter===q);
       if(e){
-        const dch=e.detachments;
+        const dch=e.detachments??e.detachQ2;
         html+=`<td><span class="trend-pct ${rateClass(e.adoptionRate)}">${e.adoptionRate}%</span>${dch!==null&&dch!==undefined?`<span class="trend-sub" style="color:var(--amber)">⚠ ${fmtNum(dch)}</span>`:''}</td>`;
       }
       else{html+=`<td style="color:var(--gray-400)">—</td>`;}
@@ -535,8 +568,13 @@ function renderTabContent(){
     <div class="section-header"><span class="section-title">Por categoría y activo</span><div class="section-divider"></div></div>
     ${buildCategories(filtered)}
   ` : "";
-  document.getElementById("panel-calidad").innerHTML = activeTab==="calidad" ? buildQualityView(filtered, currentReport.topDetachedComponents) : "";
+  document.getElementById("panel-calidad").innerHTML = activeTab==="calidad" ? buildQualityView(filtered, currentReport.topDetachedComponents, activePeriod, currentReport) : "";
   document.getElementById("panel-tendencia").innerHTML = activeTab==="tendencia" ? `<div class="trend-card">${buildTrend(currentReport.history)}</div>` : "";
+}
+
+function switchPeriod(period){
+  activePeriod=period;
+  if(activeTab==="calidad") renderTabContent();
 }
 
 function switchTab(tab){
