@@ -231,6 +231,11 @@
     <span class="header-subtitle">· Adoption Dashboard</span>
   </div>
   <div class="header-meta">
+    <div class="period-toggle" id="headerPeriodToggle" style="display:none">
+      <button class="period-btn active" data-period="q2" onclick="switchPeriod('q2')">Q2 2026</button>
+      <button class="period-btn" data-period="current" onclick="switchPeriod('current')">Q actual</button>
+      <button class="period-btn" data-period="annual" onclick="switchPeriod('annual')">Anual 2026</button>
+    </div>
     <span class="quarter-badge" id="quarterLabel">—</span>
     <span class="last-updated" id="lastUpdated">Cargando...</span>
     <a class="download-btn" href="reporte-adopcion.xlsx" download>
@@ -296,7 +301,7 @@ function buildSummary(teams){
   const dsPct=totalInst>0?Math.round((totalDs/totalInst)*100):0;
   const intPct=100-dsPct;
 
-  const totalDetach=teams.reduce((s,t)=>s+(t.detachCurrent||0),0);
+  const totalDetach=teams.reduce((s,t)=>s+(getDetachForPeriod(t,activePeriod)||0),0);
 
   return`
     <div class="summary-grid summary-grid-5">
@@ -350,11 +355,11 @@ function buildTeamCard(team,idx){
       </div>`).join('')
     :`<div class="tc-empty">Sin datos</div>`;
 
-  const hasDetach=(team.detachQ2!==null||team.detachCurrent!==null||team.detachAnnual!==null);
+  const hasDetach=(team.detachQ2!==null||team.detachCurrent!==null||team.detachAnnual!==null); // any period has data
   const detachHtml=hasDetach
     ?`<div class="tc-detach-row">
         <div class="tc-detach-stat"><span class="tc-detach-label">Q2 2026</span><span class="tc-detach-value" style="font-weight:700;color:var(--amber)">${team.detachQ2!==null?fmtNum(team.detachQ2):'—'}</span></div>
-        <div class="tc-detach-stat"><span class="tc-detach-label">Q3 2026 (en curso)</span><span class="tc-detach-value" style="font-weight:700;color:var(--amber)">${team.detachCurrent!==null?fmtNum(team.detachCurrent):'—'}</span></div>
+        <div class="tc-detach-stat"><span class="tc-detach-label">${getPeriodLabel(currentReport,'current')} (en curso)</span><span class="tc-detach-value" style="font-weight:700;color:var(--amber)">${team.detachCurrent!==null?fmtNum(team.detachCurrent):'—'}</span></div>
         <div class="tc-detach-stat"><span class="tc-detach-label">Anual 2026</span><span class="tc-detach-value" style="font-weight:700;color:var(--amber)">${team.detachAnnual!==null?fmtNum(team.detachAnnual):'—'}</span></div>
         <div class="tc-detach-note">Dato de Figma Library Analytics, agregado a nivel de Figma Team — no por archivo individual.</div>
       </div>`
@@ -366,7 +371,7 @@ function buildTeamCard(team,idx){
         <div class="tc-name">${team.name}</div>
         <div class="tc-chips">
           <div class="adoption-chip ${cls}">${hasData?team.adoptionRate+'%':'Sin datos'}</div>
-          ${(team.detachQ2!==null||team.detachCurrent!==null)?`<div class="detach-chip empty" style="color:var(--amber);background:var(--amber-light)">⚠ ${fmtNum(team.detachCurrent??team.detachQ2)}</div>`:''}
+          ${(()=>{const dv=getDetachForPeriod(team,activePeriod);return dv!==null&&dv!==undefined?`<div class="detach-chip empty" style="color:var(--amber);background:var(--amber-light)">⚠ ${fmtNum(dv)}`:''})()}
         </div>
       </div>
       <div class="tc-bar">
@@ -429,7 +434,7 @@ function buildTeamCard(team,idx){
             <span class="tc-acc-label detach">Detach rate</span>
           </div>
           <div class="tc-acc-right">
-            <span class="tc-acc-count detach">${team.detachCurrent!==null?fmtNum(team.detachCurrent):team.detachQ2!==null?fmtNum(team.detachQ2):'—'}</span>
+            <span class="tc-acc-count detach">${(()=>{const dv=getDetachForPeriod(team,activePeriod);return dv!==null?fmtNum(dv):'—'})()}</span>
             <span class="tc-chevron" id="ic-${id}-detach">▼</span>
           </div>
         </button>
@@ -451,13 +456,13 @@ function buildCategories(teams){
     const totalDs=items.reduce((s,t)=>s+(t.dsInstances||0),0);
     const totalInst=items.reduce((s,t)=>s+t.totalInstances,0);
     const catRate=totalInst>0?Math.round((totalDs/totalInst)*100):0;
-    const detachTeam=items.find(t=>t.detachCurrent!==null&&t.detachCurrent!==undefined);
+    const detachTeam=items.find(t=>getDetachForPeriod(t,activePeriod)!==null);
     return`
       <div class="category-section">
         <div class="category-header">
           <span class="category-label">${cat}</span>
           <span class="category-rate" style="color:${rateColor(catRate)}">${catRate}% adopción</span>
-          ${detachTeam?`<span class="category-rate-sep">·</span><span class="category-rate" style="color:var(--amber)">${fmtNum(detachTeam.detachCurrent)} desvinculaciones</span>`:''}
+          ${detachTeam?`<span class="category-rate-sep">·</span><span class="category-rate" style="color:var(--amber)">${fmtNum(getDetachForPeriod(detachTeam,activePeriod))} desvinculaciones</span>`:''}
           <div class="category-divider"></div>
         </div>
         <div class="teams-grid">${items.map((t)=>buildTeamCard(t,t.__idx)).join('')}</div>
@@ -465,7 +470,9 @@ function buildCategories(teams){
   }).join('');
 }
 
-function buildQualityView(teams,topDetachedComponents,period,report){
+function buildQualityView(teams,topDetachedComponents){
+  const period=activePeriod;
+  const report=currentReport;
   const cats={};
   teams.forEach((t)=>{const c=t.category||t.name;if(!cats[c])cats[c]=[];cats[c].push(t);});
 
@@ -513,14 +520,6 @@ function buildQualityView(teams,topDetachedComponents,period,report){
   const annualLabel=getPeriodLabel(report,"annual");
 
   return`
-    <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:16px;flex-wrap:wrap;gap:10px">
-      <div class="period-toggle">
-        <button class="period-btn ${period==='q2'?'active':''}" onclick="switchPeriod('q2')">${q2Label}</button>
-        <button class="period-btn ${period==='current'?'active':''}" onclick="switchPeriod('current')">${currentLabel}</button>
-        <button class="period-btn ${period==='annual'?'active':''}" onclick="switchPeriod('annual')">${annualLabel}</button>
-      </div>
-      <span style="font-size:11px;color:var(--gray-600)">Datos de Figma Library Analytics · Agrupado por Figma Team</span>
-    </div>
     <div class="quality-intro">
       <b>Desvinculaciones (detach)</b> cuenta cuántas veces, en el periodo seleccionado, alguien desconectó una instancia de un componente Dalton de su componente maestro — perdiendo las actualizaciones automáticas del sistema. Dato oficial de Figma Library Analytics (requiere plan Enterprise), agregado por <b>Figma Team</b>: activos que comparten un mismo team de Figma muestran el mismo valor. El % es referencial — con volúmenes altos de inserción suele verse cercano a 0 aunque haya desvinculaciones reales, por eso priorizamos el conteo absoluto.
     </div>
@@ -568,13 +567,17 @@ function renderTabContent(){
     <div class="section-header"><span class="section-title">Por categoría y activo</span><div class="section-divider"></div></div>
     ${buildCategories(filtered)}
   ` : "";
-  document.getElementById("panel-calidad").innerHTML = activeTab==="calidad" ? buildQualityView(filtered, currentReport.topDetachedComponents, activePeriod, currentReport) : "";
+  document.getElementById("panel-calidad").innerHTML = activeTab==="calidad" ? buildQualityView(filtered, currentReport.topDetachedComponents) : "";
   document.getElementById("panel-tendencia").innerHTML = activeTab==="tendencia" ? `<div class="trend-card">${buildTrend(currentReport.history)}</div>` : "";
 }
 
 function switchPeriod(period){
   activePeriod=period;
-  if(activeTab==="calidad") renderTabContent();
+  // Update header toggle buttons
+  document.querySelectorAll("#headerPeriodToggle .period-btn").forEach(b=>{
+    b.classList.toggle("active", b.dataset.period===period);
+  });
+  renderTabContent();
 }
 
 function switchTab(tab){
@@ -598,6 +601,14 @@ async function loadReport(){
     currentReport=report;
     document.getElementById("quarterLabel").textContent=report.quarter||"—";
     document.getElementById("lastUpdated").textContent="Actualizado: "+fmtDate(report.generatedAt);
+    // Show period toggle and update labels from report data
+    const toggle=document.getElementById("headerPeriodToggle");
+    if(toggle && report.detachPeriods){
+      const btns=toggle.querySelectorAll(".period-btn");
+      const labels={q2:report.detachPeriods.q2Label, current:report.detachPeriods.currentLabel, annual:report.detachPeriods.annualLabel};
+      btns.forEach(b=>{ if(labels[b.dataset.period]) b.textContent=labels[b.dataset.period]; });
+      toggle.style.display="flex";
+    }
 
     main.innerHTML=`
       <div class="tabs-bar">
