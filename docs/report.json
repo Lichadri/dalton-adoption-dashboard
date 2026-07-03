@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-03T16:57:29.468Z",
+  "generatedAt": "2026-07-03T22:35:52.432Z",
   "quarter": "Q3 2026",
   "teams": [
     {
@@ -1859,38 +1859,38 @@
       "category": "Nueva Web Empresas",
       "adoptionRate": 94,
       "totalRfdFrames": 50,
-      "dsInstances": 213533,
-      "internalInstances": 13703,
-      "totalInstances": 227236,
+      "dsInstances": 214825,
+      "internalInstances": 13740,
+      "totalInstances": 228565,
       "uniqueFamiliesCount": 47,
       "uniqueFamilies": [
         {
           "name": "type_option",
-          "count": 119375
+          "count": 120143
         },
         {
           "name": "section_footer",
-          "count": 20895
+          "count": 21023
         },
         {
           "name": "src_option_redes",
-          "count": 11266
+          "count": 11310
         },
         {
           "name": "reemplazar slot",
-          "count": 10616
+          "count": 10680
         },
         {
           "name": "Button",
-          "count": 9727
+          "count": 9781
         },
         {
           "name": "Alert",
-          "count": 6298
+          "count": 6309
         },
         {
           "name": "title_+_options",
-          "count": 5307
+          "count": 5339
         },
         {
           "name": "Input",
@@ -1898,43 +1898,43 @@
         },
         {
           "name": "Átomo",
-          "count": 2912
+          "count": 2947
         },
         {
           "name": "src_option_stores_download",
-          "count": 2312
+          "count": 2328
         },
         {
           "name": "Header",
-          "count": 1947
+          "count": 1968
         },
         {
           "name": "Notification Item",
-          "count": 1929
+          "count": 1950
         },
         {
           "name": "Chips",
-          "count": 1782
+          "count": 1785
         },
         {
           "name": "Radio",
-          "count": 1684
+          "count": 1688
         },
         {
           "name": "Indicator step",
-          "count": 1502
+          "count": 1523
         },
         {
           "name": "Footer",
-          "count": 1453
+          "count": 1461
         },
         {
           "name": "title_+_phones",
-          "count": 1327
+          "count": 1335
         },
         {
           "name": "title_+_social media",
-          "count": 1327
+          "count": 1335
         },
         {
           "name": "Discount Badge",
@@ -1942,11 +1942,11 @@
         },
         {
           "name": "Stepper",
-          "count": 1012
+          "count": 1020
         },
         {
           "name": "Bar Progress",
-          "count": 1006
+          "count": 1020
         },
         {
           "name": "Accordion",
@@ -1954,15 +1954,15 @@
         },
         {
           "name": "Checkbox",
-          "count": 551
+          "count": 567
         },
         {
           "name": "Breadcrumb",
-          "count": 512
+          "count": 519
         },
         {
           "name": "Loader",
-          "count": 501
+          "count": 502
         },
         {
           "name": "Pagination",
@@ -2064,15 +2064,15 @@
         },
         {
           "name": "title_+_badges_download",
-          "count": 681
+          "count": 682
         },
         {
           "name": "Home_Header",
-          "count": 643
+          "count": 650
         },
         {
           "name": "Menu_Mobile",
-          "count": 607
+          "count": 608
         },
         {
           "name": "Action 1",
@@ -2088,19 +2088,19 @@
         },
         {
           "name": "Step 01",
-          "count": 511
+          "count": 518
         },
         {
           "name": "Step 02",
-          "count": 511
+          "count": 518
         },
         {
           "name": "Indicator Mobile",
-          "count": 501
+          "count": 502
         },
         {
           "name": "Step 03",
-          "count": 495
+          "count": 502
         },
         {
           "name": "save",
@@ -2131,8 +2131,8 @@
           "count": 130
         },
         {
-          "name": "width fixed pagination",
-          "count": 122
+          "name": "File",
+          "count": 128
         }
       ],
       "files": [
@@ -2350,39 +2350,39 @@
           "key": "j4Uyzko4eQSDtEaWyVm2JM",
           "name": "Home Empresas",
           "rfdFrameCount": 43,
-          "dsInstances": 198328,
-          "internalInstances": 12837,
-          "totalInstances": 211165,
+          "dsInstances": 199620,
+          "internalInstances": 12874,
+          "totalInstances": 212494,
           "adoptionRate": 94,
           "uniqueFamiliesCount": 42,
           "uniqueFamilies": [
             {
               "name": "type_option",
-              "count": 110159
+              "count": 110927
             },
             {
               "name": "section_footer",
-              "count": 19359
+              "count": 19487
             },
             {
               "name": "src_option_redes",
-              "count": 10306
+              "count": 10350
             },
             {
               "name": "reemplazar slot",
-              "count": 9848
+              "count": 9912
             },
             {
               "name": "Button",
-              "count": 9234
+              "count": 9288
             },
             {
               "name": "Alert",
-              "count": 6259
+              "count": 6270
             },
             {
               "name": "title_+_options",
-              "count": 4923
+              "count": 4955
             },
             {
               "name": "Input",
@@ -2390,35 +2390,35 @@
             },
             {
               "name": "Átomo",
-              "count": 2904
+              "count": 2939
             },
             {
               "name": "src_option_stores_download",
-              "count": 2120
+              "count": 2136
             },
             {
               "name": "Header",
-              "count": 1947
+              "count": 1968
             },
             {
               "name": "Notification Item",
-              "count": 1929
+              "count": 1950
             },
             {
               "name": "Radio",
-              "count": 1682
+              "count": 1686
             },
             {
               "name": "Indicator step",
-              "count": 1502
+              "count": 1523
             },
             {
               "name": "Chips",
-              "count": 1487
+              "count": 1490
             },
             {
               "name": "Footer",
-              "count": 1357
+              "count": 1365
             },
             {
               "name": "Discount Badge",
@@ -2426,35 +2426,35 @@
             },
             {
               "name": "title_+_phones",
-              "count": 1231
+              "count": 1239
             },
             {
               "name": "title_+_social media",
-              "count": 1231
+              "count": 1239
             },
             {
               "name": "Bar Progress",
-              "count": 1006
+              "count": 1020
             },
             {
               "name": "Stepper",
-              "count": 986
+              "count": 994
             },
             {
               "name": "Accordion",
               "count": 921
             },
             {
-              "name": "Breadcrumb",
-              "count": 512
+              "name": "Checkbox",
+              "count": 519
             },
             {
-              "name": "Checkbox",
-              "count": 503
+              "name": "Breadcrumb",
+              "count": 519
             },
             {
               "name": "Loader",
-              "count": 475
+              "count": 476
             },
             {
               "name": "Pagination",
@@ -2536,15 +2536,15 @@
             },
             {
               "name": "title_+_badges_download",
-              "count": 649
+              "count": 650
             },
             {
               "name": "Home_Header",
-              "count": 643
+              "count": 650
             },
             {
               "name": "Menu_Mobile",
-              "count": 607
+              "count": 608
             },
             {
               "name": "Action 1",
@@ -2560,19 +2560,19 @@
             },
             {
               "name": "Step 01",
-              "count": 511
+              "count": 518
             },
             {
               "name": "Step 02",
-              "count": 511
+              "count": 518
             },
             {
               "name": "Step 03",
-              "count": 495
+              "count": 502
             },
             {
               "name": "Indicator Mobile",
-              "count": 475
+              "count": 476
             },
             {
               "name": "save",
@@ -2599,11 +2599,11 @@
               "count": 130
             },
             {
-              "name": "width fixed pagination",
-              "count": 122
+              "name": "File",
+              "count": 128
             },
             {
-              "name": "File",
+              "name": "width fixed pagination",
               "count": 122
             }
           ]
@@ -7843,8 +7843,8 @@
       "date": "2026-07-03",
       "adoptionRate": 94,
       "totalRfdFrames": 50,
-      "totalDs": 213533,
-      "totalInstances": 227236,
+      "totalDs": 214825,
+      "totalInstances": 228565,
       "detachments": null,
       "detachQ2": 17
     },
