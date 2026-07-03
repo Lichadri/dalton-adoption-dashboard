@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-02T22:34:40.490Z",
+  "generatedAt": "2026-07-03T16:57:29.468Z",
   "quarter": "Q3 2026",
   "teams": [
     {
@@ -1177,7 +1177,7 @@
           ]
         }
       ],
-      "detachQ2": 88,
+      "detachQ2": 90,
       "detachCurrent": null,
       "detachAnnual": null,
       "detachments": null
@@ -6553,9 +6553,9 @@
       "category": "Web Corporativa",
       "adoptionRate": 84,
       "totalRfdFrames": 73,
-      "dsInstances": 11472,
+      "dsInstances": 11453,
       "internalInstances": 2122,
-      "totalInstances": 13594,
+      "totalInstances": 13575,
       "uniqueFamiliesCount": 23,
       "uniqueFamilies": [
         {
@@ -6568,7 +6568,7 @@
         },
         {
           "name": "Tag",
-          "count": 1181
+          "count": 1173
         },
         {
           "name": "Accordion",
@@ -6576,11 +6576,11 @@
         },
         {
           "name": "Tab",
-          "count": 940
+          "count": 930
         },
         {
           "name": "Button",
-          "count": 882
+          "count": 881
         },
         {
           "name": "section_footer",
@@ -7082,9 +7082,9 @@
           "key": "qnAHAbm5nt9jLXAWUjf8ZY",
           "name": "Productos Líneas Personales",
           "rfdFrameCount": 14,
-          "dsInstances": 1419,
+          "dsInstances": 1400,
           "internalInstances": 172,
-          "totalInstances": 1591,
+          "totalInstances": 1572,
           "adoptionRate": 89,
           "uniqueFamiliesCount": 21,
           "uniqueFamilies": [
@@ -7101,16 +7101,16 @@
               "count": 266
             },
             {
-              "name": "Tab",
-              "count": 132
+              "name": "Tag",
+              "count": 124
             },
             {
-              "name": "Tag",
-              "count": 132
+              "name": "Tab",
+              "count": 122
             },
             {
               "name": "Button",
-              "count": 107
+              "count": 106
             },
             {
               "name": "Alert",
@@ -7257,7 +7257,7 @@
           ]
         }
       ],
-      "detachQ2": 27,
+      "detachQ2": 30,
       "detachCurrent": null,
       "detachAnnual": null,
       "detachments": null
@@ -7804,7 +7804,7 @@
       "team": "MEP",
       "category": "MEP",
       "quarter": "Q3 2026",
-      "date": "2026-07-02",
+      "date": "2026-07-03",
       "adoptionRate": 51,
       "totalRfdFrames": 17,
       "totalDs": 3084,
@@ -7816,19 +7816,19 @@
       "team": "Somos Corredores",
       "category": "Somos Corredores",
       "quarter": "Q3 2026",
-      "date": "2026-07-02",
+      "date": "2026-07-03",
       "adoptionRate": 87,
       "totalRfdFrames": 12,
       "totalDs": 3852,
       "totalInstances": 4452,
       "detachments": null,
-      "detachQ2": 88
+      "detachQ2": 90
     },
     {
       "team": "Protege 365",
       "category": "Protege 365",
       "quarter": "Q3 2026",
-      "date": "2026-07-02",
+      "date": "2026-07-03",
       "adoptionRate": 90,
       "totalRfdFrames": 8,
       "totalDs": 7739,
@@ -7840,7 +7840,7 @@
       "team": "Nueva Web Empresas",
       "category": "Nueva Web Empresas",
       "quarter": "Q3 2026",
-      "date": "2026-07-02",
+      "date": "2026-07-03",
       "adoptionRate": 94,
       "totalRfdFrames": 50,
       "totalDs": 213533,
@@ -7852,7 +7852,7 @@
       "team": "Portal Digital de Siniestros",
       "category": "Portal Digital de Siniestros",
       "quarter": "Q3 2026",
-      "date": "2026-07-02",
+      "date": "2026-07-03",
       "adoptionRate": 84,
       "totalRfdFrames": 5,
       "totalDs": 8539,
@@ -7864,7 +7864,7 @@
       "team": "Modelo Día",
       "category": "Modelo Día",
       "quarter": "Q3 2026",
-      "date": "2026-07-02",
+      "date": "2026-07-03",
       "adoptionRate": 65,
       "totalRfdFrames": 21,
       "totalDs": 14380,
@@ -7876,7 +7876,7 @@
       "team": "SOAT",
       "category": "Ecommerce",
       "quarter": "Q3 2026",
-      "date": "2026-07-02",
+      "date": "2026-07-03",
       "adoptionRate": 75,
       "totalRfdFrames": 1,
       "totalDs": 1583,
@@ -7888,7 +7888,7 @@
       "team": "Vehicular",
       "category": "Ecommerce",
       "quarter": "Q3 2026",
-      "date": "2026-07-02",
+      "date": "2026-07-03",
       "adoptionRate": 73,
       "totalRfdFrames": 1,
       "totalDs": 2286,
@@ -7900,7 +7900,7 @@
       "team": "Auto Efectivo",
       "category": "Ecommerce",
       "quarter": "Q3 2026",
-      "date": "2026-07-02",
+      "date": "2026-07-03",
       "adoptionRate": 0,
       "totalRfdFrames": 0,
       "totalDs": 0,
@@ -7912,7 +7912,7 @@
       "team": "Vehicular Todo Riesgo",
       "category": "Ecommerce",
       "quarter": "Q3 2026",
-      "date": "2026-07-02",
+      "date": "2026-07-03",
       "adoptionRate": 69,
       "totalRfdFrames": 2,
       "totalDs": 2650,
@@ -7924,7 +7924,7 @@
       "team": "Viajes",
       "category": "Ecommerce",
       "quarter": "Q3 2026",
-      "date": "2026-07-02",
+      "date": "2026-07-03",
       "adoptionRate": 85,
       "totalRfdFrames": 8,
       "totalDs": 3566,
@@ -7936,7 +7936,7 @@
       "team": "VDT",
       "category": "Ecommerce",
       "quarter": "Q3 2026",
-      "date": "2026-07-02",
+      "date": "2026-07-03",
       "adoptionRate": 85,
       "totalRfdFrames": 8,
       "totalDs": 3906,
@@ -7948,7 +7948,7 @@
       "team": "Venta Directa",
       "category": "Ecommerce",
       "quarter": "Q3 2026",
-      "date": "2026-07-02",
+      "date": "2026-07-03",
       "adoptionRate": 94,
       "totalRfdFrames": 2,
       "totalDs": 11370,
@@ -7960,19 +7960,19 @@
       "team": "Web Corporativa",
       "category": "Web Corporativa",
       "quarter": "Q3 2026",
-      "date": "2026-07-02",
+      "date": "2026-07-03",
       "adoptionRate": 84,
       "totalRfdFrames": 73,
-      "totalDs": 11472,
-      "totalInstances": 13594,
+      "totalDs": 11453,
+      "totalInstances": 13575,
       "detachments": null,
-      "detachQ2": 27
+      "detachQ2": 30
     },
     {
       "team": "Embebidos",
       "category": "Embebidos",
       "quarter": "Q3 2026",
-      "date": "2026-07-02",
+      "date": "2026-07-03",
       "adoptionRate": 88,
       "totalRfdFrames": 6,
       "totalDs": 1424,
@@ -7985,22 +7985,22 @@
     {
       "name": "type_option",
       "detachments": 485,
-      "insertions": 2366
+      "insertions": 2436
     },
     {
       "name": "section_footer",
       "detachments": 86,
-      "insertions": 4256
+      "insertions": 4382
     },
     {
       "name": "Modal Informative",
       "detachments": 58,
-      "insertions": 776
+      "insertions": 811
     },
     {
       "name": "Button",
-      "detachments": 53,
-      "insertions": 72256
+      "detachments": 56,
+      "insertions": 76698
     },
     {
       "name": "src_option_redes",
@@ -8010,52 +8010,52 @@
     {
       "name": "reemplazar slot",
       "detachments": 40,
-      "insertions": 3782
+      "insertions": 3894
     },
     {
       "name": "Radio Outline",
       "detachments": 34,
-      "insertions": 908
+      "insertions": 1005
     },
     {
       "name": "Radio Atom",
       "detachments": 24,
-      "insertions": 8910
+      "insertions": 10521
     },
     {
       "name": "Chips Status",
       "detachments": 23,
-      "insertions": 11256
+      "insertions": 12673
     },
     {
       "name": "title_+_options",
       "detachments": 23,
-      "insertions": 1417
+      "insertions": 1459
+    },
+    {
+      "name": "Input",
+      "detachments": 21,
+      "insertions": 19785
     },
     {
       "name": "Accordion",
       "detachments": 21,
-      "insertions": 1008
-    },
-    {
-      "name": "Input",
-      "detachments": 20,
-      "insertions": 18026
+      "insertions": 1108
     },
     {
       "name": "Checkbox With Text",
       "detachments": 16,
-      "insertions": 4184
+      "insertions": 4904
     },
     {
       "name": "01",
       "detachments": 13,
-      "insertions": 1414
+      "insertions": 1420
     },
     {
       "name": "Checkbox Atom",
       "detachments": 11,
-      "insertions": 3863
+      "insertions": 3892
     }
   ],
   "detachPeriods": {
