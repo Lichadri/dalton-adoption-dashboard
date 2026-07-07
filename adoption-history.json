@@ -206,10 +206,10 @@
     "category": "Somos Corredores",
     "quarter": "Q3 2026",
     "date": "2026-07-07",
-    "adoptionRate": 86,
+    "adoptionRate": 85,
     "totalRfdFrames": 12,
-    "totalDs": 3712,
-    "totalInstances": 4302,
+    "totalDs": 3634,
+    "totalInstances": 4262,
     "detachments": null,
     "detachQ2": 90
   },
