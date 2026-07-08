@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-07T22:43:20.623Z",
+  "generatedAt": "2026-07-08T17:04:26.643Z",
   "quarter": "Q3 2026",
   "teams": [
     {
@@ -575,9 +575,9 @@
       "category": "Somos Corredores",
       "adoptionRate": 85,
       "totalRfdFrames": 12,
-      "dsInstances": 3634,
-      "internalInstances": 628,
-      "totalInstances": 4262,
+      "dsInstances": 3653,
+      "internalInstances": 631,
+      "totalInstances": 4284,
       "uniqueFamiliesCount": 27,
       "uniqueFamilies": [
         {
@@ -586,15 +586,15 @@
         },
         {
           "name": "Button",
-          "count": 323
+          "count": 325
         },
         {
           "name": "Indicator step",
-          "count": 261
+          "count": 264
         },
         {
           "name": "Alert",
-          "count": 241
+          "count": 242
         },
         {
           "name": "section_footer",
@@ -602,15 +602,15 @@
         },
         {
           "name": "Bar Progress",
-          "count": 200
+          "count": 202
         },
         {
           "name": "Input",
-          "count": 185
+          "count": 186
         },
         {
           "name": "Select",
-          "count": 165
+          "count": 169
         },
         {
           "name": "reemplazar slot",
@@ -626,7 +626,7 @@
         },
         {
           "name": "Stepper",
-          "count": 61
+          "count": 62
         },
         {
           "name": "Radio",
@@ -649,6 +649,10 @@
           "count": 20
         },
         {
+          "name": "Text Area",
+          "count": 18
+        },
+        {
           "name": "Footer",
           "count": 16
         },
@@ -658,10 +662,6 @@
         },
         {
           "name": "Calendar",
-          "count": 13
-        },
-        {
-          "name": "Text Area",
           "count": 13
         },
         {
@@ -692,15 +692,15 @@
       "top20Internal": [
         {
           "name": "Step 01",
-          "count": 61
+          "count": 62
         },
         {
           "name": "Step 02",
-          "count": 61
+          "count": 62
         },
         {
           "name": "Step 03",
-          "count": 61
+          "count": 62
         },
         {
           "name": "celda L",
@@ -958,9 +958,9 @@
           "key": "5hD4pTIf3zVKz7mn0CdlHk",
           "name": "Aviso de Siniestros",
           "rfdFrameCount": 7,
-          "dsInstances": 2441,
-          "internalInstances": 194,
-          "totalInstances": 2635,
+          "dsInstances": 2460,
+          "internalInstances": 197,
+          "totalInstances": 2657,
           "adoptionRate": 93,
           "uniqueFamiliesCount": 26,
           "uniqueFamilies": [
@@ -978,23 +978,23 @@
             },
             {
               "name": "Button",
-              "count": 130
+              "count": 132
             },
             {
               "name": "Select",
-              "count": 118
+              "count": 122
             },
             {
               "name": "Alert",
-              "count": 99
+              "count": 100
             },
             {
               "name": "Input",
-              "count": 77
+              "count": 78
             },
             {
               "name": "Indicator step",
-              "count": 66
+              "count": 69
             },
             {
               "name": "Label in",
@@ -1002,7 +1002,7 @@
             },
             {
               "name": "Bar Progress",
-              "count": 44
+              "count": 46
             },
             {
               "name": "Left Label",
@@ -1014,7 +1014,7 @@
             },
             {
               "name": "Stepper",
-              "count": 22
+              "count": 23
             },
             {
               "name": "Radio",
@@ -1025,16 +1025,16 @@
               "count": 18
             },
             {
+              "name": "Text Area",
+              "count": 18
+            },
+            {
               "name": "Footer",
               "count": 15
             },
             {
               "name": "title_+_phones",
               "count": 15
-            },
-            {
-              "name": "Text Area",
-              "count": 13
             },
             {
               "name": "src_option_redes",
@@ -1076,15 +1076,15 @@
             },
             {
               "name": "Step 01",
-              "count": 22
+              "count": 23
             },
             {
               "name": "Step 02",
-              "count": 22
+              "count": 23
             },
             {
               "name": "Step 03",
-              "count": 22
+              "count": 23
             },
             {
               "name": "Userflow",
@@ -1835,9 +1835,9 @@
       "category": "Nueva Web Empresas",
       "adoptionRate": 94,
       "totalRfdFrames": 50,
-      "dsInstances": 215167,
+      "dsInstances": 215415,
       "internalInstances": 13747,
-      "totalInstances": 228914,
+      "totalInstances": 229162,
       "uniqueFamiliesCount": 47,
       "uniqueFamilies": [
         {
@@ -1930,7 +1930,7 @@
         },
         {
           "name": "Checkbox",
-          "count": 587
+          "count": 835
         },
         {
           "name": "Breadcrumb",
@@ -2326,9 +2326,9 @@
           "key": "j4Uyzko4eQSDtEaWyVm2JM",
           "name": "Home Empresas",
           "rfdFrameCount": 43,
-          "dsInstances": 199962,
+          "dsInstances": 200210,
           "internalInstances": 12881,
-          "totalInstances": 212843,
+          "totalInstances": 213091,
           "adoptionRate": 94,
           "uniqueFamiliesCount": 42,
           "uniqueFamilies": [
@@ -2422,7 +2422,7 @@
             },
             {
               "name": "Checkbox",
-              "count": 539
+              "count": 787
             },
             {
               "name": "Breadcrumb",
@@ -7780,7 +7780,7 @@
       "team": "MEP",
       "category": "MEP",
       "quarter": "Q3 2026",
-      "date": "2026-07-07",
+      "date": "2026-07-08",
       "adoptionRate": 51,
       "totalRfdFrames": 17,
       "totalDs": 3084,
@@ -7792,11 +7792,11 @@
       "team": "Somos Corredores",
       "category": "Somos Corredores",
       "quarter": "Q3 2026",
-      "date": "2026-07-07",
+      "date": "2026-07-08",
       "adoptionRate": 85,
       "totalRfdFrames": 12,
-      "totalDs": 3634,
-      "totalInstances": 4262,
+      "totalDs": 3653,
+      "totalInstances": 4284,
       "detachments": null,
       "detachQ2": 90
     },
@@ -7804,7 +7804,7 @@
       "team": "Protege 365",
       "category": "Protege 365",
       "quarter": "Q3 2026",
-      "date": "2026-07-07",
+      "date": "2026-07-08",
       "adoptionRate": 90,
       "totalRfdFrames": 8,
       "totalDs": 7804,
@@ -7816,11 +7816,11 @@
       "team": "Nueva Web Empresas",
       "category": "Nueva Web Empresas",
       "quarter": "Q3 2026",
-      "date": "2026-07-07",
+      "date": "2026-07-08",
       "adoptionRate": 94,
       "totalRfdFrames": 50,
-      "totalDs": 215167,
-      "totalInstances": 228914,
+      "totalDs": 215415,
+      "totalInstances": 229162,
       "detachments": null,
       "detachQ2": 17
     },
@@ -7828,7 +7828,7 @@
       "team": "Portal Digital de Siniestros",
       "category": "Portal Digital de Siniestros",
       "quarter": "Q3 2026",
-      "date": "2026-07-07",
+      "date": "2026-07-08",
       "adoptionRate": 84,
       "totalRfdFrames": 5,
       "totalDs": 8539,
@@ -7840,7 +7840,7 @@
       "team": "Modelo Día",
       "category": "Modelo Día",
       "quarter": "Q3 2026",
-      "date": "2026-07-07",
+      "date": "2026-07-08",
       "adoptionRate": 65,
       "totalRfdFrames": 21,
       "totalDs": 14380,
@@ -7852,7 +7852,7 @@
       "team": "SOAT",
       "category": "Ecommerce",
       "quarter": "Q3 2026",
-      "date": "2026-07-07",
+      "date": "2026-07-08",
       "adoptionRate": 75,
       "totalRfdFrames": 1,
       "totalDs": 1583,
@@ -7864,7 +7864,7 @@
       "team": "Vehicular",
       "category": "Ecommerce",
       "quarter": "Q3 2026",
-      "date": "2026-07-07",
+      "date": "2026-07-08",
       "adoptionRate": 73,
       "totalRfdFrames": 1,
       "totalDs": 2286,
@@ -7876,7 +7876,7 @@
       "team": "Auto Efectivo",
       "category": "Ecommerce",
       "quarter": "Q3 2026",
-      "date": "2026-07-07",
+      "date": "2026-07-08",
       "adoptionRate": 0,
       "totalRfdFrames": 0,
       "totalDs": 0,
@@ -7888,7 +7888,7 @@
       "team": "Vehicular Todo Riesgo",
       "category": "Ecommerce",
       "quarter": "Q3 2026",
-      "date": "2026-07-07",
+      "date": "2026-07-08",
       "adoptionRate": 69,
       "totalRfdFrames": 2,
       "totalDs": 2650,
@@ -7900,7 +7900,7 @@
       "team": "Viajes",
       "category": "Ecommerce",
       "quarter": "Q3 2026",
-      "date": "2026-07-07",
+      "date": "2026-07-08",
       "adoptionRate": 85,
       "totalRfdFrames": 8,
       "totalDs": 3566,
@@ -7912,7 +7912,7 @@
       "team": "VDT",
       "category": "Ecommerce",
       "quarter": "Q3 2026",
-      "date": "2026-07-07",
+      "date": "2026-07-08",
       "adoptionRate": 85,
       "totalRfdFrames": 8,
       "totalDs": 3906,
@@ -7924,7 +7924,7 @@
       "team": "Venta Directa",
       "category": "Ecommerce",
       "quarter": "Q3 2026",
-      "date": "2026-07-07",
+      "date": "2026-07-08",
       "adoptionRate": 94,
       "totalRfdFrames": 2,
       "totalDs": 11370,
@@ -7936,7 +7936,7 @@
       "team": "Web Corporativa",
       "category": "Web Corporativa",
       "quarter": "Q3 2026",
-      "date": "2026-07-07",
+      "date": "2026-07-08",
       "adoptionRate": 85,
       "totalRfdFrames": 80,
       "totalDs": 12278,
@@ -7948,7 +7948,7 @@
       "team": "Embebidos",
       "category": "Embebidos",
       "quarter": "Q3 2026",
-      "date": "2026-07-07",
+      "date": "2026-07-08",
       "adoptionRate": 88,
       "totalRfdFrames": 6,
       "totalDs": 1424,
@@ -7961,22 +7961,22 @@
     {
       "name": "type_option",
       "detachments": 485,
-      "insertions": 2461
+      "insertions": 2471
     },
     {
       "name": "section_footer",
       "detachments": 86,
-      "insertions": 4427
+      "insertions": 4454
     },
     {
       "name": "Modal Informative",
       "detachments": 58,
-      "insertions": 823
+      "insertions": 824
     },
     {
       "name": "Button",
       "detachments": 56,
-      "insertions": 78461
+      "insertions": 78975
     },
     {
       "name": "src_option_redes",
@@ -7986,7 +7986,7 @@
     {
       "name": "reemplazar slot",
       "detachments": 40,
-      "insertions": 3934
+      "insertions": 3958
     },
     {
       "name": "Radio Outline",
@@ -8001,27 +8001,27 @@
     {
       "name": "Chips Status",
       "detachments": 23,
-      "insertions": 12788
+      "insertions": 12816
     },
     {
       "name": "title_+_options",
       "detachments": 23,
-      "insertions": 1474
+      "insertions": 1484
     },
     {
       "name": "Input",
       "detachments": 21,
-      "insertions": 19885
+      "insertions": 20008
     },
     {
       "name": "Accordion",
       "detachments": 21,
-      "insertions": 1112
+      "insertions": 1119
     },
     {
       "name": "Checkbox With Text",
       "detachments": 16,
-      "insertions": 5062
+      "insertions": 5185
     },
     {
       "name": "01",
@@ -8031,7 +8031,7 @@
     {
       "name": "Checkbox Atom",
       "detachments": 11,
-      "insertions": 3895
+      "insertions": 3899
     }
   ],
   "detachPeriods": {
