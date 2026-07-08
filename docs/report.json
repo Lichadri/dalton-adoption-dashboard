@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-08T17:04:26.643Z",
+  "generatedAt": "2026-07-08T22:36:58.845Z",
   "quarter": "Q3 2026",
   "teams": [
     {
@@ -575,9 +575,9 @@
       "category": "Somos Corredores",
       "adoptionRate": 85,
       "totalRfdFrames": 12,
-      "dsInstances": 3653,
-      "internalInstances": 631,
-      "totalInstances": 4284,
+      "dsInstances": 3634,
+      "internalInstances": 628,
+      "totalInstances": 4262,
       "uniqueFamiliesCount": 27,
       "uniqueFamilies": [
         {
@@ -586,15 +586,15 @@
         },
         {
           "name": "Button",
-          "count": 325
+          "count": 323
         },
         {
           "name": "Indicator step",
-          "count": 264
+          "count": 261
         },
         {
           "name": "Alert",
-          "count": 242
+          "count": 241
         },
         {
           "name": "section_footer",
@@ -602,15 +602,15 @@
         },
         {
           "name": "Bar Progress",
-          "count": 202
+          "count": 200
         },
         {
           "name": "Input",
-          "count": 186
+          "count": 183
         },
         {
           "name": "Select",
-          "count": 169
+          "count": 165
         },
         {
           "name": "reemplazar slot",
@@ -626,7 +626,7 @@
         },
         {
           "name": "Stepper",
-          "count": 62
+          "count": 61
         },
         {
           "name": "Radio",
@@ -649,16 +649,16 @@
           "count": 20
         },
         {
-          "name": "Text Area",
-          "count": 18
-        },
-        {
           "name": "Footer",
           "count": 16
         },
         {
           "name": "title_+_phones",
           "count": 16
+        },
+        {
+          "name": "Text Area",
+          "count": 15
         },
         {
           "name": "Calendar",
@@ -692,15 +692,15 @@
       "top20Internal": [
         {
           "name": "Step 01",
-          "count": 62
+          "count": 61
         },
         {
           "name": "Step 02",
-          "count": 62
+          "count": 61
         },
         {
           "name": "Step 03",
-          "count": 62
+          "count": 61
         },
         {
           "name": "celda L",
@@ -958,9 +958,9 @@
           "key": "5hD4pTIf3zVKz7mn0CdlHk",
           "name": "Aviso de Siniestros",
           "rfdFrameCount": 7,
-          "dsInstances": 2460,
-          "internalInstances": 197,
-          "totalInstances": 2657,
+          "dsInstances": 2441,
+          "internalInstances": 194,
+          "totalInstances": 2635,
           "adoptionRate": 93,
           "uniqueFamiliesCount": 26,
           "uniqueFamilies": [
@@ -978,23 +978,23 @@
             },
             {
               "name": "Button",
-              "count": 132
+              "count": 130
             },
             {
               "name": "Select",
-              "count": 122
+              "count": 118
             },
             {
               "name": "Alert",
-              "count": 100
+              "count": 99
             },
             {
               "name": "Input",
-              "count": 78
+              "count": 75
             },
             {
               "name": "Indicator step",
-              "count": 69
+              "count": 66
             },
             {
               "name": "Label in",
@@ -1002,7 +1002,7 @@
             },
             {
               "name": "Bar Progress",
-              "count": 46
+              "count": 44
             },
             {
               "name": "Left Label",
@@ -1014,7 +1014,7 @@
             },
             {
               "name": "Stepper",
-              "count": 23
+              "count": 22
             },
             {
               "name": "Radio",
@@ -1025,15 +1025,15 @@
               "count": 18
             },
             {
-              "name": "Text Area",
-              "count": 18
-            },
-            {
               "name": "Footer",
               "count": 15
             },
             {
               "name": "title_+_phones",
+              "count": 15
+            },
+            {
+              "name": "Text Area",
               "count": 15
             },
             {
@@ -1076,15 +1076,15 @@
             },
             {
               "name": "Step 01",
-              "count": 23
+              "count": 22
             },
             {
               "name": "Step 02",
-              "count": 23
+              "count": 22
             },
             {
               "name": "Step 03",
-              "count": 23
+              "count": 22
             },
             {
               "name": "Userflow",
@@ -7243,9 +7243,9 @@
       "category": "Embebidos",
       "adoptionRate": 88,
       "totalRfdFrames": 6,
-      "dsInstances": 1424,
-      "internalInstances": 201,
-      "totalInstances": 1625,
+      "dsInstances": 1425,
+      "internalInstances": 199,
+      "totalInstances": 1624,
       "uniqueFamiliesCount": 19,
       "uniqueFamilies": [
         {
@@ -7270,7 +7270,7 @@
         },
         {
           "name": "Button",
-          "count": 81
+          "count": 82
         },
         {
           "name": "Tag",
@@ -7332,7 +7332,7 @@
         },
         {
           "name": "SecciónDescripción",
-          "count": 21
+          "count": 18
         },
         {
           "name": "Icon",
@@ -7356,7 +7356,7 @@
         },
         {
           "name": "Information",
-          "count": 11
+          "count": 12
         },
         {
           "name": "LogosCollab",
@@ -7412,9 +7412,9 @@
           "key": "X8aq9jmjEuGuWDblebqRFz",
           "name": "Landing Alianzas",
           "rfdFrameCount": 6,
-          "dsInstances": 1424,
-          "internalInstances": 201,
-          "totalInstances": 1625,
+          "dsInstances": 1425,
+          "internalInstances": 199,
+          "totalInstances": 1624,
           "adoptionRate": 88,
           "uniqueFamiliesCount": 19,
           "uniqueFamilies": [
@@ -7440,7 +7440,7 @@
             },
             {
               "name": "Button",
-              "count": 81
+              "count": 82
             },
             {
               "name": "Tag",
@@ -7502,7 +7502,7 @@
             },
             {
               "name": "SecciónDescripción",
-              "count": 21
+              "count": 18
             },
             {
               "name": "Icon",
@@ -7526,7 +7526,7 @@
             },
             {
               "name": "Information",
-              "count": 11
+              "count": 12
             },
             {
               "name": "LogosCollab",
@@ -7795,8 +7795,8 @@
       "date": "2026-07-08",
       "adoptionRate": 85,
       "totalRfdFrames": 12,
-      "totalDs": 3653,
-      "totalInstances": 4284,
+      "totalDs": 3634,
+      "totalInstances": 4262,
       "detachments": null,
       "detachQ2": 90
     },
@@ -7951,8 +7951,8 @@
       "date": "2026-07-08",
       "adoptionRate": 88,
       "totalRfdFrames": 6,
-      "totalDs": 1424,
-      "totalInstances": 1625,
+      "totalDs": 1425,
+      "totalInstances": 1624,
       "detachments": null,
       "detachQ2": 36
     }

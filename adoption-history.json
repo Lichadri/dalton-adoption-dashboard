@@ -208,8 +208,8 @@
     "date": "2026-07-08",
     "adoptionRate": 85,
     "totalRfdFrames": 12,
-    "totalDs": 3653,
-    "totalInstances": 4284,
+    "totalDs": 3634,
+    "totalInstances": 4262,
     "detachments": null,
     "detachQ2": 90
   },
@@ -364,8 +364,8 @@
     "date": "2026-07-08",
     "adoptionRate": 88,
     "totalRfdFrames": 6,
-    "totalDs": 1424,
-    "totalInstances": 1625,
+    "totalDs": 1425,
+    "totalInstances": 1624,
     "detachments": null,
     "detachQ2": 36
   }
