@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-09T17:56:11.205Z",
+  "generatedAt": "2026-07-09T22:52:29.914Z",
   "quarter": "Q3 2026",
   "teams": [
     {
@@ -1163,9 +1163,9 @@
       "category": "Protege 365",
       "adoptionRate": 90,
       "totalRfdFrames": 8,
-      "dsInstances": 7808,
-      "internalInstances": 844,
-      "totalInstances": 8652,
+      "dsInstances": 7743,
+      "internalInstances": 821,
+      "totalInstances": 8564,
       "uniqueFamiliesCount": 38,
       "uniqueFamilies": [
         {
@@ -1174,7 +1174,7 @@
         },
         {
           "name": "Button",
-          "count": 745
+          "count": 736
         },
         {
           "name": "Menu Item",
@@ -1186,11 +1186,11 @@
         },
         {
           "name": "Átomo",
-          "count": 350
+          "count": 335
         },
         {
           "name": "Alert",
-          "count": 293
+          "count": 292
         },
         {
           "name": "src_option_redes",
@@ -1209,20 +1209,20 @@
           "count": 160
         },
         {
-          "name": "Tag",
-          "count": 125
-        },
-        {
           "name": "title_+_options",
           "count": 120
         },
         {
-          "name": "Tab",
-          "count": 119
-        },
-        {
           "name": "Chips",
           "count": 116
+        },
+        {
+          "name": "Tag",
+          "count": 113
+        },
+        {
+          "name": "Tab",
+          "count": 109
         },
         {
           "name": "Table",
@@ -1241,16 +1241,16 @@
           "count": 90
         },
         {
-          "name": "Slider Controls",
-          "count": 84
-        },
-        {
           "name": "Checkbox",
           "count": 84
         },
         {
+          "name": "Slider Controls",
+          "count": 78
+        },
+        {
           "name": "Accordion",
-          "count": 83
+          "count": 74
         },
         {
           "name": "src_option_stores_download",
@@ -1258,19 +1258,19 @@
         },
         {
           "name": "Status Control",
-          "count": 45
+          "count": 44
         },
         {
           "name": "Banner | errores",
           "count": 41
         },
         {
-          "name": "Footer",
+          "name": "Input",
           "count": 37
         },
         {
-          "name": "Input",
-          "count": 37
+          "name": "Footer",
+          "count": 36
         },
         {
           "name": "title_+_phones",
@@ -1290,7 +1290,7 @@
         },
         {
           "name": "Breadcrumb",
-          "count": 21
+          "count": 20
         },
         {
           "name": "Select",
@@ -1332,11 +1332,7 @@
         },
         {
           "name": "Slider",
-          "count": 45
-        },
-        {
-          "name": "NorthEast",
-          "count": 36
+          "count": 44
         },
         {
           "name": "Atajos | Beneficios (new)",
@@ -1345,6 +1341,10 @@
         {
           "name": "Menu_Mobile",
           "count": 34
+        },
+        {
+          "name": "NorthEast",
+          "count": 32
         },
         {
           "name": "Menú_Desktop",
@@ -1383,10 +1383,6 @@
           "count": 16
         },
         {
-          "name": "PersonalInjuy",
-          "count": 15
-        },
-        {
           "name": "Infotip",
           "count": 15
         },
@@ -1395,11 +1391,15 @@
           "count": 15
         },
         {
-          "name": "Icon",
+          "name": "vida ley",
           "count": 14
         },
         {
-          "name": "vida ley",
+          "name": "tratamiento",
+          "count": 14
+        },
+        {
+          "name": "Right Label",
           "count": 14
         }
       ],
@@ -1408,9 +1408,9 @@
           "key": "XTTjedhXUghJApM4YxDILE",
           "name": "Web Pública",
           "rfdFrameCount": 2,
-          "dsInstances": 773,
-          "internalInstances": 210,
-          "totalInstances": 983,
+          "dsInstances": 708,
+          "internalInstances": 187,
+          "totalInstances": 895,
           "adoptionRate": 79,
           "uniqueFamiliesCount": 20,
           "uniqueFamilies": [
@@ -1420,31 +1420,31 @@
             },
             {
               "name": "Button",
-              "count": 111
-            },
-            {
-              "name": "Átomo",
-              "count": 88
+              "count": 102
             },
             {
               "name": "Alert",
-              "count": 74
+              "count": 73
+            },
+            {
+              "name": "Átomo",
+              "count": 73
             },
             {
               "name": "Tag",
-              "count": 60
+              "count": 48
             },
             {
               "name": "Tab",
-              "count": 50
+              "count": 40
             },
             {
               "name": "Accordion",
-              "count": 47
+              "count": 38
             },
             {
               "name": "Slider Controls",
-              "count": 38
+              "count": 32
             },
             {
               "name": "section_footer",
@@ -1464,7 +1464,7 @@
             },
             {
               "name": "Footer",
-              "count": 9
+              "count": 8
             },
             {
               "name": "title_+_options",
@@ -1472,11 +1472,11 @@
             },
             {
               "name": "Breadcrumb",
-              "count": 7
+              "count": 6
             },
             {
               "name": "Status Control",
-              "count": 5
+              "count": 4
             },
             {
               "name": "Input",
@@ -1498,7 +1498,7 @@
           "top20Internal": [
             {
               "name": "NorthEast",
-              "count": 36
+              "count": 32
             },
             {
               "name": "download",
@@ -1510,59 +1510,55 @@
             },
             {
               "name": "PersonalInjuy",
-              "count": 15
+              "count": 12
             },
             {
               "name": "Icon",
-              "count": 14
-            },
-            {
-              "name": "ProductTabs",
-              "count": 10
-            },
-            {
-              "name": "Trend",
-              "count": 10
-            },
-            {
-              "name": "MedicalService",
-              "count": 10
+              "count": 11
             },
             {
               "name": "Suggested search (Deprecated)",
               "count": 10
             },
             {
-              "name": "Handshake",
+              "name": "ProductTabs",
               "count": 8
             },
             {
-              "name": "Car",
-              "count": 6
+              "name": "Trend",
+              "count": 8
             },
             {
-              "name": "Slider",
-              "count": 5
+              "name": "MedicalService",
+              "count": 8
             },
             {
-              "name": "Beneficios",
-              "count": 5
-            },
-            {
-              "name": "Information",
-              "count": 5
+              "name": "Handshake",
+              "count": 7
             },
             {
               "name": "Component 86",
               "count": 4
             },
             {
-              "name": "location city",
+              "name": "Slider",
               "count": 4
             },
             {
-              "name": "support",
-              "count": 3
+              "name": "Beneficios",
+              "count": 4
+            },
+            {
+              "name": "Car",
+              "count": 4
+            },
+            {
+              "name": "Information",
+              "count": 4
+            },
+            {
+              "name": "location city",
+              "count": 4
             },
             {
               "name": "Component 87",
@@ -1574,6 +1570,10 @@
             },
             {
               "name": "Scroll",
+              "count": 2
+            },
+            {
+              "name": "support",
               "count": 2
             }
           ]
@@ -7807,8 +7807,8 @@
       "date": "2026-07-09",
       "adoptionRate": 90,
       "totalRfdFrames": 8,
-      "totalDs": 7808,
-      "totalInstances": 8652,
+      "totalDs": 7743,
+      "totalInstances": 8564,
       "detachments": null,
       "detachQ2": 317
     },
