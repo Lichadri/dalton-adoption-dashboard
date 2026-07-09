@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-08T22:36:58.845Z",
+  "generatedAt": "2026-07-09T17:56:11.205Z",
   "quarter": "Q3 2026",
   "teams": [
     {
@@ -1163,9 +1163,9 @@
       "category": "Protege 365",
       "adoptionRate": 90,
       "totalRfdFrames": 8,
-      "dsInstances": 7804,
+      "dsInstances": 7808,
       "internalInstances": 844,
-      "totalInstances": 8648,
+      "totalInstances": 8652,
       "uniqueFamiliesCount": 38,
       "uniqueFamilies": [
         {
@@ -1186,7 +1186,7 @@
         },
         {
           "name": "Átomo",
-          "count": 347
+          "count": 350
         },
         {
           "name": "Alert",
@@ -1290,7 +1290,7 @@
         },
         {
           "name": "Breadcrumb",
-          "count": 20
+          "count": 21
         },
         {
           "name": "Select",
@@ -1408,9 +1408,9 @@
           "key": "XTTjedhXUghJApM4YxDILE",
           "name": "Web Pública",
           "rfdFrameCount": 2,
-          "dsInstances": 769,
+          "dsInstances": 773,
           "internalInstances": 210,
-          "totalInstances": 979,
+          "totalInstances": 983,
           "adoptionRate": 79,
           "uniqueFamiliesCount": 20,
           "uniqueFamilies": [
@@ -1424,7 +1424,7 @@
             },
             {
               "name": "Átomo",
-              "count": 85
+              "count": 88
             },
             {
               "name": "Alert",
@@ -1472,7 +1472,7 @@
             },
             {
               "name": "Breadcrumb",
-              "count": 6
+              "count": 7
             },
             {
               "name": "Status Control",
@@ -1835,9 +1835,9 @@
       "category": "Nueva Web Empresas",
       "adoptionRate": 94,
       "totalRfdFrames": 50,
-      "dsInstances": 215415,
+      "dsInstances": 215429,
       "internalInstances": 13747,
-      "totalInstances": 229162,
+      "totalInstances": 229176,
       "uniqueFamiliesCount": 47,
       "uniqueFamilies": [
         {
@@ -1930,7 +1930,7 @@
         },
         {
           "name": "Checkbox",
-          "count": 835
+          "count": 849
         },
         {
           "name": "Breadcrumb",
@@ -2326,9 +2326,9 @@
           "key": "j4Uyzko4eQSDtEaWyVm2JM",
           "name": "Home Empresas",
           "rfdFrameCount": 43,
-          "dsInstances": 200210,
+          "dsInstances": 200224,
           "internalInstances": 12881,
-          "totalInstances": 213091,
+          "totalInstances": 213105,
           "adoptionRate": 94,
           "uniqueFamiliesCount": 42,
           "uniqueFamilies": [
@@ -2422,7 +2422,7 @@
             },
             {
               "name": "Checkbox",
-              "count": 787
+              "count": 801
             },
             {
               "name": "Breadcrumb",
@@ -7244,8 +7244,8 @@
       "adoptionRate": 88,
       "totalRfdFrames": 6,
       "dsInstances": 1425,
-      "internalInstances": 199,
-      "totalInstances": 1624,
+      "internalInstances": 198,
+      "totalInstances": 1623,
       "uniqueFamiliesCount": 19,
       "uniqueFamilies": [
         {
@@ -7331,16 +7331,16 @@
           "count": 24
         },
         {
-          "name": "SecciónDescripción",
-          "count": 18
-        },
-        {
           "name": "Icon",
           "count": 18
         },
         {
           "name": "Image",
           "count": 18
+        },
+        {
+          "name": "SecciónDescripción",
+          "count": 17
         },
         {
           "name": "WithoutShieldHeart",
@@ -7413,8 +7413,8 @@
           "name": "Landing Alianzas",
           "rfdFrameCount": 6,
           "dsInstances": 1425,
-          "internalInstances": 199,
-          "totalInstances": 1624,
+          "internalInstances": 198,
+          "totalInstances": 1623,
           "adoptionRate": 88,
           "uniqueFamiliesCount": 19,
           "uniqueFamilies": [
@@ -7501,16 +7501,16 @@
               "count": 24
             },
             {
-              "name": "SecciónDescripción",
-              "count": 18
-            },
-            {
               "name": "Icon",
               "count": 18
             },
             {
               "name": "Image",
               "count": 18
+            },
+            {
+              "name": "SecciónDescripción",
+              "count": 17
             },
             {
               "name": "WithoutShieldHeart",
@@ -7780,7 +7780,7 @@
       "team": "MEP",
       "category": "MEP",
       "quarter": "Q3 2026",
-      "date": "2026-07-08",
+      "date": "2026-07-09",
       "adoptionRate": 51,
       "totalRfdFrames": 17,
       "totalDs": 3084,
@@ -7792,7 +7792,7 @@
       "team": "Somos Corredores",
       "category": "Somos Corredores",
       "quarter": "Q3 2026",
-      "date": "2026-07-08",
+      "date": "2026-07-09",
       "adoptionRate": 85,
       "totalRfdFrames": 12,
       "totalDs": 3634,
@@ -7804,11 +7804,11 @@
       "team": "Protege 365",
       "category": "Protege 365",
       "quarter": "Q3 2026",
-      "date": "2026-07-08",
+      "date": "2026-07-09",
       "adoptionRate": 90,
       "totalRfdFrames": 8,
-      "totalDs": 7804,
-      "totalInstances": 8648,
+      "totalDs": 7808,
+      "totalInstances": 8652,
       "detachments": null,
       "detachQ2": 317
     },
@@ -7816,11 +7816,11 @@
       "team": "Nueva Web Empresas",
       "category": "Nueva Web Empresas",
       "quarter": "Q3 2026",
-      "date": "2026-07-08",
+      "date": "2026-07-09",
       "adoptionRate": 94,
       "totalRfdFrames": 50,
-      "totalDs": 215415,
-      "totalInstances": 229162,
+      "totalDs": 215429,
+      "totalInstances": 229176,
       "detachments": null,
       "detachQ2": 17
     },
@@ -7828,7 +7828,7 @@
       "team": "Portal Digital de Siniestros",
       "category": "Portal Digital de Siniestros",
       "quarter": "Q3 2026",
-      "date": "2026-07-08",
+      "date": "2026-07-09",
       "adoptionRate": 84,
       "totalRfdFrames": 5,
       "totalDs": 8539,
@@ -7840,7 +7840,7 @@
       "team": "Modelo Día",
       "category": "Modelo Día",
       "quarter": "Q3 2026",
-      "date": "2026-07-08",
+      "date": "2026-07-09",
       "adoptionRate": 65,
       "totalRfdFrames": 21,
       "totalDs": 14380,
@@ -7852,7 +7852,7 @@
       "team": "SOAT",
       "category": "Ecommerce",
       "quarter": "Q3 2026",
-      "date": "2026-07-08",
+      "date": "2026-07-09",
       "adoptionRate": 75,
       "totalRfdFrames": 1,
       "totalDs": 1583,
@@ -7864,7 +7864,7 @@
       "team": "Vehicular",
       "category": "Ecommerce",
       "quarter": "Q3 2026",
-      "date": "2026-07-08",
+      "date": "2026-07-09",
       "adoptionRate": 73,
       "totalRfdFrames": 1,
       "totalDs": 2286,
@@ -7876,7 +7876,7 @@
       "team": "Auto Efectivo",
       "category": "Ecommerce",
       "quarter": "Q3 2026",
-      "date": "2026-07-08",
+      "date": "2026-07-09",
       "adoptionRate": 0,
       "totalRfdFrames": 0,
       "totalDs": 0,
@@ -7888,7 +7888,7 @@
       "team": "Vehicular Todo Riesgo",
       "category": "Ecommerce",
       "quarter": "Q3 2026",
-      "date": "2026-07-08",
+      "date": "2026-07-09",
       "adoptionRate": 69,
       "totalRfdFrames": 2,
       "totalDs": 2650,
@@ -7900,7 +7900,7 @@
       "team": "Viajes",
       "category": "Ecommerce",
       "quarter": "Q3 2026",
-      "date": "2026-07-08",
+      "date": "2026-07-09",
       "adoptionRate": 85,
       "totalRfdFrames": 8,
       "totalDs": 3566,
@@ -7912,7 +7912,7 @@
       "team": "VDT",
       "category": "Ecommerce",
       "quarter": "Q3 2026",
-      "date": "2026-07-08",
+      "date": "2026-07-09",
       "adoptionRate": 85,
       "totalRfdFrames": 8,
       "totalDs": 3906,
@@ -7924,7 +7924,7 @@
       "team": "Venta Directa",
       "category": "Ecommerce",
       "quarter": "Q3 2026",
-      "date": "2026-07-08",
+      "date": "2026-07-09",
       "adoptionRate": 94,
       "totalRfdFrames": 2,
       "totalDs": 11370,
@@ -7936,7 +7936,7 @@
       "team": "Web Corporativa",
       "category": "Web Corporativa",
       "quarter": "Q3 2026",
-      "date": "2026-07-08",
+      "date": "2026-07-09",
       "adoptionRate": 85,
       "totalRfdFrames": 80,
       "totalDs": 12278,
@@ -7948,11 +7948,11 @@
       "team": "Embebidos",
       "category": "Embebidos",
       "quarter": "Q3 2026",
-      "date": "2026-07-08",
+      "date": "2026-07-09",
       "adoptionRate": 88,
       "totalRfdFrames": 6,
       "totalDs": 1425,
-      "totalInstances": 1624,
+      "totalInstances": 1623,
       "detachments": null,
       "detachQ2": 36
     }
@@ -7961,12 +7961,12 @@
     {
       "name": "type_option",
       "detachments": 485,
-      "insertions": 2471
+      "insertions": 2476
     },
     {
       "name": "section_footer",
       "detachments": 86,
-      "insertions": 4454
+      "insertions": 4463
     },
     {
       "name": "Modal Informative",
@@ -7976,7 +7976,7 @@
     {
       "name": "Button",
       "detachments": 56,
-      "insertions": 78975
+      "insertions": 79894
     },
     {
       "name": "src_option_redes",
@@ -7986,52 +7986,52 @@
     {
       "name": "reemplazar slot",
       "detachments": 40,
-      "insertions": 3958
+      "insertions": 3966
     },
     {
       "name": "Radio Outline",
       "detachments": 34,
-      "insertions": 1102
+      "insertions": 1130
     },
     {
       "name": "Radio Atom",
       "detachments": 24,
-      "insertions": 10578
+      "insertions": 10630
     },
     {
       "name": "Chips Status",
       "detachments": 23,
-      "insertions": 12816
+      "insertions": 12873
     },
     {
       "name": "title_+_options",
       "detachments": 23,
-      "insertions": 1484
+      "insertions": 1487
     },
     {
       "name": "Input",
       "detachments": 21,
-      "insertions": 20008
+      "insertions": 20317
     },
     {
       "name": "Accordion",
       "detachments": 21,
-      "insertions": 1119
+      "insertions": 1134
     },
     {
       "name": "Checkbox With Text",
       "detachments": 16,
-      "insertions": 5185
+      "insertions": 5443
     },
     {
       "name": "01",
       "detachments": 13,
-      "insertions": 1449
+      "insertions": 1463
     },
     {
-      "name": "Checkbox Atom",
+      "name": "Option Group",
       "detachments": 11,
-      "insertions": 3899
+      "insertions": 351
     }
   ],
   "detachPeriods": {
