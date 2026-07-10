@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-09T22:52:29.914Z",
+  "generatedAt": "2026-07-10T17:29:14.627Z",
   "quarter": "Q3 2026",
   "teams": [
     {
@@ -573,48 +573,48 @@
     {
       "name": "Somos Corredores",
       "category": "Somos Corredores",
-      "adoptionRate": 85,
+      "adoptionRate": 84,
       "totalRfdFrames": 12,
-      "dsInstances": 3634,
-      "internalInstances": 628,
-      "totalInstances": 4262,
-      "uniqueFamiliesCount": 27,
+      "dsInstances": 3583,
+      "internalInstances": 658,
+      "totalInstances": 4241,
+      "uniqueFamiliesCount": 26,
       "uniqueFamilies": [
         {
           "name": "type_option",
-          "count": 1368
+          "count": 1284
         },
         {
           "name": "Button",
-          "count": 323
+          "count": 331
         },
         {
           "name": "Indicator step",
-          "count": 261
+          "count": 267
         },
         {
           "name": "Alert",
-          "count": 241
+          "count": 249
         },
         {
           "name": "section_footer",
-          "count": 228
+          "count": 214
         },
         {
           "name": "Bar Progress",
-          "count": 200
+          "count": 204
         },
         {
           "name": "Input",
-          "count": 183
+          "count": 197
         },
         {
           "name": "Select",
-          "count": 165
+          "count": 176
         },
         {
           "name": "reemplazar slot",
-          "count": 156
+          "count": 146
         },
         {
           "name": "Label in",
@@ -626,7 +626,7 @@
         },
         {
           "name": "Stepper",
-          "count": 61
+          "count": 63
         },
         {
           "name": "Radio",
@@ -641,8 +641,12 @@
           "count": 31
         },
         {
+          "name": "Text Area",
+          "count": 23
+        },
+        {
           "name": "title_+_options",
-          "count": 22
+          "count": 21
         },
         {
           "name": "src_option_redes",
@@ -650,14 +654,10 @@
         },
         {
           "name": "Footer",
-          "count": 16
+          "count": 15
         },
         {
           "name": "title_+_phones",
-          "count": 16
-        },
-        {
-          "name": "Text Area",
           "count": 15
         },
         {
@@ -683,24 +683,20 @@
         {
           "name": "title_+_social media",
           "count": 2
-        },
-        {
-          "name": "Chips",
-          "count": 1
         }
       ],
       "top20Internal": [
         {
           "name": "Step 01",
-          "count": 61
+          "count": 63
         },
         {
           "name": "Step 02",
-          "count": 61
+          "count": 63
         },
         {
           "name": "Step 03",
-          "count": 61
+          "count": 63
         },
         {
           "name": "celda L",
@@ -723,11 +719,15 @@
           "count": 39
         },
         {
-          "name": "Upload icon",
-          "count": 31
+          "name": "Userflow",
+          "count": 35
         },
         {
-          "name": "Userflow",
+          "name": "Option",
+          "count": 32
+        },
+        {
+          "name": "Upload icon",
           "count": 31
         },
         {
@@ -747,10 +747,6 @@
           "count": 12
         },
         {
-          "name": "Option",
-          "count": 12
-        },
-        {
           "name": "titulo-fila",
           "count": 11
         },
@@ -767,7 +763,7 @@
           "count": 7
         },
         {
-          "name": "Page",
+          "name": "DirectionDown",
           "count": 6
         }
       ],
@@ -958,43 +954,43 @@
           "key": "5hD4pTIf3zVKz7mn0CdlHk",
           "name": "Aviso de Siniestros",
           "rfdFrameCount": 7,
-          "dsInstances": 2441,
-          "internalInstances": 194,
-          "totalInstances": 2635,
-          "adoptionRate": 93,
-          "uniqueFamiliesCount": 26,
+          "dsInstances": 2390,
+          "internalInstances": 224,
+          "totalInstances": 2614,
+          "adoptionRate": 91,
+          "uniqueFamiliesCount": 25,
           "uniqueFamilies": [
             {
               "name": "type_option",
-              "count": 1272
+              "count": 1188
             },
             {
               "name": "section_footer",
-              "count": 212
-            },
-            {
-              "name": "reemplazar slot",
-              "count": 148
+              "count": 198
             },
             {
               "name": "Button",
-              "count": 130
+              "count": 138
+            },
+            {
+              "name": "reemplazar slot",
+              "count": 138
             },
             {
               "name": "Select",
-              "count": 118
+              "count": 129
             },
             {
               "name": "Alert",
-              "count": 99
+              "count": 107
             },
             {
               "name": "Input",
-              "count": 75
+              "count": 89
             },
             {
               "name": "Indicator step",
-              "count": 66
+              "count": 72
             },
             {
               "name": "Label in",
@@ -1002,7 +998,7 @@
             },
             {
               "name": "Bar Progress",
-              "count": 44
+              "count": 48
             },
             {
               "name": "Left Label",
@@ -1014,7 +1010,11 @@
             },
             {
               "name": "Stepper",
-              "count": 22
+              "count": 24
+            },
+            {
+              "name": "Text Area",
+              "count": 23
             },
             {
               "name": "Radio",
@@ -1022,19 +1022,15 @@
             },
             {
               "name": "title_+_options",
-              "count": 18
+              "count": 17
             },
             {
               "name": "Footer",
-              "count": 15
+              "count": 14
             },
             {
               "name": "title_+_phones",
-              "count": 15
-            },
-            {
-              "name": "Text Area",
-              "count": 15
+              "count": 14
             },
             {
               "name": "src_option_redes",
@@ -1061,10 +1057,6 @@
               "count": 2
             },
             {
-              "name": "Chips",
-              "count": 1
-            },
-            {
               "name": "title_+_social media",
               "count": 1
             }
@@ -1075,20 +1067,24 @@
               "count": 42
             },
             {
+              "name": "Option",
+              "count": 26
+            },
+            {
               "name": "Step 01",
-              "count": 22
+              "count": 24
             },
             {
               "name": "Step 02",
-              "count": 22
+              "count": 24
             },
             {
               "name": "Step 03",
-              "count": 22
+              "count": 24
             },
             {
               "name": "Userflow",
-              "count": 12
+              "count": 16
             },
             {
               "name": "Container Drag and Drop",
@@ -1099,11 +1095,11 @@
               "count": 7
             },
             {
-              "name": "Page",
+              "name": "DirectionDown",
               "count": 6
             },
             {
-              "name": "Option",
+              "name": "Page",
               "count": 6
             },
             {
@@ -1117,10 +1113,6 @@
             {
               "name": "torito",
               "count": 4
-            },
-            {
-              "name": "DirectionDown",
-              "count": 3
             },
             {
               "name": "File",
@@ -1163,9 +1155,9 @@
       "category": "Protege 365",
       "adoptionRate": 90,
       "totalRfdFrames": 8,
-      "dsInstances": 7743,
-      "internalInstances": 821,
-      "totalInstances": 8564,
+      "dsInstances": 7782,
+      "internalInstances": 842,
+      "totalInstances": 8624,
       "uniqueFamiliesCount": 38,
       "uniqueFamilies": [
         {
@@ -1174,7 +1166,7 @@
         },
         {
           "name": "Button",
-          "count": 736
+          "count": 734
         },
         {
           "name": "Menu Item",
@@ -1186,11 +1178,11 @@
         },
         {
           "name": "Átomo",
-          "count": 335
+          "count": 342
         },
         {
           "name": "Alert",
-          "count": 292
+          "count": 305
         },
         {
           "name": "src_option_redes",
@@ -1209,20 +1201,20 @@
           "count": 160
         },
         {
+          "name": "Tag",
+          "count": 125
+        },
+        {
           "name": "title_+_options",
           "count": 120
         },
         {
-          "name": "Chips",
-          "count": 116
-        },
-        {
-          "name": "Tag",
-          "count": 113
-        },
-        {
           "name": "Tab",
-          "count": 109
+          "count": 119
+        },
+        {
+          "name": "Chips",
+          "count": 112
         },
         {
           "name": "Table",
@@ -1245,12 +1237,12 @@
           "count": 84
         },
         {
-          "name": "Slider Controls",
-          "count": 78
+          "name": "Accordion",
+          "count": 83
         },
         {
-          "name": "Accordion",
-          "count": 74
+          "name": "Slider Controls",
+          "count": 76
         },
         {
           "name": "src_option_stores_download",
@@ -1258,7 +1250,7 @@
         },
         {
           "name": "Status Control",
-          "count": 44
+          "count": 46
         },
         {
           "name": "Banner | errores",
@@ -1270,7 +1262,7 @@
         },
         {
           "name": "Footer",
-          "count": 36
+          "count": 33
         },
         {
           "name": "title_+_phones",
@@ -1290,7 +1282,7 @@
         },
         {
           "name": "Breadcrumb",
-          "count": 20
+          "count": 17
         },
         {
           "name": "Select",
@@ -1328,11 +1320,15 @@
         },
         {
           "name": "download",
-          "count": 54
+          "count": 52
         },
         {
           "name": "Slider",
-          "count": 44
+          "count": 46
+        },
+        {
+          "name": "NorthEast",
+          "count": 36
         },
         {
           "name": "Atajos | Beneficios (new)",
@@ -1341,10 +1337,6 @@
         {
           "name": "Menu_Mobile",
           "count": 34
-        },
-        {
-          "name": "NorthEast",
-          "count": 32
         },
         {
           "name": "Menú_Desktop",
@@ -1356,7 +1348,7 @@
         },
         {
           "name": "whatsapp",
-          "count": 29
+          "count": 28
         },
         {
           "name": "datos personales",
@@ -1383,6 +1375,10 @@
           "count": 16
         },
         {
+          "name": "PersonalInjuy",
+          "count": 15
+        },
+        {
           "name": "Infotip",
           "count": 15
         },
@@ -1391,15 +1387,11 @@
           "count": 15
         },
         {
+          "name": "Icon",
+          "count": 14
+        },
+        {
           "name": "vida ley",
-          "count": 14
-        },
-        {
-          "name": "tratamiento",
-          "count": 14
-        },
-        {
-          "name": "Right Label",
           "count": 14
         }
       ],
@@ -1408,11 +1400,11 @@
           "key": "XTTjedhXUghJApM4YxDILE",
           "name": "Web Pública",
           "rfdFrameCount": 2,
-          "dsInstances": 708,
-          "internalInstances": 187,
-          "totalInstances": 895,
-          "adoptionRate": 79,
-          "uniqueFamiliesCount": 20,
+          "dsInstances": 747,
+          "internalInstances": 208,
+          "totalInstances": 955,
+          "adoptionRate": 78,
+          "uniqueFamiliesCount": 19,
           "uniqueFamilies": [
             {
               "name": "type_option",
@@ -1420,35 +1412,35 @@
             },
             {
               "name": "Button",
-              "count": 102
+              "count": 100
             },
             {
               "name": "Alert",
-              "count": 73
+              "count": 86
             },
             {
               "name": "Átomo",
-              "count": 73
+              "count": 80
             },
             {
               "name": "Tag",
-              "count": 48
+              "count": 60
             },
             {
               "name": "Tab",
-              "count": 40
+              "count": 50
             },
             {
               "name": "Accordion",
-              "count": 38
-            },
-            {
-              "name": "Slider Controls",
-              "count": 32
+              "count": 47
             },
             {
               "name": "section_footer",
               "count": 32
+            },
+            {
+              "name": "Slider Controls",
+              "count": 30
             },
             {
               "name": "reemplazar slot",
@@ -1463,28 +1455,24 @@
               "count": 12
             },
             {
-              "name": "Footer",
-              "count": 8
-            },
-            {
               "name": "title_+_options",
               "count": 8
             },
             {
-              "name": "Breadcrumb",
+              "name": "Status Control",
               "count": 6
             },
             {
-              "name": "Status Control",
-              "count": 4
+              "name": "Footer",
+              "count": 5
             },
             {
               "name": "Input",
               "count": 4
             },
             {
-              "name": "Chips",
-              "count": 4
+              "name": "Breadcrumb",
+              "count": 3
             },
             {
               "name": "title_+_phones",
@@ -1498,67 +1486,71 @@
           "top20Internal": [
             {
               "name": "NorthEast",
-              "count": 32
-            },
-            {
-              "name": "download",
-              "count": 30
+              "count": 36
             },
             {
               "name": "whatsapp",
-              "count": 29
+              "count": 28
+            },
+            {
+              "name": "download",
+              "count": 28
             },
             {
               "name": "PersonalInjuy",
-              "count": 12
+              "count": 15
             },
             {
               "name": "Icon",
-              "count": 11
+              "count": 14
+            },
+            {
+              "name": "ProductTabs",
+              "count": 10
+            },
+            {
+              "name": "Trend",
+              "count": 10
+            },
+            {
+              "name": "MedicalService",
+              "count": 10
             },
             {
               "name": "Suggested search (Deprecated)",
               "count": 10
             },
             {
-              "name": "ProductTabs",
-              "count": 8
-            },
-            {
-              "name": "Trend",
-              "count": 8
-            },
-            {
-              "name": "MedicalService",
-              "count": 8
-            },
-            {
               "name": "Handshake",
-              "count": 7
+              "count": 8
+            },
+            {
+              "name": "Slider",
+              "count": 6
+            },
+            {
+              "name": "Car",
+              "count": 6
+            },
+            {
+              "name": "Beneficios",
+              "count": 5
+            },
+            {
+              "name": "Information",
+              "count": 5
             },
             {
               "name": "Component 86",
               "count": 4
             },
             {
-              "name": "Slider",
-              "count": 4
-            },
-            {
-              "name": "Beneficios",
-              "count": 4
-            },
-            {
-              "name": "Car",
-              "count": 4
-            },
-            {
-              "name": "Information",
-              "count": 4
-            },
-            {
               "name": "location city",
               "count": 4
+            },
+            {
+              "name": "support",
+              "count": 3
             },
             {
               "name": "Component 87",
@@ -1570,10 +1562,6 @@
             },
             {
               "name": "Scroll",
-              "count": 2
-            },
-            {
-              "name": "support",
               "count": 2
             }
           ]
@@ -7780,7 +7768,7 @@
       "team": "MEP",
       "category": "MEP",
       "quarter": "Q3 2026",
-      "date": "2026-07-09",
+      "date": "2026-07-10",
       "adoptionRate": 51,
       "totalRfdFrames": 17,
       "totalDs": 3084,
@@ -7792,11 +7780,11 @@
       "team": "Somos Corredores",
       "category": "Somos Corredores",
       "quarter": "Q3 2026",
-      "date": "2026-07-09",
-      "adoptionRate": 85,
+      "date": "2026-07-10",
+      "adoptionRate": 84,
       "totalRfdFrames": 12,
-      "totalDs": 3634,
-      "totalInstances": 4262,
+      "totalDs": 3583,
+      "totalInstances": 4241,
       "detachments": null,
       "detachQ2": 90
     },
@@ -7804,11 +7792,11 @@
       "team": "Protege 365",
       "category": "Protege 365",
       "quarter": "Q3 2026",
-      "date": "2026-07-09",
+      "date": "2026-07-10",
       "adoptionRate": 90,
       "totalRfdFrames": 8,
-      "totalDs": 7743,
-      "totalInstances": 8564,
+      "totalDs": 7782,
+      "totalInstances": 8624,
       "detachments": null,
       "detachQ2": 317
     },
@@ -7816,7 +7804,7 @@
       "team": "Nueva Web Empresas",
       "category": "Nueva Web Empresas",
       "quarter": "Q3 2026",
-      "date": "2026-07-09",
+      "date": "2026-07-10",
       "adoptionRate": 94,
       "totalRfdFrames": 50,
       "totalDs": 215429,
@@ -7828,7 +7816,7 @@
       "team": "Portal Digital de Siniestros",
       "category": "Portal Digital de Siniestros",
       "quarter": "Q3 2026",
-      "date": "2026-07-09",
+      "date": "2026-07-10",
       "adoptionRate": 84,
       "totalRfdFrames": 5,
       "totalDs": 8539,
@@ -7840,7 +7828,7 @@
       "team": "Modelo Día",
       "category": "Modelo Día",
       "quarter": "Q3 2026",
-      "date": "2026-07-09",
+      "date": "2026-07-10",
       "adoptionRate": 65,
       "totalRfdFrames": 21,
       "totalDs": 14380,
@@ -7852,7 +7840,7 @@
       "team": "SOAT",
       "category": "Ecommerce",
       "quarter": "Q3 2026",
-      "date": "2026-07-09",
+      "date": "2026-07-10",
       "adoptionRate": 75,
       "totalRfdFrames": 1,
       "totalDs": 1583,
@@ -7864,7 +7852,7 @@
       "team": "Vehicular",
       "category": "Ecommerce",
       "quarter": "Q3 2026",
-      "date": "2026-07-09",
+      "date": "2026-07-10",
       "adoptionRate": 73,
       "totalRfdFrames": 1,
       "totalDs": 2286,
@@ -7876,7 +7864,7 @@
       "team": "Auto Efectivo",
       "category": "Ecommerce",
       "quarter": "Q3 2026",
-      "date": "2026-07-09",
+      "date": "2026-07-10",
       "adoptionRate": 0,
       "totalRfdFrames": 0,
       "totalDs": 0,
@@ -7888,7 +7876,7 @@
       "team": "Vehicular Todo Riesgo",
       "category": "Ecommerce",
       "quarter": "Q3 2026",
-      "date": "2026-07-09",
+      "date": "2026-07-10",
       "adoptionRate": 69,
       "totalRfdFrames": 2,
       "totalDs": 2650,
@@ -7900,7 +7888,7 @@
       "team": "Viajes",
       "category": "Ecommerce",
       "quarter": "Q3 2026",
-      "date": "2026-07-09",
+      "date": "2026-07-10",
       "adoptionRate": 85,
       "totalRfdFrames": 8,
       "totalDs": 3566,
@@ -7912,7 +7900,7 @@
       "team": "VDT",
       "category": "Ecommerce",
       "quarter": "Q3 2026",
-      "date": "2026-07-09",
+      "date": "2026-07-10",
       "adoptionRate": 85,
       "totalRfdFrames": 8,
       "totalDs": 3906,
@@ -7924,7 +7912,7 @@
       "team": "Venta Directa",
       "category": "Ecommerce",
       "quarter": "Q3 2026",
-      "date": "2026-07-09",
+      "date": "2026-07-10",
       "adoptionRate": 94,
       "totalRfdFrames": 2,
       "totalDs": 11370,
@@ -7936,7 +7924,7 @@
       "team": "Web Corporativa",
       "category": "Web Corporativa",
       "quarter": "Q3 2026",
-      "date": "2026-07-09",
+      "date": "2026-07-10",
       "adoptionRate": 85,
       "totalRfdFrames": 80,
       "totalDs": 12278,
@@ -7948,7 +7936,7 @@
       "team": "Embebidos",
       "category": "Embebidos",
       "quarter": "Q3 2026",
-      "date": "2026-07-09",
+      "date": "2026-07-10",
       "adoptionRate": 88,
       "totalRfdFrames": 6,
       "totalDs": 1425,
@@ -7961,22 +7949,22 @@
     {
       "name": "type_option",
       "detachments": 485,
-      "insertions": 2476
+      "insertions": 2566
     },
     {
       "name": "section_footer",
       "detachments": 86,
-      "insertions": 4463
+      "insertions": 4625
     },
     {
       "name": "Modal Informative",
       "detachments": 58,
-      "insertions": 824
+      "insertions": 827
     },
     {
       "name": "Button",
       "detachments": 56,
-      "insertions": 79894
+      "insertions": 80736
     },
     {
       "name": "src_option_redes",
@@ -7986,52 +7974,52 @@
     {
       "name": "reemplazar slot",
       "detachments": 40,
-      "insertions": 3966
+      "insertions": 4110
     },
     {
       "name": "Radio Outline",
       "detachments": 34,
-      "insertions": 1130
+      "insertions": 1164
     },
     {
       "name": "Radio Atom",
       "detachments": 24,
-      "insertions": 10630
+      "insertions": 10696
     },
     {
       "name": "Chips Status",
       "detachments": 23,
-      "insertions": 12873
+      "insertions": 12905
     },
     {
       "name": "title_+_options",
       "detachments": 23,
-      "insertions": 1487
+      "insertions": 1541
+    },
+    {
+      "name": "Accordion",
+      "detachments": 23,
+      "insertions": 1160
     },
     {
       "name": "Input",
       "detachments": 21,
-      "insertions": 20317
-    },
-    {
-      "name": "Accordion",
-      "detachments": 21,
-      "insertions": 1134
+      "insertions": 20374
     },
     {
       "name": "Checkbox With Text",
       "detachments": 16,
-      "insertions": 5443
+      "insertions": 5482
     },
     {
       "name": "01",
       "detachments": 13,
-      "insertions": 1463
+      "insertions": 1475
     },
     {
-      "name": "Option Group",
+      "name": "Checkbox Atom",
       "detachments": 11,
-      "insertions": 351
+      "insertions": 3906
     }
   ],
   "detachPeriods": {
