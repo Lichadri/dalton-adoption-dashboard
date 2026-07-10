@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-10T17:29:14.627Z",
+  "generatedAt": "2026-07-10T22:31:32.265Z",
   "quarter": "Q3 2026",
   "teams": [
     {
@@ -1529,7 +1529,7 @@
               "count": 6
             },
             {
-              "name": "Car",
+              "name": "location city",
               "count": 6
             },
             {
@@ -1545,7 +1545,7 @@
               "count": 4
             },
             {
-              "name": "location city",
+              "name": "Car",
               "count": 4
             },
             {
@@ -1823,42 +1823,42 @@
       "category": "Nueva Web Empresas",
       "adoptionRate": 94,
       "totalRfdFrames": 50,
-      "dsInstances": 215429,
-      "internalInstances": 13747,
-      "totalInstances": 229176,
+      "dsInstances": 216174,
+      "internalInstances": 13778,
+      "totalInstances": 229952,
       "uniqueFamiliesCount": 47,
       "uniqueFamilies": [
         {
           "name": "type_option",
-          "count": 120335
+          "count": 120815
         },
         {
           "name": "section_footer",
-          "count": 21055
+          "count": 21135
         },
         {
           "name": "src_option_redes",
-          "count": 11330
+          "count": 11380
         },
         {
           "name": "reemplazar slot",
-          "count": 10696
+          "count": 10736
         },
         {
           "name": "Button",
-          "count": 9793
+          "count": 9813
         },
         {
           "name": "Alert",
-          "count": 6314
+          "count": 6324
         },
         {
           "name": "title_+_options",
-          "count": 5347
+          "count": 5367
         },
         {
           "name": "Input",
-          "count": 3713
+          "count": 3718
         },
         {
           "name": "Átomo",
@@ -1866,7 +1866,7 @@
         },
         {
           "name": "src_option_stores_download",
-          "count": 2332
+          "count": 2342
         },
         {
           "name": "Header",
@@ -1890,15 +1890,15 @@
         },
         {
           "name": "Footer",
-          "count": 1463
+          "count": 1468
         },
         {
           "name": "title_+_phones",
-          "count": 1337
+          "count": 1342
         },
         {
           "name": "title_+_social media",
-          "count": 1337
+          "count": 1342
         },
         {
           "name": "Discount Badge",
@@ -1946,7 +1946,7 @@
         },
         {
           "name": "Tag",
-          "count": 236
+          "count": 246
         },
         {
           "name": "Tab",
@@ -1997,16 +1997,16 @@
           "count": 15
         },
         {
+          "name": "Dropdown Input",
+          "count": 15
+        },
+        {
           "name": "Menu title",
           "count": 15
         },
         {
           "name": "Hero",
           "count": 11
-        },
-        {
-          "name": "Dropdown Input",
-          "count": 10
         },
         {
           "name": "Cards",
@@ -2314,43 +2314,43 @@
           "key": "j4Uyzko4eQSDtEaWyVm2JM",
           "name": "Home Empresas",
           "rfdFrameCount": 43,
-          "dsInstances": 200224,
-          "internalInstances": 12881,
-          "totalInstances": 213105,
+          "dsInstances": 200969,
+          "internalInstances": 12912,
+          "totalInstances": 213881,
           "adoptionRate": 94,
           "uniqueFamiliesCount": 42,
           "uniqueFamilies": [
             {
               "name": "type_option",
-              "count": 111119
+              "count": 111599
             },
             {
               "name": "section_footer",
-              "count": 19519
+              "count": 19599
             },
             {
               "name": "src_option_redes",
-              "count": 10370
+              "count": 10420
             },
             {
               "name": "reemplazar slot",
-              "count": 9928
+              "count": 9968
             },
             {
               "name": "Button",
-              "count": 9300
+              "count": 9320
             },
             {
               "name": "Alert",
-              "count": 6275
+              "count": 6285
             },
             {
               "name": "title_+_options",
-              "count": 4963
+              "count": 4983
             },
             {
               "name": "Input",
-              "count": 3651
+              "count": 3656
             },
             {
               "name": "Átomo",
@@ -2358,7 +2358,7 @@
             },
             {
               "name": "src_option_stores_download",
-              "count": 2140
+              "count": 2150
             },
             {
               "name": "Header",
@@ -2382,7 +2382,7 @@
             },
             {
               "name": "Footer",
-              "count": 1367
+              "count": 1372
             },
             {
               "name": "Discount Badge",
@@ -2390,11 +2390,11 @@
             },
             {
               "name": "title_+_phones",
-              "count": 1241
+              "count": 1246
             },
             {
               "name": "title_+_social media",
-              "count": 1241
+              "count": 1246
             },
             {
               "name": "Bar Progress",
@@ -2425,12 +2425,12 @@
               "count": 316
             },
             {
-              "name": "Select",
-              "count": 245
+              "name": "Tag",
+              "count": 246
             },
             {
-              "name": "Tag",
-              "count": 236
+              "name": "Select",
+              "count": 245
             },
             {
               "name": "Tab",
@@ -2469,6 +2469,10 @@
               "count": 18
             },
             {
+              "name": "Dropdown Input",
+              "count": 15
+            },
+            {
               "name": "Menu title",
               "count": 15
             },
@@ -2478,10 +2482,6 @@
             },
             {
               "name": "Hero",
-              "count": 10
-            },
-            {
-              "name": "Dropdown Input",
               "count": 10
             },
             {
@@ -7807,8 +7807,8 @@
       "date": "2026-07-10",
       "adoptionRate": 94,
       "totalRfdFrames": 50,
-      "totalDs": 215429,
-      "totalInstances": 229176,
+      "totalDs": 216174,
+      "totalInstances": 229952,
       "detachments": null,
       "detachQ2": 17
     },
