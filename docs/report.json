@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-18T15:26:51.699Z",
+  "generatedAt": "2026-08-18T21:16:25.687Z",
   "quarter": "Q3 2026",
   "teams": [
     {
@@ -131,7 +131,7 @@
         {
           "key": "XTTjedhXUghJApM4YxDILE",
           "name": "Web Pública",
-          "error": "Figma API 403: {\"status\":403,\"err\":\"Token expired\"}",
+          "error": "Figma API 502: <html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n</body>\r\n</html>\r\n",
           "rfdFrameCount": 0,
           "dsInstances": 0,
           "internalInstances": 0,
