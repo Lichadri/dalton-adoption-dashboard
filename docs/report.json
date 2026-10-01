@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-09-30T19:47:24.041Z",
-  "quarter": "Q3 2026",
+  "generatedAt": "2026-10-01T00:18:05.494Z",
+  "quarter": "Q4 2026",
   "teams": [
     {
       "name": "MEP",
@@ -968,12 +968,192 @@
       "totalInstances": 0,
       "detachments": null,
       "detachQ2": null
+    },
+    {
+      "team": "MEP",
+      "category": "MEP",
+      "quarter": "Q4 2026",
+      "date": "2026-10-01",
+      "adoptionRate": 0,
+      "totalRfdFrames": 0,
+      "totalDs": 0,
+      "totalInstances": 0,
+      "detachments": null,
+      "detachQ2": null
+    },
+    {
+      "team": "Somos Corredores",
+      "category": "Somos Corredores",
+      "quarter": "Q4 2026",
+      "date": "2026-10-01",
+      "adoptionRate": 0,
+      "totalRfdFrames": 0,
+      "totalDs": 0,
+      "totalInstances": 0,
+      "detachments": null,
+      "detachQ2": null
+    },
+    {
+      "team": "Protege 365",
+      "category": "Protege 365",
+      "quarter": "Q4 2026",
+      "date": "2026-10-01",
+      "adoptionRate": 0,
+      "totalRfdFrames": 0,
+      "totalDs": 0,
+      "totalInstances": 0,
+      "detachments": null,
+      "detachQ2": null
+    },
+    {
+      "team": "Nueva Web Empresas",
+      "category": "Nueva Web Empresas",
+      "quarter": "Q4 2026",
+      "date": "2026-10-01",
+      "adoptionRate": 0,
+      "totalRfdFrames": 0,
+      "totalDs": 0,
+      "totalInstances": 0,
+      "detachments": null,
+      "detachQ2": null
+    },
+    {
+      "team": "Portal Digital de Siniestros",
+      "category": "Portal Digital de Siniestros",
+      "quarter": "Q4 2026",
+      "date": "2026-10-01",
+      "adoptionRate": 0,
+      "totalRfdFrames": 0,
+      "totalDs": 0,
+      "totalInstances": 0,
+      "detachments": null,
+      "detachQ2": null
+    },
+    {
+      "team": "Modelo Día",
+      "category": "Modelo Día",
+      "quarter": "Q4 2026",
+      "date": "2026-10-01",
+      "adoptionRate": 0,
+      "totalRfdFrames": 0,
+      "totalDs": 0,
+      "totalInstances": 0,
+      "detachments": null,
+      "detachQ2": null
+    },
+    {
+      "team": "SOAT",
+      "category": "Ecommerce",
+      "quarter": "Q4 2026",
+      "date": "2026-10-01",
+      "adoptionRate": 0,
+      "totalRfdFrames": 0,
+      "totalDs": 0,
+      "totalInstances": 0,
+      "detachments": null,
+      "detachQ2": null
+    },
+    {
+      "team": "Vehicular",
+      "category": "Ecommerce",
+      "quarter": "Q4 2026",
+      "date": "2026-10-01",
+      "adoptionRate": 0,
+      "totalRfdFrames": 0,
+      "totalDs": 0,
+      "totalInstances": 0,
+      "detachments": null,
+      "detachQ2": null
+    },
+    {
+      "team": "Auto Efectivo",
+      "category": "Ecommerce",
+      "quarter": "Q4 2026",
+      "date": "2026-10-01",
+      "adoptionRate": 0,
+      "totalRfdFrames": 0,
+      "totalDs": 0,
+      "totalInstances": 0,
+      "detachments": null,
+      "detachQ2": null
+    },
+    {
+      "team": "Vehicular Todo Riesgo",
+      "category": "Ecommerce",
+      "quarter": "Q4 2026",
+      "date": "2026-10-01",
+      "adoptionRate": 0,
+      "totalRfdFrames": 0,
+      "totalDs": 0,
+      "totalInstances": 0,
+      "detachments": null,
+      "detachQ2": null
+    },
+    {
+      "team": "Viajes",
+      "category": "Ecommerce",
+      "quarter": "Q4 2026",
+      "date": "2026-10-01",
+      "adoptionRate": 0,
+      "totalRfdFrames": 0,
+      "totalDs": 0,
+      "totalInstances": 0,
+      "detachments": null,
+      "detachQ2": null
+    },
+    {
+      "team": "VDT",
+      "category": "Ecommerce",
+      "quarter": "Q4 2026",
+      "date": "2026-10-01",
+      "adoptionRate": 0,
+      "totalRfdFrames": 0,
+      "totalDs": 0,
+      "totalInstances": 0,
+      "detachments": null,
+      "detachQ2": null
+    },
+    {
+      "team": "Venta Directa",
+      "category": "Ecommerce",
+      "quarter": "Q4 2026",
+      "date": "2026-10-01",
+      "adoptionRate": 0,
+      "totalRfdFrames": 0,
+      "totalDs": 0,
+      "totalInstances": 0,
+      "detachments": null,
+      "detachQ2": null
+    },
+    {
+      "team": "Web Corporativa",
+      "category": "Web Corporativa",
+      "quarter": "Q4 2026",
+      "date": "2026-10-01",
+      "adoptionRate": 0,
+      "totalRfdFrames": 0,
+      "totalDs": 0,
+      "totalInstances": 0,
+      "detachments": null,
+      "detachQ2": null
+    },
+    {
+      "team": "Embebidos",
+      "category": "Embebidos",
+      "quarter": "Q4 2026",
+      "date": "2026-10-01",
+      "adoptionRate": 0,
+      "totalRfdFrames": 0,
+      "totalDs": 0,
+      "totalInstances": 0,
+      "detachments": null,
+      "detachQ2": null
     }
   ],
   "topDetachedComponents": [],
   "detachPeriods": {
     "q2Label": "Q2 2026",
-    "currentLabel": "Q3 2026",
+    "currentLabel": "Q4 2026",
     "annualLabel": "Anual 2026"
   }
 }
